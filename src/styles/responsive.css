@@ -1,0 +1,74 @@
+/* Phase 4 refinements, layered after the page-specific styles. */
+html { scrollbar-gutter: stable; }
+.site-shell { width: 100%; }
+.brand { min-height: 44px; }
+.header-link, .site-footer a { min-height: 44px; display: inline-flex; align-items: center; }
+.animal-guide-taxonomy a { min-height: 44px; }
+.animal-breadcrumb { gap: 8px; margin-top: 10px; margin-bottom: 21px; }
+.animal-breadcrumb a { min-height: 36px; display: inline-flex; align-items: center; }
+.animal-card, .region-card { display: block; }
+.region-hero-copy, .animal-guide-intro { min-width: 0; }
+.guide-panel-heading h2 { text-wrap: balance; }
+.guide-panel-description { text-wrap: pretty; }
+.search-instructions p { max-width: 56ch; }
+.animal-guide-hero { gap: clamp(26px, 4vw, 65px); }
+.animal-guide-hero h1 { letter-spacing: -2.5px; text-wrap: balance; }
+.board-tile { touch-action: manipulation; }
+.back-link { scroll-margin-top: 24px; }
+#regions, #wildlife, #rescue-guide { scroll-margin-top: 24px; }
+
+@media (min-width: 1600px) {
+  .animal-guide-art { height: 365px; }
+  .animal-guide-art .animal-sprite { width: 200px; height: 200px; }
+  .guide-art-ground { top: calc(50% + 88px); }
+  .region-hero-art { height: 410px; }
+  .guide-grid-panels { gap: 30px; }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  /* Keep five columns large enough for comfortable numbered-tile targets. */
+  .guide-grid-panels { grid-template-columns: 1fr; }
+  .guide-panel { padding: 28px; }
+  .guide-panel-heading h2 { font-size: 25px; }
+  .guide-panel-description { min-height: 0; }
+  .board-tile { font-size: 30px; }
+  .animal-guide-art .animal-sprite { width: 150px; height: 150px; }
+  .animal-preview-note { flex-direction: column; gap: 8px; }
+}
+
+@media (max-width: 767px) {
+  .animal-guide-hero { gap: 21px; }
+  .animal-guide-deck { margin-top: 18px; }
+  .animal-preview-note { margin-top: 17px; }
+  .animal-guide-intro .back-link { margin-bottom: 0; }
+  .animal-breadcrumb { margin-top: 5px; margin-bottom: 18px; }
+  .animal-breadcrumb a { min-height: 44px; }
+  .guide-panel-description { min-height: 0; }
+}
+
+@media (max-width: 430px) {
+  .site-shell { padding-inline: 18px; }
+  .site-header { gap: 12px; }
+  .animal-guide-hero h1 { font-size: clamp(42px, 12vw, 53px); letter-spacing: -1.8px; }
+  .animal-guide-deck { font-size: 19px; }
+  .guide-panel { padding-inline: 14px; }
+  .guide-panel-heading { gap: 10px; }
+  .guide-panel-heading h2 { font-size: 22px; }
+  .collection-count { letter-spacing: 0.5px; }
+  .animal-guide-navigation { margin-bottom: 26px; }
+  .animal-guide-nav-links a { min-height: 85px; }
+  .site-footer { padding-bottom: max(25px, env(safe-area-inset-bottom)); }
+}
+
+@media (max-width: 360px) {
+  .site-shell { padding-inline: 14px; }
+  .intro .eyebrow { letter-spacing: 0.6px; }
+  .section-heading h2 { font-size: 21px; }
+  .guide-panel { padding-inline: 11px; }
+  .board-frame { gap: 5px; }
+  .rescue-board, .board-columns, .board-rows { gap: 5px; }
+  .guide-panel-heading h2 { font-size: 21px; }
+  .rescue-teaser > div:nth-child(2) { min-width: 175px; }
+  .timeless-slot { gap: 12px; padding-inline: 13px; }
+  .timeless-symbol { width: 54px; }
+}

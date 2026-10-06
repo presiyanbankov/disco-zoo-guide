@@ -1,13 +1,11 @@
 import { RegionExplorer } from "../components/regions/RegionExplorer";
-import Link from "next/link";
+import { SiteHeader } from "../components/layout/SiteHeader";
+import { SiteFooter } from "../components/layout/SiteFooter";
 
 export default function Home() {
-  return <div className="site-shell">
+  return <div className="site-shell" data-route-page="/">
     <a className="skip-link" href="#regions">Skip to regions</a>
-    <header className="site-header">
-      <Link className="brand" href="/" aria-label="Disco Zoo Guide home"><span className="brand-mark" aria-hidden="true"><i/><i/><i/><i/></span><span>disco zoo<span className="brand-sub">FIELD GUIDE</span></span></Link>
-      <a href="#regions" className="header-link">Explore regions <span aria-hidden="true">↗</span></a><span className="alpha-tag">ALPHA 01</span>
-    </header>
+    <SiteHeader />
     <main>
       <section className="intro" aria-labelledby="page-title">
         <div className="eyebrow"><span className="status-dot"/> A LITTLE KNOWLEDGE. A BIGGER ZOO.</div>
@@ -20,7 +18,7 @@ export default function Home() {
         <div><div className="eyebrow">LESS GUESSWORK. MORE WILDLIFE.</div><h2 id="rescue-title">Make every rescue count.</h2><p>An interactive rescue optimizer is on the horizon.</p></div><span className="coming-soon"><span className="status-dot"/> COMING SOON</span>
       </section>
     </main>
-    <footer className="site-footer"><span className="footer-brand">Made for the love of the zoo.</span><p>Unofficial fan-made guide. Disco Zoo is created by NimbleBit.<br/>Not affiliated with or endorsed by NimbleBit.</p><a href="#page-title">Back to top ↑</a></footer>
+    <SiteFooter />
   </div>;
 }
 

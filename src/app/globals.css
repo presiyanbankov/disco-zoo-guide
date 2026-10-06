@@ -228,9 +228,6 @@ h2 {
   border-color:var(--region-accent);
   box-shadow:0 14px 35px #0003;
 }
-.region-card.is-selected {
-  border-color:var(--region-accent);
-}
 .region-farm {
   --region-accent:#b9c886;
   --sky:#333c30;
@@ -440,47 +437,6 @@ h2 {
 }
 .explorer-note span {
   color:var(--accent);
-}
-.region-preview {
-  margin-top:22px;
-  border-left:2px solid var(--region-accent);
-  background:#121817;
-  padding:24px 56px 24px 24px;
-  position:relative;
-  display:flex;
-  align-items:center;
-  gap:35px;
-  animation:reveal .25s ease-out;
-}
-.region-preview h3 {
-  font-size:24px;
-  margin:9px 0;
-  letter-spacing:-.5px;
-}
-.region-preview p {
-  font-size:13px;
-  color:var(--muted);
-  max-width:550px;
-  line-height:1.7;
-  margin:0;
-}
-.preview-note {
-  font-size:11px;
-  line-height:1.7;
-  max-width:180px;
-  color:var(--region-accent);
-  margin-left:auto;
-}
-.close-preview {
-  position:absolute;
-  right:15px;
-  top:12px;
-  background:none;
-  border:0;
-  font-size:24px;
-  cursor:pointer;
-  width:44px;
-  height:44px;
 }
 .rescue-teaser {
   margin:65px 0 55px;
@@ -716,15 +672,6 @@ h1 {
 }
 .card-copy p {
   font-size:12px;
-}
-.region-preview {
-  flex-direction:column;
-  align-items:start;
-  gap:15px;
-}
-.preview-note {
-  max-width:none;
-  margin-left:0;
 }
 .rescue-teaser {
   margin:42px 0 32px;

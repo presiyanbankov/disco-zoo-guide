@@ -1,0 +1,96 @@
+:root {
+  --motion-ease: cubic-bezier(0.22, 0.7, 0.22, 1);
+}
+
+.route-stage {
+  flex: 1;
+  width: 100%;
+  /* Keep fixed-position keyboard controls anchored to the viewport. */
+  animation: route-fade-in 280ms var(--motion-ease) both;
+}
+
+.route-stage[data-entry-motion="shared"] {
+  animation: none;
+}
+
+.site-header {
+  view-transition-name: site-header;
+}
+
+::view-transition-group(*) {
+  animation-duration: 320ms;
+  animation-timing-function: var(--motion-ease);
+}
+
+::view-transition-old(root) {
+  animation: route-leave 140ms ease-out both;
+}
+
+::view-transition-new(root) {
+  animation: route-arrive 280ms var(--motion-ease) both;
+}
+
+::view-transition-old(site-header),
+::view-transition-new(site-header) {
+  animation-duration: 140ms;
+}
+
+@keyframes route-arrive {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes route-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes route-leave {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+/* Focus has the same visual feedback as a pointer, without requiring hover. */
+.region-card:focus-visible {
+  border-color: var(--region-accent);
+  box-shadow: 0 10px 24px #0003;
+}
+.region-card:focus-visible .card-arrow {
+  transform: translate(3px, -3px);
+}
+.animal-card:focus-visible .animal-sprite {
+  transform: translateY(-4px);
+}
+.animal-card:focus-visible .animal-guide-status {
+  color: var(--accent);
+}
+.region-card:active, .animal-card:active {
+  border-color: var(--region-accent);
+}
+
+/* Touch devices get clear pressed states without sticky mouse-hover motion. */
+@media (hover: none) {
+  .region-card:hover,
+  .region-card:hover .card-arrow,
+  .animal-card:hover .animal-sprite,
+  button.board-tile:hover,
+  button.board-tile.is-inspected {
+    transform: none;
+  }
+  .region-card:hover .region-landscape {
+    transform: scale(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-stage,
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+  .region-card:focus-visible .card-arrow,
+  .animal-card:focus-visible .animal-sprite {
+    transform: none;
+  }
+}

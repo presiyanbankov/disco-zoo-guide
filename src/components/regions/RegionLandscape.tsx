@@ -2,7 +2,7 @@
 // Replace with owner-supplied assets under public/game/regions when available.
 export function RegionLandscape({region}:{region:string}){
   const polar=region==="polar",farm=region==="farm",northern=region==="northern",outback=region==="outback";
-  return <svg className="region-landscape" viewBox="0 0 600 340" fill="none" aria-hidden="true">
+  return <svg className="region-landscape" viewBox="0 0 600 340" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
     <path className="land-sky" d="M0 0h600v340H0z"/>
     <circle className="land-sun" cx="465" cy="92" r={polar?25:37}/>
     <path className="land-cloud" d="M68 75h35V64h42v11h37v13H68zm235 43h30v-9h47v9h34v11H303z"/>
