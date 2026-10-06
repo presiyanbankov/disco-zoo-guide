@@ -1,0 +1,38 @@
+/* Phase 5: original, sparse environmental accents, confined to artwork. */
+.region-atmosphere { position: absolute; inset: 0; overflow: hidden; pointer-events: none; contain: layout paint; }
+.atmosphere-light { position: absolute; inset: 0; background: radial-gradient(ellipse at 76% 26%, #e8d49d12, transparent 55%); }
+.atmosphere-mote { position: absolute; width: 2px; height: 2px; background: #e1d5ae; opacity: .3;
+  animation: mote-drift var(--mote-duration) ease-in-out var(--mote-delay) infinite; }
+.atmosphere-outback .atmosphere-mote { background: #e6bc91; opacity: .24; }
+.atmosphere-savanna .atmosphere-mote { background: #e4c681; opacity: .24; }
+.atmosphere-northern .atmosphere-light { background: radial-gradient(ellipse at 72% 24%, #a1cfca12, transparent 55%); }
+.atmosphere-northern .atmosphere-mote { background: #b3d6c9; opacity: .23; }
+.atmosphere-polar .atmosphere-light { background: radial-gradient(ellipse at 72% 24%, #bdebf21c, transparent 58%); }
+.atmosphere-polar .atmosphere-mote { background: #d7edf0; opacity: .5; animation-name: snow-drift; }
+.animal-guide-art .region-atmosphere { opacity: .65; }
+.animal-guide-art .animal-sprite { position: relative; z-index: 1; }
+.animal-guide-art .guide-art-caption { z-index: 1; }
+@keyframes mote-drift { 0%, 100% { transform: translate(0, 0); opacity: .15; } 50% { transform: translate(9px, -17px); opacity: .4; } }
+@keyframes snow-drift { from { transform: translate(-6px, -40px); opacity: 0; } 20%, 75% { opacity: .5; } to { transform: translate(12px, 100px); opacity: 0; } }
+
+/* The small control keeps its full text on phones, with a 44px touch target. */
+.sound-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px;
+  padding: 0 11px; border: 1px solid #ffffff19; background: transparent; color: #adb8ac; cursor: pointer;
+  font: 9px var(--font-geist-mono), monospace; letter-spacing: .6px; transition: color 150ms, border-color 150ms; }
+.sound-toggle[aria-pressed="true"] { color: var(--accent); border-color: #cadb9e55; }
+@media (hover: hover) { .sound-toggle:hover { border-color: #cadb9e55; color: var(--foreground); } }
+.site-header { gap: 24px; }
+@media (max-width: 767px) { .site-header { gap: 12px; } .site-header .alpha-tag { display: none; } }
+@media (max-width: 430px) { .site-header { flex-wrap: wrap; height: auto; min-height: 102px; padding-block: 18px 12px; gap: 8px; }
+  .site-header .brand { margin-right: auto; } .site-header .header-link { order: 3; width: 100%; margin-left: 0; min-height: 32px; }
+  .sound-toggle { padding-inline: 9px; } }
+
+/* Readable metadata and controls, with no per-frame JS or permanent will-change. */
+.hero-art-label, .hero-art-caption, .guide-art-label, .guide-art-caption { color: #c3d0ba; }
+.hero-art-caption, .guide-art-caption { font-size: 8px; letter-spacing: .7px; }
+.region-polar .hero-art-caption { color: #10242a; }
+.card-art .region-number { color: #e6ecd9; }
+html[data-page-hidden="true"] .atmosphere-mote,
+html[data-page-hidden="true"] .art-spark { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .atmosphere-mote { animation: none !important; opacity: .22; } }
+@media (max-width: 767px) { .atmosphere-mote:nth-last-child(-n+2) { display: none; } }

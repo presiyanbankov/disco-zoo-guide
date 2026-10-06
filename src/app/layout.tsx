@@ -5,7 +5,9 @@ import "../styles/regions.css";
 import "../styles/animals.css";
 import "../styles/responsive.css";
 import "../styles/motion.css";
+import "../styles/environment.css";
 import { NavigationMotion } from "../components/navigation/NavigationMotion";
+import { EnvironmentLifecycle } from "../components/effects/EnvironmentLifecycle";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col"><NavigationMotion>{children}</NavigationMotion></body>
+      <body className="min-h-full flex flex-col"><EnvironmentLifecycle /><NavigationMotion>{children}</NavigationMotion></body>
     </html>
   );
 }

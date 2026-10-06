@@ -20,7 +20,8 @@ entrance animation when they finish.
 
 No dependencies, canonical data, domain types, patterns, or solver files changed.
 Artwork remains clearly identified original placeholder art. Additional ambient
-effects and optional centralized sound infrastructure belong to Phase 5.
+effects and optional centralized sound infrastructure are documented in
+`../audio/README.md` (Phase 5).
 
 ## Browser verification
 

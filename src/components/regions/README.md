@@ -42,7 +42,8 @@ card. The Timeless slot has no identity-dependent inputs.
 
 The ambient effects use existing CSS animation infrastructure, with reduced
 motion support. No packages were added. Phase 4 adds shared artwork transitions;
-see `../navigation/README.md`. Optional sound remains Phase 5 work.
+see `../navigation/README.md`. Phase 5 adds optional sound and environmental
+effects; see `../audio/README.md`.
 
 ## Verification
 

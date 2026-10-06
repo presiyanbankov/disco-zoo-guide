@@ -1,4 +1,5 @@
 import { TransitionLink as Link } from "../navigation/TransitionLink";
+import { SoundToggle } from "../audio/SoundToggle";
 
 export function SiteHeader() {
   return (
@@ -10,7 +11,8 @@ export function SiteHeader() {
       <Link href="/#regions" className="header-link">
         Explore regions <span aria-hidden="true">↗</span>
       </Link>
-      <span className="alpha-tag">ALPHA 04</span>
+      <SoundToggle />
+      <span className="alpha-tag">ALPHA 05</span>
     </header>
   );
 }

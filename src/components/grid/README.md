@@ -73,4 +73,5 @@ development configuration blocks the hot-reload connection from `127.0.0.1`.
 No project configuration was changed to bypass that restriction.
 
 Phase 4 adds route/shared-artwork transitions and responsive refinements; see
-`../navigation/README.md`. Sound and additional environmental effects remain Phase 5.
+`../navigation/README.md`. Phase 5 adds optional sound and sparse environmental
+effects; see `../audio/README.md`.

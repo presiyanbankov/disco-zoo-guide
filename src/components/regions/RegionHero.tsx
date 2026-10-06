@@ -1,6 +1,7 @@
 import { TransitionLink as Link } from "../navigation/TransitionLink";
 import { RegionLandscape } from "./RegionLandscape";
 import type { RegionPresentation } from "./regionPresentation";
+import { RegionAtmosphere } from "../effects/RegionAtmosphere";
 
 export function RegionHero({ region, index }: { region: RegionPresentation; index: number }) {
   return (
@@ -18,6 +19,7 @@ export function RegionHero({ region, index }: { region: RegionPresentation; inde
       </div>
       <div className="region-hero-art" style={{ viewTransitionName: `region-art-${region.id}` }}>
         <RegionLandscape region={region.id} />
+        <RegionAtmosphere region={region.id} />
         <span className="hero-art-label">0{index + 1} / {region.climate}</span>
         <span className="art-spark spark-one" /><span className="art-spark spark-two" />
         <span className="art-spark spark-three" />

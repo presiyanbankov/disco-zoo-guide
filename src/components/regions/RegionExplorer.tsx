@@ -1,6 +1,7 @@
 import { TransitionLink as Link } from "../navigation/TransitionLink";
 import { RegionLandscape } from "./RegionLandscape";
 import { REGION_PRESENTATION } from "./regionPresentation";
+import { RegionAtmosphere } from "../effects/RegionAtmosphere";
 
 export function RegionExplorer() {
   return (
@@ -14,6 +15,7 @@ export function RegionExplorer() {
           <Link key={region.id} className={`region-card region-${region.id}`} href={`/regions/${region.id}`}>
             <div className="card-art" style={{ viewTransitionName: `region-art-${region.id}` }}>
               <RegionLandscape region={region.id} />
+              <RegionAtmosphere region={region.id} />
               <span className="region-number">0{index + 1} <span>/ {region.climate}</span></span>
               <span className="art-spark spark-one" /><span className="art-spark spark-two" /><span className="art-spark spark-three" />
             </div>

@@ -2,6 +2,7 @@ import { TransitionLink as Link } from "../navigation/TransitionLink";
 import { AnimalArtwork } from "./AnimalArtwork";
 import type { AnimalGuidePresentation } from "./animalGuidePresentation";
 import type { RegionPresentation } from "../regions/regionPresentation";
+import { RegionAtmosphere } from "../effects/RegionAtmosphere";
 
 export function AnimalGuideHero({ animal, region, index }: { animal: AnimalGuidePresentation; region: RegionPresentation; index: number }) {
   return (
@@ -16,6 +17,7 @@ export function AnimalGuideHero({ animal, region, index }: { animal: AnimalGuide
         {animal.source === "development-preview" && <p className="animal-preview-note"><span className="preview-badge">ALPHA PREVIEW</span>Sample identity awaiting review. Pattern and strategy have not been supplied.</p>}
       </div>
       <div className="animal-guide-art">
+        <RegionAtmosphere region={region.id} />
         <span className="guide-art-label">FIELD STUDY / 0{index + 1}</span>
         <div className="guide-art-lines" aria-hidden="true" />
         <AnimalArtwork id={animal.id} name={animal.name} imagePath={animal.imagePath} transitionName={`animal-${animal.regionId}-${animal.id}`} />
