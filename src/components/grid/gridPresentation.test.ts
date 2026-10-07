@@ -3,7 +3,7 @@ import test from "node:test";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import type { StaticSearchResult } from "../../types/game";
-import { DEV_MOCK_STRATEGY } from "./DEV_MOCK_STRATEGY";
+import { DEV_MOCK_STRATEGY } from "./__fixtures__/DEV_MOCK_STRATEGY";
 import { inspectPattern, inspectStrategy } from "./gridPresentation";
 import { PatternGrid } from "./PatternGrid";
 import { SearchOrderGrid } from "./SearchOrderGrid";

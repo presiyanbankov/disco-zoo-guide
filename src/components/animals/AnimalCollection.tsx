@@ -12,8 +12,8 @@ export function AnimalCollection({ animals }: { animals: readonly AnimalCardPrev
         <span className="collection-count">{String(animals.length).padStart(2, "0")} ANIMALS / 01 MYSTERY</span>
       </div>
       <div className="roster-notice">
-        <span className="preview-badge">ALPHA PREVIEW</span>
-        <p>Sample roster awaiting review. Original placeholder illustrations; patterns and strategies are pending.</p>
+        <span className="preview-badge">VERIFIED PATTERNS</span>
+        <p>Owner-reviewed animal patterns. Original placeholder illustrations; search sequences are available in each animal guide.</p>
       </div>
       {rarityLabels.map((rarity) => {
         const group = animals.filter((animal) => animal.rarity === rarity);

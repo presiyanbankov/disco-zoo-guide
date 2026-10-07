@@ -9,12 +9,18 @@ type Props = {
   animalName: string;
   strategy?: DisplayStrategy | null;
   demo?: boolean;
+  unavailableReason?: "missing-pattern" | "invalid-pattern" | "solver-error";
+  developmentError?: string;
 };
 
-export function SearchOrderGrid({ animalId, animalName, strategy, demo = false }: Props) {
+export function SearchOrderGrid({ animalId, animalName, strategy, demo = false, unavailableReason, developmentError }: Props) {
   const [activeCell, setActiveCell] = useState<number | null>(null);
   const display = inspectStrategy(strategy, animalId);
   const ready = display.status === "ready";
+  const unavailableMessage = unavailableReason === "solver-error"
+    ? "The search sequence could not be generated. The animal pattern remains available."
+    : unavailableReason ? "A valid animal pattern is needed to generate a search sequence."
+    : "Numbered recommendations will appear when a strategy is supplied.";
   const stepsByCell = new Map(display.steps.map((step) => [step.cell.row * BOARD_SIZE + step.cell.col, step]));
   const activeStep = activeCell === null ? undefined : stepsByCell.get(activeCell);
   const tiles: BoardTile[] = Array.from({ length: BOARD_SIZE ** 2 }, (_, index) => {
@@ -31,7 +37,7 @@ export function SearchOrderGrid({ animalId, animalName, strategy, demo = false }
       {ready ? <div className="grid-detail" aria-live="polite" aria-atomic="true">
         {activeStep ? <><span className="detail-step">{String(activeStep.step).padStart(2, "0")}</span><div><strong>{demo ? "Example " : ""}Step {activeStep.step}</strong><p>Row {activeStep.cell.row + 1} / Column {activeStep.cell.col + 1}</p></div></>
           : <><span className="detail-step" aria-hidden="true">↗</span><div><strong>Every step is already visible</strong><p>Tap or focus a number to inspect its position.</p></div></>}
-      </div> : <div className="grid-empty-note"><span className="empty-state-mark" aria-hidden="true">—</span><div><h3>{display.status === "invalid" ? "Strategy couldn’t be displayed" : "Strategy not available yet"}</h3><p>{display.status === "invalid" ? "The supplied result doesn’t match this animal or board. No search order has been substituted." : "Numbered recommendations will appear when a strategy is supplied."}</p></div></div>}
+      </div> : <div className="grid-empty-note"><span className="empty-state-mark" aria-hidden="true">—</span><div><h3>{display.status === "invalid" ? "Strategy couldn’t be displayed" : unavailableReason ? "Search strategy unavailable" : "Strategy not available yet"}</h3><p>{display.status === "invalid" ? "The supplied result doesn’t match this animal or board. No search order has been substituted." : unavailableMessage}</p>{process.env.NODE_ENV === "development" && developmentError && <p>Development error: {developmentError}</p>}</div></div>}
       <div className="search-instructions"><span className="eyebrow">HOW TO READ THE ORDER</span><p>{demo ? "This demo only shows how numbered tiles look. It makes no claim about where to click." : <>Start with <strong>1</strong>. Move to <strong>2</strong> only if the first tile was empty, then <strong>3</strong> if both were empty. Follow the sequence while every previous click is a miss; once you hit an animal, use its pattern instead.</>}</p>{ready && !demo && <p className="search-caveat">A complete strategy is intended to reach this animal by the final numbered tile.</p>}<p className="search-caveat">Row and column labels count from 1. {demo ? "The example numbers illustrate ordering only." : "Unnumbered tiles are outside this sequence, not guaranteed empty."}</p></div>
     </section>
   );

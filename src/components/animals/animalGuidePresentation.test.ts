@@ -1,7 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import type { Animal, StaticSearchResult } from "../../types/game";
-import { getAnimalGuidePresentation, presentOwnerAnimal } from "./animalGuidePresentation";
+import { ANIMALS } from "../../data/animals";
+import { getAnimalGuidePresentation, getRegionAnimalPresentations, presentOwnerAnimal } from "./animalGuidePresentation";
 
 // Synthetic, unpublished records used only to verify frontend visibility rules.
 const ownerRecord: Animal = {
@@ -24,12 +25,37 @@ test("future owner records retain their supplied pattern/result while hidden and
   assert.equal(presentOwnerAnimal({ ...ownerRecord, regionId: "locked-test" as Animal["regionId"] }), undefined);
 });
 
-test("preview lookup is region-scoped and never supplies a fake pattern or result", () => {
+test("approved lookup supplies the original pattern, excludes other regions, and generates a strategy while keeping an unavailable sprite absent", () => {
   const pig = getAnimalGuidePresentation("farm", "pig");
-  assert.equal(pig?.source, "development-preview");
-  assert.equal(pig?.pattern, undefined);
-  assert.equal(pig?.strategy, undefined);
+  assert.equal(pig?.source, "owner-data");
+  assert.equal(pig?.pattern, ANIMALS.find((animal) => animal.id === "pig")?.pattern);
+  assert.equal(pig?.strategy?.animalId, "pig");
+  assert.ok(pig?.strategy?.steps.length);
+  assert.equal(pig?.imagePath, undefined);
   assert.equal(getAnimalGuidePresentation("polar", "pig"), undefined);
   assert.equal(getAnimalGuidePresentation("farm", "timeless"), undefined);
   assert.equal(getAnimalGuidePresentation("locked-test", "pig"), undefined);
+});
+
+test("approved roster has exactly six classic animals per region, normalized cells, and intact separated patterns", () => {
+  assert.equal(ANIMALS.length, 30);
+  assert.equal(new Set(ANIMALS.map((animal) => animal.id)).size, 30);
+  for (const region of ["farm", "outback", "savanna", "northern", "polar"]) {
+    const animals = getRegionAnimalPresentations(region);
+    assert.equal(animals.length, 6);
+    assert.equal(animals.filter((animal) => animal.rarity === "common").length, 3);
+    assert.equal(animals.filter((animal) => animal.rarity === "rare").length, 2);
+    assert.equal(animals.filter((animal) => animal.rarity === "mythical").length, 1);
+    for (const animal of animals) {
+      const cells = animal.pattern!.cells;
+      assert.equal(Math.min(...cells.map((cell) => cell.row)), 0);
+      assert.equal(Math.min(...cells.map((cell) => cell.col)), 0);
+      assert.equal(new Set(cells.map((cell) => `${cell.row},${cell.col}`)).size, cells.length);
+      assert.ok(cells.every((cell) => Number.isInteger(cell.row) && Number.isInteger(cell.col) && cell.row < 5 && cell.col < 5));
+      assert.equal(cells.length, animal.rarity === "common" ? 4 : animal.rarity === "rare" ? 3 : animal.id === "sasquatch" || animal.id === "yeti" ? 2 : 3);
+    }
+  }
+  assert.deepEqual(getAnimalGuidePresentation("polar", "yeti")?.pattern?.cells, [{ row: 0, col: 0 }, { row: 2, col: 0 }]);
+  assert.deepEqual(getAnimalGuidePresentation("polar", "seal")?.pattern?.cells, [{ row: 0, col: 0 }, { row: 1, col: 1 }, { row: 1, col: 3 }, { row: 2, col: 2 }]);
+  assert.deepEqual(getAnimalGuidePresentation("northern", "beaver")?.pattern?.cells, [{ row: 0, col: 2 }, { row: 1, col: 0 }, { row: 1, col: 1 }, { row: 2, col: 2 }]);
 });

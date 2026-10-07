@@ -19,7 +19,7 @@ To replace a cue, add a licensed/owner-supplied file under `public/game/audio/`
 and set `SOUND_CUES[cue].src` to its public URL. Files are fetched and decoded
 only when requested and cached centrally. Adjust volume in the same definition.
 Downloaded audio is capped at 500ms per cue; no background music or looping audio
-is included. No result/success cue is wired to the missing solver results.
+is included. No result/success cue is wired to search results.
 
 ## Environment and performance
 
@@ -43,8 +43,8 @@ activation, one context across region/animal navigation, saved preference withou
 autoplay after reload, mute silence, preference synchronization, hidden-tab
 suspension, interaction-based resume, reduced motion, denied storage, and an
 unavailable AudioContext. No browser runtime errors were found.
-The development-only layout demo also verifies trusted grid hover/selection cues
-with the same central context; it remains silent until sound is enabled.
+Real numbered search tiles use the same delegated grid hover/selection cues;
+they remain silent until sound is enabled.
 
 32 layout checks across 320, 375, 390, 430, 768, 1024, 1440, and 2560 pixels
 found no horizontal overflow. Phone and desktop screenshots were reviewed.
@@ -53,5 +53,5 @@ name/pressed state pass. The Polar artwork caption has 4.76:1 measured contrast.
 
 No packages, game-data files, domain types, animal patterns, or solver code
 changed. Existing preview identities and original placeholder artwork remain
-clearly disclosed. Actual sprites, patterns, and generated strategies still
-depend on owner-supplied assets and reviewed data.
+clearly disclosed. Approved patterns and existing solver output are now integrated by the animal
+guide presentation layer. Actual sprites still depend on owner-supplied assets.

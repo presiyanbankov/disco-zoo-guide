@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { AnimalCollection } from "../../../components/animals/AnimalCollection";
-import { getPreviewAnimals } from "../../../components/animals/DEV_MOCK_ANIMALS";
+import { getRegionAnimalPresentations } from "../../../components/animals/animalGuidePresentation";
 import { SiteFooter } from "../../../components/layout/SiteFooter";
 import { SiteHeader } from "../../../components/layout/SiteHeader";
 import { RegionHero } from "../../../components/regions/RegionHero";
@@ -38,7 +38,7 @@ export default async function RegionPage({ params }: Props) {
       <SiteHeader />
       <main>
         <RegionHero region={region} index={REGION_PRESENTATION.indexOf(region)} />
-        <AnimalCollection animals={getPreviewAnimals(region.id)} />
+        <AnimalCollection animals={getRegionAnimalPresentations(region.id)} />
         <div className="region-field-note"><span aria-hidden="true">✦</span><p>{region.fieldNote}</p></div>
         <RegionNavigation currentId={region.id} />
       </main>

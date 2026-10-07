@@ -8,26 +8,26 @@ non-spoiling 404 page. Region pages compose `RegionHero`, `AnimalCollection`,
 `TimelessSlot`, and `RegionNavigation`, with shared site header/footer components.
 
 Phase 3 now links animal cards to individual animal routes. See
-`../grid/README.md` for the pattern/search-grid contracts and development demo.
+`../grid/README.md` for the pattern/search-grid contracts and real solver integration.
 
 ## Presentation and owner data
 
 `regionPresentation.ts` contains frontend copy and the explicitly available
 region list. It does not define game mechanics.
 
-`../animals/DEV_MOCK_ANIMALS.ts` is a development-only frontend roster with a
-visible alpha-preview disclosure on every region page. Names and rarity labels
-were cross-checked against the linked Pocket Gamer reference. The owner's
-`src/data/animals.ts` and `src/data/regions.ts` remain empty and untouched.
+The owner-approved classic roster and researched patterns now come from
+`src/data/animals.ts` through `getRegionAnimalPresentations`. The former
+`../animals/DEV_MOCK_ANIMALS.ts` remains an unused frontend fixture; production
+routes no longer use its sample records. `src/data/regions.ts` remains untouched.
 
 The frontend consumes existing types from `src/types/game.ts` without modifying
-them. When canonical animal records are supplied, replace the sample-roster
-boundary in the region route. Respect `hidden`, current-region visibility, and
-the Timeless exclusion before passing records to the collection. Remove the
-sample notice only when owner-reviewed data is actually connected.
+them. The presentation boundary respects `hidden`, current-region visibility,
+and the Timeless exclusion. Collection copy identifies reviewed patterns while
+still disclosing original placeholder artwork. Animal guides generate real search sequences.
 
-No mock patterns, search steps, solver calls, Timeless identities, pets, or
-locked-region animal records were added.
+Region lists do not invoke the solver. Only selected animal guides call the
+existing owner solver; no Timeless identities, pets, or locked-region animal
+records are exposed.
 
 ## Artwork and styling
 
