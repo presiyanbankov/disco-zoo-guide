@@ -16,3 +16,7 @@ permission. Artwork resembles Disco Zoo game imagery; the experiment preserves
 animal pixels while removing the backgrounds, ground shadows and visible marks.
 Disco Zoo is created by NimbleBit / Milkbag Games. No affiliation or endorsement
 is claimed. Original signed reference files remain here for review and attribution.
+
+## Approved Jungle and Moon sources
+
+Twelve unchanged 150x150 reference PNGs were added for Monkey, Toucan, Gorilla, Panda, Tiger, Phoenix, Moonkey, Lunar Tick, Tribble, Moonicorn, Luna Moth and Jade Rabbit. Deterministic lowercase IDs match the canonical records. Source URLs and hashes are pinned in scripts/fandomExtractionProfiles.json; final dimensions and source-space masks/seeds are recorded in [the HQ inventory](../../../public/game/animals-hq/README.md). No resampling/recoloring of reference files occurred.

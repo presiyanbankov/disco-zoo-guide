@@ -94,3 +94,7 @@ All five regions now use original vector landscapes in `RegionLandscape.tsx`. Th
 ## Current HQ display source inventory
 
 All 30 classic animals now prefer reviewed exact-pixel Fandom foreground extractions under `public/game/animals-hq/<region>/<id>.png`. The canonical 32x23 files and their data paths remain unchanged as fallback. Previous Scale4x artwork is retained for reference but is no longer rendered. The complete per-file source URLs, dimensions, shadow masks, enclosed seeds and inspection notes are in [animals-hq/README.md](animals-hq/README.md). Pixel validation is in [the all-animal report](experiments/fandom-extracted-all/validation.json). Unresolved cases: none.
+
+## Jungle and Moon
+
+The 12 approved classic animals now use exact-pixel HQ Fandom extractions, bringing the supported display inventory to 42. Sources, dimensions, reviewed shadow masks and Phoenix/Moonkey enclosed seeds are recorded in [animals-hq/README.md](animals-hq/README.md) and scripts/fandomExtractionProfiles.json. Unchanged reference PNGs are under ssets/reference/fandom/; validation/contact sheets are under public/game/experiments/fandom-extracted-all/. Region environments remain bespoke SVG vectors.

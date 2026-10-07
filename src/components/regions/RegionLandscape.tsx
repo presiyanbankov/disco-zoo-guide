@@ -1,5 +1,9 @@
+import { JungleLandscape, MoonLandscape } from "./JungleMoonLandscapes";
+
 /** Original vector interpretations; no game screenshots or animal-pattern geometry. */
 export function RegionLandscape({ region }: { region: string }) {
+  if (region === "jungle") return <JungleLandscape />;
+  if (region === "moon") return <MoonLandscape />;
   const farm = region === "farm", outback = region === "outback", savanna = region === "savanna";
   const northern = region === "northern", polar = region === "polar";
   return <svg className={`region-landscape vector-${region}`} viewBox="0 0 600 340" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">

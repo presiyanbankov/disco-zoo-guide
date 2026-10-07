@@ -27,6 +27,16 @@ export const REGION_PRESENTATION = [
     name: "Polar",
     climate: "FROZEN",
   },
+  {
+    id: "jungle",
+    name: "Jungle",
+    climate: "TROPICAL",
+  },
+  {
+    id: "moon",
+    name: "Moon",
+    climate: "LUNAR",
+  },
 ] as const satisfies readonly {
   id: RegionId;
   name: string;

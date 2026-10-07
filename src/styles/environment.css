@@ -38,6 +38,14 @@ html[data-page-hidden="true"] .art-spark { animation-play-state: paused; }
 @media (max-width: 767px) { .atmosphere-mote:nth-last-child(-n+2) { display: none; } }
 
 /* Region motion: six sparse motes, two atmospheric planes, actual vector depth. */
+.atmosphere-jungle .atmosphere-light { background: radial-gradient(ellipse at 65% 30%, #b8d89016, transparent 65%); }
+.atmosphere-jungle .atmosphere-band { top: 62%; height: 27%; opacity: .07; background: linear-gradient(0deg, transparent, #b4c9ab, transparent); }
+.atmosphere-jungle .atmosphere-mote { border-radius: 50%; background: #d8e7a1; box-shadow: 0 0 4px #d8e7a14a; animation-name: firefly-drift; }
+.atmosphere-moon .atmosphere-light { background: radial-gradient(ellipse at 78% 25%, #acbfe91b, transparent 50%); }
+.atmosphere-moon .band-far { display: none; }
+.atmosphere-moon .band-near { top: 76%; height: 15%; opacity: .04; background: linear-gradient(0deg, transparent, #c4c8d9, transparent); }
+.atmosphere-moon .atmosphere-mote { width: 1px; height: 1px; background: #c7d2e9; opacity: .22; animation-name: dust-drift; }
+@keyframes firefly-drift { 0%,100% { transform: translate(0,0); opacity: .08; } 50% { transform: translate(8px,-12px); opacity: .5; } }
 .atmosphere-light { animation: light-drift 26s ease-in-out infinite alternate; }
 .atmosphere-band { position: absolute; width: 120%; left: -10%; height: 28%; top: 55%; opacity: .08;
   background: linear-gradient(0deg, transparent, #d6d6ba, transparent); animation: haze-drift 31s ease-in-out infinite alternate; }

@@ -269,6 +269,21 @@
 }
 
 /* Sparse labels; environmental identity lives in vector geometry and motion. */
+.region-jungle { --region-accent: #9dbd84; --sky: #192f29; --sun: #b6c596; --far: #284e3d; --mid: #31553d; --ground: #183e2c; --detail: #638552; }
+.region-moon { --region-accent: #b8bbdd; --sky: #171f31; --sun: #a6b9dc; --far: #4a5367; --mid: #697186; --ground: #838a9a; --detail: #b5bacb; }
+.region-search { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); align-items: center; gap: clamp(28px,6vw,90px); padding: 40px 0 48px; border-top: 1px solid var(--line); }
+.region-search-copy h2 { margin: 16px 0 24px; font-size: clamp(24px,3vw,36px); letter-spacing: -1px; }
+.region-search-copy p { max-width: 350px; color: #c0cbb7; font-size: 14px; line-height: 1.8; }
+.region-search-copy .region-search-assumption { color: var(--muted); font-size: 12px; margin-top: 10px; }
+.region-search-pending { display: flex; align-items: center; gap: 10px; margin-top: 30px; color: var(--accent); font: 10px var(--font-geist-mono),monospace; line-height: 1.8; }
+.region-search-board { width: 100%; max-width: 480px; justify-self: end; }
+.region-search-board-heading { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 22px; }
+@media (max-width: 767px) {
+  .region-search { grid-template-columns: 1fr; gap: 24px; padding: 30px 0 36px; }
+  .region-search-copy h2 { margin: 12px 0 15px; }
+  .region-search-pending { margin-top: 18px; }
+  .region-search-board { justify-self: center; }
+}
 .hero-animal-count { margin: 26px 0 10px; color: var(--accent); font: 12px var(--font-geist-mono), monospace; letter-spacing: 1px; }
 .hero-roster-summary { margin: 0 0 24px; color: var(--muted); font: 10px var(--font-geist-mono), monospace; line-height: 1.8; }
 .land-snow { fill: #d8e4e0; opacity: .65; }

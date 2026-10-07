@@ -1,6 +1,8 @@
 import { RegionExplorer } from "../components/regions/RegionExplorer";
 import { SiteHeader } from "../components/layout/SiteHeader";
 import { SiteFooter } from "../components/layout/SiteFooter";
+import { REGION_PRESENTATION } from "../components/regions/regionPresentation";
+import { ANIMALS } from "../data/animals";
 
 export default function Home() {
   return <div className="site-shell" data-route-page="/">
@@ -10,7 +12,7 @@ export default function Home() {
       <section className="intro" aria-labelledby="page-title">
         <div className="eyebrow"><span className="status-dot"/> UNOFFICIAL COMPANION</div>
         <h1 id="page-title">Disco Zoo<br/><span>guide.</span></h1>
-        <div className="intro-bottom"><p>Animal patterns and complete search sequences.</p><span className="intro-coordinate">05 REGIONS <span>/</span> 30 ANIMALS</span></div>
+        <div className="intro-bottom"><p>Animal patterns and complete search sequences.</p><span className="intro-coordinate">{String(REGION_PRESENTATION.length).padStart(2, "0")} REGIONS <span>/</span> {ANIMALS.filter(animal => !animal.hidden && animal.rarity !== "timeless" && REGION_PRESENTATION.some(region => region.id === animal.regionId)).length} ANIMALS</span></div>
       </section>
       <RegionExplorer/>
       <section className="rescue-teaser" aria-labelledby="rescue-title">

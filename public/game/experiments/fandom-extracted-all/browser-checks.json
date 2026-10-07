@@ -4,6 +4,40 @@
       "width": 375,
       "path": "/regions/farm",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/farm/sheep.png",
@@ -101,6 +135,40 @@
       "width": 375,
       "path": "/regions/outback",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/outback/kangaroo.png",
@@ -198,6 +266,40 @@
       "width": 375,
       "path": "/regions/savanna",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/zebra.png",
@@ -295,6 +397,40 @@
       "width": 375,
       "path": "/regions/northern",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/northern/bear.png",
@@ -392,6 +528,40 @@
       "width": 375,
       "path": "/regions/polar",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/polar/penguin.png",
@@ -487,8 +657,304 @@
     },
     {
       "width": 375,
+      "path": "/regions/jungle",
+      "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/monkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            100
+          ],
+          "size": [
+            87.96875,
+            74.5625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/jungle/toucan.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            87.734375,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/gorilla.png",
+          "hq": true,
+          "natural": [
+            112,
+            112
+          ],
+          "size": [
+            80,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/jungle/panda.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            87.984375,
+            56.9375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/tiger.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            87.984375,
+            56.9375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/phoenix.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            87.734375,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/moon",
+      "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/moonkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            88
+          ],
+          "size": [
+            87.984375,
+            65.625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/moon/lunar-tick.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            87.96875,
+            57.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/moon/tribble.png",
+          "hq": true,
+          "natural": [
+            100,
+            87
+          ],
+          "size": [
+            87.984375,
+            76.546875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/moon/moonicorn.png",
+          "hq": true,
+          "natural": [
+            112,
+            136
+          ],
+          "size": [
+            65.875,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/moon/luna-moth.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            87.984375,
+            64.703125
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/moon/jade-rabbit.png",
+          "hq": true,
+          "natural": [
+            76,
+            136
+          ],
+          "size": [
+            44.703125,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 375,
       "path": "/regions/farm/sheep",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "search": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/sheep.png",
@@ -511,6 +977,40 @@
       "width": 375,
       "path": "/regions/farm/pig",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/pig.png",
@@ -533,6 +1033,40 @@
       "width": 375,
       "path": "/regions/farm/rabbit",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/rabbit.png",
@@ -555,6 +1089,39 @@
       "width": 375,
       "path": "/regions/farm/horse",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        10
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/horse.png",
@@ -577,6 +1144,39 @@
       "width": 375,
       "path": "/regions/farm/cow",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2
+      ],
+      "search": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/cow.png",
@@ -599,6 +1199,39 @@
       "width": 375,
       "path": "/regions/farm/unicorn",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/unicorn.png",
@@ -621,6 +1254,40 @@
       "width": 375,
       "path": "/regions/outback/kangaroo",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        12,
+        18
+      ],
+      "search": [
+        null,
+        2,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/kangaroo.png",
@@ -643,6 +1310,40 @@
       "width": 375,
       "path": "/regions/outback/platypus",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        5,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/platypus.png",
@@ -665,6 +1366,40 @@
       "width": 375,
       "path": "/regions/outback/crocodile",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "search": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/crocodile.png",
@@ -687,6 +1422,39 @@
       "width": 375,
       "path": "/regions/outback/koala",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        6
+      ],
+      "search": [
+        null,
+        5,
+        null,
+        6,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null,
+        7,
+        null,
+        8,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/koala.png",
@@ -709,6 +1477,39 @@
       "width": 375,
       "path": "/regions/outback/cockatoo",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        5,
+        1,
+        2,
+        3,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/cockatoo.png",
@@ -731,6 +1532,39 @@
       "width": 375,
       "path": "/regions/outback/tiddalik",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/tiddalik.png",
@@ -753,6 +1587,40 @@
       "width": 375,
       "path": "/regions/savanna/zebra",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        7,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/zebra.png",
@@ -775,6 +1643,40 @@
       "width": 375,
       "path": "/regions/savanna/hippo",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        10,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/hippo.png",
@@ -797,6 +1699,40 @@
       "width": 375,
       "path": "/regions/savanna/giraffe",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/giraffe.png",
@@ -819,6 +1755,39 @@
       "width": 375,
       "path": "/regions/savanna/lion",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2
+      ],
+      "search": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/lion.png",
@@ -841,6 +1810,39 @@
       "width": 375,
       "path": "/regions/savanna/elephant",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        5
+      ],
+      "search": [
+        5,
+        null,
+        6,
+        null,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        7,
+        null,
+        8,
+        null,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/elephant.png",
@@ -863,6 +1865,39 @@
       "width": 375,
       "path": "/regions/savanna/gryphon",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/gryphon.png",
@@ -885,6 +1920,40 @@
       "width": 375,
       "path": "/regions/northern/bear",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        6,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/bear.png",
@@ -907,6 +1976,40 @@
       "width": 375,
       "path": "/regions/northern/skunk",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "search": [
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        2,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/skunk.png",
@@ -929,6 +2032,40 @@
       "width": 375,
       "path": "/regions/northern/beaver",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        2,
+        5,
+        6,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/beaver.png",
@@ -951,6 +2088,39 @@
       "width": 375,
       "path": "/regions/northern/moose",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/moose.png",
@@ -973,6 +2143,39 @@
       "width": 375,
       "path": "/regions/northern/fox",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        5,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/fox.png",
@@ -995,6 +2198,38 @@
       "width": 375,
       "path": "/regions/northern/sasquatch",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        6,
+        7,
+        8,
+        9,
+        10,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/sasquatch.png",
@@ -1017,6 +2252,40 @@
       "width": 375,
       "path": "/regions/polar/penguin",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        6,
+        10,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        1,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/penguin.png",
@@ -1039,6 +2308,40 @@
       "width": 375,
       "path": "/regions/polar/seal",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        8,
+        12
+      ],
+      "search": [
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/seal.png",
@@ -1061,6 +2364,40 @@
       "width": 375,
       "path": "/regions/polar/muskox",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/muskox.png",
@@ -1083,6 +2420,39 @@
       "width": 375,
       "path": "/regions/polar/polar-bear",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        3,
+        null,
+        null,
+        null,
+        6,
+        null,
+        null,
+        null,
+        null,
+        2,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/polar-bear.png",
@@ -1105,6 +2475,39 @@
       "width": 375,
       "path": "/regions/polar/walrus",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/walrus.png",
@@ -1127,6 +2530,38 @@
       "width": 375,
       "path": "/regions/polar/yeti",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        10
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/yeti.png",
@@ -1146,9 +2581,707 @@
       ]
     },
     {
+      "width": 375,
+      "path": "/regions/jungle/monkey",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        6,
+        8
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/monkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            100
+          ],
+          "size": [
+            118,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/jungle/toucan",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        11,
+        16
+      ],
+      "search": [
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/toucan.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            136,
+            124
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/jungle/gorilla",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/gorilla.png",
+          "hq": true,
+          "natural": [
+            112,
+            112
+          ],
+          "size": [
+            112,
+            112
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/jungle/panda",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        2,
+        5,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        4,
+        null,
+        null,
+        null,
+        1,
+        3,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/panda.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/jungle/tiger",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        3
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/tiger.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/jungle/phoenix",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        12
+      ],
+      "search": [
+        null,
+        2,
+        3,
+        null,
+        null,
+        4,
+        5,
+        6,
+        null,
+        null,
+        7,
+        8,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/phoenix.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            136,
+            124
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/moon/moonkey",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        7,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        4,
+        5,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/moonkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            88
+          ],
+          "size": [
+            118,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/moon/lunar-tick",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        11,
+        15,
+        17
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/lunar-tick.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            124,
+            81
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/moon/tribble",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/tribble.png",
+          "hq": true,
+          "natural": [
+            100,
+            87
+          ],
+          "size": [
+            100,
+            87
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/moon/moonicorn",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        5,
+        1,
+        6,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        7,
+        3,
+        8,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/moonicorn.png",
+          "hq": true,
+          "natural": [
+            112,
+            136
+          ],
+          "size": [
+            112,
+            136
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/moon/luna-moth",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        4,
+        3,
+        null,
+        null,
+        null,
+        5,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/luna-moth.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            136,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/moon/jade-rabbit",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        4,
+        null,
+        5,
+        6,
+        7,
+        8,
+        null,
+        9,
+        1,
+        2,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/jade-rabbit.png",
+          "hq": true,
+          "natural": [
+            76,
+            136
+          ],
+          "size": [
+            76,
+            136
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
       "width": 390,
       "path": "/regions/farm",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/farm/sheep.png",
@@ -1246,6 +3379,40 @@
       "width": 390,
       "path": "/regions/outback",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/outback/kangaroo.png",
@@ -1343,6 +3510,40 @@
       "width": 390,
       "path": "/regions/savanna",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/zebra.png",
@@ -1440,6 +3641,40 @@
       "width": 390,
       "path": "/regions/northern",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/northern/bear.png",
@@ -1537,6 +3772,40 @@
       "width": 390,
       "path": "/regions/polar",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/polar/penguin.png",
@@ -1632,8 +3901,304 @@
     },
     {
       "width": 390,
+      "path": "/regions/jungle",
+      "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/monkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            100
+          ],
+          "size": [
+            87.96875,
+            74.5625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/jungle/toucan.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            87.734375,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/gorilla.png",
+          "hq": true,
+          "natural": [
+            112,
+            112
+          ],
+          "size": [
+            80,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/jungle/panda.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            87.984375,
+            56.9375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/tiger.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            87.984375,
+            56.9375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/phoenix.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            87.734375,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/moon",
+      "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/moonkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            88
+          ],
+          "size": [
+            87.984375,
+            65.625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/moon/lunar-tick.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            87.96875,
+            57.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/moon/tribble.png",
+          "hq": true,
+          "natural": [
+            100,
+            87
+          ],
+          "size": [
+            87.984375,
+            76.546875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/moon/moonicorn.png",
+          "hq": true,
+          "natural": [
+            112,
+            136
+          ],
+          "size": [
+            65.875,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/moon/luna-moth.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            87.984375,
+            64.703125
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/moon/jade-rabbit.png",
+          "hq": true,
+          "natural": [
+            76,
+            136
+          ],
+          "size": [
+            44.703125,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 390,
       "path": "/regions/farm/sheep",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "search": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/sheep.png",
@@ -1656,6 +4221,40 @@
       "width": 390,
       "path": "/regions/farm/pig",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/pig.png",
@@ -1678,6 +4277,40 @@
       "width": 390,
       "path": "/regions/farm/rabbit",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/rabbit.png",
@@ -1700,6 +4333,39 @@
       "width": 390,
       "path": "/regions/farm/horse",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        10
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/horse.png",
@@ -1722,6 +4388,39 @@
       "width": 390,
       "path": "/regions/farm/cow",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2
+      ],
+      "search": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/cow.png",
@@ -1744,6 +4443,39 @@
       "width": 390,
       "path": "/regions/farm/unicorn",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/unicorn.png",
@@ -1766,6 +4498,40 @@
       "width": 390,
       "path": "/regions/outback/kangaroo",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        12,
+        18
+      ],
+      "search": [
+        null,
+        2,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/kangaroo.png",
@@ -1788,6 +4554,40 @@
       "width": 390,
       "path": "/regions/outback/platypus",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        5,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/platypus.png",
@@ -1810,6 +4610,40 @@
       "width": 390,
       "path": "/regions/outback/crocodile",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "search": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/crocodile.png",
@@ -1832,6 +4666,39 @@
       "width": 390,
       "path": "/regions/outback/koala",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        6
+      ],
+      "search": [
+        null,
+        5,
+        null,
+        6,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null,
+        7,
+        null,
+        8,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/koala.png",
@@ -1854,6 +4721,39 @@
       "width": 390,
       "path": "/regions/outback/cockatoo",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        5,
+        1,
+        2,
+        3,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/cockatoo.png",
@@ -1876,6 +4776,39 @@
       "width": 390,
       "path": "/regions/outback/tiddalik",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/tiddalik.png",
@@ -1898,6 +4831,40 @@
       "width": 390,
       "path": "/regions/savanna/zebra",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        7,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/zebra.png",
@@ -1920,6 +4887,40 @@
       "width": 390,
       "path": "/regions/savanna/hippo",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        10,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/hippo.png",
@@ -1942,6 +4943,40 @@
       "width": 390,
       "path": "/regions/savanna/giraffe",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/giraffe.png",
@@ -1964,6 +4999,39 @@
       "width": 390,
       "path": "/regions/savanna/lion",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2
+      ],
+      "search": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/lion.png",
@@ -1986,6 +5054,39 @@
       "width": 390,
       "path": "/regions/savanna/elephant",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        5
+      ],
+      "search": [
+        5,
+        null,
+        6,
+        null,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        7,
+        null,
+        8,
+        null,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/elephant.png",
@@ -2008,6 +5109,39 @@
       "width": 390,
       "path": "/regions/savanna/gryphon",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/gryphon.png",
@@ -2030,6 +5164,40 @@
       "width": 390,
       "path": "/regions/northern/bear",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        6,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/bear.png",
@@ -2052,6 +5220,40 @@
       "width": 390,
       "path": "/regions/northern/skunk",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "search": [
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        2,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/skunk.png",
@@ -2074,6 +5276,40 @@
       "width": 390,
       "path": "/regions/northern/beaver",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        2,
+        5,
+        6,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/beaver.png",
@@ -2096,6 +5332,39 @@
       "width": 390,
       "path": "/regions/northern/moose",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/moose.png",
@@ -2118,6 +5387,39 @@
       "width": 390,
       "path": "/regions/northern/fox",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        5,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/fox.png",
@@ -2140,6 +5442,38 @@
       "width": 390,
       "path": "/regions/northern/sasquatch",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        6,
+        7,
+        8,
+        9,
+        10,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/sasquatch.png",
@@ -2162,6 +5496,40 @@
       "width": 390,
       "path": "/regions/polar/penguin",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        6,
+        10,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        1,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/penguin.png",
@@ -2184,6 +5552,40 @@
       "width": 390,
       "path": "/regions/polar/seal",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        8,
+        12
+      ],
+      "search": [
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/seal.png",
@@ -2206,6 +5608,40 @@
       "width": 390,
       "path": "/regions/polar/muskox",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/muskox.png",
@@ -2228,6 +5664,39 @@
       "width": 390,
       "path": "/regions/polar/polar-bear",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        3,
+        null,
+        null,
+        null,
+        6,
+        null,
+        null,
+        null,
+        null,
+        2,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/polar-bear.png",
@@ -2250,6 +5719,39 @@
       "width": 390,
       "path": "/regions/polar/walrus",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/walrus.png",
@@ -2272,6 +5774,38 @@
       "width": 390,
       "path": "/regions/polar/yeti",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        10
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/yeti.png",
@@ -2291,9 +5825,707 @@
       ]
     },
     {
+      "width": 390,
+      "path": "/regions/jungle/monkey",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        6,
+        8
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/monkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            100
+          ],
+          "size": [
+            118,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/jungle/toucan",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        11,
+        16
+      ],
+      "search": [
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/toucan.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            136,
+            124
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/jungle/gorilla",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/gorilla.png",
+          "hq": true,
+          "natural": [
+            112,
+            112
+          ],
+          "size": [
+            112,
+            112
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/jungle/panda",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        2,
+        5,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        4,
+        null,
+        null,
+        null,
+        1,
+        3,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/panda.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/jungle/tiger",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        3
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/tiger.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/jungle/phoenix",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        12
+      ],
+      "search": [
+        null,
+        2,
+        3,
+        null,
+        null,
+        4,
+        5,
+        6,
+        null,
+        null,
+        7,
+        8,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/phoenix.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            136,
+            124
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/moon/moonkey",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        7,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        4,
+        5,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/moonkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            88
+          ],
+          "size": [
+            118,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/moon/lunar-tick",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        11,
+        15,
+        17
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/lunar-tick.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            124,
+            81
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/moon/tribble",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/tribble.png",
+          "hq": true,
+          "natural": [
+            100,
+            87
+          ],
+          "size": [
+            100,
+            87
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/moon/moonicorn",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        5,
+        1,
+        6,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        7,
+        3,
+        8,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/moonicorn.png",
+          "hq": true,
+          "natural": [
+            112,
+            136
+          ],
+          "size": [
+            112,
+            136
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/moon/luna-moth",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        4,
+        3,
+        null,
+        null,
+        null,
+        5,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/luna-moth.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            136,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/moon/jade-rabbit",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        4,
+        null,
+        5,
+        6,
+        7,
+        8,
+        null,
+        9,
+        1,
+        2,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/jade-rabbit.png",
+          "hq": true,
+          "natural": [
+            76,
+            136
+          ],
+          "size": [
+            76,
+            136
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
       "width": 768,
       "path": "/regions/farm",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/farm/sheep.png",
@@ -2391,6 +6623,40 @@
       "width": 768,
       "path": "/regions/outback",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/outback/kangaroo.png",
@@ -2488,6 +6754,40 @@
       "width": 768,
       "path": "/regions/savanna",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/zebra.png",
@@ -2585,6 +6885,40 @@
       "width": 768,
       "path": "/regions/northern",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/northern/bear.png",
@@ -2682,6 +7016,40 @@
       "width": 768,
       "path": "/regions/polar",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/polar/penguin.png",
@@ -2777,8 +7145,304 @@
     },
     {
       "width": 768,
+      "path": "/regions/jungle",
+      "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/monkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            100
+          ],
+          "size": [
+            111.984375,
+            94.90625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/jungle/toucan.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            109.671875,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/jungle/gorilla.png",
+          "hq": true,
+          "natural": [
+            112,
+            112
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/panda.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            111.984375,
+            72.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/tiger.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            111.984375,
+            72.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/phoenix.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            109.671875,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/moon",
+      "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/moonkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            88
+          ],
+          "size": [
+            111.984375,
+            83.515625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/moon/lunar-tick.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            111.984375,
+            73.15625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/moon/tribble.png",
+          "hq": true,
+          "natural": [
+            100,
+            87
+          ],
+          "size": [
+            100,
+            87
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/moon/moonicorn.png",
+          "hq": true,
+          "natural": [
+            112,
+            136
+          ],
+          "size": [
+            82.34375,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/moon/luna-moth.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            111.984375,
+            82.34375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/moon/jade-rabbit.png",
+          "hq": true,
+          "natural": [
+            76,
+            136
+          ],
+          "size": [
+            55.875,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
       "path": "/regions/farm/sheep",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "search": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/sheep.png",
@@ -2801,6 +7465,40 @@
       "width": 768,
       "path": "/regions/farm/pig",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/pig.png",
@@ -2823,6 +7521,40 @@
       "width": 768,
       "path": "/regions/farm/rabbit",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/rabbit.png",
@@ -2845,6 +7577,39 @@
       "width": 768,
       "path": "/regions/farm/horse",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        10
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/horse.png",
@@ -2867,6 +7632,39 @@
       "width": 768,
       "path": "/regions/farm/cow",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2
+      ],
+      "search": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/cow.png",
@@ -2889,6 +7687,39 @@
       "width": 768,
       "path": "/regions/farm/unicorn",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/unicorn.png",
@@ -2911,6 +7742,40 @@
       "width": 768,
       "path": "/regions/outback/kangaroo",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        12,
+        18
+      ],
+      "search": [
+        null,
+        2,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/kangaroo.png",
@@ -2933,6 +7798,40 @@
       "width": 768,
       "path": "/regions/outback/platypus",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        5,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/platypus.png",
@@ -2955,6 +7854,40 @@
       "width": 768,
       "path": "/regions/outback/crocodile",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "search": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/crocodile.png",
@@ -2977,6 +7910,39 @@
       "width": 768,
       "path": "/regions/outback/koala",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        6
+      ],
+      "search": [
+        null,
+        5,
+        null,
+        6,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null,
+        7,
+        null,
+        8,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/koala.png",
@@ -2999,6 +7965,39 @@
       "width": 768,
       "path": "/regions/outback/cockatoo",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        5,
+        1,
+        2,
+        3,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/cockatoo.png",
@@ -3021,6 +8020,39 @@
       "width": 768,
       "path": "/regions/outback/tiddalik",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/tiddalik.png",
@@ -3043,6 +8075,40 @@
       "width": 768,
       "path": "/regions/savanna/zebra",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        7,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/zebra.png",
@@ -3065,6 +8131,40 @@
       "width": 768,
       "path": "/regions/savanna/hippo",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        10,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/hippo.png",
@@ -3087,6 +8187,40 @@
       "width": 768,
       "path": "/regions/savanna/giraffe",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/giraffe.png",
@@ -3109,6 +8243,39 @@
       "width": 768,
       "path": "/regions/savanna/lion",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2
+      ],
+      "search": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/lion.png",
@@ -3131,6 +8298,39 @@
       "width": 768,
       "path": "/regions/savanna/elephant",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        5
+      ],
+      "search": [
+        5,
+        null,
+        6,
+        null,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        7,
+        null,
+        8,
+        null,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/elephant.png",
@@ -3153,6 +8353,39 @@
       "width": 768,
       "path": "/regions/savanna/gryphon",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/gryphon.png",
@@ -3175,6 +8408,40 @@
       "width": 768,
       "path": "/regions/northern/bear",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        6,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/bear.png",
@@ -3197,6 +8464,40 @@
       "width": 768,
       "path": "/regions/northern/skunk",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "search": [
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        2,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/skunk.png",
@@ -3219,6 +8520,40 @@
       "width": 768,
       "path": "/regions/northern/beaver",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        2,
+        5,
+        6,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/beaver.png",
@@ -3241,6 +8576,39 @@
       "width": 768,
       "path": "/regions/northern/moose",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/moose.png",
@@ -3263,6 +8631,39 @@
       "width": 768,
       "path": "/regions/northern/fox",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        5,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/fox.png",
@@ -3285,6 +8686,38 @@
       "width": 768,
       "path": "/regions/northern/sasquatch",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        6,
+        7,
+        8,
+        9,
+        10,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/sasquatch.png",
@@ -3307,6 +8740,40 @@
       "width": 768,
       "path": "/regions/polar/penguin",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        6,
+        10,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        1,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/penguin.png",
@@ -3329,6 +8796,40 @@
       "width": 768,
       "path": "/regions/polar/seal",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        8,
+        12
+      ],
+      "search": [
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/seal.png",
@@ -3351,6 +8852,40 @@
       "width": 768,
       "path": "/regions/polar/muskox",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/muskox.png",
@@ -3373,6 +8908,39 @@
       "width": 768,
       "path": "/regions/polar/polar-bear",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        3,
+        null,
+        null,
+        null,
+        6,
+        null,
+        null,
+        null,
+        null,
+        2,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/polar-bear.png",
@@ -3395,6 +8963,39 @@
       "width": 768,
       "path": "/regions/polar/walrus",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/walrus.png",
@@ -3417,6 +9018,38 @@
       "width": 768,
       "path": "/regions/polar/yeti",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        10
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/yeti.png",
@@ -3436,9 +9069,707 @@
       ]
     },
     {
+      "width": 768,
+      "path": "/regions/jungle/monkey",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        6,
+        8
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/monkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            100
+          ],
+          "size": [
+            118,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/jungle/toucan",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        11,
+        16
+      ],
+      "search": [
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/toucan.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            136,
+            124
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/jungle/gorilla",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/gorilla.png",
+          "hq": true,
+          "natural": [
+            112,
+            112
+          ],
+          "size": [
+            112,
+            112
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/jungle/panda",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        2,
+        5,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        4,
+        null,
+        null,
+        null,
+        1,
+        3,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/panda.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/jungle/tiger",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        3
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/tiger.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/jungle/phoenix",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        12
+      ],
+      "search": [
+        null,
+        2,
+        3,
+        null,
+        null,
+        4,
+        5,
+        6,
+        null,
+        null,
+        7,
+        8,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/phoenix.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            136,
+            124
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/moon/moonkey",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        7,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        4,
+        5,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/moonkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            88
+          ],
+          "size": [
+            118,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/moon/lunar-tick",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        11,
+        15,
+        17
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/lunar-tick.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            124,
+            81
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/moon/tribble",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/tribble.png",
+          "hq": true,
+          "natural": [
+            100,
+            87
+          ],
+          "size": [
+            100,
+            87
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/moon/moonicorn",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        5,
+        1,
+        6,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        7,
+        3,
+        8,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/moonicorn.png",
+          "hq": true,
+          "natural": [
+            112,
+            136
+          ],
+          "size": [
+            112,
+            136
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/moon/luna-moth",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        4,
+        3,
+        null,
+        null,
+        null,
+        5,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/luna-moth.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            136,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/moon/jade-rabbit",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        4,
+        null,
+        5,
+        6,
+        7,
+        8,
+        null,
+        9,
+        1,
+        2,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/jade-rabbit.png",
+          "hq": true,
+          "natural": [
+            76,
+            136
+          ],
+          "size": [
+            76,
+            136
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
       "width": 1440,
       "path": "/regions/farm",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/farm/sheep.png",
@@ -3536,6 +9867,40 @@
       "width": 1440,
       "path": "/regions/outback",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/outback/kangaroo.png",
@@ -3633,6 +9998,40 @@
       "width": 1440,
       "path": "/regions/savanna",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/zebra.png",
@@ -3730,6 +10129,40 @@
       "width": 1440,
       "path": "/regions/northern",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/northern/bear.png",
@@ -3827,6 +10260,40 @@
       "width": 1440,
       "path": "/regions/polar",
       "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
       "icons": [
         {
           "src": "/game/animals-hq/polar/penguin.png",
@@ -3922,8 +10389,304 @@
     },
     {
       "width": 1440,
+      "path": "/regions/jungle",
+      "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/monkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            100
+          ],
+          "size": [
+            111.984375,
+            94.90625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/toucan.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            109.671875,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/gorilla.png",
+          "hq": true,
+          "natural": [
+            112,
+            112
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/jungle/panda.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            111.984375,
+            72.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/tiger.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            111.984375,
+            72.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/jungle/phoenix.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            109.671875,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/moon",
+      "overflow": false,
+      "regionSearch": {
+        "pending": true,
+        "beforeCollection": true,
+        "tiles": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "buttons": 0
+      },
+      "pattern": [],
+      "search": [],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/moonkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            88
+          ],
+          "size": [
+            111.984375,
+            83.515625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/moon/lunar-tick.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            111.984375,
+            73.15625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/moon/tribble.png",
+          "hq": true,
+          "natural": [
+            100,
+            87
+          ],
+          "size": [
+            100,
+            87
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/moon/moonicorn.png",
+          "hq": true,
+          "natural": [
+            112,
+            136
+          ],
+          "size": [
+            82.34375,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/moon/luna-moth.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            111.984375,
+            82.34375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/moon/jade-rabbit.png",
+          "hq": true,
+          "natural": [
+            76,
+            136
+          ],
+          "size": [
+            55.875,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
       "path": "/regions/farm/sheep",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "search": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/sheep.png",
@@ -3946,6 +10709,40 @@
       "width": 1440,
       "path": "/regions/farm/pig",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/pig.png",
@@ -3968,6 +10765,40 @@
       "width": 1440,
       "path": "/regions/farm/rabbit",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/rabbit.png",
@@ -3990,6 +10821,39 @@
       "width": 1440,
       "path": "/regions/farm/horse",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        10
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/horse.png",
@@ -4012,6 +10876,39 @@
       "width": 1440,
       "path": "/regions/farm/cow",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2
+      ],
+      "search": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/cow.png",
@@ -4034,6 +10931,39 @@
       "width": 1440,
       "path": "/regions/farm/unicorn",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/farm/unicorn.png",
@@ -4056,6 +10986,40 @@
       "width": 1440,
       "path": "/regions/outback/kangaroo",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        12,
+        18
+      ],
+      "search": [
+        null,
+        2,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/kangaroo.png",
@@ -4078,6 +11042,40 @@
       "width": 1440,
       "path": "/regions/outback/platypus",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        5,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/platypus.png",
@@ -4100,6 +11098,40 @@
       "width": 1440,
       "path": "/regions/outback/crocodile",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "search": [
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/crocodile.png",
@@ -4122,6 +11154,39 @@
       "width": 1440,
       "path": "/regions/outback/koala",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        6
+      ],
+      "search": [
+        null,
+        5,
+        null,
+        6,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null,
+        7,
+        null,
+        8,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/koala.png",
@@ -4144,6 +11209,39 @@
       "width": 1440,
       "path": "/regions/outback/cockatoo",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        5,
+        1,
+        2,
+        3,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/cockatoo.png",
@@ -4166,6 +11264,39 @@
       "width": 1440,
       "path": "/regions/outback/tiddalik",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/outback/tiddalik.png",
@@ -4188,6 +11319,40 @@
       "width": 1440,
       "path": "/regions/savanna/zebra",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        7,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/zebra.png",
@@ -4210,6 +11375,40 @@
       "width": 1440,
       "path": "/regions/savanna/hippo",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        10,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/hippo.png",
@@ -4232,6 +11431,40 @@
       "width": 1440,
       "path": "/regions/savanna/giraffe",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        10,
+        15
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/giraffe.png",
@@ -4254,6 +11487,39 @@
       "width": 1440,
       "path": "/regions/savanna/lion",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        2
+      ],
+      "search": [
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/lion.png",
@@ -4276,6 +11542,39 @@
       "width": 1440,
       "path": "/regions/savanna/elephant",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        5
+      ],
+      "search": [
+        5,
+        null,
+        6,
+        null,
+        null,
+        null,
+        1,
+        null,
+        2,
+        null,
+        7,
+        null,
+        8,
+        null,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/elephant.png",
@@ -4298,6 +11597,39 @@
       "width": 1440,
       "path": "/regions/savanna/gryphon",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/savanna/gryphon.png",
@@ -4320,6 +11652,40 @@
       "width": 1440,
       "path": "/regions/northern/bear",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        6,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        4,
+        null,
+        1,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/bear.png",
@@ -4342,6 +11708,40 @@
       "width": 1440,
       "path": "/regions/northern/skunk",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "search": [
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        2,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/skunk.png",
@@ -4364,6 +11764,40 @@
       "width": 1440,
       "path": "/regions/northern/beaver",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        2,
+        5,
+        6,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/beaver.png",
@@ -4386,6 +11820,39 @@
       "width": 1440,
       "path": "/regions/northern/moose",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        5,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/moose.png",
@@ -4408,6 +11875,39 @@
       "width": 1440,
       "path": "/regions/northern/fox",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        5,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/fox.png",
@@ -4430,6 +11930,38 @@
       "width": 1440,
       "path": "/regions/northern/sasquatch",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        6,
+        7,
+        8,
+        9,
+        10,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/northern/sasquatch.png",
@@ -4452,6 +11984,40 @@
       "width": 1440,
       "path": "/regions/polar/penguin",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        6,
+        10,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        1,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/penguin.png",
@@ -4474,6 +12040,40 @@
       "width": 1440,
       "path": "/regions/polar/seal",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        8,
+        12
+      ],
+      "search": [
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/seal.png",
@@ -4496,6 +12096,40 @@
       "width": 1440,
       "path": "/regions/polar/muskox",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        1,
+        5,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/muskox.png",
@@ -4518,6 +12152,39 @@
       "width": 1440,
       "path": "/regions/polar/polar-bear",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        3,
+        null,
+        null,
+        null,
+        6,
+        null,
+        null,
+        null,
+        null,
+        2,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/polar-bear.png",
@@ -4540,6 +12207,39 @@
       "width": 1440,
       "path": "/regions/polar/walrus",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        5,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/walrus.png",
@@ -4562,6 +12262,38 @@
       "width": 1440,
       "path": "/regions/polar/yeti",
       "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        10
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        6,
+        7,
+        8,
+        9,
+        10,
+        1,
+        2,
+        3,
+        4,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "icons": [
         {
           "src": "/game/animals-hq/polar/yeti.png",
@@ -4573,6 +12305,670 @@
           "size": [
             88,
             130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/jungle/monkey",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        6,
+        8
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/monkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            100
+          ],
+          "size": [
+            118,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/jungle/toucan",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        11,
+        16
+      ],
+      "search": [
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        1,
+        2,
+        3,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/toucan.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            136,
+            124
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/jungle/gorilla",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        4,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/gorilla.png",
+          "hq": true,
+          "natural": [
+            112,
+            112
+          ],
+          "size": [
+            112,
+            112
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/jungle/panda",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        2,
+        5,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        4,
+        null,
+        null,
+        null,
+        1,
+        3,
+        5,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/panda.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/jungle/tiger",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        3
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null,
+        null,
+        null,
+        5,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/tiger.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/jungle/phoenix",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        12
+      ],
+      "search": [
+        null,
+        2,
+        3,
+        null,
+        null,
+        4,
+        5,
+        6,
+        null,
+        null,
+        7,
+        8,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/jungle/phoenix.png",
+          "hq": true,
+          "natural": [
+            136,
+            124
+          ],
+          "size": [
+            136,
+            124
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/moon/moonkey",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        7,
+        12
+      ],
+      "search": [
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        4,
+        5,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/moonkey.png",
+          "hq": true,
+          "natural": [
+            118,
+            88
+          ],
+          "size": [
+            118,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/moon/lunar-tick",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        11,
+        15,
+        17
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        2,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/lunar-tick.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            124,
+            81
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/moon/tribble",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        1,
+        5,
+        6,
+        7
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        3,
+        null,
+        null,
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        null,
+        4,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/tribble.png",
+          "hq": true,
+          "natural": [
+            100,
+            87
+          ],
+          "size": [
+            100,
+            87
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/moon/moonicorn",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        5,
+        6
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        5,
+        1,
+        6,
+        2,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        7,
+        3,
+        8,
+        4,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/moonicorn.png",
+          "hq": true,
+          "natural": [
+            112,
+            136
+          ],
+          "size": [
+            112,
+            136
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/moon/luna-moth",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        2,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        2,
+        null,
+        null,
+        null,
+        4,
+        3,
+        null,
+        null,
+        null,
+        5,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/luna-moth.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            136,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/moon/jade-rabbit",
+      "overflow": false,
+      "regionSearch": null,
+      "pattern": [
+        0,
+        11
+      ],
+      "search": [
+        null,
+        null,
+        null,
+        4,
+        null,
+        5,
+        6,
+        7,
+        8,
+        null,
+        9,
+        1,
+        2,
+        3,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "icons": [
+        {
+          "src": "/game/animals-hq/moon/jade-rabbit.png",
+          "hq": true,
+          "natural": [
+            76,
+            136
+          ],
+          "size": [
+            76,
+            136
           ],
           "crisp": true,
           "clipped": false,

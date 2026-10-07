@@ -1970,5 +1970,933 @@
     "review_status": "reviewed",
     "notes": "Separated hands/arms/legs/feet, all white/gray body shades and eye highlight preserved.",
     "region": "polar"
+  },
+  {
+    "id": "monkey",
+    "name": "Monkey",
+    "region": "jungle",
+    "cdn": "2/27/Monkey.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "639271887ec8f47cfa3ba9c6f24f9802e55e22798033b7bcd9d884fef79969f6",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      21,
+      129,
+      137,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        177,
+        155,
+        109
+      ],
+      [
+        212,
+        196,
+        164
+      ],
+      [
+        194,
+        179,
+        148
+      ],
+      [
+        155,
+        136,
+        96
+      ],
+      [
+        160,
+        139,
+        98
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ]
+    ],
+    "count": 5784,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Monkey.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Curled tail, fingers, muzzle, toes and gray eye highlight individually reviewed; under-leg background reopens through shadow."
+  },
+  {
+    "id": "toucan",
+    "name": "Toucan",
+    "region": "jungle",
+    "cdn": "e/e2/Toucan.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "3e998dcd033c3a7f2a09c500aee2c6d3043b1257c86f1009e5c00857230cb48e",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      10,
+      129,
+      138,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        44,
+        44,
+        44
+      ],
+      [
+        219,
+        245,
+        0
+      ],
+      [
+        31,
+        31,
+        31
+      ],
+      [
+        159,
+        11,
+        12
+      ],
+      [
+        141,
+        230,
+        37
+      ],
+      [
+        127,
+        207,
+        33
+      ],
+      [
+        197,
+        220,
+        0
+      ],
+      [
+        53,
+        197,
+        196
+      ],
+      [
+        22,
+        22,
+        22
+      ],
+      [
+        143,
+        10,
+        11
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ]
+    ],
+    "count": 6684,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Toucan.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Cyan feet, projecting beak, tail tip and gray eye highlight individually reviewed."
+  },
+  {
+    "id": "gorilla",
+    "name": "Gorilla",
+    "region": "jungle",
+    "cdn": "8/84/Gorilla.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "9cf05f057d3e07bc0292f2f84205808039f9ea59ff85a3e9016d2757dff730ce",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      22,
+      129,
+      119,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        68,
+        68,
+        68
+      ],
+      [
+        89,
+        89,
+        89
+      ],
+      [
+        47,
+        47,
+        47
+      ],
+      [
+        109,
+        109,
+        109
+      ],
+      [
+        80,
+        80,
+        80
+      ],
+      [
+        62,
+        62,
+        62
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        34,
+        34,
+        34
+      ],
+      [
+        136,
+        136,
+        136
+      ]
+    ],
+    "count": 7824,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Gorilla.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "All gray face/body shading, arm outline, toes and eye highlight individually reviewed; under-leg opening reopens through shadow."
+  },
+  {
+    "id": "panda",
+    "name": "Panda",
+    "region": "jungle",
+    "cdn": "0/00/Panda.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "a07f70b9ee8b75315d1f0481203f1de5c65e3006468d4e384100172ec51c4435",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      11,
+      129,
+      129,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        68,
+        68,
+        68
+      ],
+      [
+        55,
+        55,
+        55
+      ],
+      [
+        206,
+        206,
+        206
+      ],
+      [
+        137,
+        137,
+        137
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        196,
+        196,
+        196
+      ]
+    ],
+    "count": 7620,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Panda.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "White muzzle/body, black legs, gray eye highlight and hind-foot shading individually reviewed."
+  },
+  {
+    "id": "tiger",
+    "name": "Tiger",
+    "region": "jungle",
+    "cdn": "a/ae/Tiger.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "c1999934c0391d07674d0e34c777db3fe5f9125ece0dd1b92fffbbe6b492c85f",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      10,
+      129,
+      138,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        68,
+        68,
+        68
+      ],
+      [
+        220,
+        140,
+        46
+      ],
+      [
+        54,
+        54,
+        54
+      ],
+      [
+        244,
+        220,
+        192
+      ],
+      [
+        154,
+        98,
+        32
+      ],
+      [
+        204,
+        204,
+        204
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        199,
+        159,
+        112
+      ],
+      [
+        237,
+        196,
+        148
+      ],
+      [
+        136,
+        136,
+        136
+      ]
+    ],
+    "count": 6648,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Tiger.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Striped extended tail, white muzzle/feet, dark stripes and gray eye highlight individually reviewed."
+  },
+  {
+    "id": "phoenix",
+    "name": "Phoenix",
+    "region": "jungle",
+    "cdn": "c/c1/Phoenix.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "9b77f7318401a5ac4c1318bbbefd34a9cf4c82704031585d576dc6da403ad335",
+    "shadow": [
+      149,
+      124,
+      95
+    ],
+    "shadow_box": [
+      13,
+      129,
+      140,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        222,
+        49,
+        0
+      ],
+      [
+        255,
+        222,
+        0
+      ],
+      [
+        255,
+        138,
+        0
+      ],
+      [
+        184,
+        40,
+        0
+      ],
+      [
+        174,
+        38,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        198,
+        43,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ]
+    ],
+    "count": 7514,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Phoenix.png",
+    "enclosed_background": [
+      {
+        "seed": [
+          88,
+          21
+        ],
+        "count": 36,
+        "label": "feather-opening"
+      }
+    ],
+    "review_status": "reviewed",
+    "notes": "Crest, flame-feather tips, long tail and eye highlight individually reviewed; 36-pixel enclosed wing/feather opening requires explicit seed."
+  },
+  {
+    "id": "moonkey",
+    "name": "Moonkey",
+    "region": "moon",
+    "cdn": "3/38/Moonkey.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "47c9af62798a8119f5c67129c961ad80070546b90abc9770c14071698ba05ed4",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      19,
+      130,
+      135,
+      142
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        255,
+        182,
+        23
+      ],
+      [
+        243,
+        173,
+        21
+      ],
+      [
+        216,
+        153,
+        17
+      ],
+      [
+        253,
+        194,
+        66
+      ],
+      [
+        250,
+        206,
+        110
+      ],
+      [
+        246,
+        230,
+        196
+      ],
+      [
+        178,
+        125,
+        11
+      ],
+      [
+        240,
+        215,
+        160
+      ],
+      [
+        246,
+        189,
+        65
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        100,
+        68,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ]
+    ],
+    "count": 5616,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Moonkey.png",
+    "enclosed_background": [
+      {
+        "seed": [
+          107,
+          100
+        ],
+        "count": 504,
+        "label": "tail-opening"
+      }
+    ],
+    "review_status": "reviewed",
+    "notes": "Entire curled tail, thin legs/feet, face shading and eye highlight individually reviewed; 504-pixel enclosed tail opening requires explicit seed."
+  },
+  {
+    "id": "lunar-tick",
+    "name": "Lunar Tick",
+    "region": "moon",
+    "cdn": "6/67/Lunar_Tick.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "9fe3282a11588407195b921725c98918c71b58813dae318fb41903c9d6940ec6",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      19,
+      129,
+      135,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        168,
+        0,
+        0
+      ],
+      [
+        212,
+        0,
+        0
+      ],
+      [
+        235,
+        77,
+        77
+      ],
+      [
+        226,
+        0,
+        0
+      ],
+      [
+        231,
+        39,
+        39
+      ],
+      [
+        84,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ]
+    ],
+    "count": 4380,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Lunar_Tick.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Every thin black leg/extension, red shell shading and gray eye highlight individually reviewed."
+  },
+  {
+    "id": "tribble",
+    "name": "Tribble",
+    "region": "moon",
+    "cdn": "1/15/Tribble.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "a953021d81fd377f9596bc6d222095fe2dc5e4d5b4c12d1c2aa5a33d248caad1",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      29,
+      129,
+      121,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        178,
+        147,
+        82
+      ],
+      [
+        100,
+        68,
+        0
+      ],
+      [
+        199,
+        172,
+        116
+      ],
+      [
+        139,
+        107,
+        41
+      ],
+      [
+        116,
+        84,
+        16
+      ]
+    ],
+    "count": 6912,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Tribble.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "All tan/brown texture pixels and irregular body outline individually reviewed; no eye or invented detail added."
+  },
+  {
+    "id": "moonicorn",
+    "name": "Moonicorn",
+    "region": "moon",
+    "cdn": "d/d5/Moonicorn.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "6e595c79478d27129741b233151f0e1357c573478b61388f71e4945a9b3e437b",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      23,
+      130,
+      127,
+      142
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        241,
+        197,
+        255
+      ],
+      [
+        199,
+        115,
+        226
+      ],
+      [
+        217,
+        242,
+        80
+      ],
+      [
+        249,
+        255,
+        213
+      ],
+      [
+        0,
+        255,
+        10
+      ],
+      [
+        229,
+        255,
+        84
+      ],
+      [
+        227,
+        103,
+        0
+      ],
+      [
+        214,
+        72,
+        0
+      ],
+      [
+        255,
+        165,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        221,
+        0,
+        232
+      ],
+      [
+        210,
+        21,
+        116
+      ],
+      [
+        200,
+        41,
+        0
+      ],
+      [
+        0,
+        204,
+        7
+      ],
+      [
+        136,
+        136,
+        136
+      ]
+    ],
+    "count": 5862,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Moonicorn.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Crescent horn, colored mane/tail, all thin legs and gray eye highlight individually reviewed; horn opening is exterior-connected."
+  },
+  {
+    "id": "luna-moth",
+    "name": "Luna Moth",
+    "region": "moon",
+    "cdn": "2/2a/Luna_Moth.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "0f7daab1817ed0e5951a6066c37495ff44800ed6e61ceecbf95dfe611c438a19",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      12,
+      129,
+      140,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        120,
+        238,
+        62
+      ],
+      [
+        202,
+        227,
+        64
+      ],
+      [
+        168,
+        0,
+        0
+      ],
+      [
+        229,
+        255,
+        84
+      ],
+      [
+        213,
+        255,
+        192
+      ],
+      [
+        124,
+        56,
+        90
+      ],
+      [
+        122,
+        147,
+        76
+      ],
+      [
+        84,
+        166,
+        43
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        102,
+        202,
+        52
+      ],
+      [
+        136,
+        136,
+        136
+      ]
+    ],
+    "count": 6486,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Luna_Moth.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Thin antenna, red legs, green wing-tip extensions and eye highlight individually reviewed."
+  },
+  {
+    "id": "jade-rabbit",
+    "name": "Jade Rabbit",
+    "region": "moon",
+    "cdn": "d/d7/Jade_Rabbit.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "5279593f40148ac7d4fa847a58573f40a4cea560213b3a930f1be53df72ffc14",
+    "shadow": [
+      149,
+      124,
+      95
+    ],
+    "shadow_box": [
+      44,
+      129,
+      113,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        63,
+        238,
+        141
+      ],
+      [
+        38,
+        207,
+        114
+      ],
+      [
+        199,
+        245,
+        219
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ]
+    ],
+    "count": 4831,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Jade_Rabbit.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Tall ear, projecting forepaw, hind foot, pale ear/face shading and eye highlight individually reviewed."
   }
 ]

@@ -10,9 +10,9 @@ import { getAnimalDisplayArtwork } from "./animalArtworkPresentation";
 import { getAnimalGuidePresentation } from "./animalGuidePresentation";
 import { RegionLandscape } from "../regions/RegionLandscape";
 
-test("all 30 canonical records and original RGBA icons remain intact while display prefers reviewed HQ", () => {
-  assert.equal(ANIMALS.length, 30);
-  for (const record of ANIMALS) {
+test("existing 30 canonical records and original RGBA icons remain intact while display prefers reviewed HQ", () => {
+  assert.equal(ANIMALS.length, 42);
+  for (const record of ANIMALS.slice(0, 30)) {
     const animal = getAnimalGuidePresentation(record.regionId, record.id)!;
     assert.equal(animal.imagePath, record.imagePath);
     const png = readFileSync(join(process.cwd(), "public", record.imagePath));
@@ -27,8 +27,8 @@ test("all 30 canonical records and original RGBA icons remain intact while displ
   }
 });
 
-test("all five regions use vector landscapes without screenshot layers", () => {
-  for (const region of ["farm", "outback", "savanna", "northern", "polar"]) {
+test("all seven regions use vector landscapes without screenshot layers", () => {
+  for (const region of ["farm", "outback", "savanna", "northern", "polar", "jungle", "moon"]) {
     const html = renderToStaticMarkup(createElement(RegionLandscape, { region }));
     assert.match(html, /<svg/);
     assert.match(html, /land-far-layer/);
@@ -36,7 +36,7 @@ test("all five regions use vector landscapes without screenshot layers", () => {
   }
 });
 
-test("all 30 collection and detail contexts render validated HQ dimensions without upscale assets", () => {
+test("all 42 collection and detail contexts render validated HQ dimensions without upscale assets", () => {
   for (const record of ANIMALS) {
     const collection = renderToStaticMarkup(createElement(AnimalArtwork, { ...record, context: "collection" }));
     const detail = renderToStaticMarkup(createElement(AnimalArtwork, { ...record, context: "detail" }));

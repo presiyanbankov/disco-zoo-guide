@@ -148,5 +148,65 @@
     "src": "/game/animals-hq/polar/yeti.png",
     "width": 88,
     "height": 130
+  },
+  "/game/animals/jungle/monkey.png": {
+    "src": "/game/animals-hq/jungle/monkey.png",
+    "width": 118,
+    "height": 100
+  },
+  "/game/animals/jungle/toucan.png": {
+    "src": "/game/animals-hq/jungle/toucan.png",
+    "width": 136,
+    "height": 124
+  },
+  "/game/animals/jungle/gorilla.png": {
+    "src": "/game/animals-hq/jungle/gorilla.png",
+    "width": 112,
+    "height": 112
+  },
+  "/game/animals/jungle/panda.png": {
+    "src": "/game/animals-hq/jungle/panda.png",
+    "width": 136,
+    "height": 88
+  },
+  "/game/animals/jungle/tiger.png": {
+    "src": "/game/animals-hq/jungle/tiger.png",
+    "width": 136,
+    "height": 88
+  },
+  "/game/animals/jungle/phoenix.png": {
+    "src": "/game/animals-hq/jungle/phoenix.png",
+    "width": 136,
+    "height": 124
+  },
+  "/game/animals/moon/moonkey.png": {
+    "src": "/game/animals-hq/moon/moonkey.png",
+    "width": 118,
+    "height": 88
+  },
+  "/game/animals/moon/lunar-tick.png": {
+    "src": "/game/animals-hq/moon/lunar-tick.png",
+    "width": 124,
+    "height": 81
+  },
+  "/game/animals/moon/tribble.png": {
+    "src": "/game/animals-hq/moon/tribble.png",
+    "width": 100,
+    "height": 87
+  },
+  "/game/animals/moon/moonicorn.png": {
+    "src": "/game/animals-hq/moon/moonicorn.png",
+    "width": 112,
+    "height": 136
+  },
+  "/game/animals/moon/luna-moth.png": {
+    "src": "/game/animals-hq/moon/luna-moth.png",
+    "width": 136,
+    "height": 100
+  },
+  "/game/animals/moon/jade-rabbit.png": {
+    "src": "/game/animals-hq/moon/jade-rabbit.png",
+    "width": 76,
+    "height": 136
   }
 }

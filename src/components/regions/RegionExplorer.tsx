@@ -8,7 +8,7 @@ export function RegionExplorer() {
     <section id="regions" className="explorer" aria-labelledby="regions-title">
       <div className="section-heading">
         <div><span className="eyebrow">REGIONS</span><h2 id="regions-title">Select a region<span>.</span></h2></div>
-        <span className="region-count"><strong>05</strong><span>REGIONS TO EXPLORE</span></span>
+        <span className="region-count"><strong>{String(REGION_PRESENTATION.length).padStart(2, "0")}</strong><span>REGIONS TO EXPLORE</span></span>
       </div>
       <div className="region-grid">
         {REGION_PRESENTATION.map((region, index) => (

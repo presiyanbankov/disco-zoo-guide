@@ -6,6 +6,7 @@ import { inspectPattern } from "../grid/gridPresentation";
 import { ANIMALS } from "../../data/animals";
 import { getRegionPresentation } from "../regions/regionPresentation";
 import type { AnimalCardPreview } from "./DEV_MOCK_ANIMALS";
+import { getAnimalDisplayArtwork } from "./animalArtworkPresentation";
 
 export type AnimalGuidePresentation = AnimalCardPreview & {
   pattern?: AnimalPattern;
@@ -32,7 +33,9 @@ export function getRegionAnimalPresentations(regionId: string): AnimalGuidePrese
     .map((animal): AnimalGuidePresentation | undefined => {
       const view = presentOwnerAnimal(animal);
       if (!view) return undefined;
-      return { ...view, imagePath: animal.imagePath && existsSync(join(process.cwd(), "public", animal.imagePath)) ? animal.imagePath : undefined };
+      const artwork = getAnimalDisplayArtwork(animal.imagePath);
+      const available = artwork && (existsSync(join(process.cwd(), "public", artwork.src)) || existsSync(join(process.cwd(), "public", animal.imagePath)));
+      return { ...view, imagePath: available ? animal.imagePath : undefined };
     })
     .filter((animal): animal is AnimalGuidePresentation => animal !== undefined);
 }

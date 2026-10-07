@@ -6,6 +6,8 @@ import { SiteFooter } from "../../../components/layout/SiteFooter";
 import { SiteHeader } from "../../../components/layout/SiteHeader";
 import { RegionHero } from "../../../components/regions/RegionHero";
 import { RegionNavigation } from "../../../components/regions/RegionNavigation";
+import { RegionSearch } from "../../../components/regions/RegionSearch";
+import { getRegionSearchPresentation } from "../../../components/regions/regionSearchPresentation";
 import { getRegionPresentation, REGION_PRESENTATION } from "../../../components/regions/regionPresentation";
 
 type Props = { params: Promise<{ regionId: string }> };
@@ -14,7 +16,7 @@ export function generateStaticParams() {
   return REGION_PRESENTATION.map((region) => ({ regionId: region.id }));
 }
 
-// Only the five explicitly available regions get public-facing pages.
+// Only explicitly supported regions get public-facing pages.
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -39,6 +41,7 @@ export default async function RegionPage({ params }: Props) {
       <SiteHeader />
       <main>
         <RegionHero region={region} index={REGION_PRESENTATION.indexOf(region)} animals={animals} />
+        <RegionSearch regionName={region.name} strategy={getRegionSearchPresentation(animals)} />
         <AnimalCollection animals={animals} />
         <RegionNavigation currentId={region.id} />
       </main>

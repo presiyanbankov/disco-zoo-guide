@@ -1,0 +1,20 @@
+{
+  "navigation": true,
+  "reducedMotion": [
+    "jungle",
+    "moon"
+  ],
+  "locked": [
+    "jurassic",
+    "mars",
+    "constellation"
+  ],
+  "newAnimalFallback": true,
+  "collectionAndSearchWidths": [
+    375,
+    390,
+    768,
+    1440
+  ],
+  "errors": []
+}

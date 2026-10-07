@@ -162,4 +162,66 @@ export const ANIMALS: Animal[] = [
     pattern: { cells: [{ row: 0, col: 0 }, { row: 2, col: 0 }] },
     imagePath: "/game/animals/polar/yeti.png",
   },
+  // Jungle — owner-approved research coordinates.
+  {
+    id: "monkey", name: "Monkey", regionId: "jungle", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 2 }, { row: 1, col: 1 }, { row: 1, col: 3 }] },
+    imagePath: "/game/animals/jungle/monkey.png",
+  },
+  {
+    id: "toucan", name: "Toucan", regionId: "jungle", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 1, col: 0 }, { row: 2, col: 1 }, { row: 3, col: 1 }] },
+    imagePath: "/game/animals/jungle/toucan.png",
+  },
+  {
+    id: "gorilla", name: "Gorilla", regionId: "jungle", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 2 }, { row: 1, col: 0 }, { row: 1, col: 2 }] },
+    imagePath: "/game/animals/jungle/gorilla.png",
+  },
+  {
+    id: "panda", name: "Panda", regionId: "jungle", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 2 }, { row: 1, col: 0 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/jungle/panda.png",
+  },
+  {
+    id: "tiger", name: "Tiger", regionId: "jungle", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 2 }, { row: 0, col: 3 }] },
+    imagePath: "/game/animals/jungle/tiger.png",
+  },
+  {
+    id: "phoenix", name: "Phoenix", regionId: "jungle", rarity: "mythical",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/jungle/phoenix.png",
+  },
+  // Moon — owner-approved research coordinates.
+  {
+    id: "moonkey", name: "Moonkey", regionId: "moon", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 0 }, { row: 1, col: 2 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/moon/moonkey.png",
+  },
+  {
+    id: "lunar-tick", name: "Lunar Tick", regionId: "moon", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 2, col: 1 }, { row: 3, col: 0 }, { row: 3, col: 2 }] },
+    imagePath: "/game/animals/moon/lunar-tick.png",
+  },
+  {
+    id: "tribble", name: "Tribble", regionId: "moon", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 1, col: 0 }, { row: 1, col: 1 }, { row: 1, col: 2 }] },
+    imagePath: "/game/animals/moon/tribble.png",
+  },
+  {
+    id: "moonicorn", name: "Moonicorn", regionId: "moon", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 0 }, { row: 1, col: 1 }] },
+    imagePath: "/game/animals/moon/moonicorn.png",
+  },
+  {
+    id: "luna-moth", name: "Luna Moth", regionId: "moon", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 2 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/moon/luna-moth.png",
+  },
+  {
+    id: "jade-rabbit", name: "Jade Rabbit", regionId: "moon", rarity: "mythical",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/moon/jade-rabbit.png",
+  },
 ];

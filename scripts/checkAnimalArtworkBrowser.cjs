@@ -1,5 +1,8 @@
 /* Dependency-free Chrome CDP QA. Start the site on :3108 and Chrome CDP on :9241. */
+/* eslint-disable @typescript-eslint/no-require-imports -- Standalone Node CommonJS QA script. */
 const fs = require('node:fs');
+const { ANIMALS } = require('../.next/region-component-check/data/animals.js');
+const { generateSearchSequence } = require('../.next/region-component-check/solver/static/staticSolver.js');
 const output = 'public/game/experiments/fandom-extracted-all';
 const validation = JSON.parse(fs.readFileSync(output + '/validation.json', 'utf8'));
 const baseURL = process.env.HQ_QA_URL || 'http://localhost:3108';
@@ -22,7 +25,8 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
     if (message.id) {
       const promise = pending.get(message.id);
       pending.delete(message.id);
-      message.error ? promise.reject(message.error) : promise.resolve(message.result);
+      if (message.error) promise.reject(message.error);
+      else promise.resolve(message.result);
     }
     if (message.method === 'Runtime.exceptionThrown') errors.push(message.params.exceptionDetails.text);
     if (message.method === 'Network.responseReceived' && message.params.type === 'Image' && message.params.response.status >= 400) {
@@ -47,6 +51,16 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
   };
   const navigate = async path => {
     await call('Page.navigate', { url: baseURL + path });
+    await waitFor(`location.pathname === ${JSON.stringify(path)} && document.readyState === 'complete' && document.images.length > 0`);
+    // Exercise real lazy loading after the added Region Search section moves cards down.
+    const count = await evaluate('document.images.length');
+    for (let index = 0; index < count; index++) {
+      if (await evaluate(`!document.images[${index}].complete || !document.images[${index}].naturalWidth`)) {
+        await evaluate(`document.images[${index}].scrollIntoView({block:'center',behavior:'instant'})`);
+        await waitFor(`document.images[${index}].complete && document.images[${index}].naturalWidth > 0`);
+      }
+    }
+    await evaluate(`window.scrollTo({top:0,behavior:'instant'})`);
     await waitFor(`location.pathname === ${JSON.stringify(path)} && document.readyState === 'complete' && document.images.length > 0 && [...document.images].every(i => i.complete && i.naturalWidth > 0)`);
   };
   const screenshot = async filename => {
@@ -57,7 +71,7 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
   await call('Runtime.enable');
   await call('Network.enable');
   await call('Emulation.setFocusEmulationEnabled', { enabled: true });
-  const results = [], regions = ['farm', 'outback', 'savanna', 'northern', 'polar'];
+  const results = [], regions = ['farm', 'outback', 'savanna', 'northern', 'polar', 'jungle', 'moon'];
   const paths = [...regions.map(r => '/regions/' + r), ...validation.animals.map(a => '/regions/' + a.region + '/' + a.animal)];
   for (const width of [375, 390, 768, 1440]) {
     await call('Emulation.setDeviceMetricsOverride', { width, height: 1000, deviceScaleFactor: 1, mobile: width < 768 });
@@ -65,6 +79,16 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
       await navigate(path);
       const result = await evaluate(`({
         overflow: document.documentElement.scrollWidth > innerWidth,
+        regionSearch: (() => {
+          const section = document.querySelector('.region-search');
+          if (!section) return null;
+          const collection = document.getElementById('wildlife');
+          return { pending: section.dataset.regionSearchStatus === 'pending', beforeCollection: !!(section.compareDocumentPosition(collection) & Node.DOCUMENT_POSITION_FOLLOWING),
+            tiles: [...section.querySelectorAll('.board-tile')].map(cell => cell.textContent),
+            buttons: section.querySelectorAll('.board-tile button, button.board-tile').length };
+        })(),
+        pattern: [...document.querySelectorAll('.pattern-panel .board-tile')].map((cell,index) => cell.classList.contains('tile-pattern') ? index : null).filter(index => index !== null),
+        search: [...document.querySelectorAll('.search-panel .board-tile')].map(cell => cell.textContent ? Number(cell.textContent) : null),
         icons: [...document.querySelectorAll('img.animal-game-icon')].map(i => {
           const r = i.getBoundingClientRect();
           const stage = i.closest('.animal-art-stage, .animal-guide-art').getBoundingClientRect();
@@ -76,18 +100,32 @@ const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
       })`);
       const collection = regions.some(r => path === '/regions/' + r);
       if (result.overflow || result.icons.length !== (collection ? 6 : 1) || result.icons.some(i => !i.hq || !i.crisp || i.clipped || i.horizontalCenterError > 1)) throw Error(JSON.stringify({ width, path, ...result }));
+      if (collection) {
+        if (!result.regionSearch?.pending || !result.regionSearch.beforeCollection || result.regionSearch.buttons || result.regionSearch.tiles.length !== 25 || result.regionSearch.tiles.some(Boolean)) throw Error('Pending region search failed: ' + path);
+      } else {
+        const animal = ANIMALS.find(a => path === '/regions/' + a.regionId + '/' + a.id);
+        const pattern = animal.pattern.cells.map(c => c.row * 5 + c.col);
+        const steps = generateSearchSequence(animal.id, animal.pattern).steps;
+        const search = Array.from({length:25},(_,i) => steps.find(s => s.cell.row * 5 + s.cell.col === i)?.step ?? null);
+        if (JSON.stringify(pattern) !== JSON.stringify(result.pattern) || JSON.stringify(search) !== JSON.stringify(result.search)) throw Error('Pattern/search mismatch: ' + path);
+      }
       for (const icon of result.icons) {
         const record = validation.animals.find(a => icon.src === '/game/animals-hq/' + a.region + '/' + a.animal + '.png');
         if (!record || String(record.outputDimensions) !== String(icon.natural)) throw Error('Asset dimensions mismatch: ' + JSON.stringify({width,path,icon,recordDimensions:record?.outputDimensions}));
       }
       results.push({ width, path, ...result });
       if ((width === 390 || width === 1440) && collection) await screenshot(path.split('/').pop() + '-' + width + '.png');
-      if (width === 1440 && /\/(pig|giraffe|gryphon|fox|yeti)$/.test(path)) await screenshot(path.split('/').pop() + '-guide-' + width + '.png');
-      if (width === 390 && /\/(giraffe|cockatoo|yeti)$/.test(path)) await screenshot(path.split('/').pop() + '-guide-' + width + '.png');
+      if (width === 1440 && /\/(pig|phoenix|moonkey|moonicorn|jade-rabbit)$/.test(path)) await screenshot(path.split('/').pop() + '-guide-' + width + '.png');
+      if (width === 390 && /\/(phoenix|moonkey|lunar-tick|luna-moth|jade-rabbit)$/.test(path)) await screenshot(path.split('/').pop() + '-guide-' + width + '.png');
     }
     await navigate('/game/experiments/fandom-extracted-all/index.html');
     const review = await evaluate(`({ count:document.images.length, overflow:document.documentElement.scrollWidth>innerWidth, crisp:[...document.images].every(i=>getComputedStyle(i).imageRendering==='pixelated') })`);
-    if (review.count !== 120 || review.overflow || !review.crisp) throw Error('Review page failed');
+    if (review.count !== 156 || review.overflow || !review.crisp) throw Error('Review page failed');
+    await call('Page.navigate', { url: baseURL + '/' });
+    await waitFor(`document.querySelectorAll('.region-card').length === 7 && document.readyState === 'complete'`);
+    const home = await evaluate(`({ regions:[...document.querySelectorAll('.region-card')].map(a=>new URL(a.href).pathname.split('/').pop()), locked:!!document.querySelector('.locked-card'), overflow:document.documentElement.scrollWidth>innerWidth })`);
+    if (String(home.regions) !== String(regions) || !home.locked || home.overflow) throw Error('Homepage navigation failed');
+    if (width === 390 || width === 1440) await screenshot('home-' + width + '.png');
   }
   await call('Network.setCacheDisabled', { cacheDisabled: true });
   intercept = true;

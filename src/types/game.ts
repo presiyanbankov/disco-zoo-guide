@@ -3,7 +3,9 @@ export type RegionId =
     | "outback"
     | "savanna"
     | "northern"
-    | "polar";
+    | "polar"
+    | "jungle"
+    | "moon";
 
 export type Rarity =
     | "common"
