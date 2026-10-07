@@ -1,6 +1,21 @@
-// Original presentation artwork, not official or extracted Disco Zoo imagery.
-// Replace with owner-supplied assets under public/game/regions when available.
+import Image from "next/image";
+
+const GAME_ENVIRONMENTS: Record<string, { path: string; width: number; height: number }> = {
+  farm: { path: "/game/regions/farm-terrain.png", width: 192, height: 192 },
+  savanna: { path: "/game/regions/savanna-habitat.png", width: 1152, height: 832 },
+  polar: { path: "/game/regions/polar-habitat.png", width: 1152, height: 832 },
+};
+
+export function hasRegionGameArtwork(region: string) {
+  return Object.prototype.hasOwnProperty.call(GAME_ENVIRONMENTS, region);
+}
+
+// Outback and Northern retain the existing original landscape illustrations.
 export function RegionLandscape({region}:{region:string}){
+  if (hasRegionGameArtwork(region)) {
+    const image = GAME_ENVIRONMENTS[region];
+    return <Image className="region-landscape region-game-art" src={image.path} width={image.width} height={image.height} alt="" aria-hidden="true" sizes="(min-width: 1600px) 700px, (min-width: 768px) 50vw, 100vw" />;
+  }
   const polar=region==="polar",farm=region==="farm",northern=region==="northern",outback=region==="outback";
   return <svg className="region-landscape" viewBox="0 0 600 340" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
     <path className="land-sky" d="M0 0h600v340H0z"/>

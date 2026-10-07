@@ -52,6 +52,6 @@ Keyboard Space activation, visible focus, and the accessibility tree's toggle
 name/pressed state pass. The Polar artwork caption has 4.76:1 measured contrast.
 
 No packages, game-data files, domain types, animal patterns, or solver code
-changed. Existing preview identities and original placeholder artwork remain
-clearly disclosed. Approved patterns and existing solver output are now integrated by the animal
-guide presentation layer. Actual sprites still depend on owner-supplied assets.
+changed. The classic roster uses owner-approved icons; region artwork retains placeholders
+only for Outback and Northern. Approved patterns and existing solver output are now integrated by the animal
+guide presentation layer. Approved animal icons and three official region crops are now integrated.

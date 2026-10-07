@@ -1,11 +1,10 @@
-# Animal artwork slots
+# Animal icons
 
-Phase 2 uses original SVG illustrations from
-`src/components/animals/AnimalArtwork.tsx`. These are clearly presented as
-placeholder illustrations, not original Disco Zoo sprites.
+Thirty owner-approved 32x23 transparent PNG icons now occupy the canonical paths
+in `farm/`, `outback/`, `savanna/`, `northern/`, and `polar/`.
+See `../ASSET_SOURCES.md` for every filename, source sheet, and exact crop.
+Original pixels and alpha are preserved. Display at restrained 2x/3x sizes.
 
-Put authorized or owner-supplied sprites in region-specific directories here:
-`farm/`, `outback/`, `savanna/`, `northern/`, `polar/`.
-The animal card accepts an optional `imagePath` for a sprite replacement.
-
-Do not add Timeless or locked-region imagery for the alpha.
+`AnimalArtwork` renders the PNG or an accessible initial when artwork is absent;
+it no longer contains imitations of the game animals. No Timeless or locked-region
+artwork is included. Reuse permission has not been established.

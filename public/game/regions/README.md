@@ -1,8 +1,10 @@
-﻿# Region artwork
+# Region artwork
 
-Phase 1 uses original vector landscape placeholders in
-src/components/regions/RegionLandscape.tsx. These are presentation artwork,
-not official game assets. No game packages were downloaded or extracted.
+Farm, Savanna and Polar use inspected crops of the approved official Google Play
+screenshots. Source URLs and crop rectangles are recorded in `../ASSET_SOURCES.md`.
+No currency bars, UI text, buttons, speech bubbles or interface panels are present
+in these crops. They remain single flattened images, with independent CSS VFX.
 
-Place owner-supplied or authorized region imagery here to replace illustrations
-without changing canonical game data.
+Outback and Northern retain the original SVG landscapes. Their candidate images
+are not approved and are not downloaded or integrated. No full screenshots or
+pattern sheets are stored in public/. Reuse permission has not been established.

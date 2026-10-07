@@ -13,7 +13,7 @@ export function AnimalCollection({ animals }: { animals: readonly AnimalCardPrev
       </div>
       <div className="roster-notice">
         <span className="preview-badge">VERIFIED PATTERNS</span>
-        <p>Owner-reviewed animal patterns. Original placeholder illustrations; search sequences are available in each animal guide.</p>
+        <p>Owner-reviewed animal patterns. Disco Zoo game icons; search sequences are available in each animal guide.</p>
       </div>
       {rarityLabels.map((rarity) => {
         const group = animals.filter((animal) => animal.rarity === rarity);

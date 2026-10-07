@@ -23,7 +23,7 @@ routes no longer use its sample records. `src/data/regions.ts` remains untouched
 The frontend consumes existing types from `src/types/game.ts` without modifying
 them. The presentation boundary respects `hidden`, current-region visibility,
 and the Timeless exclusion. Collection copy identifies reviewed patterns while
-still disclosing original placeholder artwork. Animal guides generate real search sequences.
+disclosing Disco Zoo game icons. Animal guides generate real search sequences.
 
 Region lists do not invoke the solver. Only selected animal guides call the
 existing owner solver; no Timeless identities, pets, or locked-region animal
@@ -31,8 +31,9 @@ records are exposed.
 
 ## Artwork and styling
 
-`RegionLandscape` and `AnimalArtwork` are original vector placeholders, not
-original game sprites. `AnimalArtwork` accepts an `imagePath` for a replacement
+`RegionLandscape` uses approved official screenshot crops for Farm, Savanna and
+Polar; Outback and Northern retain original SVG landscapes. `AnimalArtwork` uses
+the approved transparent game icons and no longer draws substitute animal SVGs. `AnimalArtwork` accepts an `imagePath` for a replacement
 sprite. See `public/game/animals/README.md` for asset locations.
 
 `src/styles/regions.css` provides the responsive layouts. Common animals appear

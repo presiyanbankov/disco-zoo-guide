@@ -32,5 +32,5 @@ node --test .next/solver-integration-check/components/grid/gridPresentation.test
 ```
 
 Shared artwork transitions and environmental effects remain documented in
-`../navigation/README.md` and `../audio/README.md`. Actual sprites remain original
-placeholder artwork until licensed or owner-supplied replacements are available.
+`../navigation/README.md` and `../audio/README.md`. All 30 approved animal icons are now integrated; sources are recorded in
+`public/game/ASSET_SOURCES.md`. The search and pattern contracts are unchanged.

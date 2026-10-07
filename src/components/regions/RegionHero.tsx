@@ -1,5 +1,5 @@
 import { TransitionLink as Link } from "../navigation/TransitionLink";
-import { RegionLandscape } from "./RegionLandscape";
+import { hasRegionGameArtwork, RegionLandscape } from "./RegionLandscape";
 import type { RegionPresentation } from "./regionPresentation";
 import { RegionAtmosphere } from "../effects/RegionAtmosphere";
 
@@ -23,7 +23,7 @@ export function RegionHero({ region, index }: { region: RegionPresentation; inde
         <span className="hero-art-label">0{index + 1} / {region.climate}</span>
         <span className="art-spark spark-one" /><span className="art-spark spark-two" />
         <span className="art-spark spark-three" />
-        <span className="hero-art-caption">LANDSCAPE STUDY · ALPHA ARTWORK</span>
+        <span className="hero-art-caption">{hasRegionGameArtwork(region.id) ? "GAME ENVIRONMENT · DISCO ZOO" : "LANDSCAPE STUDY · ORIGINAL ARTWORK"}</span>
       </div>
     </section>
   );

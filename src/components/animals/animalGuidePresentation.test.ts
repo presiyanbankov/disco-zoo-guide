@@ -25,13 +25,13 @@ test("future owner records retain their supplied pattern/result while hidden and
   assert.equal(presentOwnerAnimal({ ...ownerRecord, regionId: "locked-test" as Animal["regionId"] }), undefined);
 });
 
-test("approved lookup supplies the original pattern, excludes other regions, and generates a strategy while keeping an unavailable sprite absent", () => {
+test("approved lookup supplies the original pattern, excludes other regions, and generates a strategy and supplies the approved sprite path", () => {
   const pig = getAnimalGuidePresentation("farm", "pig");
   assert.equal(pig?.source, "owner-data");
   assert.equal(pig?.pattern, ANIMALS.find((animal) => animal.id === "pig")?.pattern);
   assert.equal(pig?.strategy?.animalId, "pig");
   assert.ok(pig?.strategy?.steps.length);
-  assert.equal(pig?.imagePath, undefined);
+  assert.equal(pig?.imagePath, "/game/animals/farm/pig.png");
   assert.equal(getAnimalGuidePresentation("polar", "pig"), undefined);
   assert.equal(getAnimalGuidePresentation("farm", "timeless"), undefined);
   assert.equal(getAnimalGuidePresentation("locked-test", "pig"), undefined);

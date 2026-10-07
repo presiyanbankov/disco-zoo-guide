@@ -256,3 +256,13 @@
 @media (prefers-reduced-motion: reduce) {
   .animal-card:hover .animal-sprite { transform: none; }
 }
+
+/* Approved flat screenshot crops. Existing overlays and atmosphere stay separate. */
+.region-game-art { object-fit: cover; image-rendering: pixelated; filter: brightness(.62) saturate(.72); }
+.region-hero-art .region-game-art { transform: scale(1.04); }
+.animal-art-stage img.animal-game-icon { width: 96px; height: 69px; object-fit: contain; image-rendering: pixelated; }
+.animal-guide-art img.animal-game-icon { width: 96px; height: 69px; image-rendering: pixelated; }
+.animal-guide-art .guide-art-ground { width: 80px; top: calc(50% + 34px); }
+@media (max-width: 767px) {
+  .animal-art-stage img.animal-game-icon { width: 64px; height: 46px; }
+}
