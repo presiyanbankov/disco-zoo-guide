@@ -6,6 +6,7 @@ import "../styles/animals.css";
 import "../styles/responsive.css";
 import "../styles/motion.css";
 import "../styles/environment.css";
+import "../styles/rescue.css";
 import { NavigationMotion } from "../components/navigation/NavigationMotion";
 import { EnvironmentLifecycle } from "../components/effects/EnvironmentLifecycle";
 

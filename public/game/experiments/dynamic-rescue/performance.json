@@ -1,0 +1,32 @@
+{
+  "runtime": "v24.14.0",
+  "results": [
+    {
+      "animals": 1,
+      "runs": 126,
+      "meanMs": 0.06639047619047597,
+      "p95Ms": 0.22160000000000224,
+      "maximumMs": 0.9864999999999995,
+      "maxWorlds": 20,
+      "slowest": "sheep"
+    },
+    {
+      "animals": 2,
+      "runs": 315,
+      "meanMs": 0.14203587301587267,
+      "p95Ms": 0.37359999999999616,
+      "maximumMs": 0.8532000000000011,
+      "maxWorlds": 180,
+      "slowest": "hippo,lion"
+    },
+    {
+      "animals": 3,
+      "runs": 420,
+      "meanMs": 0.5320488095238096,
+      "p95Ms": 1.3734000000000037,
+      "maximumMs": 2.37560000000002,
+      "maxWorlds": 1008,
+      "slowest": "pig,cow,unicorn"
+    }
+  ]
+}

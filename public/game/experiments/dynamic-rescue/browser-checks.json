@@ -1,0 +1,603 @@
+{
+  "layouts": 28,
+  "startedRescues": 84,
+  "results": [
+    {
+      "width": 375,
+      "region": "farm",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.3238525390625,
+        "left": 0,
+        "right": 375,
+        "top": 645.3238525390625,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 375,
+      "region": "outback",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.3247680664062,
+        "left": 0,
+        "right": 375,
+        "top": 655.7622680664062,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 375,
+      "region": "savanna",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.5765991210938,
+        "left": 0,
+        "right": 375,
+        "top": 645.5765991210938,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 375,
+      "region": "northern",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.575439453125,
+        "left": 0,
+        "right": 375,
+        "top": 645.575439453125,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 375,
+      "region": "polar",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.8797607421875,
+        "left": 0,
+        "right": 375,
+        "top": 645.8797607421875,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 375,
+      "region": "jungle",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.5760498046875,
+        "left": 0,
+        "right": 375,
+        "top": 645.5760498046875,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 375,
+      "region": "moon",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.5769653320312,
+        "left": 0,
+        "right": 375,
+        "top": 645.5769653320312,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 390,
+      "region": "farm",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.575439453125,
+        "left": 0,
+        "right": 390,
+        "top": 645.575439453125,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 390,
+      "region": "outback",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.5758666992188,
+        "left": 0,
+        "right": 390,
+        "top": 656.0133666992188,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 390,
+      "region": "savanna",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000,
+        "left": 0,
+        "right": 390,
+        "top": 645,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 390,
+      "region": "northern",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.5752563476562,
+        "left": 0,
+        "right": 390,
+        "top": 645.5752563476562,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 390,
+      "region": "polar",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.8804931640625,
+        "left": 0,
+        "right": 390,
+        "top": 645.8804931640625,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 390,
+      "region": "jungle",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.8807983398438,
+        "left": 0,
+        "right": 390,
+        "top": 645.8807983398438,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 390,
+      "region": "moon",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 1000.576904296875,
+        "left": 0,
+        "right": 390,
+        "top": 645.576904296875,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 768,
+      "region": "farm",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 901.046875,
+        "left": 82.578125,
+        "right": 370.578125,
+        "top": 551.046875,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 768,
+      "region": "outback",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 890.609375,
+        "left": 82.578125,
+        "right": 370.578125,
+        "top": 551.046875,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 768,
+      "region": "savanna",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 901.046875,
+        "left": 82.578125,
+        "right": 370.578125,
+        "top": 551.046875,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 768,
+      "region": "northern",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 901.046875,
+        "left": 82.578125,
+        "right": 370.578125,
+        "top": 551.046875,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 768,
+      "region": "polar",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 901.046875,
+        "left": 82.578125,
+        "right": 370.578125,
+        "top": 551.046875,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 768,
+      "region": "jungle",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 901.046875,
+        "left": 82.578125,
+        "right": 370.578125,
+        "top": 551.046875,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 768,
+      "region": "moon",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 901.046875,
+        "left": 82.578125,
+        "right": 370.578125,
+        "top": 551.046875,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 1440,
+      "region": "farm",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 916.9375,
+        "left": 152,
+        "right": 440,
+        "top": 566.9375,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 1440,
+      "region": "outback",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 906.5,
+        "left": 152,
+        "right": 440,
+        "top": 566.9375,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 1440,
+      "region": "savanna",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 916.9375,
+        "left": 152,
+        "right": 440,
+        "top": 566.9375,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 1440,
+      "region": "northern",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 916.9375,
+        "left": 152,
+        "right": 440,
+        "top": 566.9375,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 1440,
+      "region": "polar",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 916.9375,
+        "left": 152,
+        "right": 440,
+        "top": 566.9375,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 1440,
+      "region": "jungle",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 916.9375,
+        "left": 152,
+        "right": 440,
+        "top": 566.9375,
+        "active": "rescue-result-empty"
+      }
+    },
+    {
+      "width": 1440,
+      "region": "moon",
+      "selectionCounts": [
+        1,
+        2,
+        3
+      ],
+      "empty": true,
+      "animalHit": true,
+      "undo": true,
+      "reset": true,
+      "panel": {
+        "position": "fixed",
+        "bottom": 916.9375,
+        "left": 152,
+        "right": 440,
+        "top": 566.9375,
+        "active": "rescue-result-empty"
+      }
+    }
+  ],
+  "homepageNavigation": true,
+  "sameRegion": true,
+  "contradictionUndo": true,
+  "completion": true,
+  "keyboardFocusTrap": true,
+  "escapeFocusRestore": true,
+  "reducedMotion": true,
+  "version": "ALPHA 08",
+  "errors": []
+}
