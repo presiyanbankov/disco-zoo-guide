@@ -6,10 +6,11 @@ import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { ANIMALS } from "../../data/animals";
 import { AnimalArtwork } from "./AnimalArtwork";
+import { getAnimalDisplayArtwork } from "./animalArtworkPresentation";
 import { getAnimalGuidePresentation } from "./animalGuidePresentation";
 import { RegionLandscape } from "../regions/RegionLandscape";
 
-test("all 30 guide records resolve original-size RGBA icons and render their real PNG paths", () => {
+test("all 30 canonical records and original RGBA icons remain intact while display prefers reviewed HQ", () => {
   assert.equal(ANIMALS.length, 30);
   for (const record of ANIMALS) {
     const animal = getAnimalGuidePresentation(record.regionId, record.id)!;
@@ -20,23 +21,49 @@ test("all 30 guide records resolve original-size RGBA icons and render their rea
     assert.equal(png.readUInt32BE(20), 23);
     assert.equal(png[25], 6, "Icon must preserve RGBA channels");
     const html = renderToStaticMarkup(createElement(AnimalArtwork, animal));
-    assert.ok(html.includes(`src="${record.imagePath}"`));
+    assert.ok(html.includes(`src="${getAnimalDisplayArtwork(record.imagePath)!.src}"`));
     assert.ok(html.includes(`alt="${record.name}"`));
     assert.doesNotMatch(html, /<svg|_next\/image/);
   }
 });
 
-test("only approved regions render screenshot crops; Outback and Northern keep original artwork", () => {
-  for (const region of ["farm", "savanna", "polar"]) {
-    const html = renderToStaticMarkup(createElement(RegionLandscape, { region }));
-    assert.match(html, /region-game-art/);
-    assert.doesNotMatch(html, /<svg/);
-  }
-  for (const region of ["outback", "northern"]) {
+test("all five regions use vector landscapes without screenshot layers", () => {
+  for (const region of ["farm", "outback", "savanna", "northern", "polar"]) {
     const html = renderToStaticMarkup(createElement(RegionLandscape, { region }));
     assert.match(html, /<svg/);
-    assert.doesNotMatch(html, /<img|region-game-art/);
+    assert.match(html, /land-far-layer/);
+    assert.doesNotMatch(html, /<img|region-game-art|game\/regions/);
   }
+});
+
+test("all 30 collection and detail contexts render validated HQ dimensions without upscale assets", () => {
+  for (const record of ANIMALS) {
+    const collection = renderToStaticMarkup(createElement(AnimalArtwork, { ...record, context: "collection" }));
+    const detail = renderToStaticMarkup(createElement(AnimalArtwork, { ...record, context: "detail" }));
+    const artwork = getAnimalDisplayArtwork(record.imagePath)!;
+    assert.equal(artwork.src, `/game/animals-hq/${record.regionId}/${record.id}.png`);
+    assert.equal(artwork.isHq, true);
+    for (const html of [collection, detail]) {
+      assert.ok(html.includes(`src="${artwork.src}"`));
+      assert.match(html, /data-art-source="hq"/);
+      assert.doesNotMatch(html, /scale4x|sprite-upscale|game\/derived/);
+    }
+    const png = readFileSync(join(process.cwd(), "public", artwork.src));
+    assert.equal(png.readUInt32BE(16), artwork.width);
+    assert.equal(png.readUInt32BE(20), artwork.height);
+    assert.equal(png[25], 6);
+  }
+});
+
+test("missing manifest entry or failed HQ loads use canonical art; failed canonical loads use the unavailable state", () => {
+  const original = "/game/animals/farm/pig.png";
+  const hq = getAnimalDisplayArtwork(original)!;
+  assert.deepEqual(getAnimalDisplayArtwork(original, hq.src), { src: original, width: 32, height: 23, isHq: false });
+  assert.equal(getAnimalDisplayArtwork(original, original), null);
+  assert.deepEqual(getAnimalDisplayArtwork("/game/animals/farm/unresolved-test.png"), {
+    src: "/game/animals/farm/unresolved-test.png", width: 32, height: 23, isHq: false,
+  });
+  assert.equal(getAnimalDisplayArtwork(), null);
 });
 
 test("missing artwork uses an accessible fallback without substitute animal drawings", () => {

@@ -22,8 +22,7 @@ routes no longer use its sample records. `src/data/regions.ts` remains untouched
 
 The frontend consumes existing types from `src/types/game.ts` without modifying
 them. The presentation boundary respects `hidden`, current-region visibility,
-and the Timeless exclusion. Collection copy identifies reviewed patterns while
-disclosing Disco Zoo game icons. Animal guides generate real search sequences.
+and the Timeless exclusion. Collection cards show factual identity and rarity with authentic Disco Zoo icons. Animal guides generate real search sequences.
 
 Region lists do not invoke the solver. Only selected animal guides call the
 existing owner solver; no Timeless identities, pets, or locked-region animal
@@ -31,8 +30,9 @@ records are exposed.
 
 ## Artwork and styling
 
-`RegionLandscape` uses approved official screenshot crops for Farm, Savanna and
-Polar; Outback and Northern retain original SVG landscapes. `AnimalArtwork` uses
+`RegionLandscape` uses bespoke layered SVG interpretations for all five regions.
+Screenshot crops remain reference-only. Region copy is limited to names, climate,
+counts and navigation; flavor subtitles, quotes and field-note paragraphs are removed. `AnimalArtwork` uses
 the approved transparent game icons and no longer draws substitute animal SVGs. `AnimalArtwork` accepts an `imagePath` for a replacement
 sprite. See `public/game/animals/README.md` for asset locations.
 
@@ -53,8 +53,17 @@ effects; see `../audio/README.md`.
 - Headless Chrome checked `/` and all five region routes at 375, 390, 430, 768,
   1024, 1440, 1920, and 2560 pixels: no horizontal overflow.
 - Each region renders six cards grouped 3 common / 2 rare / 1 mythical, plus
-  the unknown Timeless slot and a visible sample-roster disclosure.
+  the unknown Timeless slot.
 - Region navigation, browser back, keyboard focus, and reduced motion pass.
 - At Phase 2, locked, invalid, and unimplemented animal routes returned the
   non-spoiling 404. Phase 3 now makes the 30 known animal routes available.
 - Desktop Farm and phone Farm/Polar screenshots were visually reviewed.
+
+## Ambient vector motion
+
+Six sparse motes per scene (four visible on phones), two haze planes (one on phones),
+and slow SVG depth, grass/canopy and light motion. Northern adds mist; Polar adds
+snow, ice shimmer and a faint atmospheric light band. Farm uses pollen and warm
+light; Outback/Savanna use dust and slow light movement. Only transform/opacity
+animate, without per-frame JavaScript, filters or additional dependencies. All
+new effects pause when hidden and become static under reduced motion.

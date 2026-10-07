@@ -1,0 +1,269 @@
+{
+  "results": [
+    {
+      "width": 375,
+      "overflow": false,
+      "images": 16,
+      "pixelated": true,
+      "nativeSizes": [
+        {
+          "natural": [
+            76,
+            60
+          ],
+          "display": [
+            76,
+            60
+          ]
+        },
+        {
+          "natural": [
+            92,
+            76
+          ],
+          "display": [
+            92,
+            76
+          ]
+        },
+        {
+          "natural": [
+            76,
+            76
+          ],
+          "display": [
+            76,
+            76
+          ]
+        },
+        {
+          "natural": [
+            124,
+            81
+          ],
+          "display": [
+            124,
+            81
+          ]
+        }
+      ],
+      "cardSizes": [
+        [
+          58.265625,
+          45.984375
+        ],
+        [
+          55.671875,
+          45.984375
+        ],
+        [
+          46,
+          46
+        ],
+        [
+          64,
+          41.796875
+        ]
+      ]
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "images": 16,
+      "pixelated": true,
+      "nativeSizes": [
+        {
+          "natural": [
+            76,
+            60
+          ],
+          "display": [
+            76,
+            60
+          ]
+        },
+        {
+          "natural": [
+            92,
+            76
+          ],
+          "display": [
+            92,
+            76
+          ]
+        },
+        {
+          "natural": [
+            76,
+            76
+          ],
+          "display": [
+            76,
+            76
+          ]
+        },
+        {
+          "natural": [
+            124,
+            81
+          ],
+          "display": [
+            124,
+            81
+          ]
+        }
+      ],
+      "cardSizes": [
+        [
+          58.265625,
+          45.984375
+        ],
+        [
+          55.671875,
+          45.984375
+        ],
+        [
+          46,
+          46
+        ],
+        [
+          64,
+          41.796875
+        ]
+      ]
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "images": 16,
+      "pixelated": true,
+      "nativeSizes": [
+        {
+          "natural": [
+            76,
+            60
+          ],
+          "display": [
+            76,
+            60
+          ]
+        },
+        {
+          "natural": [
+            92,
+            76
+          ],
+          "display": [
+            92,
+            76
+          ]
+        },
+        {
+          "natural": [
+            76,
+            76
+          ],
+          "display": [
+            76,
+            76
+          ]
+        },
+        {
+          "natural": [
+            124,
+            81
+          ],
+          "display": [
+            124,
+            81
+          ]
+        }
+      ],
+      "cardSizes": [
+        [
+          76,
+          60
+        ],
+        [
+          83.515625,
+          68.984375
+        ],
+        [
+          69,
+          69
+        ],
+        [
+          96,
+          62.703125
+        ]
+      ]
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "images": 16,
+      "pixelated": true,
+      "nativeSizes": [
+        {
+          "natural": [
+            76,
+            60
+          ],
+          "display": [
+            76,
+            60
+          ]
+        },
+        {
+          "natural": [
+            92,
+            76
+          ],
+          "display": [
+            92,
+            76
+          ]
+        },
+        {
+          "natural": [
+            76,
+            76
+          ],
+          "display": [
+            76,
+            76
+          ]
+        },
+        {
+          "natural": [
+            124,
+            81
+          ],
+          "display": [
+            124,
+            81
+          ]
+        }
+      ],
+      "cardSizes": [
+        [
+          76,
+          60
+        ],
+        [
+          83.515625,
+          68.984375
+        ],
+        [
+          69,
+          69
+        ],
+        [
+          96,
+          62.703125
+        ]
+      ]
+    }
+  ],
+  "errors": []
+}

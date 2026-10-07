@@ -9,6 +9,7 @@ const MOTES = [
 export function RegionAtmosphere({ region }: { region: string }) {
   return <div className={`region-atmosphere atmosphere-${region}`} aria-hidden="true">
     <span className="atmosphere-light" />
+    <span className="atmosphere-band band-far" /><span className="atmosphere-band band-near" />
     {MOTES.map(([x, y, delay, duration], index) => <i className="atmosphere-mote" key={index}
       style={{ left: `${x}%`, top: `${y}%`, "--mote-delay": `${delay}s`, "--mote-duration": `${duration}s` } as CSSProperties} />)}
   </div>;

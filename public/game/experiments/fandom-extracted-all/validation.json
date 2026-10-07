@@ -1,0 +1,6493 @@
+{
+  "animals": [
+    {
+      "animal": "sheep",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/c/cc/Sheep.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Sheep.png",
+      "sourceSHA256": "7c36bca89ef30cbf20ac3ec0f90faa65fdda0f0502be0c70fc7eabd0541fee37",
+      "sourceDimensions": [
+        120,
+        120
+      ],
+      "animalBounds": [
+        24,
+        54,
+        96,
+        110
+      ],
+      "cropBounds": [
+        22,
+        52,
+        98,
+        112
+      ],
+      "outputDimensions": [
+        76,
+        60
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        147,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          130,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          146,
+          140,
+          99
+        ],
+        [
+          154,
+          147,
+          104
+        ],
+        [
+          213,
+          213,
+          213
+        ],
+        [
+          251,
+          192,
+          208
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          213,
+          213,
+          213
+        ],
+        [
+          251,
+          192,
+          208
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "animalPixels": 2608,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 3144,
+          "bounds": [
+            24,
+            54,
+            96,
+            114
+          ]
+        },
+        {
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 456,
+          "bounds": [
+            25,
+            106,
+            95,
+            114
+          ],
+          "rgb": [
+            136,
+            130,
+            93
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 2608,
+          "bounds": [
+            24,
+            54,
+            96,
+            110
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "7d0a18db8cd22f26079274fe848f8a7cf440fd1cda70191c4367d8cadf843328",
+      "region": "farm",
+      "name": "Sheep",
+      "localFile": "public/game/animals-hq/farm/sheep.png",
+      "notes": "White fleece, pink muzzle, gray legs and gray eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          130,
+          93
+        ],
+        "bounds": [
+          25,
+          106,
+          95,
+          114
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "pig",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/3/30/Pig.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Pig.png",
+      "sourceSHA256": "4c0e575ec3e8f79723b5a87607a6297cecce6dae979922943ce23fed50190ef1",
+      "sourceDimensions": [
+        120,
+        120
+      ],
+      "animalBounds": [
+        25,
+        54,
+        97,
+        110
+      ],
+      "cropBounds": [
+        23,
+        52,
+        99,
+        112
+      ],
+      "outputDimensions": [
+        76,
+        60
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        147,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          130,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          146,
+          140,
+          99
+        ],
+        [
+          154,
+          147,
+          104
+        ],
+        [
+          232,
+          174,
+          190
+        ],
+        [
+          251,
+          192,
+          208
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          232,
+          174,
+          190
+        ],
+        [
+          251,
+          192,
+          208
+        ]
+      ],
+      "animalPixels": 2496,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 3128,
+          "bounds": [
+            25,
+            54,
+            97,
+            114
+          ]
+        },
+        {
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 456,
+          "bounds": [
+            26,
+            106,
+            96,
+            114
+          ],
+          "rgb": [
+            136,
+            130,
+            93
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "reviewed-tail-opening",
+          "pixels": 16,
+          "bounds": [
+            89,
+            66,
+            93,
+            70
+          ],
+          "rgb": [
+            154,
+            147,
+            104
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 2496,
+          "bounds": [
+            25,
+            54,
+            97,
+            110
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "567e560205d90cc31b3dffda05be2f4c453a092832a0e604d25c96fa6cd7168f",
+      "region": "farm",
+      "name": "Pig",
+      "localFile": "public/game/animals-hq/farm/pig.png",
+      "notes": "Curled tail and both legs preserved; explicitly clear the enclosed 16px tail opening.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          130,
+          93
+        ],
+        "bounds": [
+          26,
+          106,
+          96,
+          114
+        ]
+      },
+      "reviewedEnclosedBackground": [
+        {
+          "seed": [
+            89,
+            66
+          ],
+          "count": 16,
+          "label": "tail-opening"
+        }
+      ]
+    },
+    {
+      "animal": "rabbit",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/f/fd/Rabbit.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Rabbit.png",
+      "sourceSHA256": "b9406be6f533d15229830d02ccd5c5354c47d5452040d8a8e414a0dde6c21e54",
+      "sourceDimensions": [
+        120,
+        120
+      ],
+      "animalBounds": [
+        36,
+        46,
+        84,
+        110
+      ],
+      "cropBounds": [
+        34,
+        44,
+        86,
+        112
+      ],
+      "outputDimensions": [
+        52,
+        68
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        147,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          130,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          146,
+          140,
+          99
+        ],
+        [
+          154,
+          147,
+          104
+        ],
+        [
+          213,
+          213,
+          213
+        ],
+        [
+          237,
+          237,
+          237
+        ],
+        [
+          251,
+          192,
+          208
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          213,
+          213,
+          213
+        ],
+        [
+          237,
+          237,
+          237
+        ],
+        [
+          251,
+          192,
+          208
+        ]
+      ],
+      "animalPixels": 1552,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 1832,
+          "bounds": [
+            36,
+            46,
+            84,
+            114
+          ]
+        },
+        {
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 232,
+          "bounds": [
+            37,
+            106,
+            83,
+            114
+          ],
+          "rgb": [
+            136,
+            130,
+            93
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 1552,
+          "bounds": [
+            36,
+            46,
+            84,
+            110
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "2c5c6309b5237c404601d495aada1ff1bd5bfb1582f000192f32ae8552b92170",
+      "region": "farm",
+      "name": "Rabbit",
+      "localFile": "public/game/animals-hq/farm/rabbit.png",
+      "notes": "Thin upright ears, pink inner ear, short tail, feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          130,
+          93
+        ],
+        "bounds": [
+          37,
+          106,
+          83,
+          114
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "horse",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/c/c3/Horse.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Horse.png",
+      "sourceSHA256": "9989e9cf487dc86a6c134cbf543448d10426abaacabec12f976e66b9ac3e51ca",
+      "sourceDimensions": [
+        120,
+        120
+      ],
+      "animalBounds": [
+        24,
+        42,
+        96,
+        110
+      ],
+      "cropBounds": [
+        22,
+        40,
+        98,
+        112
+      ],
+      "outputDimensions": [
+        76,
+        72
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        153,
+        142,
+        108
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          57,
+          32,
+          18
+        ],
+        [
+          81,
+          46,
+          26
+        ],
+        [
+          116,
+          66,
+          37
+        ],
+        [
+          135,
+          126,
+          96
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          145,
+          135,
+          102
+        ],
+        [
+          153,
+          142,
+          108
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          57,
+          32,
+          18
+        ],
+        [
+          81,
+          46,
+          26
+        ],
+        [
+          116,
+          66,
+          37
+        ],
+        [
+          136,
+          136,
+          136
+        ]
+      ],
+      "animalPixels": 2064,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 2824,
+          "bounds": [
+            24,
+            42,
+            96,
+            114
+          ]
+        },
+        {
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 456,
+          "bounds": [
+            25,
+            106,
+            95,
+            114
+          ],
+          "rgb": [
+            135,
+            126,
+            96
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ],
+          "rgb": [
+            145,
+            135,
+            102
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ],
+          "rgb": [
+            145,
+            135,
+            102
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ],
+          "rgb": [
+            145,
+            135,
+            102
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 2064,
+          "bounds": [
+            24,
+            42,
+            96,
+            110
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "666198d77ad3e95542e1d35686f8b90ca6a4b727fd52c7b133c45448c3fbb275",
+      "region": "farm",
+      "name": "Horse",
+      "localFile": "public/game/animals-hq/farm/horse.png",
+      "notes": "Both ears, muzzle, tail, darker mane and four hoof/leg portions preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          135,
+          126,
+          96
+        ],
+        "bounds": [
+          25,
+          106,
+          95,
+          114
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "cow",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/8/84/Cow.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Cow.png",
+      "sourceSHA256": "4465b244a8ee181553639e04b7f31ad25727058a6a19c77f040c8ac76c7aefe6",
+      "sourceDimensions": [
+        120,
+        120
+      ],
+      "animalBounds": [
+        24,
+        54,
+        96,
+        110
+      ],
+      "cropBounds": [
+        22,
+        52,
+        98,
+        112
+      ],
+      "outputDimensions": [
+        76,
+        60
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        153,
+        142,
+        108
+      ],
+      "sourceRGBColors": [
+        [
+          28,
+          39,
+          51
+        ],
+        [
+          51,
+          51,
+          51
+        ],
+        [
+          74,
+          74,
+          74
+        ],
+        [
+          135,
+          126,
+          96
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          145,
+          135,
+          102
+        ],
+        [
+          153,
+          142,
+          108
+        ],
+        [
+          213,
+          213,
+          213
+        ],
+        [
+          232,
+          174,
+          190
+        ],
+        [
+          251,
+          192,
+          208
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          28,
+          39,
+          51
+        ],
+        [
+          51,
+          51,
+          51
+        ],
+        [
+          74,
+          74,
+          74
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          213,
+          213,
+          213
+        ],
+        [
+          232,
+          174,
+          190
+        ],
+        [
+          251,
+          192,
+          208
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "animalPixels": 2496,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 3128,
+          "bounds": [
+            24,
+            54,
+            96,
+            114
+          ]
+        },
+        {
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 456,
+          "bounds": [
+            25,
+            106,
+            95,
+            114
+          ],
+          "rgb": [
+            135,
+            126,
+            96
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ],
+          "rgb": [
+            145,
+            135,
+            102
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ],
+          "rgb": [
+            145,
+            135,
+            102
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ],
+          "rgb": [
+            145,
+            135,
+            102
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 2496,
+          "bounds": [
+            24,
+            54,
+            96,
+            110
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "c088eb2edb5329680382dec07ebae4d6881db6047dc59844262d7ff4949388ed",
+      "region": "farm",
+      "name": "Cow",
+      "localFile": "public/game/animals-hq/farm/cow.png",
+      "notes": "Tail, spotted coat, pink muzzle/udder, dark hooves and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          135,
+          126,
+          96
+        ],
+        "bounds": [
+          25,
+          106,
+          95,
+          114
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "unicorn",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/7/7e/Unicorn.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Unicorn.png",
+      "sourceSHA256": "c30dbe0349c03d4ee5772fd9cb2ce209c9796b5fab221fa1516dadee34ef447b",
+      "sourceDimensions": [
+        120,
+        120
+      ],
+      "animalBounds": [
+        24,
+        30,
+        96,
+        110
+      ],
+      "cropBounds": [
+        22,
+        28,
+        98,
+        112
+      ],
+      "outputDimensions": [
+        76,
+        84
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        169,
+        140,
+        107
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          180,
+          255
+        ],
+        [
+          24,
+          255,
+          0
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          144,
+          0,
+          204
+        ],
+        [
+          149,
+          124,
+          95
+        ],
+        [
+          160,
+          133,
+          102
+        ],
+        [
+          169,
+          140,
+          107
+        ],
+        [
+          180,
+          0,
+          255
+        ],
+        [
+          213,
+          213,
+          213
+        ],
+        [
+          255,
+          0,
+          0
+        ],
+        [
+          255,
+          174,
+          0
+        ],
+        [
+          255,
+          246,
+          0
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          180,
+          255
+        ],
+        [
+          24,
+          255,
+          0
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          144,
+          0,
+          204
+        ],
+        [
+          180,
+          0,
+          255
+        ],
+        [
+          213,
+          213,
+          213
+        ],
+        [
+          255,
+          0,
+          0
+        ],
+        [
+          255,
+          174,
+          0
+        ],
+        [
+          255,
+          246,
+          0
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "animalPixels": 2256,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 3016,
+          "bounds": [
+            24,
+            30,
+            96,
+            114
+          ]
+        },
+        {
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 456,
+          "bounds": [
+            25,
+            106,
+            95,
+            114
+          ],
+          "rgb": [
+            149,
+            124,
+            95
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ],
+          "rgb": [
+            160,
+            133,
+            102
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ],
+          "rgb": [
+            160,
+            133,
+            102
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ],
+          "rgb": [
+            160,
+            133,
+            102
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 2256,
+          "bounds": [
+            24,
+            30,
+            96,
+            110
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "b5ac957d8c26d21d0d56317b2d9788317eff963ea62ca51bb6d7794b62087906",
+      "region": "farm",
+      "name": "Unicorn",
+      "localFile": "public/game/animals-hq/farm/unicorn.png",
+      "notes": "Thin horn, all rainbow mane colors, purple tail, feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          149,
+          124,
+          95
+        ],
+        "bounds": [
+          25,
+          106,
+          95,
+          114
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "kangaroo",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/5/56/Kangaroo.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Kangaroo.png",
+      "sourceSHA256": "2e65973c19776b4b3057a4a5244c6b77bc9137e5ce2be2429ac8d31e8fcb7083",
+      "sourceDimensions": [
+        120,
+        120
+      ],
+      "animalBounds": [
+        21,
+        38,
+        109,
+        110
+      ],
+      "cropBounds": [
+        19,
+        36,
+        111,
+        112
+      ],
+      "outputDimensions": [
+        92,
+        76
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        147,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          129,
+          66,
+          35
+        ],
+        [
+          136,
+          130,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          146,
+          140,
+          99
+        ],
+        [
+          154,
+          147,
+          104
+        ],
+        [
+          169,
+          108,
+          58
+        ],
+        [
+          206,
+          186,
+          174
+        ],
+        [
+          239,
+          217,
+          207
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          129,
+          66,
+          35
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          169,
+          108,
+          58
+        ],
+        [
+          206,
+          186,
+          174
+        ],
+        [
+          239,
+          217,
+          207
+        ]
+      ],
+      "animalPixels": 2384,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 3016,
+          "bounds": [
+            21,
+            38,
+            109,
+            114
+          ]
+        },
+        {
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 504,
+          "bounds": [
+            23,
+            106,
+            101,
+            114
+          ],
+          "rgb": [
+            136,
+            130,
+            93
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 2384,
+          "bounds": [
+            21,
+            38,
+            109,
+            110
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "2eae46902526a3fac72a22aa7f142fef6440c405eaae6e2df3924e81b0b1059d",
+      "region": "outback",
+      "name": "Kangaroo",
+      "localFile": "public/game/animals-hq/outback/kangaroo.png",
+      "notes": "Long tapering tail, ears, tiny arms, dark feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          130,
+          93
+        ],
+        "bounds": [
+          23,
+          106,
+          101,
+          114
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "platypus",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/5/5d/Platypus.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Platypus.png",
+      "sourceSHA256": "844efcca990e98937d729d713b88c371e3c8b8e02efb25fcf8a46326cdf9b6e2",
+      "sourceDimensions": [
+        120,
+        120
+      ],
+      "animalBounds": [
+        13,
+        70,
+        101,
+        110
+      ],
+      "cropBounds": [
+        11,
+        68,
+        103,
+        112
+      ],
+      "outputDimensions": [
+        92,
+        44
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        147,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          66,
+          66,
+          66
+        ],
+        [
+          136,
+          130,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          143,
+          98,
+          60
+        ],
+        [
+          146,
+          140,
+          99
+        ],
+        [
+          154,
+          147,
+          104
+        ],
+        [
+          169,
+          108,
+          58
+        ],
+        [
+          204,
+          169,
+          139
+        ],
+        [
+          230,
+          199,
+          173
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          66,
+          66,
+          66
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          143,
+          98,
+          60
+        ],
+        [
+          169,
+          108,
+          58
+        ],
+        [
+          204,
+          169,
+          139
+        ],
+        [
+          230,
+          199,
+          173
+        ]
+      ],
+      "animalPixels": 2160,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 2752,
+          "bounds": [
+            13,
+            70,
+            101,
+            114
+          ]
+        },
+        {
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 528,
+          "bounds": [
+            15,
+            106,
+            99,
+            114
+          ],
+          "rgb": [
+            136,
+            130,
+            93
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 2160,
+          "bounds": [
+            13,
+            70,
+            101,
+            110
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "2f46152125811a265112f5a8d97c779a742ea10a528c7fbacf5a5048f3d45071",
+      "region": "outback",
+      "name": "Platypus",
+      "localFile": "public/game/animals-hq/outback/platypus.png",
+      "notes": "Broad dark bill, extending tail, separate feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          130,
+          93
+        ],
+        "bounds": [
+          15,
+          106,
+          99,
+          114
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "crocodile",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/d/d6/Crocodile.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Crocodile.png",
+      "sourceSHA256": "2ab0ff584fee2c9d51ed7adfc4a554a6b38a9c06ba2f4d28741c1ff3272f4305",
+      "sourceDimensions": [
+        120,
+        120
+      ],
+      "animalBounds": [
+        17,
+        78,
+        105,
+        110
+      ],
+      "cropBounds": [
+        15,
+        76,
+        107,
+        112
+      ],
+      "outputDimensions": [
+        92,
+        36
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        147,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          83,
+          0
+        ],
+        [
+          37,
+          109,
+          0
+        ],
+        [
+          136,
+          130,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          144,
+          181,
+          126
+        ],
+        [
+          146,
+          140,
+          99
+        ],
+        [
+          154,
+          147,
+          104
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          28,
+          83,
+          0
+        ],
+        [
+          37,
+          109,
+          0
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          144,
+          181,
+          126
+        ]
+      ],
+      "animalPixels": 1584,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 2200,
+          "bounds": [
+            17,
+            78,
+            105,
+            114
+          ]
+        },
+        {
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 504,
+          "bounds": [
+            19,
+            106,
+            97,
+            114
+          ],
+          "rgb": [
+            136,
+            130,
+            93
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ],
+          "rgb": [
+            146,
+            140,
+            99
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 1584,
+          "bounds": [
+            17,
+            78,
+            105,
+            110
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "e252f6ebb70a929dc56ee6050b20606f407d4c0b185179cd562c111630757dec",
+      "region": "outback",
+      "name": "Crocodile",
+      "localFile": "public/game/animals-hq/outback/crocodile.png",
+      "notes": "Long tapering tail, dorsal bumps, pale jaw, feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          130,
+          93
+        ],
+        "bounds": [
+          19,
+          106,
+          97,
+          114
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "koala",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/2/22/Koala.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Koala.png",
+      "sourceSHA256": "663ed09fd4f577f3e3c124acd1beb4d5c489e75d92e6519e7db1ae500a540053",
+      "sourceDimensions": [
+        120,
+        120
+      ],
+      "animalBounds": [
+        24,
+        46,
+        96,
+        110
+      ],
+      "cropBounds": [
+        22,
+        44,
+        98,
+        112
+      ],
+      "outputDimensions": [
+        76,
+        68
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        153,
+        142,
+        108
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          66,
+          66,
+          66
+        ],
+        [
+          70,
+          70,
+          70
+        ],
+        [
+          87,
+          87,
+          87
+        ],
+        [
+          101,
+          101,
+          101
+        ],
+        [
+          126,
+          126,
+          126
+        ],
+        [
+          135,
+          126,
+          96
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          145,
+          135,
+          102
+        ],
+        [
+          152,
+          152,
+          152
+        ],
+        [
+          153,
+          142,
+          108
+        ],
+        [
+          167,
+          167,
+          167
+        ],
+        [
+          187,
+          187,
+          187
+        ],
+        [
+          191,
+          191,
+          191
+        ],
+        [
+          217,
+          217,
+          217
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          66,
+          66,
+          66
+        ],
+        [
+          70,
+          70,
+          70
+        ],
+        [
+          87,
+          87,
+          87
+        ],
+        [
+          101,
+          101,
+          101
+        ],
+        [
+          126,
+          126,
+          126
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          152,
+          152,
+          152
+        ],
+        [
+          167,
+          167,
+          167
+        ],
+        [
+          187,
+          187,
+          187
+        ],
+        [
+          191,
+          191,
+          191
+        ],
+        [
+          217,
+          217,
+          217
+        ]
+      ],
+      "animalPixels": 2528,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 3096,
+          "bounds": [
+            24,
+            46,
+            96,
+            114
+          ]
+        },
+        {
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 408,
+          "bounds": [
+            25,
+            106,
+            95,
+            114
+          ],
+          "rgb": [
+            135,
+            126,
+            96
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ],
+          "rgb": [
+            145,
+            135,
+            102
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ],
+          "rgb": [
+            145,
+            135,
+            102
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ],
+          "rgb": [
+            145,
+            135,
+            102
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 2528,
+          "bounds": [
+            24,
+            46,
+            96,
+            110
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "ed30f0b4f024b0f1a66356deb7c80d05ef75be6b2b8d32e3645dbdd35d859305",
+      "region": "outback",
+      "name": "Koala",
+      "localFile": "public/game/animals-hq/outback/koala.png",
+      "notes": "All distinct gray face/ear/body/foot colors and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          135,
+          126,
+          96
+        ],
+        "bounds": [
+          25,
+          106,
+          95,
+          114
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "cockatoo",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/b/b6/Cockatoo.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Cockatoo.png",
+      "sourceSHA256": "be9c5cbb6ed2208d4f1be738fa232433b0ca71d3f398a78a9b57c13ca0ac7947",
+      "sourceDimensions": [
+        120,
+        120
+      ],
+      "animalBounds": [
+        24,
+        38,
+        96,
+        110
+      ],
+      "cropBounds": [
+        22,
+        36,
+        98,
+        112
+      ],
+      "outputDimensions": [
+        76,
+        76
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        153,
+        142,
+        108
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          66,
+          66,
+          66
+        ],
+        [
+          135,
+          126,
+          96
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          145,
+          135,
+          102
+        ],
+        [
+          153,
+          142,
+          108
+        ],
+        [
+          217,
+          217,
+          217
+        ],
+        [
+          247,
+          239,
+          155
+        ],
+        [
+          255,
+          245,
+          139
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          66,
+          66,
+          66
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          217,
+          217,
+          217
+        ],
+        [
+          247,
+          239,
+          155
+        ],
+        [
+          255,
+          245,
+          139
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "animalPixels": 2256,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 2732,
+          "bounds": [
+            24,
+            38,
+            96,
+            114
+          ]
+        },
+        {
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 412,
+          "bounds": [
+            25,
+            106,
+            90,
+            114
+          ],
+          "rgb": [
+            135,
+            126,
+            96
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ],
+          "rgb": [
+            145,
+            135,
+            102
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ],
+          "rgb": [
+            145,
+            135,
+            102
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ],
+          "rgb": [
+            145,
+            135,
+            102
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 2256,
+          "bounds": [
+            24,
+            38,
+            96,
+            110
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "a42493659b0d877467ac69b5aafc8b93332e4f4ad9d32195f25b271fb03b4ed8",
+      "region": "outback",
+      "name": "Cockatoo",
+      "localFile": "public/game/animals-hq/outback/cockatoo.png",
+      "notes": "Yellow crest tips, dark beak/feet, white/gray tail feathers and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          135,
+          126,
+          96
+        ],
+        "bounds": [
+          25,
+          106,
+          90,
+          114
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "tiddalik",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/e/e9/Tiddalik.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Tiddalik.png",
+      "sourceSHA256": "665f3eb124c465f51db5a83a0f59bad9bbed374b5f598a6fa3f8928335e474d4",
+      "sourceDimensions": [
+        120,
+        120
+      ],
+      "animalBounds": [
+        16,
+        46,
+        104,
+        110
+      ],
+      "cropBounds": [
+        14,
+        44,
+        106,
+        112
+      ],
+      "outputDimensions": [
+        92,
+        68
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        169,
+        140,
+        107
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          30,
+          129,
+          204
+        ],
+        [
+          38,
+          161,
+          255
+        ],
+        [
+          116,
+          194,
+          5
+        ],
+        [
+          126,
+          211,
+          5
+        ],
+        [
+          145,
+          242,
+          6
+        ],
+        [
+          149,
+          124,
+          95
+        ],
+        [
+          152,
+          152,
+          152
+        ],
+        [
+          160,
+          133,
+          102
+        ],
+        [
+          169,
+          140,
+          107
+        ],
+        [
+          197,
+          204,
+          0
+        ],
+        [
+          206,
+          214,
+          0
+        ],
+        [
+          214,
+          222,
+          0
+        ],
+        [
+          246,
+          255,
+          0
+        ],
+        [
+          255,
+          0,
+          0
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          30,
+          129,
+          204
+        ],
+        [
+          38,
+          161,
+          255
+        ],
+        [
+          116,
+          194,
+          5
+        ],
+        [
+          126,
+          211,
+          5
+        ],
+        [
+          145,
+          242,
+          6
+        ],
+        [
+          152,
+          152,
+          152
+        ],
+        [
+          197,
+          204,
+          0
+        ],
+        [
+          206,
+          214,
+          0
+        ],
+        [
+          214,
+          222,
+          0
+        ],
+        [
+          246,
+          255,
+          0
+        ],
+        [
+          255,
+          0,
+          0
+        ]
+      ],
+      "animalPixels": 2976,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 3600,
+          "bounds": [
+            16,
+            46,
+            104,
+            114
+          ]
+        },
+        {
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ]
+        },
+        {
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 432,
+          "bounds": [
+            18,
+            106,
+            102,
+            114
+          ],
+          "rgb": [
+            149,
+            124,
+            95
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 9,
+          "bounds": [
+            102,
+            114,
+            107,
+            119
+          ],
+          "rgb": [
+            160,
+            133,
+            102
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            108,
+            114,
+            113,
+            119
+          ],
+          "rgb": [
+            160,
+            133,
+            102
+          ]
+        },
+        {
+          "role": "signature",
+          "pixels": 13,
+          "bounds": [
+            114,
+            114,
+            119,
+            119
+          ],
+          "rgb": [
+            160,
+            133,
+            102
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 2976,
+          "bounds": [
+            16,
+            46,
+            104,
+            110
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "a066b7e79072b459900314515614100fea0ce9d649b8fe40c0180d8b9ad2478d",
+      "region": "outback",
+      "name": "Tiddalik",
+      "localFile": "public/game/animals-hq/outback/tiddalik.png",
+      "notes": "Red crest, vivid blue/yellow legs, green body and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          149,
+          124,
+          95
+        ],
+        "bounds": [
+          18,
+          106,
+          102,
+          114
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "zebra",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/3/37/Zebra.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Zebra.png",
+      "sourceSHA256": "3a4d8d54721995041a8d0181ca93d819c64c38e9a2aa6cd2c43c172954e97bc3",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        21,
+        33,
+        129,
+        135
+      ],
+      "cropBounds": [
+        19,
+        31,
+        131,
+        137
+      ],
+      "outputDimensions": [
+        112,
+        106
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        148,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          45,
+          45,
+          45
+        ],
+        [
+          54,
+          54,
+          54
+        ],
+        [
+          90,
+          90,
+          90
+        ],
+        [
+          136,
+          131,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          153,
+          153,
+          153
+        ],
+        [
+          154,
+          148,
+          104
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          45,
+          45,
+          45
+        ],
+        [
+          54,
+          54,
+          54
+        ],
+        [
+          90,
+          90,
+          90
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          153,
+          153,
+          153
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "animalPixels": 4590,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 6294,
+          "bounds": [
+            21,
+            33,
+            129,
+            141
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 1020,
+          "bounds": [
+            23,
+            129,
+            127,
+            141
+          ],
+          "rgb": [
+            136,
+            131,
+            93
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 4590,
+          "bounds": [
+            21,
+            33,
+            129,
+            135
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "0e677b0dd4175c2c73fc0786ca3ac0470233c709ffe21d0448487f5245cb77cd",
+      "region": "savanna",
+      "name": "Zebra",
+      "localFile": "public/game/animals-hq/savanna/zebra.png",
+      "notes": "Ears, mane, checker-striped body, thin legs, hooves and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          131,
+          93
+        ],
+        "bounds": [
+          23,
+          129,
+          127,
+          141
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "hippo",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/f/f3/Hippo.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Hippo.png",
+      "sourceSHA256": "a6696822096bfd9abfe780a4ad864daf0893da64d08eac60280cd9fc8235e5c2",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        15,
+        52,
+        135,
+        136
+      ],
+      "cropBounds": [
+        13,
+        50,
+        137,
+        138
+      ],
+      "outputDimensions": [
+        124,
+        88
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        148,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          108,
+          47,
+          122
+        ],
+        [
+          136,
+          131,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          154,
+          148,
+          104
+        ],
+        [
+          155,
+          81,
+          172
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          108,
+          47,
+          122
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          155,
+          81,
+          172
+        ]
+      ],
+      "animalPixels": 7008,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 8118,
+          "bounds": [
+            15,
+            52,
+            135,
+            142
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 1050,
+          "bounds": [
+            17,
+            130,
+            125,
+            142
+          ],
+          "rgb": [
+            136,
+            131,
+            93
+          ]
+        },
+        {
+          "role": "shadow",
+          "pixels": 24,
+          "bounds": [
+            129,
+            130,
+            133,
+            136
+          ],
+          "rgb": [
+            136,
+            131,
+            93
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 7008,
+          "bounds": [
+            15,
+            52,
+            135,
+            136
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "72c366eef9c789a9cd28f85fa3703ae36e0a34e98c811b6b46127ffa2d4356f1",
+      "region": "savanna",
+      "name": "Hippo",
+      "localFile": "public/game/animals-hq/savanna/hippo.png",
+      "notes": "Small ears, muzzle, dark foot/leg portions and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          131,
+          93
+        ],
+        "bounds": [
+          17,
+          130,
+          133,
+          142
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "giraffe",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/6/60/Giraffe.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Giraffe.png",
+      "sourceSHA256": "45b91b0d69bc99f4b67f9a9c516c26fbfe6b75270c098e27139dec651ee72d7d",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        25,
+        10,
+        121,
+        136
+      ],
+      "cropBounds": [
+        23,
+        8,
+        123,
+        138
+      ],
+      "outputDimensions": [
+        100,
+        130
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        148,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          77,
+          36,
+          11
+        ],
+        [
+          108,
+          60,
+          31
+        ],
+        [
+          116,
+          66,
+          38
+        ],
+        [
+          136,
+          131,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          139,
+          94,
+          65
+        ],
+        [
+          154,
+          109,
+          78
+        ],
+        [
+          154,
+          148,
+          104
+        ],
+        [
+          210,
+          174,
+          144
+        ],
+        [
+          243,
+          208,
+          177
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          77,
+          36,
+          11
+        ],
+        [
+          108,
+          60,
+          31
+        ],
+        [
+          116,
+          66,
+          38
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          139,
+          94,
+          65
+        ],
+        [
+          154,
+          109,
+          78
+        ],
+        [
+          210,
+          174,
+          144
+        ],
+        [
+          243,
+          208,
+          177
+        ]
+      ],
+      "animalPixels": 4368,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 6420,
+          "bounds": [
+            25,
+            10,
+            121,
+            142
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 900,
+          "bounds": [
+            27,
+            130,
+            113,
+            142
+          ],
+          "rgb": [
+            136,
+            131,
+            93
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 4368,
+          "bounds": [
+            25,
+            10,
+            121,
+            136
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "892b1e6e497ce42c3690eb3208a3f916bcc9d4eabe487a5d64cf0ece5cfe463d",
+      "region": "savanna",
+      "name": "Giraffe",
+      "localFile": "public/game/animals-hq/savanna/giraffe.png",
+      "notes": "Horn/ear tips, long neck, markings, extending tail, thin legs and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          131,
+          93
+        ],
+        "bounds": [
+          27,
+          130,
+          113,
+          142
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "lion",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/4/47/Lion.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Lion.png",
+      "sourceSHA256": "391fef0d7114fedfdceb2b81f46e9583175fcbb8013035e5c38ad64dcfb674e6",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        21,
+        51,
+        129,
+        135
+      ],
+      "cropBounds": [
+        19,
+        49,
+        131,
+        137
+      ],
+      "outputDimensions": [
+        112,
+        88
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        153,
+        142,
+        107
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          135,
+          126,
+          94
+        ],
+        [
+          136,
+          84,
+          4
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          144,
+          88,
+          1
+        ],
+        [
+          153,
+          142,
+          107
+        ],
+        [
+          160,
+          101,
+          0
+        ],
+        [
+          198,
+          153,
+          1
+        ],
+        [
+          203,
+          153,
+          0
+        ],
+        [
+          233,
+          182,
+          1
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          84,
+          4
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          144,
+          88,
+          1
+        ],
+        [
+          160,
+          101,
+          0
+        ],
+        [
+          198,
+          153,
+          1
+        ],
+        [
+          203,
+          153,
+          0
+        ],
+        [
+          233,
+          182,
+          1
+        ]
+      ],
+      "animalPixels": 5994,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 7158,
+          "bounds": [
+            21,
+            51,
+            129,
+            141
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 948,
+          "bounds": [
+            23,
+            129,
+            127,
+            141
+          ],
+          "rgb": [
+            135,
+            126,
+            94
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 5994,
+          "bounds": [
+            21,
+            51,
+            129,
+            135
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "321ceb5f6c96c021648d05d5e0f4b2d05d2281942df49be028d19360c93b9812",
+      "region": "savanna",
+      "name": "Lion",
+      "localFile": "public/game/animals-hq/savanna/lion.png",
+      "notes": "Mane outline, long tail and dark tuft, feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          135,
+          126,
+          94
+        ],
+        "bounds": [
+          23,
+          129,
+          127,
+          141
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "elephant",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/6/60/Elephant.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Elephant.png",
+      "sourceSHA256": "909afaed00b133b91327e837e3740757be1a2d014747b2349ac9a4f46c4fe1d0",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        19,
+        51,
+        127,
+        135
+      ],
+      "cropBounds": [
+        17,
+        49,
+        129,
+        137
+      ],
+      "outputDimensions": [
+        112,
+        88
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        153,
+        142,
+        107
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          78,
+          78,
+          78
+        ],
+        [
+          95,
+          95,
+          95
+        ],
+        [
+          112,
+          112,
+          112
+        ],
+        [
+          135,
+          126,
+          94
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          153,
+          142,
+          107
+        ],
+        [
+          237,
+          237,
+          237
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          78,
+          78,
+          78
+        ],
+        [
+          95,
+          95,
+          95
+        ],
+        [
+          112,
+          112,
+          112
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          237,
+          237,
+          237
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "animalPixels": 6900,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 8220,
+          "bounds": [
+            19,
+            51,
+            127,
+            141
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 888,
+          "bounds": [
+            21,
+            129,
+            118,
+            141
+          ],
+          "rgb": [
+            135,
+            126,
+            94
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 6900,
+          "bounds": [
+            19,
+            51,
+            127,
+            135
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "6e8e02cb8bf461de03771b9259aa65036103e80b6ab5bbb84511c537393b6efe",
+      "region": "savanna",
+      "name": "Elephant",
+      "localFile": "public/game/animals-hq/savanna/elephant.png",
+      "notes": "Both tusk whites, narrow trunk tip, body/ear grays, feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          135,
+          126,
+          94
+        ],
+        "bounds": [
+          21,
+          129,
+          118,
+          141
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "gryphon",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/2/2f/Gryphon.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Gryphon.png",
+      "sourceSHA256": "ace31571ed9d3d601a4b328dbccc04de4dc603a0a2d9b4fd76e3b4cafa90c493",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        12,
+        16,
+        132,
+        136
+      ],
+      "cropBounds": [
+        10,
+        14,
+        134,
+        138
+      ],
+      "outputDimensions": [
+        124,
+        124
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        169,
+        140,
+        107
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          149,
+          124,
+          94
+        ],
+        [
+          157,
+          81,
+          15
+        ],
+        [
+          169,
+          140,
+          107
+        ],
+        [
+          200,
+          117,
+          43
+        ],
+        [
+          231,
+          231,
+          231
+        ],
+        [
+          234,
+          136,
+          49
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          157,
+          81,
+          15
+        ],
+        [
+          200,
+          117,
+          43
+        ],
+        [
+          231,
+          231,
+          231
+        ],
+        [
+          234,
+          136,
+          49
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "animalPixels": 7392,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 8898,
+          "bounds": [
+            12,
+            16,
+            132,
+            142
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 1074,
+          "bounds": [
+            15,
+            130,
+            130,
+            142
+          ],
+          "rgb": [
+            149,
+            124,
+            94
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 7392,
+          "bounds": [
+            12,
+            16,
+            132,
+            136
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "336750a414df6804c57ff247959ae91a1a24852edec8cc5b9bc438e48102c67e",
+      "region": "savanna",
+      "name": "Gryphon",
+      "localFile": "public/game/animals-hq/savanna/gryphon.png",
+      "notes": "Extended wings/feather tips, beak, tail, rear legs and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          149,
+          124,
+          94
+        ],
+        "bounds": [
+          15,
+          130,
+          130,
+          142
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "bear",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/a/a4/Bear.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Bear.png",
+      "sourceSHA256": "dfc3dc2cbd2a7afab098c76d6913391aa9d09e8f916cd88e5ef1ecc226fdb1e5",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        14,
+        58,
+        134,
+        135
+      ],
+      "cropBounds": [
+        12,
+        56,
+        136,
+        137
+      ],
+      "outputDimensions": [
+        124,
+        81
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        148,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          118,
+          74,
+          17
+        ],
+        [
+          136,
+          131,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          142,
+          92,
+          28
+        ],
+        [
+          154,
+          148,
+          104
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          118,
+          74,
+          17
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          142,
+          92,
+          28
+        ]
+      ],
+      "animalPixels": 6660,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 7926,
+          "bounds": [
+            14,
+            58,
+            134,
+            141
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 1014,
+          "bounds": [
+            16,
+            129,
+            123,
+            141
+          ],
+          "rgb": [
+            136,
+            131,
+            93
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 6660,
+          "bounds": [
+            14,
+            58,
+            134,
+            135
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "670ecb12e002562fa38cf4e89f85cb42af2f02876ceeacd2cf5fc199ad4edb80",
+      "region": "northern",
+      "name": "Bear",
+      "localFile": "public/game/animals-hq/northern/bear.png",
+      "notes": "Ears, muzzle, brown leg/body shades and gray eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          131,
+          93
+        ],
+        "bounds": [
+          16,
+          129,
+          123,
+          141
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "skunk",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/7/79/Skunk.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Skunk.png",
+      "sourceSHA256": "9bcdf5df0537338b33928719d7322ba5829575d15de9a995b48e50997e313308",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        15,
+        51,
+        135,
+        135
+      ],
+      "cropBounds": [
+        13,
+        49,
+        137,
+        137
+      ],
+      "outputDimensions": [
+        124,
+        88
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        148,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          59,
+          59,
+          59
+        ],
+        [
+          136,
+          131,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          154,
+          148,
+          104
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          59,
+          59,
+          59
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "animalPixels": 4884,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 6354,
+          "bounds": [
+            15,
+            51,
+            135,
+            141
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 1146,
+          "bounds": [
+            17,
+            129,
+            133,
+            141
+          ],
+          "rgb": [
+            136,
+            131,
+            93
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 4884,
+          "bounds": [
+            15,
+            51,
+            135,
+            135
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "6a0726de1cb0510294edda68242094090b6ccd2dc695fd4209b85be69b4bb664",
+      "region": "northern",
+      "name": "Skunk",
+      "localFile": "public/game/animals-hq/northern/skunk.png",
+      "notes": "Long raised tail and white stripe, black feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          131,
+          93
+        ],
+        "bounds": [
+          17,
+          129,
+          133,
+          141
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "beaver",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/2/26/Beaver.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Beaver.png",
+      "sourceSHA256": "fae6cae861b216290f13e964a716282834cec900287795063bdfcb7841e6e301",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        10,
+        70,
+        142,
+        136
+      ],
+      "cropBounds": [
+        8,
+        68,
+        144,
+        138
+      ],
+      "outputDimensions": [
+        136,
+        70
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        148,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          66,
+          44,
+          15
+        ],
+        [
+          86,
+          57,
+          20
+        ],
+        [
+          95,
+          63,
+          22
+        ],
+        [
+          126,
+          87,
+          40
+        ],
+        [
+          136,
+          131,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          154,
+          148,
+          104
+        ],
+        [
+          246,
+          234,
+          217
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          66,
+          44,
+          15
+        ],
+        [
+          86,
+          57,
+          20
+        ],
+        [
+          95,
+          63,
+          22
+        ],
+        [
+          126,
+          87,
+          40
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          246,
+          234,
+          217
+        ]
+      ],
+      "animalPixels": 5832,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 7428,
+          "bounds": [
+            10,
+            70,
+            142,
+            142
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 1272,
+          "bounds": [
+            12,
+            130,
+            140,
+            142
+          ],
+          "rgb": [
+            136,
+            131,
+            93
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 5832,
+          "bounds": [
+            10,
+            70,
+            142,
+            136
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "21c42345bd61d712dfdc7585c8543a362c692addc16c20ce4f9272998cc09951",
+      "region": "northern",
+      "name": "Beaver",
+      "localFile": "public/game/animals-hq/northern/beaver.png",
+      "notes": "Wide extending tail and every tail shade, pale teeth, feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          131,
+          93
+        ],
+        "bounds": [
+          12,
+          130,
+          140,
+          142
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "moose",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/2/27/Moose.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Moose.png",
+      "sourceSHA256": "8f36376380a8969221705f9942c98c6f7f2700d6293e1c63c238b8a55681eeb8",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        14,
+        28,
+        134,
+        136
+      ],
+      "cropBounds": [
+        12,
+        26,
+        136,
+        138
+      ],
+      "outputDimensions": [
+        124,
+        112
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        153,
+        142,
+        107
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          48,
+          37,
+          23
+        ],
+        [
+          66,
+          54,
+          38
+        ],
+        [
+          74,
+          60,
+          44
+        ],
+        [
+          106,
+          91,
+          70
+        ],
+        [
+          135,
+          126,
+          94
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          153,
+          142,
+          107
+        ],
+        [
+          238,
+          213,
+          181
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          48,
+          37,
+          23
+        ],
+        [
+          66,
+          54,
+          38
+        ],
+        [
+          74,
+          60,
+          44
+        ],
+        [
+          106,
+          91,
+          70
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          238,
+          213,
+          181
+        ]
+      ],
+      "animalPixels": 5844,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 7896,
+          "bounds": [
+            14,
+            28,
+            134,
+            142
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 1128,
+          "bounds": [
+            16,
+            130,
+            124,
+            142
+          ],
+          "rgb": [
+            135,
+            126,
+            94
+          ]
+        },
+        {
+          "role": "shadow",
+          "pixels": 24,
+          "bounds": [
+            128,
+            130,
+            132,
+            136
+          ],
+          "rgb": [
+            135,
+            126,
+            94
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 5844,
+          "bounds": [
+            14,
+            28,
+            134,
+            136
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "3a60c58fc29a4cc038a8ea19749b4b0e86597ada56ceb184dd9a497c6dfbdb30",
+      "region": "northern",
+      "name": "Moose",
+      "localFile": "public/game/animals-hq/northern/moose.png",
+      "notes": "Thin branching antlers, extending muzzle, thin legs and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          135,
+          126,
+          94
+        ],
+        "bounds": [
+          16,
+          130,
+          132,
+          142
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "fox",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/7/73/Fox.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Fox.png",
+      "sourceSHA256": "1ba7a86d69d192519184b25acc5aaeaf1af5aee5467caa002096f86fbcaf4978",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        9,
+        41,
+        141,
+        137
+      ],
+      "cropBounds": [
+        7,
+        39,
+        143,
+        139
+      ],
+      "outputDimensions": [
+        136,
+        100
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        153,
+        142,
+        107
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          48,
+          37,
+          23
+        ],
+        [
+          74,
+          60,
+          44
+        ],
+        [
+          120,
+          81,
+          30
+        ],
+        [
+          126,
+          87,
+          40
+        ],
+        [
+          135,
+          126,
+          94
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          152,
+          95,
+          22
+        ],
+        [
+          153,
+          142,
+          107
+        ],
+        [
+          166,
+          102,
+          17
+        ],
+        [
+          191,
+          161,
+          122
+        ],
+        [
+          194,
+          123,
+          28
+        ],
+        [
+          220,
+          194,
+          162
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          48,
+          37,
+          23
+        ],
+        [
+          74,
+          60,
+          44
+        ],
+        [
+          120,
+          81,
+          30
+        ],
+        [
+          126,
+          87,
+          40
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          152,
+          95,
+          22
+        ],
+        [
+          166,
+          102,
+          17
+        ],
+        [
+          191,
+          161,
+          122
+        ],
+        [
+          194,
+          123,
+          28
+        ],
+        [
+          220,
+          194,
+          162
+        ]
+      ],
+      "animalPixels": 5550,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 7686,
+          "bounds": [
+            9,
+            41,
+            141,
+            143
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 1272,
+          "bounds": [
+            11,
+            131,
+            139,
+            143
+          ],
+          "rgb": [
+            135,
+            126,
+            94
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 5550,
+          "bounds": [
+            9,
+            41,
+            141,
+            137
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "71664f776277a0c3007a06bf218c64df06530eefb82685fcf8fa1a778c06583d",
+      "region": "northern",
+      "name": "Fox",
+      "localFile": "public/game/animals-hq/northern/fox.png",
+      "notes": "Pointed ears, extending white-tipped tail, black feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          135,
+          126,
+          94
+        ],
+        "bounds": [
+          11,
+          131,
+          139,
+          143
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "sasquatch",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/8/8d/Sasquatch.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Sasquatch.png",
+      "sourceSHA256": "2a1e61644d93c1fd3aea6134f3eb9046ce88a896c7a1a4b8618750ea0b69400d",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        36,
+        10,
+        120,
+        136
+      ],
+      "cropBounds": [
+        34,
+        8,
+        122,
+        138
+      ],
+      "outputDimensions": [
+        88,
+        130
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        169,
+        140,
+        107
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          51,
+          43,
+          30
+        ],
+        [
+          67,
+          56,
+          40
+        ],
+        [
+          74,
+          60,
+          44
+        ],
+        [
+          103,
+          74,
+          37
+        ],
+        [
+          126,
+          87,
+          40
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          149,
+          124,
+          94
+        ],
+        [
+          169,
+          140,
+          107
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          51,
+          43,
+          30
+        ],
+        [
+          67,
+          56,
+          40
+        ],
+        [
+          74,
+          60,
+          44
+        ],
+        [
+          103,
+          74,
+          37
+        ],
+        [
+          126,
+          87,
+          40
+        ],
+        [
+          136,
+          136,
+          136
+        ]
+      ],
+      "animalPixels": 5615,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 6665,
+          "bounds": [
+            36,
+            10,
+            120,
+            142
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 654,
+          "bounds": [
+            38,
+            130,
+            119,
+            142
+          ],
+          "rgb": [
+            149,
+            124,
+            94
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 5615,
+          "bounds": [
+            36,
+            10,
+            120,
+            136
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "2e843daeaa1775461fc255e61587eadbc305d3c2b8b9af1d404e013a9849618a",
+      "region": "northern",
+      "name": "Sasquatch",
+      "localFile": "public/game/animals-hq/northern/sasquatch.png",
+      "notes": "Thin arms/fingers, separated legs and feet, all torso shades and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          149,
+          124,
+          94
+        ],
+        "bounds": [
+          38,
+          130,
+          119,
+          142
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "penguin",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/9/97/Penguin.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Penguin.png",
+      "sourceSHA256": "5febf245d8c3fdacf313723ef5aab8168d71fbe1638a3da2445523385631eb4b",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        39,
+        39,
+        111,
+        135
+      ],
+      "cropBounds": [
+        37,
+        37,
+        113,
+        137
+      ],
+      "outputDimensions": [
+        76,
+        100
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        148,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          59,
+          59,
+          59
+        ],
+        [
+          136,
+          131,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          154,
+          148,
+          104
+        ],
+        [
+          157,
+          157,
+          157
+        ],
+        [
+          240,
+          215,
+          0
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          59,
+          59,
+          59
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          157,
+          157,
+          157
+        ],
+        [
+          240,
+          215,
+          0
+        ],
+        [
+          255,
+          255,
+          255
+        ]
+      ],
+      "animalPixels": 4266,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 4692,
+          "bounds": [
+            39,
+            39,
+            111,
+            141
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 426,
+          "bounds": [
+            40,
+            129,
+            105,
+            141
+          ],
+          "rgb": [
+            136,
+            131,
+            93
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 4266,
+          "bounds": [
+            39,
+            39,
+            111,
+            135
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "da192023c5b97c3c740fd94bab3497118d011456e78720c1430b50071c115567",
+      "region": "polar",
+      "name": "Penguin",
+      "localFile": "public/game/animals-hq/polar/penguin.png",
+      "notes": "Thin beak/flippers, yellow neck patches, gray feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          131,
+          93
+        ],
+        "bounds": [
+          40,
+          129,
+          105,
+          141
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "seal",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/8/8e/Seal.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Seal.png",
+      "sourceSHA256": "45820d232ffe05e43932c01c39b7ea5ee0de50e23d12f9ee8ae9f25b2efe6937",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        11,
+        51,
+        143,
+        135
+      ],
+      "cropBounds": [
+        9,
+        49,
+        145,
+        137
+      ],
+      "outputDimensions": [
+        136,
+        88
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        148,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          131,
+          93
+        ],
+        [
+          137,
+          137,
+          137
+        ],
+        [
+          147,
+          147,
+          147
+        ],
+        [
+          154,
+          148,
+          104
+        ],
+        [
+          157,
+          157,
+          157
+        ],
+        [
+          192,
+          192,
+          192
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          137,
+          137,
+          137
+        ],
+        [
+          147,
+          147,
+          147
+        ],
+        [
+          157,
+          157,
+          157
+        ],
+        [
+          192,
+          192,
+          192
+        ]
+      ],
+      "animalPixels": 5952,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 7128,
+          "bounds": [
+            11,
+            51,
+            143,
+            141
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 1032,
+          "bounds": [
+            23,
+            129,
+            141,
+            141
+          ],
+          "rgb": [
+            136,
+            131,
+            93
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 5952,
+          "bounds": [
+            11,
+            51,
+            143,
+            135
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "27fb521f1003957c5160c15dec8a9d19d76bab4b34977ad1761a78a0c1d5b4de",
+      "region": "polar",
+      "name": "Seal",
+      "localFile": "public/game/animals-hq/polar/seal.png",
+      "notes": "Raised tail/flipper tips, muzzle, all gray body shades and lighter eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          131,
+          93
+        ],
+        "bounds": [
+          23,
+          129,
+          141,
+          141
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "muskox",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/9/98/Muskox.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Muskox.png",
+      "sourceSHA256": "8d115d1ee805057407324ee0952c2e82e6f695fe0f3c25db43dc2d9b5178038a",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        9,
+        39,
+        141,
+        135
+      ],
+      "cropBounds": [
+        7,
+        37,
+        143,
+        137
+      ],
+      "outputDimensions": [
+        136,
+        100
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        154,
+        148,
+        104
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          44,
+          34,
+          22
+        ],
+        [
+          63,
+          49,
+          32
+        ],
+        [
+          120,
+          109,
+          94
+        ],
+        [
+          121,
+          107,
+          89
+        ],
+        [
+          136,
+          131,
+          93
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          150,
+          136,
+          118
+        ],
+        [
+          154,
+          148,
+          104
+        ],
+        [
+          179,
+          165,
+          147
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          44,
+          34,
+          22
+        ],
+        [
+          63,
+          49,
+          32
+        ],
+        [
+          120,
+          109,
+          94
+        ],
+        [
+          121,
+          107,
+          89
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          150,
+          136,
+          118
+        ],
+        [
+          179,
+          165,
+          147
+        ]
+      ],
+      "animalPixels": 8526,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 10278,
+          "bounds": [
+            9,
+            39,
+            141,
+            141
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 1284,
+          "bounds": [
+            11,
+            129,
+            129,
+            141
+          ],
+          "rgb": [
+            136,
+            131,
+            93
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 8526,
+          "bounds": [
+            9,
+            39,
+            141,
+            135
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "545e41ea7c1c996a349fdb19df1df50da83c77f38c6a9d84893d8f8cecb4caf0",
+      "region": "polar",
+      "name": "Muskox",
+      "localFile": "public/game/animals-hq/polar/muskox.png",
+      "notes": "Curved pale horn, back/body trim, feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          136,
+          131,
+          93
+        ],
+        "bounds": [
+          11,
+          129,
+          129,
+          141
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "polar-bear",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/7/78/Polar_Bear.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Polar_Bear.png",
+      "sourceSHA256": "2f2c5ed6604d03fe57d6d73cef504cac715b21693972af88f0ea34c7a988c846",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        8,
+        51,
+        140,
+        135
+      ],
+      "cropBounds": [
+        6,
+        49,
+        142,
+        137
+      ],
+      "outputDimensions": [
+        136,
+        88
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        153,
+        142,
+        107
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          135,
+          126,
+          95
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          153,
+          142,
+          107
+        ],
+        [
+          230,
+          229,
+          220
+        ],
+        [
+          242,
+          242,
+          235
+        ],
+        [
+          255,
+          255,
+          251
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          230,
+          229,
+          220
+        ],
+        [
+          242,
+          242,
+          235
+        ],
+        [
+          255,
+          255,
+          251
+        ]
+      ],
+      "animalPixels": 7746,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 9786,
+          "bounds": [
+            8,
+            51,
+            140,
+            141
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 1140,
+          "bounds": [
+            10,
+            129,
+            128,
+            141
+          ],
+          "rgb": [
+            135,
+            126,
+            95
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 7746,
+          "bounds": [
+            8,
+            51,
+            140,
+            135
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "087204f2021ffc993925af9d714e9443ee56cf99fe750901e1b5b61062207692",
+      "region": "polar",
+      "name": "Polar Bear",
+      "localFile": "public/game/animals-hq/polar/polar-bear.png",
+      "notes": "Pale muzzle, ears, all three white body shades, feet and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          135,
+          126,
+          95
+        ],
+        "bounds": [
+          10,
+          129,
+          128,
+          141
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "walrus",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/7/79/Walrus.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Walrus.png",
+      "sourceSHA256": "d525eb85304c5ce633c408458cb47f67ce5bef80fab608acbf699e324f9e9d38",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        11,
+        51,
+        143,
+        135
+      ],
+      "cropBounds": [
+        9,
+        49,
+        145,
+        137
+      ],
+      "outputDimensions": [
+        136,
+        88
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        153,
+        142,
+        107
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          44,
+          34,
+          22
+        ],
+        [
+          63,
+          49,
+          32
+        ],
+        [
+          135,
+          126,
+          95
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          153,
+          142,
+          107
+        ],
+        [
+          255,
+          253,
+          238
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          44,
+          34,
+          22
+        ],
+        [
+          63,
+          49,
+          32
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          255,
+          253,
+          238
+        ]
+      ],
+      "animalPixels": 6870,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 7638,
+          "bounds": [
+            11,
+            51,
+            143,
+            141
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 768,
+          "bounds": [
+            13,
+            129,
+            141,
+            141
+          ],
+          "rgb": [
+            135,
+            126,
+            95
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 6870,
+          "bounds": [
+            11,
+            51,
+            143,
+            135
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "214dcfe72428fe44d556c48f7487a57a5297a864bcddfc636817a7c643403a18",
+      "region": "polar",
+      "name": "Walrus",
+      "localFile": "public/game/animals-hq/polar/walrus.png",
+      "notes": "Long white tusk, tail/flipper tips, dark body shades and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          135,
+          126,
+          95
+        ],
+        "bounds": [
+          13,
+          129,
+          141,
+          141
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    },
+    {
+      "animal": "yeti",
+      "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/7/7d/Yeti.png/revision/latest?format=original",
+      "filePage": "https://discozoo.fandom.com/wiki/File:Yeti.png",
+      "sourceSHA256": "6bf6d8d4be9a3cd7eb9c8df73d27a12777176995aaf3c298ad4b878417eaf2d5",
+      "sourceDimensions": [
+        150,
+        150
+      ],
+      "animalBounds": [
+        34,
+        10,
+        118,
+        136
+      ],
+      "cropBounds": [
+        32,
+        8,
+        120,
+        138
+      ],
+      "outputDimensions": [
+        88,
+        130
+      ],
+      "padding": 2,
+      "backgroundRGB": [
+        169,
+        140,
+        107
+      ],
+      "sourceRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          149,
+          124,
+          95
+        ],
+        [
+          169,
+          140,
+          107
+        ],
+        [
+          198,
+          198,
+          186
+        ],
+        [
+          241,
+          241,
+          236
+        ],
+        [
+          255,
+          255,
+          251
+        ]
+      ],
+      "retainedRGBColors": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          136,
+          136,
+          136
+        ],
+        [
+          198,
+          198,
+          186
+        ],
+        [
+          241,
+          241,
+          236
+        ],
+        [
+          255,
+          255,
+          251
+        ]
+      ],
+      "animalPixels": 6209,
+      "missingAnimalPixels": 0,
+      "addedAnimalPixels": 0,
+      "recoloredPixels": 0,
+      "artificialSemitransparentPixels": 0,
+      "alphaValues": [
+        0,
+        255
+      ],
+      "initialForegroundComponents": [
+        {
+          "pixels": 7043,
+          "bounds": [
+            34,
+            10,
+            118,
+            142
+          ]
+        }
+      ],
+      "removedComponents": [
+        {
+          "role": "shadow",
+          "pixels": 618,
+          "bounds": [
+            36,
+            130,
+            117,
+            142
+          ],
+          "rgb": [
+            149,
+            124,
+            95
+          ]
+        }
+      ],
+      "finalForegroundComponents": [
+        {
+          "pixels": 6209,
+          "bounds": [
+            34,
+            10,
+            118,
+            136
+          ]
+        }
+      ],
+      "sourcePixelsPerOutputPixel": 1,
+      "scaleFactor": 1,
+      "resampling": false,
+      "outputSHA256": "887dee6fd4dee4996efcb04a27a5c1cacd1f1d00b561983cce10bf3f1451f75b",
+      "region": "polar",
+      "name": "Yeti",
+      "localFile": "public/game/animals-hq/polar/yeti.png",
+      "notes": "Separated hands/arms/legs/feet, all white/gray body shades and eye highlight preserved.",
+      "reviewedShadowMask": {
+        "rgb": [
+          149,
+          124,
+          95
+        ],
+        "bounds": [
+          36,
+          130,
+          117,
+          142
+        ]
+      },
+      "reviewedEnclosedBackground": []
+    }
+  ],
+  "unresolved": []
+}

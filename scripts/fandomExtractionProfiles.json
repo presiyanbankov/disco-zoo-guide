@@ -1,0 +1,1974 @@
+[
+  {
+    "id": "sheep",
+    "name": "Sheep",
+    "cdn": "c/cc/Sheep.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "7c36bca89ef30cbf20ac3ec0f90faa65fdda0f0502be0c70fc7eabd0541fee37",
+    "shadow": [
+      136,
+      130,
+      93
+    ],
+    "shadow_box": [
+      25,
+      106,
+      95,
+      114
+    ],
+    "signature": [
+      146,
+      140,
+      99
+    ],
+    "animal_colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        251,
+        192,
+        208
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        213,
+        213,
+        213
+      ]
+    ],
+    "count": 2608,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Sheep.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "White fleece, pink muzzle, gray legs and gray eye highlight preserved.",
+    "region": "farm"
+  },
+  {
+    "id": "pig",
+    "name": "Pig",
+    "cdn": "3/30/Pig.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "4c0e575ec3e8f79723b5a87607a6297cecce6dae979922943ce23fed50190ef1",
+    "shadow": [
+      136,
+      130,
+      93
+    ],
+    "shadow_box": [
+      26,
+      106,
+      96,
+      114
+    ],
+    "signature": [
+      146,
+      140,
+      99
+    ],
+    "animal_colors": [
+      [
+        251,
+        192,
+        208
+      ],
+      [
+        232,
+        174,
+        190
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "count": 2496,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Pig.png",
+    "enclosed_background": [
+      {
+        "seed": [
+          89,
+          66
+        ],
+        "count": 16,
+        "label": "tail-opening"
+      }
+    ],
+    "review_status": "reviewed",
+    "notes": "Curled tail and both legs preserved; explicitly clear the enclosed 16px tail opening.",
+    "region": "farm"
+  },
+  {
+    "id": "rabbit",
+    "name": "Rabbit",
+    "cdn": "f/fd/Rabbit.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "b9406be6f533d15229830d02ccd5c5354c47d5452040d8a8e414a0dde6c21e54",
+    "shadow": [
+      136,
+      130,
+      93
+    ],
+    "shadow_box": [
+      37,
+      106,
+      83,
+      114
+    ],
+    "signature": [
+      146,
+      140,
+      99
+    ],
+    "animal_colors": [
+      [
+        237,
+        237,
+        237
+      ],
+      [
+        251,
+        192,
+        208
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        213,
+        213,
+        213
+      ]
+    ],
+    "count": 1552,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Rabbit.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Thin upright ears, pink inner ear, short tail, feet and eye highlight preserved.",
+    "region": "farm"
+  },
+  {
+    "id": "horse",
+    "name": "Horse",
+    "cdn": "c/c3/Horse.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "9989e9cf487dc86a6c134cbf543448d10426abaacabec12f976e66b9ac3e51ca",
+    "shadow": [
+      135,
+      126,
+      96
+    ],
+    "shadow_box": [
+      25,
+      106,
+      95,
+      114
+    ],
+    "signature": [
+      145,
+      135,
+      102
+    ],
+    "animal_colors": [
+      [
+        116,
+        66,
+        37
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        81,
+        46,
+        26
+      ],
+      [
+        57,
+        32,
+        18
+      ]
+    ],
+    "count": 2064,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Horse.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Both ears, muzzle, tail, darker mane and four hoof/leg portions preserved.",
+    "region": "farm"
+  },
+  {
+    "id": "cow",
+    "name": "Cow",
+    "cdn": "8/84/Cow.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "4465b244a8ee181553639e04b7f31ad25727058a6a19c77f040c8ac76c7aefe6",
+    "shadow": [
+      135,
+      126,
+      96
+    ],
+    "shadow_box": [
+      25,
+      106,
+      95,
+      114
+    ],
+    "signature": [
+      145,
+      135,
+      102
+    ],
+    "animal_colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        251,
+        192,
+        208
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        51,
+        51,
+        51
+      ],
+      [
+        74,
+        74,
+        74
+      ],
+      [
+        213,
+        213,
+        213
+      ],
+      [
+        232,
+        174,
+        190
+      ],
+      [
+        28,
+        39,
+        51
+      ]
+    ],
+    "count": 2496,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Cow.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Tail, spotted coat, pink muzzle/udder, dark hooves and eye highlight preserved.",
+    "region": "farm"
+  },
+  {
+    "id": "unicorn",
+    "name": "Unicorn",
+    "cdn": "7/7e/Unicorn.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "c30dbe0349c03d4ee5772fd9cb2ce209c9796b5fab221fa1516dadee34ef447b",
+    "shadow": [
+      149,
+      124,
+      95
+    ],
+    "shadow_box": [
+      25,
+      106,
+      95,
+      114
+    ],
+    "signature": [
+      160,
+      133,
+      102
+    ],
+    "animal_colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        174,
+        0
+      ],
+      [
+        255,
+        246,
+        0
+      ],
+      [
+        24,
+        255,
+        0
+      ],
+      [
+        0,
+        180,
+        255
+      ],
+      [
+        180,
+        0,
+        255
+      ],
+      [
+        213,
+        213,
+        213
+      ],
+      [
+        144,
+        0,
+        204
+      ]
+    ],
+    "count": 2256,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Unicorn.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Thin horn, all rainbow mane colors, purple tail, feet and eye highlight preserved.",
+    "region": "farm"
+  },
+  {
+    "id": "kangaroo",
+    "name": "Kangaroo",
+    "cdn": "5/56/Kangaroo.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "2e65973c19776b4b3057a4a5244c6b77bc9137e5ce2be2429ac8d31e8fcb7083",
+    "shadow": [
+      136,
+      130,
+      93
+    ],
+    "shadow_box": [
+      23,
+      106,
+      101,
+      114
+    ],
+    "signature": [
+      146,
+      140,
+      99
+    ],
+    "animal_colors": [
+      [
+        169,
+        108,
+        58
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        239,
+        217,
+        207
+      ],
+      [
+        206,
+        186,
+        174
+      ],
+      [
+        129,
+        66,
+        35
+      ]
+    ],
+    "count": 2384,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Kangaroo.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Long tapering tail, ears, tiny arms, dark feet and eye highlight preserved.",
+    "region": "outback"
+  },
+  {
+    "id": "platypus",
+    "name": "Platypus",
+    "cdn": "5/5d/Platypus.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "844efcca990e98937d729d713b88c371e3c8b8e02efb25fcf8a46326cdf9b6e2",
+    "shadow": [
+      136,
+      130,
+      93
+    ],
+    "shadow_box": [
+      15,
+      106,
+      99,
+      114
+    ],
+    "signature": [
+      146,
+      140,
+      99
+    ],
+    "animal_colors": [
+      [
+        169,
+        108,
+        58
+      ],
+      [
+        66,
+        66,
+        66
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        230,
+        199,
+        173
+      ],
+      [
+        143,
+        98,
+        60
+      ],
+      [
+        204,
+        169,
+        139
+      ]
+    ],
+    "count": 2160,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Platypus.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Broad dark bill, extending tail, separate feet and eye highlight preserved.",
+    "region": "outback"
+  },
+  {
+    "id": "crocodile",
+    "name": "Crocodile",
+    "cdn": "d/d6/Crocodile.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "2ab0ff584fee2c9d51ed7adfc4a554a6b38a9c06ba2f4d28741c1ff3272f4305",
+    "shadow": [
+      136,
+      130,
+      93
+    ],
+    "shadow_box": [
+      19,
+      106,
+      97,
+      114
+    ],
+    "signature": [
+      146,
+      140,
+      99
+    ],
+    "animal_colors": [
+      [
+        37,
+        109,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        144,
+        181,
+        126
+      ],
+      [
+        28,
+        83,
+        0
+      ]
+    ],
+    "count": 1584,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Crocodile.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Long tapering tail, dorsal bumps, pale jaw, feet and eye highlight preserved.",
+    "region": "outback"
+  },
+  {
+    "id": "koala",
+    "name": "Koala",
+    "cdn": "2/22/Koala.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "663ed09fd4f577f3e3c124acd1beb4d5c489e75d92e6519e7db1ae500a540053",
+    "shadow": [
+      135,
+      126,
+      96
+    ],
+    "shadow_box": [
+      25,
+      106,
+      95,
+      114
+    ],
+    "signature": [
+      145,
+      135,
+      102
+    ],
+    "animal_colors": [
+      [
+        87,
+        87,
+        87
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        66,
+        66,
+        66
+      ],
+      [
+        152,
+        152,
+        152
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        217,
+        217,
+        217
+      ],
+      [
+        70,
+        70,
+        70
+      ],
+      [
+        187,
+        187,
+        187
+      ],
+      [
+        167,
+        167,
+        167
+      ],
+      [
+        191,
+        191,
+        191
+      ],
+      [
+        126,
+        126,
+        126
+      ],
+      [
+        101,
+        101,
+        101
+      ]
+    ],
+    "count": 2528,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Koala.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "All distinct gray face/ear/body/foot colors and eye highlight preserved.",
+    "region": "outback"
+  },
+  {
+    "id": "cockatoo",
+    "name": "Cockatoo",
+    "cdn": "b/b6/Cockatoo.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "be9c5cbb6ed2208d4f1be738fa232433b0ca71d3f398a78a9b57c13ca0ac7947",
+    "shadow": [
+      135,
+      126,
+      96
+    ],
+    "shadow_box": [
+      25,
+      106,
+      90,
+      114
+    ],
+    "signature": [
+      145,
+      135,
+      102
+    ],
+    "animal_colors": [
+      [
+        255,
+        245,
+        139
+      ],
+      [
+        247,
+        239,
+        155
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        66,
+        66,
+        66
+      ],
+      [
+        217,
+        217,
+        217
+      ]
+    ],
+    "count": 2256,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Cockatoo.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Yellow crest tips, dark beak/feet, white/gray tail feathers and eye highlight preserved.",
+    "region": "outback"
+  },
+  {
+    "id": "tiddalik",
+    "name": "Tiddalik",
+    "cdn": "e/e9/Tiddalik.png",
+    "size": [
+      120,
+      120
+    ],
+    "sha256": "665f3eb124c465f51db5a83a0f59bad9bbed374b5f598a6fa3f8928335e474d4",
+    "shadow": [
+      149,
+      124,
+      95
+    ],
+    "shadow_box": [
+      18,
+      106,
+      102,
+      114
+    ],
+    "signature": [
+      160,
+      133,
+      102
+    ],
+    "animal_colors": [
+      [
+        255,
+        0,
+        0
+      ],
+      [
+        145,
+        242,
+        6
+      ],
+      [
+        152,
+        152,
+        152
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        116,
+        194,
+        5
+      ],
+      [
+        246,
+        255,
+        0
+      ],
+      [
+        30,
+        129,
+        204
+      ],
+      [
+        197,
+        204,
+        0
+      ],
+      [
+        214,
+        222,
+        0
+      ],
+      [
+        38,
+        161,
+        255
+      ],
+      [
+        126,
+        211,
+        5
+      ],
+      [
+        206,
+        214,
+        0
+      ]
+    ],
+    "count": 2976,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Tiddalik.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Red crest, vivid blue/yellow legs, green body and eye highlight preserved.",
+    "region": "outback"
+  },
+  {
+    "id": "zebra",
+    "name": "Zebra",
+    "cdn": "3/37/Zebra.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "3a4d8d54721995041a8d0181ca93d819c64c38e9a2aa6cd2c43c172954e97bc3",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      23,
+      129,
+      127,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        90,
+        90,
+        90
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        45,
+        45,
+        45
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        153,
+        153,
+        153
+      ],
+      [
+        54,
+        54,
+        54
+      ]
+    ],
+    "count": 4590,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Zebra.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Ears, mane, checker-striped body, thin legs, hooves and eye highlight preserved.",
+    "region": "savanna"
+  },
+  {
+    "id": "hippo",
+    "name": "Hippo",
+    "cdn": "f/f3/Hippo.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "a6696822096bfd9abfe780a4ad864daf0893da64d08eac60280cd9fc8235e5c2",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      17,
+      130,
+      133,
+      142
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        155,
+        81,
+        172
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        108,
+        47,
+        122
+      ]
+    ],
+    "count": 7008,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Hippo.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Small ears, muzzle, dark foot/leg portions and eye highlight preserved.",
+    "region": "savanna"
+  },
+  {
+    "id": "giraffe",
+    "name": "Giraffe",
+    "cdn": "6/60/Giraffe.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "45b91b0d69bc99f4b67f9a9c516c26fbfe6b75270c098e27139dec651ee72d7d",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      27,
+      130,
+      113,
+      142
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        116,
+        66,
+        38
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        154,
+        109,
+        78
+      ],
+      [
+        243,
+        208,
+        177
+      ],
+      [
+        108,
+        60,
+        31
+      ],
+      [
+        139,
+        94,
+        65
+      ],
+      [
+        210,
+        174,
+        144
+      ],
+      [
+        77,
+        36,
+        11
+      ]
+    ],
+    "count": 4368,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Giraffe.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Horn/ear tips, long neck, markings, extending tail, thin legs and eye highlight preserved.",
+    "region": "savanna"
+  },
+  {
+    "id": "lion",
+    "name": "Lion",
+    "cdn": "4/47/Lion.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "391fef0d7114fedfdceb2b81f46e9583175fcbb8013035e5c38ad64dcfb674e6",
+    "shadow": [
+      135,
+      126,
+      94
+    ],
+    "shadow_box": [
+      23,
+      129,
+      127,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        160,
+        101,
+        0
+      ],
+      [
+        233,
+        182,
+        1
+      ],
+      [
+        136,
+        84,
+        4
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        144,
+        88,
+        1
+      ],
+      [
+        203,
+        153,
+        0
+      ],
+      [
+        198,
+        153,
+        1
+      ]
+    ],
+    "count": 5994,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Lion.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Mane outline, long tail and dark tuft, feet and eye highlight preserved.",
+    "region": "savanna"
+  },
+  {
+    "id": "elephant",
+    "name": "Elephant",
+    "cdn": "6/60/Elephant.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "909afaed00b133b91327e837e3740757be1a2d014747b2349ac9a4f46c4fe1d0",
+    "shadow": [
+      135,
+      126,
+      94
+    ],
+    "shadow_box": [
+      21,
+      129,
+      118,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        112,
+        112,
+        112
+      ],
+      [
+        78,
+        78,
+        78
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        237,
+        237,
+        237
+      ],
+      [
+        95,
+        95,
+        95
+      ]
+    ],
+    "count": 6900,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Elephant.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Both tusk whites, narrow trunk tip, body/ear grays, feet and eye highlight preserved.",
+    "region": "savanna"
+  },
+  {
+    "id": "gryphon",
+    "name": "Gryphon",
+    "cdn": "2/2f/Gryphon.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "ace31571ed9d3d601a4b328dbccc04de4dc603a0a2d9b4fd76e3b4cafa90c493",
+    "shadow": [
+      149,
+      124,
+      94
+    ],
+    "shadow_box": [
+      15,
+      130,
+      130,
+      142
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        231,
+        231,
+        231
+      ],
+      [
+        234,
+        136,
+        49
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        200,
+        117,
+        43
+      ],
+      [
+        157,
+        81,
+        15
+      ]
+    ],
+    "count": 7392,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Gryphon.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Extended wings/feather tips, beak, tail, rear legs and eye highlight preserved.",
+    "region": "savanna"
+  },
+  {
+    "id": "bear",
+    "name": "Bear",
+    "cdn": "a/a4/Bear.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "dfc3dc2cbd2a7afab098c76d6913391aa9d09e8f916cd88e5ef1ecc226fdb1e5",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      16,
+      129,
+      123,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        118,
+        74,
+        17
+      ],
+      [
+        142,
+        92,
+        28
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "count": 6660,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Bear.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Ears, muzzle, brown leg/body shades and gray eye highlight preserved.",
+    "region": "northern"
+  },
+  {
+    "id": "skunk",
+    "name": "Skunk",
+    "cdn": "7/79/Skunk.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "9bcdf5df0537338b33928719d7322ba5829575d15de9a995b48e50997e313308",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      17,
+      129,
+      133,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        59,
+        59,
+        59
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "count": 4884,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Skunk.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Long raised tail and white stripe, black feet and eye highlight preserved.",
+    "region": "northern"
+  },
+  {
+    "id": "beaver",
+    "name": "Beaver",
+    "cdn": "2/26/Beaver.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "fae6cae861b216290f13e964a716282834cec900287795063bdfcb7841e6e301",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      12,
+      130,
+      140,
+      142
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        126,
+        87,
+        40
+      ],
+      [
+        95,
+        63,
+        22
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        86,
+        57,
+        20
+      ],
+      [
+        246,
+        234,
+        217
+      ],
+      [
+        66,
+        44,
+        15
+      ]
+    ],
+    "count": 5832,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Beaver.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Wide extending tail and every tail shade, pale teeth, feet and eye highlight preserved.",
+    "region": "northern"
+  },
+  {
+    "id": "moose",
+    "name": "Moose",
+    "cdn": "2/27/Moose.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "8f36376380a8969221705f9942c98c6f7f2700d6293e1c63c238b8a55681eeb8",
+    "shadow": [
+      135,
+      126,
+      94
+    ],
+    "shadow_box": [
+      16,
+      130,
+      132,
+      142
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        238,
+        213,
+        181
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        74,
+        60,
+        44
+      ],
+      [
+        66,
+        54,
+        38
+      ],
+      [
+        48,
+        37,
+        23
+      ],
+      [
+        106,
+        91,
+        70
+      ]
+    ],
+    "count": 5844,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Moose.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Thin branching antlers, extending muzzle, thin legs and eye highlight preserved.",
+    "region": "northern"
+  },
+  {
+    "id": "fox",
+    "name": "Fox",
+    "cdn": "7/73/Fox.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "1ba7a86d69d192519184b25acc5aaeaf1af5aee5467caa002096f86fbcaf4978",
+    "shadow": [
+      135,
+      126,
+      94
+    ],
+    "shadow_box": [
+      11,
+      131,
+      139,
+      143
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        126,
+        87,
+        40
+      ],
+      [
+        74,
+        60,
+        44
+      ],
+      [
+        166,
+        102,
+        17
+      ],
+      [
+        194,
+        123,
+        28
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        48,
+        37,
+        23
+      ],
+      [
+        220,
+        194,
+        162
+      ],
+      [
+        191,
+        161,
+        122
+      ],
+      [
+        152,
+        95,
+        22
+      ],
+      [
+        120,
+        81,
+        30
+      ]
+    ],
+    "count": 5550,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Fox.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Pointed ears, extending white-tipped tail, black feet and eye highlight preserved.",
+    "region": "northern"
+  },
+  {
+    "id": "sasquatch",
+    "name": "Sasquatch",
+    "cdn": "8/8d/Sasquatch.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "2a1e61644d93c1fd3aea6134f3eb9046ce88a896c7a1a4b8618750ea0b69400d",
+    "shadow": [
+      149,
+      124,
+      94
+    ],
+    "shadow_box": [
+      38,
+      130,
+      119,
+      142
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        74,
+        60,
+        44
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        51,
+        43,
+        30
+      ],
+      [
+        103,
+        74,
+        37
+      ],
+      [
+        67,
+        56,
+        40
+      ],
+      [
+        126,
+        87,
+        40
+      ]
+    ],
+    "count": 5615,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Sasquatch.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Thin arms/fingers, separated legs and feet, all torso shades and eye highlight preserved.",
+    "region": "northern"
+  },
+  {
+    "id": "penguin",
+    "name": "Penguin",
+    "cdn": "9/97/Penguin.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "5febf245d8c3fdacf313723ef5aab8168d71fbe1638a3da2445523385631eb4b",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      40,
+      129,
+      105,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        59,
+        59,
+        59
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        240,
+        215,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ],
+      [
+        157,
+        157,
+        157
+      ]
+    ],
+    "count": 4266,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Penguin.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Thin beak/flippers, yellow neck patches, gray feet and eye highlight preserved.",
+    "region": "polar"
+  },
+  {
+    "id": "seal",
+    "name": "Seal",
+    "cdn": "8/8e/Seal.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "45820d232ffe05e43932c01c39b7ea5ee0de50e23d12f9ee8ae9f25b2efe6937",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      23,
+      129,
+      141,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        157,
+        157,
+        157
+      ],
+      [
+        192,
+        192,
+        192
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        147,
+        147,
+        147
+      ],
+      [
+        137,
+        137,
+        137
+      ]
+    ],
+    "count": 5952,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Seal.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Raised tail/flipper tips, muzzle, all gray body shades and lighter eye highlight preserved.",
+    "region": "polar"
+  },
+  {
+    "id": "muskox",
+    "name": "Muskox",
+    "cdn": "9/98/Muskox.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "8d115d1ee805057407324ee0952c2e82e6f695fe0f3c25db43dc2d9b5178038a",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      11,
+      129,
+      129,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        63,
+        49,
+        32
+      ],
+      [
+        179,
+        165,
+        147
+      ],
+      [
+        121,
+        107,
+        89
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        44,
+        34,
+        22
+      ],
+      [
+        150,
+        136,
+        118
+      ],
+      [
+        120,
+        109,
+        94
+      ]
+    ],
+    "count": 8526,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Muskox.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Curved pale horn, back/body trim, feet and eye highlight preserved.",
+    "region": "polar"
+  },
+  {
+    "id": "polar-bear",
+    "name": "Polar Bear",
+    "cdn": "7/78/Polar_Bear.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "2f2c5ed6604d03fe57d6d73cef504cac715b21693972af88f0ea34c7a988c846",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      10,
+      129,
+      128,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        255,
+        255,
+        251
+      ],
+      [
+        230,
+        229,
+        220
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        242,
+        242,
+        235
+      ]
+    ],
+    "count": 7746,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Polar_Bear.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Pale muzzle, ears, all three white body shades, feet and eye highlight preserved.",
+    "region": "polar"
+  },
+  {
+    "id": "walrus",
+    "name": "Walrus",
+    "cdn": "7/79/Walrus.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "d525eb85304c5ce633c408458cb47f67ce5bef80fab608acbf699e324f9e9d38",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      13,
+      129,
+      141,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        63,
+        49,
+        32
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        255,
+        253,
+        238
+      ],
+      [
+        44,
+        34,
+        22
+      ]
+    ],
+    "count": 6870,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Walrus.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Long white tusk, tail/flipper tips, dark body shades and eye highlight preserved.",
+    "region": "polar"
+  },
+  {
+    "id": "yeti",
+    "name": "Yeti",
+    "cdn": "7/7d/Yeti.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "6bf6d8d4be9a3cd7eb9c8df73d27a12777176995aaf3c298ad4b878417eaf2d5",
+    "shadow": [
+      149,
+      124,
+      95
+    ],
+    "shadow_box": [
+      36,
+      130,
+      117,
+      142
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        255,
+        255,
+        251
+      ],
+      [
+        241,
+        241,
+        236
+      ],
+      [
+        198,
+        198,
+        186
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "count": 6209,
+    "file_page": "https://discozoo.fandom.com/wiki/File:Yeti.png",
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Separated hands/arms/legs/feet, all white/gray body shades and eye highlight preserved.",
+    "region": "polar"
+  }
+]

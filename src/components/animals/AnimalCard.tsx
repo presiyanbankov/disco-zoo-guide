@@ -14,7 +14,7 @@ export function AnimalCard({ animal, index }: { animal: AnimalCardPreview; index
       </div>
       <div className="animal-card-copy">
         <h3 id={`animal-${animal.id}`}>{animal.name}</h3>
-        <span className="animal-guide-status">View field notes <span aria-hidden="true">↗</span></span>
+        <span className="animal-guide-status"><span aria-hidden="true">↗</span></span>
       </div>
     </Link>
   );

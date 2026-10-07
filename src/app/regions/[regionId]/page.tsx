@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!region) return { title: "Uncharted territory — Disco Zoo Field Guide" };
   return {
     title: `${region.name} — Disco Zoo Field Guide`,
-    description: `${region.mood}. Explore the ${region.name} animal collection in this unofficial Disco Zoo guide.`,
+    description: `${region.name} animals, rescue patterns and search sequences. Unofficial Disco Zoo guide.`,
   };
 }
 
@@ -31,15 +31,15 @@ export default async function RegionPage({ params }: Props) {
   const { regionId } = await params;
   const region = getRegionPresentation(regionId);
   if (!region) notFound();
+  const animals = getRegionAnimalPresentations(region.id);
 
   return (
     <div className={`site-shell region-page region-${region.id}`} data-route-page={`/regions/${region.id}`}>
       <a className="skip-link" href="#wildlife">Skip to animals</a>
       <SiteHeader />
       <main>
-        <RegionHero region={region} index={REGION_PRESENTATION.indexOf(region)} />
-        <AnimalCollection animals={getRegionAnimalPresentations(region.id)} />
-        <div className="region-field-note"><span aria-hidden="true">✦</span><p>{region.fieldNote}</p></div>
+        <RegionHero region={region} index={REGION_PRESENTATION.indexOf(region)} animals={animals} />
+        <AnimalCollection animals={animals} />
         <RegionNavigation currentId={region.id} />
       </main>
       <SiteFooter />

@@ -1,0 +1,850 @@
+[
+  {
+    "animal": "pig",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/3/30/Pig.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Pig.png",
+    "sourceSHA256": "4c0e575ec3e8f79723b5a87607a6297cecce6dae979922943ce23fed50190ef1",
+    "sourceDimensions": [
+      120,
+      120
+    ],
+    "animalBounds": [
+      25,
+      54,
+      97,
+      110
+    ],
+    "cropBounds": [
+      23,
+      52,
+      99,
+      112
+    ],
+    "outputDimensions": [
+      76,
+      60
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      154,
+      147,
+      104
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        130,
+        93
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        146,
+        140,
+        99
+      ],
+      [
+        154,
+        147,
+        104
+      ],
+      [
+        232,
+        174,
+        190
+      ],
+      [
+        251,
+        192,
+        208
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        232,
+        174,
+        190
+      ],
+      [
+        251,
+        192,
+        208
+      ]
+    ],
+    "animalPixels": 2496,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 3128,
+        "bounds": [
+          25,
+          54,
+          97,
+          114
+        ]
+      },
+      {
+        "pixels": 9,
+        "bounds": [
+          102,
+          114,
+          107,
+          119
+        ]
+      },
+      {
+        "pixels": 13,
+        "bounds": [
+          108,
+          114,
+          113,
+          119
+        ]
+      },
+      {
+        "pixels": 13,
+        "bounds": [
+          114,
+          114,
+          119,
+          119
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 456,
+        "bounds": [
+          26,
+          106,
+          96,
+          114
+        ],
+        "rgb": [
+          136,
+          130,
+          93
+        ]
+      },
+      {
+        "role": "signature",
+        "pixels": 9,
+        "bounds": [
+          102,
+          114,
+          107,
+          119
+        ],
+        "rgb": [
+          146,
+          140,
+          99
+        ]
+      },
+      {
+        "role": "signature",
+        "pixels": 13,
+        "bounds": [
+          108,
+          114,
+          113,
+          119
+        ],
+        "rgb": [
+          146,
+          140,
+          99
+        ]
+      },
+      {
+        "role": "signature",
+        "pixels": 13,
+        "bounds": [
+          114,
+          114,
+          119,
+          119
+        ],
+        "rgb": [
+          146,
+          140,
+          99
+        ]
+      },
+      {
+        "role": "reviewed-tail-opening",
+        "pixels": 16,
+        "bounds": [
+          89,
+          66,
+          93,
+          70
+        ],
+        "rgb": [
+          154,
+          147,
+          104
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 2496,
+        "bounds": [
+          25,
+          54,
+          97,
+          110
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "567e560205d90cc31b3dffda05be2f4c453a092832a0e604d25c96fa6cd7168f"
+  },
+  {
+    "animal": "kangaroo",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/5/56/Kangaroo.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Kangaroo.png",
+    "sourceSHA256": "2e65973c19776b4b3057a4a5244c6b77bc9137e5ce2be2429ac8d31e8fcb7083",
+    "sourceDimensions": [
+      120,
+      120
+    ],
+    "animalBounds": [
+      21,
+      38,
+      109,
+      110
+    ],
+    "cropBounds": [
+      19,
+      36,
+      111,
+      112
+    ],
+    "outputDimensions": [
+      92,
+      76
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      154,
+      147,
+      104
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        129,
+        66,
+        35
+      ],
+      [
+        136,
+        130,
+        93
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        146,
+        140,
+        99
+      ],
+      [
+        154,
+        147,
+        104
+      ],
+      [
+        169,
+        108,
+        58
+      ],
+      [
+        206,
+        186,
+        174
+      ],
+      [
+        239,
+        217,
+        207
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        129,
+        66,
+        35
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        169,
+        108,
+        58
+      ],
+      [
+        206,
+        186,
+        174
+      ],
+      [
+        239,
+        217,
+        207
+      ]
+    ],
+    "animalPixels": 2384,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 3016,
+        "bounds": [
+          21,
+          38,
+          109,
+          114
+        ]
+      },
+      {
+        "pixels": 9,
+        "bounds": [
+          102,
+          114,
+          107,
+          119
+        ]
+      },
+      {
+        "pixels": 13,
+        "bounds": [
+          108,
+          114,
+          113,
+          119
+        ]
+      },
+      {
+        "pixels": 13,
+        "bounds": [
+          114,
+          114,
+          119,
+          119
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 504,
+        "bounds": [
+          23,
+          106,
+          101,
+          114
+        ],
+        "rgb": [
+          136,
+          130,
+          93
+        ]
+      },
+      {
+        "role": "signature",
+        "pixels": 9,
+        "bounds": [
+          102,
+          114,
+          107,
+          119
+        ],
+        "rgb": [
+          146,
+          140,
+          99
+        ]
+      },
+      {
+        "role": "signature",
+        "pixels": 13,
+        "bounds": [
+          108,
+          114,
+          113,
+          119
+        ],
+        "rgb": [
+          146,
+          140,
+          99
+        ]
+      },
+      {
+        "role": "signature",
+        "pixels": 13,
+        "bounds": [
+          114,
+          114,
+          119,
+          119
+        ],
+        "rgb": [
+          146,
+          140,
+          99
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 2384,
+        "bounds": [
+          21,
+          38,
+          109,
+          110
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "2eae46902526a3fac72a22aa7f142fef6440c405eaae6e2df3924e81b0b1059d"
+  },
+  {
+    "animal": "cockatoo",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/b/b6/Cockatoo.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Cockatoo.png",
+    "sourceSHA256": "be9c5cbb6ed2208d4f1be738fa232433b0ca71d3f398a78a9b57c13ca0ac7947",
+    "sourceDimensions": [
+      120,
+      120
+    ],
+    "animalBounds": [
+      24,
+      38,
+      96,
+      110
+    ],
+    "cropBounds": [
+      22,
+      36,
+      98,
+      112
+    ],
+    "outputDimensions": [
+      76,
+      76
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      153,
+      142,
+      108
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        66,
+        66,
+        66
+      ],
+      [
+        135,
+        126,
+        96
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        145,
+        135,
+        102
+      ],
+      [
+        153,
+        142,
+        108
+      ],
+      [
+        217,
+        217,
+        217
+      ],
+      [
+        247,
+        239,
+        155
+      ],
+      [
+        255,
+        245,
+        139
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        66,
+        66,
+        66
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        217,
+        217,
+        217
+      ],
+      [
+        247,
+        239,
+        155
+      ],
+      [
+        255,
+        245,
+        139
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "animalPixels": 2256,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 2732,
+        "bounds": [
+          24,
+          38,
+          96,
+          114
+        ]
+      },
+      {
+        "pixels": 9,
+        "bounds": [
+          102,
+          114,
+          107,
+          119
+        ]
+      },
+      {
+        "pixels": 13,
+        "bounds": [
+          108,
+          114,
+          113,
+          119
+        ]
+      },
+      {
+        "pixels": 13,
+        "bounds": [
+          114,
+          114,
+          119,
+          119
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 412,
+        "bounds": [
+          25,
+          106,
+          90,
+          114
+        ],
+        "rgb": [
+          135,
+          126,
+          96
+        ]
+      },
+      {
+        "role": "signature",
+        "pixels": 9,
+        "bounds": [
+          102,
+          114,
+          107,
+          119
+        ],
+        "rgb": [
+          145,
+          135,
+          102
+        ]
+      },
+      {
+        "role": "signature",
+        "pixels": 13,
+        "bounds": [
+          108,
+          114,
+          113,
+          119
+        ],
+        "rgb": [
+          145,
+          135,
+          102
+        ]
+      },
+      {
+        "role": "signature",
+        "pixels": 13,
+        "bounds": [
+          114,
+          114,
+          119,
+          119
+        ],
+        "rgb": [
+          145,
+          135,
+          102
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 2256,
+        "bounds": [
+          24,
+          38,
+          96,
+          110
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "a42493659b0d877467ac69b5aafc8b93332e4f4ad9d32195f25b271fb03b4ed8"
+  },
+  {
+    "animal": "bear",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/a/a4/Bear.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Bear.png",
+    "sourceSHA256": "dfc3dc2cbd2a7afab098c76d6913391aa9d09e8f916cd88e5ef1ecc226fdb1e5",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      14,
+      58,
+      134,
+      135
+    ],
+    "cropBounds": [
+      12,
+      56,
+      136,
+      137
+    ],
+    "outputDimensions": [
+      124,
+      81
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      154,
+      148,
+      104
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        118,
+        74,
+        17
+      ],
+      [
+        136,
+        131,
+        93
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        142,
+        92,
+        28
+      ],
+      [
+        154,
+        148,
+        104
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        118,
+        74,
+        17
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        142,
+        92,
+        28
+      ]
+    ],
+    "animalPixels": 6660,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 7926,
+        "bounds": [
+          14,
+          58,
+          134,
+          141
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 1014,
+        "bounds": [
+          16,
+          129,
+          123,
+          141
+        ],
+        "rgb": [
+          136,
+          131,
+          93
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 6660,
+        "bounds": [
+          14,
+          58,
+          134,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "670ecb12e002562fa38cf4e89f85cb42af2f02876ceeacd2cf5fc199ad4edb80"
+  }
+]

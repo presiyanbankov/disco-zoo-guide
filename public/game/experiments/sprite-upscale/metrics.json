@@ -1,0 +1,92 @@
+[
+  {
+    "file": "kangaroo-nearest-4x.png",
+    "changedPixelsVsNearest": 0,
+    "size": [
+      128,
+      92
+    ],
+    "sourceSHA256": "d06d398f3e73f308e0def154995dd92640ed5a81fbf2df9e654c1b2ff27759a4",
+    "rgbaPalettePreserved": true
+  },
+  {
+    "file": "kangaroo-scale2x-nearest-4x.png",
+    "changedPixelsVsNearest": 100,
+    "size": [
+      128,
+      92
+    ],
+    "sourceSHA256": "d06d398f3e73f308e0def154995dd92640ed5a81fbf2df9e654c1b2ff27759a4",
+    "rgbaPalettePreserved": true
+  },
+  {
+    "file": "kangaroo-scale4x.png",
+    "changedPixelsVsNearest": 125,
+    "size": [
+      128,
+      92
+    ],
+    "sourceSHA256": "d06d398f3e73f308e0def154995dd92640ed5a81fbf2df9e654c1b2ff27759a4",
+    "rgbaPalettePreserved": true
+  },
+  {
+    "file": "koala-nearest-4x.png",
+    "changedPixelsVsNearest": 0,
+    "size": [
+      128,
+      92
+    ],
+    "sourceSHA256": "e0629629209b91d968e56355f2ed486dbb25a5d68a41f6100feb142527daf917",
+    "rgbaPalettePreserved": true
+  },
+  {
+    "file": "koala-scale2x-nearest-4x.png",
+    "changedPixelsVsNearest": 136,
+    "size": [
+      128,
+      92
+    ],
+    "sourceSHA256": "e0629629209b91d968e56355f2ed486dbb25a5d68a41f6100feb142527daf917",
+    "rgbaPalettePreserved": true
+  },
+  {
+    "file": "koala-scale4x.png",
+    "changedPixelsVsNearest": 180,
+    "size": [
+      128,
+      92
+    ],
+    "sourceSHA256": "e0629629209b91d968e56355f2ed486dbb25a5d68a41f6100feb142527daf917",
+    "rgbaPalettePreserved": true
+  },
+  {
+    "file": "cockatoo-nearest-4x.png",
+    "changedPixelsVsNearest": 0,
+    "size": [
+      128,
+      92
+    ],
+    "sourceSHA256": "bf5f887fcc8bd53311fdd4be9aa8141bc5b139c0b50026dd6475fca5e19432c8",
+    "rgbaPalettePreserved": true
+  },
+  {
+    "file": "cockatoo-scale2x-nearest-4x.png",
+    "changedPixelsVsNearest": 188,
+    "size": [
+      128,
+      92
+    ],
+    "sourceSHA256": "bf5f887fcc8bd53311fdd4be9aa8141bc5b139c0b50026dd6475fca5e19432c8",
+    "rgbaPalettePreserved": true
+  },
+  {
+    "file": "cockatoo-scale4x.png",
+    "changedPixelsVsNearest": 231,
+    "size": [
+      128,
+      92
+    ],
+    "sourceSHA256": "bf5f887fcc8bd53311fdd4be9aa8141bc5b139c0b50026dd6475fca5e19432c8",
+    "rgbaPalettePreserved": true
+  }
+]

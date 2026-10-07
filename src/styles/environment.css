@@ -36,3 +36,41 @@ html[data-page-hidden="true"] .atmosphere-mote,
 html[data-page-hidden="true"] .art-spark { animation-play-state: paused; }
 @media (prefers-reduced-motion: reduce) { .atmosphere-mote { animation: none !important; opacity: .22; } }
 @media (max-width: 767px) { .atmosphere-mote:nth-last-child(-n+2) { display: none; } }
+
+/* Region motion: six sparse motes, two atmospheric planes, actual vector depth. */
+.atmosphere-light { animation: light-drift 26s ease-in-out infinite alternate; }
+.atmosphere-band { position: absolute; width: 120%; left: -10%; height: 28%; top: 55%; opacity: .08;
+  background: linear-gradient(0deg, transparent, #d6d6ba, transparent); animation: haze-drift 31s ease-in-out infinite alternate; }
+.band-near { top: 73%; opacity: .05; animation-duration: 39s; animation-delay: -17s; }
+.atmosphere-farm .atmosphere-band { display: none; }
+.atmosphere-farm .atmosphere-light { background: radial-gradient(ellipse at 70% 22%, #f0d79722, transparent 60%); }
+.atmosphere-farm .atmosphere-mote { border-radius: 50%; background: #e9df9d; }
+.atmosphere-outback .atmosphere-band { height: 13%; top: 60%; background: linear-gradient(0deg, transparent, #dcab8520, transparent); animation-duration: 19s; }
+.atmosphere-outback .atmosphere-mote { width: 3px; height: 1px; animation-name: dust-drift; }
+.atmosphere-savanna .atmosphere-band { opacity: .035; background: linear-gradient(0deg, transparent, #e1c486, transparent); }
+.atmosphere-savanna .atmosphere-mote { animation-name: dust-drift; }
+.atmosphere-northern .atmosphere-band { height: 34%; opacity: .1; background: linear-gradient(0deg, transparent, #b5d1cd, transparent); }
+.atmosphere-polar .band-far { top: 9%; height: 40%; opacity: .07; background: linear-gradient(115deg, transparent 20%, #9ccabf 47%, #b4b5d4 62%, transparent 82%); }
+.atmosphere-polar .band-near { top: 69%; height: 25%; opacity: .06; background: linear-gradient(0deg, transparent, #bedae0, transparent); }
+.land-far-layer { animation: landscape-far 33s ease-in-out infinite alternate; }
+.land-mid-layer { animation: landscape-mid 29s ease-in-out -11s infinite alternate; }
+.land-near-layer { animation: landscape-near 27s ease-in-out -7s infinite alternate; }
+.land-leaves { transform-box: fill-box; transform-origin: 50% 100%; animation: leaf-wind 12s ease-in-out infinite alternate; }
+.land-grass { transform-box: fill-box; transform-origin: 50% 100%; animation: grass-wind 9s ease-in-out -3s infinite alternate; }
+.land-sun-glow { animation: sun-breathe 22s ease-in-out infinite alternate; }
+.land-ice-shimmer { animation: ice-shimmer 18s ease-in-out -8s infinite; }
+@keyframes light-drift { to { transform: translate(-3%, 2%); opacity: .55; } }
+@keyframes haze-drift { from { transform: translate(-3%, 1%); } to { transform: translate(4%, -2%); } }
+@keyframes dust-drift { 0%,100% { transform: translate(-12px, 3px); opacity: .1; } 50% { transform: translate(20px, -7px); opacity: .3; } }
+@keyframes landscape-far { to { transform: translateX(3px); } }
+@keyframes landscape-mid { to { transform: translate(-4px, 1px); } }
+@keyframes landscape-near { to { transform: translateX(5px); } }
+@keyframes leaf-wind { to { transform: rotate(1.2deg); } }
+@keyframes grass-wind { to { transform: skewX(4deg); } }
+@keyframes sun-breathe { to { opacity: .1; } }
+@keyframes ice-shimmer { 0%,80%,100% { opacity: .12; } 88% { opacity: .5; } }
+html[data-page-hidden="true"] :is(.atmosphere-light,.atmosphere-band,.land-far-layer,.land-mid-layer,.land-near-layer,.land-leaves,.land-grass,.land-sun-glow,.land-ice-shimmer) { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  :is(.atmosphere-light,.atmosphere-band,.land-far-layer,.land-mid-layer,.land-near-layer,.land-leaves,.land-grass,.land-sun-glow,.land-ice-shimmer) { animation: none !important; transform: none !important; }
+}
+@media (max-width: 767px) { .band-near { display: none; } }

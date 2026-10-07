@@ -257,12 +257,28 @@
   .animal-card:hover .animal-sprite { transform: none; }
 }
 
-/* Approved flat screenshot crops. Existing overlays and atmosphere stay separate. */
-.region-game-art { object-fit: cover; image-rendering: pixelated; filter: brightness(.62) saturate(.72); }
-.region-hero-art .region-game-art { transform: scale(1.04); }
 .animal-art-stage img.animal-game-icon { width: 96px; height: 69px; object-fit: contain; image-rendering: pixelated; }
 .animal-guide-art img.animal-game-icon { width: 96px; height: 69px; image-rendering: pixelated; }
 .animal-guide-art .guide-art-ground { width: 80px; top: calc(50% + 34px); }
+.animal-art-stage img.animal-hq-icon { width: auto; height: auto; max-width: min(112px, 75%); max-height: 100px; }
+.animal-guide-art img.animal-hq-icon { width: auto; height: auto; max-width: min(160px, 65%); max-height: 160px; }
+.animal-guide-art:has(.animal-hq-icon) .guide-art-ground { display: none; }
 @media (max-width: 767px) {
   .animal-art-stage img.animal-game-icon { width: 64px; height: 46px; }
+  .animal-art-stage img.animal-hq-icon { width: auto; height: auto; max-width: min(88px, 75%); max-height: 80px; }
 }
+
+/* Sparse labels; environmental identity lives in vector geometry and motion. */
+.hero-animal-count { margin: 26px 0 10px; color: var(--accent); font: 12px var(--font-geist-mono), monospace; letter-spacing: 1px; }
+.hero-roster-summary { margin: 0 0 24px; color: var(--muted); font: 10px var(--font-geist-mono), monospace; line-height: 1.8; }
+.land-snow { fill: #d8e4e0; opacity: .65; }
+.land-sun-glow { color: var(--sun); }
+.vector-farm .land-ground { fill: #334f32; }
+.vector-farm .land-mid { fill: #4f6840; }
+.vector-outback .land-mid { fill: #92543d; }
+.vector-outback .land-ground { fill: #583b2e; }
+.vector-polar .land-mid { fill: #759da9; }
+.vector-polar .land-ground { fill: #afc6ce; }
+.animal-guide-status { font-size: 17px; transition: transform 160ms ease, color 160ms ease; }
+.animal-card:is(:hover,:focus-visible) .animal-guide-status { transform: translate(2px,-2px); }
+@media (prefers-reduced-motion: reduce) { .animal-card:is(:hover,:focus-visible) .animal-guide-status { transform: none; } }

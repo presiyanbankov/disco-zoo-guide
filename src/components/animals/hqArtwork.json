@@ -1,0 +1,152 @@
+{
+  "/game/animals/farm/sheep.png": {
+    "src": "/game/animals-hq/farm/sheep.png",
+    "width": 76,
+    "height": 60
+  },
+  "/game/animals/farm/pig.png": {
+    "src": "/game/animals-hq/farm/pig.png",
+    "width": 76,
+    "height": 60
+  },
+  "/game/animals/farm/rabbit.png": {
+    "src": "/game/animals-hq/farm/rabbit.png",
+    "width": 52,
+    "height": 68
+  },
+  "/game/animals/farm/horse.png": {
+    "src": "/game/animals-hq/farm/horse.png",
+    "width": 76,
+    "height": 72
+  },
+  "/game/animals/farm/cow.png": {
+    "src": "/game/animals-hq/farm/cow.png",
+    "width": 76,
+    "height": 60
+  },
+  "/game/animals/farm/unicorn.png": {
+    "src": "/game/animals-hq/farm/unicorn.png",
+    "width": 76,
+    "height": 84
+  },
+  "/game/animals/outback/kangaroo.png": {
+    "src": "/game/animals-hq/outback/kangaroo.png",
+    "width": 92,
+    "height": 76
+  },
+  "/game/animals/outback/platypus.png": {
+    "src": "/game/animals-hq/outback/platypus.png",
+    "width": 92,
+    "height": 44
+  },
+  "/game/animals/outback/crocodile.png": {
+    "src": "/game/animals-hq/outback/crocodile.png",
+    "width": 92,
+    "height": 36
+  },
+  "/game/animals/outback/koala.png": {
+    "src": "/game/animals-hq/outback/koala.png",
+    "width": 76,
+    "height": 68
+  },
+  "/game/animals/outback/cockatoo.png": {
+    "src": "/game/animals-hq/outback/cockatoo.png",
+    "width": 76,
+    "height": 76
+  },
+  "/game/animals/outback/tiddalik.png": {
+    "src": "/game/animals-hq/outback/tiddalik.png",
+    "width": 92,
+    "height": 68
+  },
+  "/game/animals/savanna/zebra.png": {
+    "src": "/game/animals-hq/savanna/zebra.png",
+    "width": 112,
+    "height": 106
+  },
+  "/game/animals/savanna/hippo.png": {
+    "src": "/game/animals-hq/savanna/hippo.png",
+    "width": 124,
+    "height": 88
+  },
+  "/game/animals/savanna/giraffe.png": {
+    "src": "/game/animals-hq/savanna/giraffe.png",
+    "width": 100,
+    "height": 130
+  },
+  "/game/animals/savanna/lion.png": {
+    "src": "/game/animals-hq/savanna/lion.png",
+    "width": 112,
+    "height": 88
+  },
+  "/game/animals/savanna/elephant.png": {
+    "src": "/game/animals-hq/savanna/elephant.png",
+    "width": 112,
+    "height": 88
+  },
+  "/game/animals/savanna/gryphon.png": {
+    "src": "/game/animals-hq/savanna/gryphon.png",
+    "width": 124,
+    "height": 124
+  },
+  "/game/animals/northern/bear.png": {
+    "src": "/game/animals-hq/northern/bear.png",
+    "width": 124,
+    "height": 81
+  },
+  "/game/animals/northern/skunk.png": {
+    "src": "/game/animals-hq/northern/skunk.png",
+    "width": 124,
+    "height": 88
+  },
+  "/game/animals/northern/beaver.png": {
+    "src": "/game/animals-hq/northern/beaver.png",
+    "width": 136,
+    "height": 70
+  },
+  "/game/animals/northern/moose.png": {
+    "src": "/game/animals-hq/northern/moose.png",
+    "width": 124,
+    "height": 112
+  },
+  "/game/animals/northern/fox.png": {
+    "src": "/game/animals-hq/northern/fox.png",
+    "width": 136,
+    "height": 100
+  },
+  "/game/animals/northern/sasquatch.png": {
+    "src": "/game/animals-hq/northern/sasquatch.png",
+    "width": 88,
+    "height": 130
+  },
+  "/game/animals/polar/penguin.png": {
+    "src": "/game/animals-hq/polar/penguin.png",
+    "width": 76,
+    "height": 100
+  },
+  "/game/animals/polar/seal.png": {
+    "src": "/game/animals-hq/polar/seal.png",
+    "width": 136,
+    "height": 88
+  },
+  "/game/animals/polar/muskox.png": {
+    "src": "/game/animals-hq/polar/muskox.png",
+    "width": 136,
+    "height": 100
+  },
+  "/game/animals/polar/polar-bear.png": {
+    "src": "/game/animals-hq/polar/polar-bear.png",
+    "width": 136,
+    "height": 88
+  },
+  "/game/animals/polar/walrus.png": {
+    "src": "/game/animals-hq/polar/walrus.png",
+    "width": 136,
+    "height": 88
+  },
+  "/game/animals/polar/yeti.png": {
+    "src": "/game/animals-hq/polar/yeti.png",
+    "width": 88,
+    "height": 130
+  }
+}

@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Disco Zoo Field Guide — Your next great rescue",
-  description: "An unofficial Disco Zoo companion. Explore Farm, Outback, Savanna, Northern, and Polar in a field guide for curious zookeepers.",
+  description: "An unofficial Disco Zoo companion. Explore Farm, Outback, Savanna, Northern, and Polar with animal patterns and search sequences.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

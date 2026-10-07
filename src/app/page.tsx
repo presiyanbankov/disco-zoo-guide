@@ -8,14 +8,14 @@ export default function Home() {
     <SiteHeader />
     <main>
       <section className="intro" aria-labelledby="page-title">
-        <div className="eyebrow"><span className="status-dot"/> A LITTLE KNOWLEDGE. A BIGGER ZOO.</div>
-        <h1 id="page-title">Your next great<br/><span>rescue starts here.</span></h1>
-        <div className="intro-bottom"><p>A field guide for curious zookeepers.<br/>Explore the habitats. Get to know the wildlife.</p><span className="intro-coordinate">EST. 2014 <span>/</span> STILL EXPLORING</span></div>
+        <div className="eyebrow"><span className="status-dot"/> UNOFFICIAL COMPANION</div>
+        <h1 id="page-title">Disco Zoo<br/><span>guide.</span></h1>
+        <div className="intro-bottom"><p>Animal patterns and complete search sequences.</p><span className="intro-coordinate">05 REGIONS <span>/</span> 30 ANIMALS</span></div>
       </section>
       <RegionExplorer/>
       <section className="rescue-teaser" aria-labelledby="rescue-title">
         <div className="teaser-grid" aria-hidden="true">{Array.from({length:25},(_,i)=><span key={i} className={i===12?"target":i===7||i===18?"marked":""}>{i===12?"+":""}</span>)}</div>
-        <div><div className="eyebrow">LESS GUESSWORK. MORE WILDLIFE.</div><h2 id="rescue-title">Make every rescue count.</h2><p>An interactive rescue optimizer is on the horizon.</p></div><span className="coming-soon"><span className="status-dot"/> COMING SOON</span>
+        <div><div className="eyebrow">RESCUE TOOLS</div><h2 id="rescue-title">Interactive rescue calculator</h2><p>Coming soon.</p></div><span className="coming-soon"><span className="status-dot"/> COMING SOON</span>
       </section>
     </main>
     <SiteFooter />

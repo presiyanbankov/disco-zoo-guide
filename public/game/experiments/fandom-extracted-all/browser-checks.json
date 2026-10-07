@@ -1,0 +1,4600 @@
+{
+  "layouts": [
+    {
+      "width": 375,
+      "path": "/regions/farm",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/sheep.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/pig.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/rabbit.png",
+          "hq": true,
+          "natural": [
+            52,
+            68
+          ],
+          "size": [
+            52,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/horse.png",
+          "hq": true,
+          "natural": [
+            76,
+            72
+          ],
+          "size": [
+            76,
+            72
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/cow.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/unicorn.png",
+          "hq": true,
+          "natural": [
+            76,
+            84
+          ],
+          "size": [
+            72.375,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/outback",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/kangaroo.png",
+          "hq": true,
+          "natural": [
+            92,
+            76
+          ],
+          "size": [
+            87.984375,
+            72.6875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/outback/platypus.png",
+          "hq": true,
+          "natural": [
+            92,
+            44
+          ],
+          "size": [
+            87.96875,
+            42.078125
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/crocodile.png",
+          "hq": true,
+          "natural": [
+            92,
+            36
+          ],
+          "size": [
+            87.953125,
+            34.421875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/outback/koala.png",
+          "hq": true,
+          "natural": [
+            76,
+            68
+          ],
+          "size": [
+            76,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/cockatoo.png",
+          "hq": true,
+          "natural": [
+            76,
+            76
+          ],
+          "size": [
+            76,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/tiddalik.png",
+          "hq": true,
+          "natural": [
+            92,
+            68
+          ],
+          "size": [
+            87.96875,
+            65.03125
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/savanna",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/zebra.png",
+          "hq": true,
+          "natural": [
+            112,
+            106
+          ],
+          "size": [
+            84.515625,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/savanna/hippo.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            87.96875,
+            62.4375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/savanna/giraffe.png",
+          "hq": true,
+          "natural": [
+            100,
+            130
+          ],
+          "size": [
+            61.53125,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/savanna/lion.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            87.984375,
+            69.140625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/savanna/elephant.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            87.984375,
+            69.140625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/savanna/gryphon.png",
+          "hq": true,
+          "natural": [
+            124,
+            124
+          ],
+          "size": [
+            80,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/northern",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/bear.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            87.96875,
+            57.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/northern/skunk.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            87.96875,
+            62.4375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/northern/beaver.png",
+          "hq": true,
+          "natural": [
+            136,
+            70
+          ],
+          "size": [
+            87.96875,
+            45.28125
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/northern/moose.png",
+          "hq": true,
+          "natural": [
+            124,
+            112
+          ],
+          "size": [
+            87.96875,
+            79.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/northern/fox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            87.984375,
+            64.703125
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/northern/sasquatch.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            54.140625,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/polar",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/penguin.png",
+          "hq": true,
+          "natural": [
+            76,
+            100
+          ],
+          "size": [
+            60.796875,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/seal.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            87.984375,
+            56.9375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/muskox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            87.984375,
+            64.703125
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/polar-bear.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            87.984375,
+            56.9375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/walrus.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            87.984375,
+            56.9375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/yeti.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            54.140625,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/farm/sheep",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/sheep.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/farm/pig",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/pig.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/farm/rabbit",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/rabbit.png",
+          "hq": true,
+          "natural": [
+            52,
+            68
+          ],
+          "size": [
+            52,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/farm/horse",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/horse.png",
+          "hq": true,
+          "natural": [
+            76,
+            72
+          ],
+          "size": [
+            76,
+            72
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/farm/cow",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/cow.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/farm/unicorn",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/unicorn.png",
+          "hq": true,
+          "natural": [
+            76,
+            84
+          ],
+          "size": [
+            76,
+            84
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/outback/kangaroo",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/kangaroo.png",
+          "hq": true,
+          "natural": [
+            92,
+            76
+          ],
+          "size": [
+            92,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/outback/platypus",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/platypus.png",
+          "hq": true,
+          "natural": [
+            92,
+            44
+          ],
+          "size": [
+            92,
+            44
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/outback/crocodile",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/crocodile.png",
+          "hq": true,
+          "natural": [
+            92,
+            36
+          ],
+          "size": [
+            92,
+            36
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/outback/koala",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/koala.png",
+          "hq": true,
+          "natural": [
+            76,
+            68
+          ],
+          "size": [
+            76,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/outback/cockatoo",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/cockatoo.png",
+          "hq": true,
+          "natural": [
+            76,
+            76
+          ],
+          "size": [
+            76,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/outback/tiddalik",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/tiddalik.png",
+          "hq": true,
+          "natural": [
+            92,
+            68
+          ],
+          "size": [
+            92,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/savanna/zebra",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/zebra.png",
+          "hq": true,
+          "natural": [
+            112,
+            106
+          ],
+          "size": [
+            112,
+            106
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/savanna/hippo",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/hippo.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            124,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/savanna/giraffe",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/giraffe.png",
+          "hq": true,
+          "natural": [
+            100,
+            130
+          ],
+          "size": [
+            100,
+            130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/savanna/lion",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/lion.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            112,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/savanna/elephant",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/elephant.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            112,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/savanna/gryphon",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/gryphon.png",
+          "hq": true,
+          "natural": [
+            124,
+            124
+          ],
+          "size": [
+            124,
+            124
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/northern/bear",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/bear.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            124,
+            81
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/northern/skunk",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/skunk.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            124,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/northern/beaver",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/beaver.png",
+          "hq": true,
+          "natural": [
+            136,
+            70
+          ],
+          "size": [
+            136,
+            70
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/northern/moose",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/moose.png",
+          "hq": true,
+          "natural": [
+            124,
+            112
+          ],
+          "size": [
+            124,
+            112
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/northern/fox",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/fox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            136,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/northern/sasquatch",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/sasquatch.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            88,
+            130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/polar/penguin",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/penguin.png",
+          "hq": true,
+          "natural": [
+            76,
+            100
+          ],
+          "size": [
+            76,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/polar/seal",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/seal.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/polar/muskox",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/muskox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            136,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/polar/polar-bear",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/polar-bear.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/polar/walrus",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/walrus.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "path": "/regions/polar/yeti",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/yeti.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            88,
+            130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/farm",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/sheep.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/pig.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/rabbit.png",
+          "hq": true,
+          "natural": [
+            52,
+            68
+          ],
+          "size": [
+            52,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/horse.png",
+          "hq": true,
+          "natural": [
+            76,
+            72
+          ],
+          "size": [
+            76,
+            72
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/cow.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/unicorn.png",
+          "hq": true,
+          "natural": [
+            76,
+            84
+          ],
+          "size": [
+            72.375,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/outback",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/kangaroo.png",
+          "hq": true,
+          "natural": [
+            92,
+            76
+          ],
+          "size": [
+            87.984375,
+            72.6875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/outback/platypus.png",
+          "hq": true,
+          "natural": [
+            92,
+            44
+          ],
+          "size": [
+            87.96875,
+            42.078125
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/crocodile.png",
+          "hq": true,
+          "natural": [
+            92,
+            36
+          ],
+          "size": [
+            87.953125,
+            34.421875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/outback/koala.png",
+          "hq": true,
+          "natural": [
+            76,
+            68
+          ],
+          "size": [
+            76,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/cockatoo.png",
+          "hq": true,
+          "natural": [
+            76,
+            76
+          ],
+          "size": [
+            76,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/tiddalik.png",
+          "hq": true,
+          "natural": [
+            92,
+            68
+          ],
+          "size": [
+            87.96875,
+            65.03125
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/savanna",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/zebra.png",
+          "hq": true,
+          "natural": [
+            112,
+            106
+          ],
+          "size": [
+            84.515625,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/savanna/hippo.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            87.96875,
+            62.4375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/savanna/giraffe.png",
+          "hq": true,
+          "natural": [
+            100,
+            130
+          ],
+          "size": [
+            61.53125,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/savanna/lion.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            87.984375,
+            69.140625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/savanna/elephant.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            87.984375,
+            69.140625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/savanna/gryphon.png",
+          "hq": true,
+          "natural": [
+            124,
+            124
+          ],
+          "size": [
+            80,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/northern",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/bear.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            87.96875,
+            57.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/northern/skunk.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            87.96875,
+            62.4375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/northern/beaver.png",
+          "hq": true,
+          "natural": [
+            136,
+            70
+          ],
+          "size": [
+            87.96875,
+            45.28125
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/northern/moose.png",
+          "hq": true,
+          "natural": [
+            124,
+            112
+          ],
+          "size": [
+            87.96875,
+            79.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/northern/fox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            87.984375,
+            64.703125
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/northern/sasquatch.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            54.140625,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/polar",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/penguin.png",
+          "hq": true,
+          "natural": [
+            76,
+            100
+          ],
+          "size": [
+            60.796875,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/seal.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            87.984375,
+            56.9375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/muskox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            87.984375,
+            64.703125
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/polar-bear.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            87.984375,
+            56.9375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/walrus.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            87.984375,
+            56.9375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/yeti.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            54.140625,
+            80
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/farm/sheep",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/sheep.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/farm/pig",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/pig.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/farm/rabbit",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/rabbit.png",
+          "hq": true,
+          "natural": [
+            52,
+            68
+          ],
+          "size": [
+            52,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/farm/horse",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/horse.png",
+          "hq": true,
+          "natural": [
+            76,
+            72
+          ],
+          "size": [
+            76,
+            72
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/farm/cow",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/cow.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/farm/unicorn",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/unicorn.png",
+          "hq": true,
+          "natural": [
+            76,
+            84
+          ],
+          "size": [
+            76,
+            84
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/outback/kangaroo",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/kangaroo.png",
+          "hq": true,
+          "natural": [
+            92,
+            76
+          ],
+          "size": [
+            92,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/outback/platypus",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/platypus.png",
+          "hq": true,
+          "natural": [
+            92,
+            44
+          ],
+          "size": [
+            92,
+            44
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/outback/crocodile",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/crocodile.png",
+          "hq": true,
+          "natural": [
+            92,
+            36
+          ],
+          "size": [
+            92,
+            36
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/outback/koala",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/koala.png",
+          "hq": true,
+          "natural": [
+            76,
+            68
+          ],
+          "size": [
+            76,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/outback/cockatoo",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/cockatoo.png",
+          "hq": true,
+          "natural": [
+            76,
+            76
+          ],
+          "size": [
+            76,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/outback/tiddalik",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/tiddalik.png",
+          "hq": true,
+          "natural": [
+            92,
+            68
+          ],
+          "size": [
+            92,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/savanna/zebra",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/zebra.png",
+          "hq": true,
+          "natural": [
+            112,
+            106
+          ],
+          "size": [
+            112,
+            106
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/savanna/hippo",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/hippo.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            124,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/savanna/giraffe",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/giraffe.png",
+          "hq": true,
+          "natural": [
+            100,
+            130
+          ],
+          "size": [
+            100,
+            130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/savanna/lion",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/lion.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            112,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/savanna/elephant",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/elephant.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            112,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/savanna/gryphon",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/gryphon.png",
+          "hq": true,
+          "natural": [
+            124,
+            124
+          ],
+          "size": [
+            124,
+            124
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/northern/bear",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/bear.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            124,
+            81
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/northern/skunk",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/skunk.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            124,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/northern/beaver",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/beaver.png",
+          "hq": true,
+          "natural": [
+            136,
+            70
+          ],
+          "size": [
+            136,
+            70
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/northern/moose",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/moose.png",
+          "hq": true,
+          "natural": [
+            124,
+            112
+          ],
+          "size": [
+            124,
+            112
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/northern/fox",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/fox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            136,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/northern/sasquatch",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/sasquatch.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            88,
+            130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/polar/penguin",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/penguin.png",
+          "hq": true,
+          "natural": [
+            76,
+            100
+          ],
+          "size": [
+            76,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/polar/seal",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/seal.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/polar/muskox",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/muskox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            136,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/polar/polar-bear",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/polar-bear.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/polar/walrus",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/walrus.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "path": "/regions/polar/yeti",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/yeti.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            88,
+            130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/farm",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/sheep.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/farm/pig.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/farm/rabbit.png",
+          "hq": true,
+          "natural": [
+            52,
+            68
+          ],
+          "size": [
+            52,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/farm/horse.png",
+          "hq": true,
+          "natural": [
+            76,
+            72
+          ],
+          "size": [
+            76,
+            72
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/cow.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/unicorn.png",
+          "hq": true,
+          "natural": [
+            76,
+            84
+          ],
+          "size": [
+            76,
+            84
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/outback",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/kangaroo.png",
+          "hq": true,
+          "natural": [
+            92,
+            76
+          ],
+          "size": [
+            92,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/outback/platypus.png",
+          "hq": true,
+          "natural": [
+            92,
+            44
+          ],
+          "size": [
+            92,
+            44
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/outback/crocodile.png",
+          "hq": true,
+          "natural": [
+            92,
+            36
+          ],
+          "size": [
+            92,
+            36
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/outback/koala.png",
+          "hq": true,
+          "natural": [
+            76,
+            68
+          ],
+          "size": [
+            76,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/cockatoo.png",
+          "hq": true,
+          "natural": [
+            76,
+            76
+          ],
+          "size": [
+            76,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/tiddalik.png",
+          "hq": true,
+          "natural": [
+            92,
+            68
+          ],
+          "size": [
+            92,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/savanna",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/zebra.png",
+          "hq": true,
+          "natural": [
+            112,
+            106
+          ],
+          "size": [
+            105.65625,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/savanna/hippo.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            111.96875,
+            79.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/savanna/giraffe.png",
+          "hq": true,
+          "natural": [
+            100,
+            130
+          ],
+          "size": [
+            76.921875,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/savanna/lion.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            112,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/savanna/elephant.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            112,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/savanna/gryphon.png",
+          "hq": true,
+          "natural": [
+            124,
+            124
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/northern",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/bear.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            111.984375,
+            73.15625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/northern/skunk.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            111.96875,
+            79.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/northern/beaver.png",
+          "hq": true,
+          "natural": [
+            136,
+            70
+          ],
+          "size": [
+            111.984375,
+            57.640625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/northern/moose.png",
+          "hq": true,
+          "natural": [
+            124,
+            112
+          ],
+          "size": [
+            110.703125,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/northern/fox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            111.984375,
+            82.34375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/northern/sasquatch.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            67.6875,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/polar",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/penguin.png",
+          "hq": true,
+          "natural": [
+            76,
+            100
+          ],
+          "size": [
+            76,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/seal.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            111.984375,
+            72.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/polar/muskox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            111.984375,
+            82.34375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/polar/polar-bear.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            111.984375,
+            72.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/walrus.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            111.984375,
+            72.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/yeti.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            67.6875,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/farm/sheep",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/sheep.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/farm/pig",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/pig.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/farm/rabbit",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/rabbit.png",
+          "hq": true,
+          "natural": [
+            52,
+            68
+          ],
+          "size": [
+            52,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/farm/horse",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/horse.png",
+          "hq": true,
+          "natural": [
+            76,
+            72
+          ],
+          "size": [
+            76,
+            72
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/farm/cow",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/cow.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/farm/unicorn",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/unicorn.png",
+          "hq": true,
+          "natural": [
+            76,
+            84
+          ],
+          "size": [
+            76,
+            84
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/outback/kangaroo",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/kangaroo.png",
+          "hq": true,
+          "natural": [
+            92,
+            76
+          ],
+          "size": [
+            92,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/outback/platypus",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/platypus.png",
+          "hq": true,
+          "natural": [
+            92,
+            44
+          ],
+          "size": [
+            92,
+            44
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/outback/crocodile",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/crocodile.png",
+          "hq": true,
+          "natural": [
+            92,
+            36
+          ],
+          "size": [
+            92,
+            36
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/outback/koala",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/koala.png",
+          "hq": true,
+          "natural": [
+            76,
+            68
+          ],
+          "size": [
+            76,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/outback/cockatoo",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/cockatoo.png",
+          "hq": true,
+          "natural": [
+            76,
+            76
+          ],
+          "size": [
+            76,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/outback/tiddalik",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/tiddalik.png",
+          "hq": true,
+          "natural": [
+            92,
+            68
+          ],
+          "size": [
+            92,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/savanna/zebra",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/zebra.png",
+          "hq": true,
+          "natural": [
+            112,
+            106
+          ],
+          "size": [
+            112,
+            106
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/savanna/hippo",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/hippo.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            124,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/savanna/giraffe",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/giraffe.png",
+          "hq": true,
+          "natural": [
+            100,
+            130
+          ],
+          "size": [
+            100,
+            130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/savanna/lion",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/lion.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            112,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/savanna/elephant",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/elephant.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            112,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/savanna/gryphon",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/gryphon.png",
+          "hq": true,
+          "natural": [
+            124,
+            124
+          ],
+          "size": [
+            124,
+            124
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/northern/bear",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/bear.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            124,
+            81
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/northern/skunk",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/skunk.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            124,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/northern/beaver",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/beaver.png",
+          "hq": true,
+          "natural": [
+            136,
+            70
+          ],
+          "size": [
+            136,
+            70
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/northern/moose",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/moose.png",
+          "hq": true,
+          "natural": [
+            124,
+            112
+          ],
+          "size": [
+            124,
+            112
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/northern/fox",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/fox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            136,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/northern/sasquatch",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/sasquatch.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            88,
+            130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/polar/penguin",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/penguin.png",
+          "hq": true,
+          "natural": [
+            76,
+            100
+          ],
+          "size": [
+            76,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/polar/seal",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/seal.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/polar/muskox",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/muskox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            136,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/polar/polar-bear",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/polar-bear.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/polar/walrus",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/walrus.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "path": "/regions/polar/yeti",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/yeti.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            88,
+            130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/farm",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/sheep.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/pig.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/rabbit.png",
+          "hq": true,
+          "natural": [
+            52,
+            68
+          ],
+          "size": [
+            52,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/horse.png",
+          "hq": true,
+          "natural": [
+            76,
+            72
+          ],
+          "size": [
+            76,
+            72
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/cow.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/farm/unicorn.png",
+          "hq": true,
+          "natural": [
+            76,
+            84
+          ],
+          "size": [
+            76,
+            84
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/outback",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/kangaroo.png",
+          "hq": true,
+          "natural": [
+            92,
+            76
+          ],
+          "size": [
+            92,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/platypus.png",
+          "hq": true,
+          "natural": [
+            92,
+            44
+          ],
+          "size": [
+            92,
+            44
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/crocodile.png",
+          "hq": true,
+          "natural": [
+            92,
+            36
+          ],
+          "size": [
+            92,
+            36
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/koala.png",
+          "hq": true,
+          "natural": [
+            76,
+            68
+          ],
+          "size": [
+            76,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/cockatoo.png",
+          "hq": true,
+          "natural": [
+            76,
+            76
+          ],
+          "size": [
+            76,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/outback/tiddalik.png",
+          "hq": true,
+          "natural": [
+            92,
+            68
+          ],
+          "size": [
+            92,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/savanna",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/zebra.png",
+          "hq": true,
+          "natural": [
+            112,
+            106
+          ],
+          "size": [
+            105.65625,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/savanna/hippo.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            111.96875,
+            79.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/savanna/giraffe.png",
+          "hq": true,
+          "natural": [
+            100,
+            130
+          ],
+          "size": [
+            76.921875,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/savanna/lion.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            112,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/savanna/elephant.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            112,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/savanna/gryphon.png",
+          "hq": true,
+          "natural": [
+            124,
+            124
+          ],
+          "size": [
+            100,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/northern",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/bear.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            111.984375,
+            73.15625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/northern/skunk.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            111.96875,
+            79.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/northern/beaver.png",
+          "hq": true,
+          "natural": [
+            136,
+            70
+          ],
+          "size": [
+            111.984375,
+            57.640625
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/northern/moose.png",
+          "hq": true,
+          "natural": [
+            124,
+            112
+          ],
+          "size": [
+            110.703125,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/northern/fox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            111.984375,
+            82.34375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/northern/sasquatch.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            67.6875,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/polar",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/penguin.png",
+          "hq": true,
+          "natural": [
+            76,
+            100
+          ],
+          "size": [
+            76,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        },
+        {
+          "src": "/game/animals-hq/polar/seal.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            111.984375,
+            72.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/muskox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            111.984375,
+            82.34375
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/polar-bear.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            111.984375,
+            72.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/walrus.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            111.984375,
+            72.46875
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0.0078125
+        },
+        {
+          "src": "/game/animals-hq/polar/yeti.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            67.6875,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/farm/sheep",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/sheep.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/farm/pig",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/pig.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/farm/rabbit",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/rabbit.png",
+          "hq": true,
+          "natural": [
+            52,
+            68
+          ],
+          "size": [
+            52,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/farm/horse",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/horse.png",
+          "hq": true,
+          "natural": [
+            76,
+            72
+          ],
+          "size": [
+            76,
+            72
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/farm/cow",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/cow.png",
+          "hq": true,
+          "natural": [
+            76,
+            60
+          ],
+          "size": [
+            76,
+            60
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/farm/unicorn",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/farm/unicorn.png",
+          "hq": true,
+          "natural": [
+            76,
+            84
+          ],
+          "size": [
+            76,
+            84
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/outback/kangaroo",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/kangaroo.png",
+          "hq": true,
+          "natural": [
+            92,
+            76
+          ],
+          "size": [
+            92,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/outback/platypus",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/platypus.png",
+          "hq": true,
+          "natural": [
+            92,
+            44
+          ],
+          "size": [
+            92,
+            44
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/outback/crocodile",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/crocodile.png",
+          "hq": true,
+          "natural": [
+            92,
+            36
+          ],
+          "size": [
+            92,
+            36
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/outback/koala",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/koala.png",
+          "hq": true,
+          "natural": [
+            76,
+            68
+          ],
+          "size": [
+            76,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/outback/cockatoo",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/cockatoo.png",
+          "hq": true,
+          "natural": [
+            76,
+            76
+          ],
+          "size": [
+            76,
+            76
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/outback/tiddalik",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/outback/tiddalik.png",
+          "hq": true,
+          "natural": [
+            92,
+            68
+          ],
+          "size": [
+            92,
+            68
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/savanna/zebra",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/zebra.png",
+          "hq": true,
+          "natural": [
+            112,
+            106
+          ],
+          "size": [
+            112,
+            106
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/savanna/hippo",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/hippo.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            124,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/savanna/giraffe",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/giraffe.png",
+          "hq": true,
+          "natural": [
+            100,
+            130
+          ],
+          "size": [
+            100,
+            130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/savanna/lion",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/lion.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            112,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/savanna/elephant",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/elephant.png",
+          "hq": true,
+          "natural": [
+            112,
+            88
+          ],
+          "size": [
+            112,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/savanna/gryphon",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/savanna/gryphon.png",
+          "hq": true,
+          "natural": [
+            124,
+            124
+          ],
+          "size": [
+            124,
+            124
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/northern/bear",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/bear.png",
+          "hq": true,
+          "natural": [
+            124,
+            81
+          ],
+          "size": [
+            124,
+            81
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/northern/skunk",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/skunk.png",
+          "hq": true,
+          "natural": [
+            124,
+            88
+          ],
+          "size": [
+            124,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/northern/beaver",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/beaver.png",
+          "hq": true,
+          "natural": [
+            136,
+            70
+          ],
+          "size": [
+            136,
+            70
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/northern/moose",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/moose.png",
+          "hq": true,
+          "natural": [
+            124,
+            112
+          ],
+          "size": [
+            124,
+            112
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/northern/fox",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/fox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            136,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/northern/sasquatch",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/northern/sasquatch.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            88,
+            130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/polar/penguin",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/penguin.png",
+          "hq": true,
+          "natural": [
+            76,
+            100
+          ],
+          "size": [
+            76,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/polar/seal",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/seal.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/polar/muskox",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/muskox.png",
+          "hq": true,
+          "natural": [
+            136,
+            100
+          ],
+          "size": [
+            136,
+            100
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/polar/polar-bear",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/polar-bear.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/polar/walrus",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/walrus.png",
+          "hq": true,
+          "natural": [
+            136,
+            88
+          ],
+          "size": [
+            136,
+            88
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "path": "/regions/polar/yeti",
+      "overflow": false,
+      "icons": [
+        {
+          "src": "/game/animals-hq/polar/yeti.png",
+          "hq": true,
+          "natural": [
+            88,
+            130
+          ],
+          "size": [
+            88,
+            130
+          ],
+          "crisp": true,
+          "clipped": false,
+          "horizontalCenterError": 0
+        }
+      ]
+    }
+  ],
+  "reviewWidths": [
+    375,
+    390,
+    768,
+    1440
+  ],
+  "hqFallback": true,
+  "unavailable": true,
+  "intentionalFailures": [
+    "http://localhost:3108/game/animals-hq/farm/pig.png",
+    "http://localhost:3108/game/animals-hq/farm/pig.png",
+    "http://localhost:3108/game/animals-hq/farm/pig.png",
+    "http://localhost:3108/game/animals-hq/farm/pig.png",
+    "http://localhost:3108/game/animals/farm/pig.png"
+  ],
+  "errors": []
+}

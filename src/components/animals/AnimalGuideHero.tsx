@@ -13,14 +13,13 @@ export function AnimalGuideHero({ animal, region, index }: { animal: AnimalGuide
         <div className="eyebrow">ANIMAL FIELD NOTES / 0{index + 1}</div>
         <h1 id="page-title">{animal.name}<span>.</span></h1>
         <div className={`animal-guide-taxonomy rarity-${animal.rarity}`}><span className="guide-rarity">{animal.rarity}</span><Link href={`/regions/${region.id}`}>{region.name} region <span aria-hidden="true">↗</span></Link></div>
-        <p className="animal-guide-deck">Know the shape.<br /><span>Read the rescue.</span></p>
         {animal.source === "development-preview" && <p className="animal-preview-note"><span className="preview-badge">ALPHA PREVIEW</span>Sample identity awaiting review. Pattern and strategy have not been supplied.</p>}
       </div>
       <div className="animal-guide-art">
         <RegionAtmosphere region={region.id} />
         <span className="guide-art-label">FIELD STUDY / 0{index + 1}</span>
         <div className="guide-art-lines" aria-hidden="true" />
-        <AnimalArtwork id={animal.id} name={animal.name} imagePath={animal.imagePath} transitionName={`animal-${animal.regionId}-${animal.id}`} />
+        <AnimalArtwork id={animal.id} name={animal.name} imagePath={animal.imagePath} context="detail" transitionName={`animal-${animal.regionId}-${animal.id}`} />
         <span className="guide-art-ground" />
         <span className="guide-art-caption">{animal.imagePath ? `${region.name} / ${animal.name}` : "ORIGINAL PLACEHOLDER ILLUSTRATION"}</span>
       </div>

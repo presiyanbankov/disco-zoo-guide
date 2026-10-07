@@ -73,8 +73,7 @@ Crop format below: x, y, width, height.
   Source: [polar-source.png](https://play-lh.googleusercontent.com/P804P83Vd-ScMIPM_xTgOhT7Ly1Y1TzE9kYWQyK6PWVY4ld1ovIeIfCHWLYC5v17PRWSxpoYXN6rQPsrmnrC=s0) (official Google Play screenshot).
   Notes: inspected crop excludes currency, text, buttons, speech bubbles, fences and interface panels.
 
-Outback and Northern retain the original SVG landscapes in `RegionLandscape.tsx`; their environment candidates were not approved.
-The optional sound cues and ambient CSS particles are separate from the flattened images.
+All five regions now use original vector landscapes in `RegionLandscape.tsx`. The three official crops above are reference-only and are not rendered on production pages. Outback and Northern candidates remain unapproved. Ambient motion is independent CSS.
 
 ## Presentation and verification
 
@@ -83,3 +82,15 @@ The optional sound cues and ambient CSS particles are separate from the flattene
 - All 30 canonical image paths already matched these filenames; no data-file edit was needed.
 - Exact decoded icon pixels and alpha were compared to the approved source rectangles before build.
 - Full sheets and uncropped screenshots are not production/public assets.
+
+## Isolated sprite experiment
+
+`experiments/sprite-upscale/` contains nine 4x variants for Kangaroo, Koala and Cockatoo only, plus a contact sheet and comparison page. All derive from the approved animal crops above. Source PNGs remain untouched; production still uses originals. Methods, source hashes and verification are documented in that folder. No reuse permission is claimed.
+
+## Detail-only derived display asset
+
+`public/game/derived/animals/outback/cockatoo-scale4x.png` is an unchanged copy of the three-sprite Scale4x trial, derived from the approved Cockatoo crop above. Display-only hero override; canonical PNG and data path are untouched. Collections retain nearest-neighbor source rendering. Kangaroo/Koala trials and the other 27 animals are not selected or processed for production. Method and verification details: `derived/README.md`.
+
+## Current HQ display source inventory
+
+All 30 classic animals now prefer reviewed exact-pixel Fandom foreground extractions under `public/game/animals-hq/<region>/<id>.png`. The canonical 32x23 files and their data paths remain unchanged as fallback. Previous Scale4x artwork is retained for reference but is no longer rendered. The complete per-file source URLs, dimensions, shadow masks, enclosed seeds and inspection notes are in [animals-hq/README.md](animals-hq/README.md). Pixel validation is in [the all-animal report](experiments/fandom-extracted-all/validation.json). Unresolved cases: none.

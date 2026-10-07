@@ -8,12 +8,8 @@ export function AnimalCollection({ animals }: { animals: readonly AnimalCardPrev
   return (
     <section className="animal-collection" id="wildlife" aria-labelledby="wildlife-title">
       <div className="section-heading">
-        <div><span className="eyebrow">A CLOSER LOOK</span><h2 id="wildlife-title">Meet the locals<span>.</span></h2></div>
+        <div><span className="eyebrow">COLLECTION</span><h2 id="wildlife-title">Animals<span>.</span></h2></div>
         <span className="collection-count">{String(animals.length).padStart(2, "0")} ANIMALS / 01 MYSTERY</span>
-      </div>
-      <div className="roster-notice">
-        <span className="preview-badge">VERIFIED PATTERNS</span>
-        <p>Owner-reviewed animal patterns. Disco Zoo game icons; search sequences are available in each animal guide.</p>
       </div>
       {rarityLabels.map((rarity) => {
         const group = animals.filter((animal) => animal.rarity === rarity);
