@@ -28,8 +28,6 @@
 .rescue-result-animal[data-participant-kind="pet"]:hover,
 .rescue-result-animal[data-participant-kind="pet"]:active { background: var(--pet-selected); border-color: var(--pet-border-strong); }
 .rescue-result-animal[data-participant-kind="pet"] kbd { color: var(--pet-muted); }
-.dynamic-cell[data-participant-kind="pet"] { background: var(--pet-selected); border-color: var(--pet-border-strong); }
-.rescue-roster-animal[data-participant-kind="pet"] { border-bottom-color: var(--pet-border); }
 .rescue-roster-animal[data-participant-kind="pet"] > div > span,
 .rescue-history li[data-participant-kind="pet"] strong { color: var(--pet-accent); }
 .rescue-history li[data-participant-kind="pet"] { border-color: var(--pet-border); }

@@ -1,0 +1,19 @@
+{
+  "protectedFiles": 71,
+  "unchangedFunctions": [
+    "createDynamicRescueState",
+    "generateRescueWorlds",
+    "filterRescueWorlds",
+    "applyObservation",
+    "undoObservation",
+    "resetObservations",
+    "getPossibleWorlds",
+    "scoreWorldsByHitProbability",
+    "chooseDynamicCell"
+  ],
+  "unchangedScoringWeights": [
+    "balanced",
+    "finish-found",
+    "target"
+  ]
+}

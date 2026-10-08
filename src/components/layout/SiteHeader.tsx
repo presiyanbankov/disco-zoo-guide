@@ -1,5 +1,6 @@
 import { TransitionLink as Link } from "../navigation/TransitionLink";
 import { SoundToggle } from "../audio/SoundToggle";
+import { RescueHeaderLink } from "./RescueHeaderLink";
 import { SITE_VERSION } from "./siteVersion";
 
 export function SiteHeader() {
@@ -12,8 +13,8 @@ export function SiteHeader() {
       <Link href="/#regions" className="header-link">
         Explore regions <span aria-hidden="true">↗</span>
       </Link>
+      <RescueHeaderLink />
       <SoundToggle />
-      <Link href="/rescue" className="rescue-header-link">Rescue assistant</Link>
       <span className="alpha-tag">{SITE_VERSION}</span>
     </header>
   );

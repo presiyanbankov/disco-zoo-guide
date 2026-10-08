@@ -1,6 +1,6 @@
 import type { AnimalPattern } from "../../types/game";
 import { generatePlacements } from "../static/generatePlacements";
-import { BALANCED_STRATEGY, scoreWorldsByStrategy, type RescueStrategy } from "./rescueStrategy";
+import { BALANCED_STRATEGY, resolveTargetStrategy, scoreWorldsByStrategy, type RescueStrategy } from "./rescueStrategy";
 
 export interface RescueParticipant {
   id: string;
@@ -25,7 +25,7 @@ export interface DynamicCellScore {
   strategyScore?: number;
 }
 export interface DynamicRescueResult {
-  status: "ready" | "complete" | "contradiction" | "target-required" | "target-resolved" | "strategy-complete";
+  status: "ready" | "complete" | "contradiction" | "target-required" | "target-resolved" | "strategy-complete" | "strategy-unavailable";
   worldCount: number;
   scores: readonly DynamicCellScore[];
   recommendation: DynamicCellScore | null;
@@ -127,6 +127,10 @@ export function analyzeDynamicRescue(state: DynamicRescueState, strategy: Rescue
 export function analyzeRescueWorlds(state: DynamicRescueState, worlds: readonly RescueWorld[], strategy: RescueStrategy = BALANCED_STRATEGY): DynamicRescueResult {
   // An impossible observation history is a result state, not an exception.
   if (!worlds.length) return { status: "contradiction", worldCount: 0, scores: [], recommendation: null };
+  if (strategy.type === "rarity-focus" && state.participants.every(p => p.kind === "pet")) {
+    return { status: "strategy-unavailable", worldCount: worlds.length, scores: [], recommendation: null };
+  }
+  strategy = resolveTargetStrategy(state, worlds, strategy);
   if (strategy.type === "target" && !state.participants.some(p => p.id === strategy.participantId)) {
     return { status: "target-required", worldCount: worlds.length, scores: [], recommendation: null };
   }

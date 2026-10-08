@@ -6,7 +6,7 @@ import { animalParticipant, petParticipant, validateRescueSetup } from "./rescue
 import type { Animal } from "../../types/game";
 import { analyzeRescueWorlds, getPossibleWorlds, applyObservation, createDynamicRescueState, resetObservations, undoObservation, type DynamicRescueState } from "../../solver/dynamic/dynamicRescueSolver";
 import { REGION_PRESENTATION } from "../regions/regionPresentation";
-import { BALANCED_STRATEGY, DEFAULT_RARITY_PRIORITIES, type PriorityValue, type RarityPriorityConfig, type RescueStrategy } from "../../solver/dynamic/rescueStrategy";
+import { BALANCED_STRATEGY, resolveTargetStrategy, rarityFocusParticipantIds, type RescueStrategy } from "../../solver/dynamic/rescueStrategy";
 import { RescueSetup } from "./RescueSetup";
 import { RescueBoard } from "./RescueBoard";
 
@@ -16,21 +16,41 @@ export function RescueAssistant({ animals }: { animals: readonly Animal[] }) {
   const [petId, setPetId] = useState<string | null>(null);
   const [state, setState] = useState<DynamicRescueState | null>(null);
   const [strategy, setStrategy] = useState<RescueStrategy>(BALANCED_STRATEGY);
-  const [priorities, setPriorities] = useState<RarityPriorityConfig>(DEFAULT_RARITY_PRIORITIES);
+  const [targetTransition, setTargetTransition] = useState("");
   const [lastTarget, setLastTarget] = useState("");
   const [error, setError] = useState<string>();
-  const selected = animals.filter(a => a.regionId === regionId && selectedIds.includes(a.id) && !a.hidden && a.rarity !== "timeless");
+  const selected = selectedIds.flatMap(id => { const a = animals.find(a => a.id === id && a.regionId === regionId && !a.hidden && a.rarity !== "timeless"); return a ? [a] : []; });
   const pet = PET_SPECIES.find(p => p.id === petId);
   const participants = [...selected.map(animalParticipant), ...(pet ? [petParticipant(pet)] : [])];
   const worlds = useMemo(() => state ? getPossibleWorlds(state) : [], [state]);
+  const effectiveStrategy = state ? resolveTargetStrategy(state, worlds, strategy) : strategy;
+  const rarityParticipants = state && effectiveStrategy.type === "rarity-focus" ? rarityFocusParticipantIds(state, worlds) : [];
   const result = useMemo(() => state ? analyzeRescueWorlds(state, worlds, strategy) : null, [state, worlds, strategy]);
-  const onStrategy = (type: RescueStrategy["type"]) => setStrategy(type === "target" ? { type, participantId: lastTarget } : type === "rarity-priority" ? { type, priorities } : { type });
-  const onPriority = (category: keyof RarityPriorityConfig, value: PriorityValue) => {
-    const next = { ...priorities, [category]: value };
-    setPriorities(next);
-    setStrategy({ type: "rarity-priority", priorities: next });
+  const onStrategy = (type: RescueStrategy["type"]) => {
+    setTargetTransition("");
+    setStrategy(type === "target" ? { type, participantId: lastTarget } : { type });
   };
-  const onTarget = (participantId: string) => { setLastTarget(participantId); setStrategy({ type: "target", participantId }); };
+  const onTarget = (participantId: string) => { setTargetTransition(""); setLastTarget(participantId); setStrategy({ type: "target", participantId }); };
+  function report(observation: Parameters<typeof applyObservation>[1]) {
+    if (!state) return;
+    const next = applyObservation(state, observation);
+    const nextStrategy = resolveTargetStrategy(next, getPossibleWorlds(next), effectiveStrategy);
+    if (effectiveStrategy.type === "target" && nextStrategy.type === "target" && nextStrategy.participantId !== effectiveStrategy.participantId) {
+      const before = participants.find(p => p.id === effectiveStrategy.participantId)?.name;
+      const after = participants.find(p => p.id === nextStrategy.participantId)?.name;
+      setTargetTransition(`${before} complete \u2192 targeting ${after}`);
+      setStrategy(nextStrategy); setLastTarget(nextStrategy.participantId);
+    } else setTargetTransition("");
+    setState(next);
+  }
+  function nextRescue() {
+    setState(null); setSelectedIds([]); setPetId(null); setError(undefined); setTargetTransition("");
+    if (strategy.type === "target") { setStrategy({ type: "target", participantId: "" }); setLastTarget(""); }
+    requestAnimationFrame(() => {
+      const control = regionId ? document.getElementById("rescue-animals-heading") : document.querySelector<HTMLElement>(".pet-disclosure-summary");
+      control?.focus({ preventScroll: false });
+    });
+  }
   const region = REGION_PRESENTATION.find(r => r.id === regionId);
 
   function start() {
@@ -40,17 +60,18 @@ export function RescueAssistant({ animals }: { animals: readonly Animal[] }) {
 
   return <div className={`rescue-assistant${regionId ? ` region-${regionId}` : ""}`}>
     {!state || !result ? <RescueSetup regionId={regionId} selectedIds={selectedIds} animals={animals}
-      participants={participants} strategy={strategy} onStrategy={onStrategy} onTarget={onTarget} onPriority={onPriority}
-      petId={petId} onPet={id => { if (id === null || selectedIds.length < 3) setPetId(id); }}
+      participants={participants} strategy={effectiveStrategy} onStrategy={onStrategy} onTarget={onTarget}
+      petId={petId} onPet={id => { if (id === null || selectedIds.length < 3) { setPetId(id); if (id && !selectedIds.length && strategy.type === "rarity-focus") setStrategy(BALANCED_STRATEGY); } }}
       onRegion={id => { if (id === regionId) return; setRegionId(id); setSelectedIds([]); setState(null); setStrategy(BALANCED_STRATEGY); setLastTarget(""); setError(undefined); }}
       onAnimal={id => {
         if (!animals.some(a => a.id === id && a.regionId === regionId && !a.hidden && a.rarity !== "timeless")) return;
+        if (selectedIds.includes(id) && selectedIds.length === 1 && petId && strategy.type === "rarity-focus") setStrategy(BALANCED_STRATEGY);
         setSelectedIds(ids => ids.includes(id) ? ids.filter(i => i !== id) : ids.length < (petId ? 2 : 3) ? [...ids, id] : ids);
       }} onStart={start} />
-      : <RescueBoard key={`${regionId}:${selectedIds.join(",")}`} regionName={selected.length ? region?.name ?? "" : "Pet rescue"} participants={participants} state={state} result={result} strategy={strategy} onStrategy={onStrategy} onTarget={onTarget} onPriority={onPriority}
-        onObservation={observation => setState(previous => previous ? applyObservation(previous, observation) : previous)}
-        onUndo={() => setState(previous => previous ? undoObservation(previous) : previous)}
-        onReset={() => setState(previous => previous ? resetObservations(previous) : previous)}
+      : <RescueBoard key={`${regionId}:${selectedIds.join(",")}`} regionName={selected.length ? region?.name ?? "" : "Pet rescue"} participants={participants} state={state} result={result} strategy={effectiveStrategy} onStrategy={onStrategy} onTarget={onTarget}
+        onObservation={report} rarityParticipants={rarityParticipants} targetTransition={targetTransition} onNext={nextRescue}
+        onUndo={() => { setTargetTransition(""); setState(previous => previous ? undoObservation(previous) : previous); }}
+        onReset={() => { setTargetTransition(""); setState(previous => previous ? resetObservations(previous) : previous); }}
         onChange={() => setState(null)} />}
     {error && <p role="alert">{error}</p>}
   </div>;

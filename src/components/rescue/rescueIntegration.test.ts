@@ -61,7 +61,7 @@ test("contradiction preserves undo/reset, disables reporting, and does not show 
   assert.equal(result.status, "contradiction");
   const html = renderToStaticMarkup(createElement(RescueBoard, { regionName: "Farm", participants: [animals[0]], state, result, ...actions }));
   assert.match(html, /role="alert"/);
-  assert.match(html, /Undo the last result or reset this rescue/);
+  assert.match(html, /Check the last result or undo it/);
   assert.doesNotMatch(html, /data-recommended="true"/);
   assert.equal((html.match(/data-cell-state="[^"]+" disabled=""/g) ?? []).length, 25);
 });
@@ -83,6 +83,6 @@ test("completion appears only after every possible animal tile has been reported
   const result = analyzeDynamicRescue(state);
   assert.equal(result.status, "complete");
   const html = renderToStaticMarkup(createElement(RescueBoard, { regionName: "Farm", participants: [pig], state, result, ...actions }));
-  assert.match(html, /Rescue complete/);
+  assert.match(html, /RESCUE COMPLETE/);
   assert.doesNotMatch(html, /data-recommended="true"/);
 });

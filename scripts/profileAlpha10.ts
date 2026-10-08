@@ -4,7 +4,7 @@ import { ANIMALS } from "../src/data/animals";
 import { PET_SPECIES } from "../src/data/pets";
 import { animalParticipant, petParticipant } from "../src/components/rescue/rescueParticipants";
 import { analyzeDynamicRescue, analyzeRescueWorlds, createDynamicRescueState, getPossibleWorlds } from "../src/solver/dynamic/dynamicRescueSolver";
-import { rarityPriorityStrategy, type RescueStrategy } from "../src/solver/dynamic/rescueStrategy";
+import { RARITY_FOCUS_STRATEGY, type RescueStrategy } from "../src/solver/dynamic/rescueStrategy";
 
 const results = [];
 for (const [count, withPet] of [[1, false], [2, false], [3, false], [1, true], [2, true]] as const) {
@@ -20,7 +20,7 @@ for (const [count, withPet] of [[1, false], [2, false], [3, false], [1, true], [
     for (const selected of combinations) for (const pet of withPet ? PET_SPECIES : [null]) {
       const state = createDynamicRescueState([...selected.map(animalParticipant), ...(pet ? [petParticipant(pet)] : [])]);
       const worlds = getPossibleWorlds(state);
-      const strategies: RescueStrategy[] = [{ type: "balanced" }, { type: "finish-found" }, { type: "target", participantId: state.participants[0].id }, rarityPriorityStrategy()];
+      const strategies: RescueStrategy[] = [{ type: "balanced" }, { type: "finish-found" }, { type: "target", participantId: state.participants[0].id }, RARITY_FOCUS_STRATEGY];
       for (const strategy of strategies) {
         const sample = samples.get(strategy.type) ?? { full: [], policy: [], maxWorlds: 0 };
         // Warm-up once, then three measured end-to-end and policy-only evaluations.
