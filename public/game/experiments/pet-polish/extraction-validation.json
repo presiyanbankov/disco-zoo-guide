@@ -1,0 +1,322 @@
+[
+  {
+    "species": "rabbit",
+    "sourceDimensions": [
+      364,
+      364
+    ],
+    "tile": [
+      0,
+      0,
+      124,
+      124
+    ],
+    "interior": [
+      16,
+      16,
+      112,
+      112
+    ],
+    "seed": [
+      65,
+      78
+    ],
+    "sourceCrop": [
+      30,
+      22,
+      102,
+      106
+    ],
+    "outputDimensions": [
+      72,
+      84
+    ],
+    "retainedPixels": 2464,
+    "rgbChanged": 0,
+    "resampled": false,
+    "alphaValues": [
+      0,
+      255
+    ]
+  },
+  {
+    "species": "bird",
+    "sourceDimensions": [
+      604,
+      244
+    ],
+    "tile": [
+      0,
+      0,
+      124,
+      124
+    ],
+    "interior": [
+      16,
+      16,
+      112,
+      112
+    ],
+    "seed": [
+      60,
+      65
+    ],
+    "sourceCrop": [
+      26,
+      30,
+      106,
+      106
+    ],
+    "outputDimensions": [
+      80,
+      76
+    ],
+    "retainedPixels": 2544,
+    "rgbChanged": 0,
+    "resampled": false,
+    "alphaValues": [
+      0,
+      255
+    ]
+  },
+  {
+    "species": "dog",
+    "sourceDimensions": [
+      244,
+      364
+    ],
+    "tile": [
+      120,
+      0,
+      244,
+      124
+    ],
+    "interior": [
+      16,
+      16,
+      112,
+      112
+    ],
+    "seed": [
+      60,
+      70
+    ],
+    "sourceCrop": [
+      26,
+      34,
+      102,
+      94
+    ],
+    "outputDimensions": [
+      76,
+      60
+    ],
+    "retainedPixels": 1824,
+    "rgbChanged": 0,
+    "resampled": false,
+    "alphaValues": [
+      0,
+      255
+    ]
+  },
+  {
+    "species": "cat",
+    "sourceDimensions": [
+      244,
+      364
+    ],
+    "tile": [
+      0,
+      0,
+      124,
+      124
+    ],
+    "interior": [
+      16,
+      16,
+      112,
+      112
+    ],
+    "seed": [
+      60,
+      70
+    ],
+    "sourceCrop": [
+      26,
+      26,
+      106,
+      102
+    ],
+    "outputDimensions": [
+      80,
+      76
+    ],
+    "retainedPixels": 2544,
+    "rgbChanged": 0,
+    "resampled": false,
+    "alphaValues": [
+      0,
+      255
+    ]
+  },
+  {
+    "species": "fish",
+    "sourceDimensions": [
+      484,
+      364
+    ],
+    "tile": [
+      360,
+      0,
+      484,
+      124
+    ],
+    "interior": [
+      16,
+      16,
+      112,
+      112
+    ],
+    "seed": [
+      60,
+      65
+    ],
+    "sourceCrop": [
+      18,
+      26,
+      110,
+      106
+    ],
+    "outputDimensions": [
+      92,
+      80
+    ],
+    "retainedPixels": 5984,
+    "rgbChanged": 0,
+    "resampled": false,
+    "alphaValues": [
+      0,
+      255
+    ]
+  },
+  {
+    "species": "turtle",
+    "sourceDimensions": [
+      364,
+      364
+    ],
+    "tile": [
+      0,
+      0,
+      124,
+      124
+    ],
+    "interior": [
+      16,
+      16,
+      112,
+      112
+    ],
+    "seed": [
+      60,
+      70
+    ],
+    "sourceCrop": [
+      22,
+      42,
+      106,
+      86
+    ],
+    "outputDimensions": [
+      84,
+      44
+    ],
+    "retainedPixels": 1952,
+    "rgbChanged": 0,
+    "resampled": false,
+    "alphaValues": [
+      0,
+      255
+    ]
+  },
+  {
+    "species": "lizard",
+    "sourceDimensions": [
+      364,
+      368
+    ],
+    "tile": [
+      0,
+      0,
+      124,
+      124
+    ],
+    "interior": [
+      16,
+      16,
+      112,
+      112
+    ],
+    "seed": [
+      60,
+      70
+    ],
+    "sourceCrop": [
+      22,
+      50,
+      106,
+      86
+    ],
+    "outputDimensions": [
+      84,
+      36
+    ],
+    "retainedPixels": 1200,
+    "rgbChanged": 0,
+    "resampled": false,
+    "alphaValues": [
+      0,
+      255
+    ]
+  },
+  {
+    "species": "hamster",
+    "sourceDimensions": [
+      364,
+      364
+    ],
+    "tile": [
+      0,
+      0,
+      124,
+      124
+    ],
+    "interior": [
+      16,
+      16,
+      112,
+      112
+    ],
+    "seed": [
+      60,
+      70
+    ],
+    "sourceCrop": [
+      22,
+      42,
+      106,
+      90
+    ],
+    "outputDimensions": [
+      84,
+      48
+    ],
+    "retainedPixels": 2176,
+    "rgbChanged": 0,
+    "resampled": false,
+    "alphaValues": [
+      0,
+      255
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+/* Pet-only presentation tokens. Authentic tile pixels and region accents stay intact. */
+:root {
+  --pet-accent: #d2aedf;
+  --pet-muted: #b5a6bd;
+  --pet-border: #403247;
+  --pet-border-strong: #8a659a;
+  --pet-surface: #141116;
+  --pet-selected: #281d2f;
+  --pet-empty: #19151d;
+  --pet-fill: #ac83be;
+}
+.pets-reference .eyebrow, .pets-page > .eyebrow, .pet-reference-card > .eyebrow,
+.pets-reference .back-link, .pets-page .back-link { color: var(--pet-accent); }
+.pets-reference .back-link:hover, .pets-page .back-link:hover { color: var(--pet-accent); }
+.pets-reference a:focus-visible, .pets-page a:focus-visible,
+.rescue-pet-option:focus-visible, .rescue-result-animal[data-participant-kind="pet"]:focus-visible {
+  outline: 2px solid var(--pet-accent); outline-offset: 4px;
+}
+.pet-reference-card { border-radius: 3px; }
+.pet-disclosure-summary h2 > span { color: var(--pet-muted); }
+.pet-disclosure-content .rescue-functional-copy { color: var(--pet-muted); }
+.pet-disclosure[data-pet-selected="true"] .pet-current { color: var(--pet-accent); }
+.pet-disclosure[open] .pet-chevron { color: var(--pet-accent); }
+.rescue-pet-option { position: relative; color: var(--text); transition: border-color 160ms, background 160ms; }
+.rescue-pet-option:hover:not(:disabled) { border-color: var(--pet-border-strong); background: var(--pet-selected); }
+.pet-choice-check { position: absolute; top: 5px; right: 7px; color: var(--pet-accent); font-size: 12px; }
+.rescue-result-animal[data-participant-kind="pet"] { background: var(--pet-surface); border-color: var(--pet-border); }
+.rescue-result-animal[data-participant-kind="pet"]:hover,
+.rescue-result-animal[data-participant-kind="pet"]:active { background: var(--pet-selected); border-color: var(--pet-border-strong); }
+.rescue-result-animal[data-participant-kind="pet"] kbd { color: var(--pet-muted); }
+.dynamic-cell[data-participant-kind="pet"] { background: var(--pet-selected); border-color: var(--pet-border-strong); }
+.rescue-roster-animal[data-participant-kind="pet"] { border-bottom-color: var(--pet-border); }
+.rescue-roster-animal[data-participant-kind="pet"] > div > span,
+.rescue-history li[data-participant-kind="pet"] strong { color: var(--pet-accent); }
+.rescue-history li[data-participant-kind="pet"] { border-color: var(--pet-border); }
+@media (prefers-reduced-motion: reduce) { .rescue-pet-option { transition: none; } }

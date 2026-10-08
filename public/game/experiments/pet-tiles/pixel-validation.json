@@ -1,0 +1,178 @@
+[
+  {
+    "species": "rabbit",
+    "sourceDimensions": [
+      364,
+      364
+    ],
+    "sourceSha256": "10c685454e9aad4d00bc44e91dbe7db2c81c44fceb34554f42611e2878616c84",
+    "crop": [
+      4,
+      4,
+      120,
+      120
+    ],
+    "outputDimensions": [
+      116,
+      116
+    ],
+    "allSourcePixelsIdentical": true,
+    "recoloured": false,
+    "resampled": false,
+    "alphaModified": false
+  },
+  {
+    "species": "bird",
+    "sourceDimensions": [
+      604,
+      244
+    ],
+    "sourceSha256": "b2612d710e260aff0eafeeed524401cfc167f89070a8868fcebee3580f7b7ca6",
+    "crop": [
+      4,
+      4,
+      120,
+      120
+    ],
+    "outputDimensions": [
+      116,
+      116
+    ],
+    "allSourcePixelsIdentical": true,
+    "recoloured": false,
+    "resampled": false,
+    "alphaModified": false
+  },
+  {
+    "species": "dog",
+    "sourceDimensions": [
+      244,
+      364
+    ],
+    "sourceSha256": "fd2446dcaba7f56e0ce328dc18f5df529d55e078f43c5276dd8938110c648d8c",
+    "crop": [
+      124,
+      4,
+      240,
+      120
+    ],
+    "outputDimensions": [
+      116,
+      116
+    ],
+    "allSourcePixelsIdentical": true,
+    "recoloured": false,
+    "resampled": false,
+    "alphaModified": false
+  },
+  {
+    "species": "cat",
+    "sourceDimensions": [
+      244,
+      364
+    ],
+    "sourceSha256": "a8f3c72985b22b16828145a98157c0a0a1ab389b9ac55df8f9a31e8b16a2d1ea",
+    "crop": [
+      4,
+      4,
+      120,
+      120
+    ],
+    "outputDimensions": [
+      116,
+      116
+    ],
+    "allSourcePixelsIdentical": true,
+    "recoloured": false,
+    "resampled": false,
+    "alphaModified": false
+  },
+  {
+    "species": "fish",
+    "sourceDimensions": [
+      484,
+      364
+    ],
+    "sourceSha256": "a31d247ebc79b7bd4c16a91477497f836ac6aef3f0f4cc7cda425a0b7e6c9101",
+    "crop": [
+      364,
+      4,
+      480,
+      120
+    ],
+    "outputDimensions": [
+      116,
+      116
+    ],
+    "allSourcePixelsIdentical": true,
+    "recoloured": false,
+    "resampled": false,
+    "alphaModified": false
+  },
+  {
+    "species": "turtle",
+    "sourceDimensions": [
+      364,
+      364
+    ],
+    "sourceSha256": "a2f331beafed5253c29876c1819f91163a38bb9fcb92592d1d935612a392052d",
+    "crop": [
+      4,
+      4,
+      120,
+      120
+    ],
+    "outputDimensions": [
+      116,
+      116
+    ],
+    "allSourcePixelsIdentical": true,
+    "recoloured": false,
+    "resampled": false,
+    "alphaModified": false
+  },
+  {
+    "species": "lizard",
+    "sourceDimensions": [
+      364,
+      368
+    ],
+    "sourceSha256": "dcae0f119d9836fdb2175ec71b02a1698494077a02ed1a12fa77f201b426676a",
+    "crop": [
+      4,
+      4,
+      120,
+      120
+    ],
+    "outputDimensions": [
+      116,
+      116
+    ],
+    "allSourcePixelsIdentical": true,
+    "recoloured": false,
+    "resampled": false,
+    "alphaModified": false
+  },
+  {
+    "species": "hamster",
+    "sourceDimensions": [
+      364,
+      364
+    ],
+    "sourceSha256": "a442f58b01be1adf40a6c674efac1a0d660e590daa50173892cbc84fb8230e0e",
+    "crop": [
+      4,
+      4,
+      120,
+      120
+    ],
+    "outputDimensions": [
+      116,
+      116
+    ],
+    "allSourcePixelsIdentical": true,
+    "recoloured": false,
+    "resampled": false,
+    "alphaModified": false
+  }
+]

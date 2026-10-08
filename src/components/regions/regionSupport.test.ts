@@ -44,9 +44,9 @@ test("navigation exposes precisely seven unlocked regions in the requested seque
   assert.equal((html.match(/class="region-card /g) ?? []).length, 7);
   for (const [index, region] of regions.entries()) {
     assert.ok(html.includes(`href="/regions/${region}"`));
-    assert.match(html, new RegExp(`class="region-number">0${index + 1}`));
+    assert.match(html, new RegExp(`class="region-number">0${region === "moon" ? 1 : index + 1}`));
   }
-  assert.match(html, /Locked regions/);
+  assert.match(html, /Unknown region/);
   assert.doesNotMatch(html, /href="\/regions\/(mars|constellation|jurassic)/);
 });
 

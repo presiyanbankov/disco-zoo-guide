@@ -1,16 +1,20 @@
-import type { Animal } from "../../types/game";
+import type { AnimalPattern } from "../../types/game";
 import { generatePlacements } from "../static/generatePlacements";
 
-export type RescueAnimal = Pick<Animal, "id" | "regionId" | "pattern">;
+export interface RescueParticipant {
+  id: string;
+  kind: "animal" | "pet";
+  pattern: AnimalPattern;
+}
 export type RescueObservation =
   | { type: "empty"; cellIndex: number }
-  | { type: "animal"; cellIndex: number; animalId: string };
+  | { type: "hit"; cellIndex: number; participantId: string };
 export interface DynamicRescueState {
-  animals: readonly RescueAnimal[];
+  participants: readonly RescueParticipant[];
   observations: readonly RescueObservation[];
 }
 export interface RescueWorld {
-  animals: readonly { animalId: string; cells: readonly number[] }[];
+  participants: readonly { participantId: string; cells: readonly number[] }[];
 }
 export interface DynamicCellScore {
   cellIndex: number;
@@ -26,55 +30,54 @@ export interface DynamicRescueResult {
 // Absolute probability tolerance for arithmetic noise; row-major ties win.
 export const DYNAMIC_SCORE_EPSILON = 1e-12;
 
-export function createDynamicRescueState(animals: readonly RescueAnimal[]): DynamicRescueState {
-  if (animals.length < 1 || animals.length > 3) throw new Error("Select one to three animals");
-  if (new Set(animals.map(a => a.id)).size !== animals.length) throw new Error("Select distinct animals");
-  if (new Set(animals.map(a => a.regionId)).size !== 1) throw new Error("Animals must belong to one region");
-  for (const animal of animals) {
-    const cells = animal.pattern?.cells;
+export function createDynamicRescueState(participants: readonly RescueParticipant[]): DynamicRescueState {
+  if (participants.length < 1 || participants.length > 3) throw new Error("Select one to three participants");
+  if (new Set(participants.map(a => a.id)).size !== participants.length) throw new Error("Select distinct participants");
+  for (const participant of participants) {
+    const cells = participant.pattern?.cells;
     if (!cells?.length || cells.some(c => !Number.isInteger(c.row) || !Number.isInteger(c.col)
       || c.row < 0 || c.row >= 5 || c.col < 0 || c.col >= 5)
       || new Set(cells.map(c => c.row * 5 + c.col)).size !== cells.length) {
-      throw new Error(`Invalid pattern for ${animal.id}`);
+      throw new Error(`Invalid pattern for ${participant.id}`);
     }
   }
   return {
-    animals: animals.map(a => ({ id: a.id, regionId: a.regionId, pattern: { cells: a.pattern.cells.map(c => ({ ...c })) } })),
+    participants: participants.map(a => ({ id: a.id, kind: a.kind, pattern: { cells: a.pattern.cells.map(c => ({ ...c })) } })),
     observations: [],
   };
 }
 
-/** Every world assigns one placement to every guaranteed animal, without overlap. */
-export function generateRescueWorlds(animals: readonly RescueAnimal[]): RescueWorld[] {
-  const candidates = animals.map(a => ({ animalId: a.id, placements: generatePlacements(a.pattern.cells) }));
+/** Every world assigns one placement to every guaranteed participant, without overlap. */
+export function generateRescueWorlds(participants: readonly RescueParticipant[]): RescueWorld[] {
+  const candidates = participants.map(a => ({ participantId: a.id, placements: generatePlacements(a.pattern.cells) }));
   const worlds: RescueWorld[] = [];
-  function visit(index: number, assigned: RescueWorld["animals"], occupied: ReadonlySet<number>) {
+  function visit(index: number, assigned: RescueWorld["participants"], occupied: ReadonlySet<number>) {
     if (index === candidates.length) {
-      worlds.push({ animals: assigned });
+      worlds.push({ participants: assigned });
       return;
     }
-    const animal = candidates[index];
-    for (const cells of animal.placements) {
+    const participant = candidates[index];
+    for (const cells of participant.placements) {
       if (cells.some(cell => occupied.has(cell))) continue;
-      visit(index + 1, [...assigned, { animalId: animal.animalId, cells }], new Set([...occupied, ...cells]));
+      visit(index + 1, [...assigned, { participantId: participant.participantId, cells }], new Set([...occupied, ...cells]));
     }
   }
-  if (animals.length) visit(0, [], new Set());
+  if (participants.length) visit(0, [], new Set());
   return worlds;
 }
 
-/** EMPTY excludes all animals; a named hit requires precisely that animal. */
+/** EMPTY excludes all participants; a named hit requires precisely that participant. */
 export function filterRescueWorlds(worlds: readonly RescueWorld[], observations: readonly RescueObservation[]): RescueWorld[] {
   return worlds.filter(world => observations.every(observation => {
-    if (observation.type === "empty") return world.animals.every(a => !a.cells.includes(observation.cellIndex));
-    return world.animals.some(a => a.animalId === observation.animalId && a.cells.includes(observation.cellIndex))
-      && world.animals.every(a => a.animalId === observation.animalId || !a.cells.includes(observation.cellIndex));
+    if (observation.type === "empty") return world.participants.every(a => !a.cells.includes(observation.cellIndex));
+    return world.participants.some(a => a.participantId === observation.participantId && a.cells.includes(observation.cellIndex))
+      && world.participants.every(a => a.participantId === observation.participantId || !a.cells.includes(observation.cellIndex));
   }));
 }
 
 export function applyObservation(state: DynamicRescueState, observation: RescueObservation): DynamicRescueState {
   if (!Number.isInteger(observation.cellIndex) || observation.cellIndex < 0 || observation.cellIndex >= 25) throw new Error("Invalid board cell");
-  if (observation.type === "animal" && !state.animals.some(a => a.id === observation.animalId)) throw new Error("Animal is not selected");
+  if (observation.type === "hit" && !state.participants.some(a => a.id === observation.participantId)) throw new Error("Participant is not selected");
   return { ...state, observations: [...state.observations, { ...observation }] };
 }
 
@@ -87,7 +90,7 @@ export function resetObservations(state: DynamicRescueState): DynamicRescueState
 }
 
 export function getPossibleWorlds(state: DynamicRescueState): RescueWorld[] {
-  return filterRescueWorlds(generateRescueWorlds(state.animals), state.observations);
+  return filterRescueWorlds(generateRescueWorlds(state.participants), state.observations);
 }
 
 /** Uniform valid worlds. This scoring objective is separate from generation/filtering. */
@@ -97,7 +100,7 @@ export function scoreWorldsByHitProbability(worlds: readonly RescueWorld[], obse
   const scores: DynamicCellScore[] = [];
   for (let cellIndex = 0; cellIndex < 25; cellIndex++) {
     if (opened.has(cellIndex)) continue;
-    const hits = worlds.filter(world => world.animals.some(a => a.cells.includes(cellIndex))).length;
+    const hits = worlds.filter(world => world.participants.some(a => a.cells.includes(cellIndex))).length;
     scores.push({ cellIndex, hitProbability: hits / worlds.length });
   }
   return scores;
@@ -117,8 +120,8 @@ export function analyzeDynamicRescue(state: DynamicRescueState): DynamicRescueRe
   if (!worlds.length) return { status: "contradiction", worldCount: 0, scores: [], recommendation: null };
   const scores = scoreWorldsByHitProbability(worlds, state.observations);
   const recommendation = chooseDynamicCell(scores);
-  // Conservative completion: no unopened cell can contain an animal in ANY
-  // surviving world. A uniquely determined but partly unopened animal continues.
+  // Conservative completion: no unopened cell can contain a participant in ANY
+  // surviving world. A uniquely determined but partly unopened participant continues.
   if (!recommendation || recommendation.hitProbability === 0) {
     return { status: "complete", worldCount: worlds.length, scores, recommendation: null };
   }

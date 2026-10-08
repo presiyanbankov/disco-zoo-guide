@@ -54,3 +54,10 @@ export interface StaticSearchResult {
     animalId: string;
     steps: SearchStep[];
 }
+/** One rescue-relevant record per pet species; cosmetics do not change geometry. */
+export interface PetSpecies {
+    id: string;
+    name: string;
+    pattern: AnimalPattern;
+    imagePath: string;
+}

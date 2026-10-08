@@ -7,6 +7,8 @@ import "../styles/responsive.css";
 import "../styles/motion.css";
 import "../styles/environment.css";
 import "../styles/rescue.css";
+import "../styles/alpha09.css";
+import "../styles/pets.css";
 import { NavigationMotion } from "../components/navigation/NavigationMotion";
 import { EnvironmentLifecycle } from "../components/effects/EnvironmentLifecycle";
 

@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const { performance } = require('node:perf_hooks');
 const { ANIMALS } = require('../.next/dynamic-component-check/data/animals.js');
 const solver = require('../.next/dynamic-component-check/solver/dynamic/dynamicRescueSolver.js');
+const createState = animals => solver.createDynamicRescueState(animals.map(a => ({id: `animal:${a.regionId}:${a.id}`, kind: 'animal', pattern: a.pattern})));
 const results = [];
 for (const count of [1, 2, 3]) {
   const times = [];
@@ -17,7 +18,7 @@ for (const count of [1, 2, 3]) {
     }
     select(0, []);
     for (const selected of combinations) {
-      const state = solver.createDynamicRescueState(selected);
+      const state = createState(selected);
       for (let run = 0; run < 3; run++) {
         const start = performance.now();
         const result = solver.analyzeDynamicRescue(state);

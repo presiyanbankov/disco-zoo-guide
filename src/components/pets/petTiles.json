@@ -1,0 +1,42 @@
+{
+  "rabbit": {
+    "src": "/game/pets/tiles/rabbit.png",
+    "width": 116,
+    "height": 116
+  },
+  "bird": {
+    "src": "/game/pets/tiles/bird.png",
+    "width": 116,
+    "height": 116
+  },
+  "dog": {
+    "src": "/game/pets/tiles/dog.png",
+    "width": 116,
+    "height": 116
+  },
+  "cat": {
+    "src": "/game/pets/tiles/cat.png",
+    "width": 116,
+    "height": 116
+  },
+  "fish": {
+    "src": "/game/pets/tiles/fish.png",
+    "width": 116,
+    "height": 116
+  },
+  "turtle": {
+    "src": "/game/pets/tiles/turtle.png",
+    "width": 116,
+    "height": 116
+  },
+  "lizard": {
+    "src": "/game/pets/tiles/lizard.png",
+    "width": 116,
+    "height": 116
+  },
+  "hamster": {
+    "src": "/game/pets/tiles/hamster.png",
+    "width": 116,
+    "height": 116
+  }
+}

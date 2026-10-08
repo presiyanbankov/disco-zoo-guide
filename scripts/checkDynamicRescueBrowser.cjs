@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const { ANIMALS } = require('../.next/dynamic-component-check/data/animals.js');
 const solver = require('../.next/dynamic-component-check/solver/dynamic/dynamicRescueSolver.js');
+const createState = animals => solver.createDynamicRescueState(animals.map(a => ({id: `animal:${a.regionId}:${a.id}`, kind: 'animal', pattern: a.pattern})));
 const { SITE_VERSION } = require('../.next/dynamic-component-check/components/layout/siteVersion.js');
 const base = process.env.HQ_QA_URL || 'http://localhost:3108';
 const debug = process.env.HQ_QA_CDP || 'http://localhost:9241';
@@ -103,10 +104,10 @@ fs.mkdirSync(output, {recursive:true});
         }
         await click('.rescue-primary');
         await waitFor(`!!document.querySelector('.rescue-live')`);
-        await verify(solver.createDynamicRescueState(animals.slice(0,count)));
-        if (count < 3) { await clickText('Change animals'); await waitFor(`!!document.querySelector('.rescue-setup')`); }
+        await verify(createState(animals.slice(0,count)));
+        if (count < 3) { await clickText('Change setup'); await waitFor(`!!document.querySelector('.rescue-setup')`); }
       }
-      let state = solver.createDynamicRescueState(animals);
+      let state = createState(animals);
       const score = solver.analyzeDynamicRescue(state).scores.find(s=>s.hitProbability<1 && s.hitProbability>0);
       await click(`[data-cell-index="${score.cellIndex}"]`);
       await waitFor(`!!document.querySelector('[role="dialog"]')`);
@@ -120,15 +121,15 @@ fs.mkdirSync(output, {recursive:true});
       await verify(state);
       const afterEmpty=state;
       const world=solver.getPossibleWorlds(state)[0];
-      const hit=world.animals.find(a=>a.cells.some(c=>!state.observations.some(o=>o.cellIndex===c)));
+      const hit=world.participants.find(a=>a.cells.some(c=>!state.observations.some(o=>o.cellIndex===c)));
       const hitCell=hit.cells.find(c=>!state.observations.some(o=>o.cellIndex===c));
       await click(`[data-cell-index="${hitCell}"]`);
       await waitFor(`!!document.querySelector('[role="dialog"]')`);
       if(width===1440) {
-        const number=animals.findIndex(a=>a.id===hit.animalId)+1;
+        const number=animals.findIndex(a=>`animal:${a.regionId}:${a.id}`===hit.participantId)+1;
         await key(String(number),'Digit'+number,48+number);
-      } else await click(`.rescue-result-animal[data-animal-id="${hit.animalId}"]`);
-      state=solver.applyObservation(state,{type:'animal',cellIndex:hitCell,animalId:hit.animalId});
+      } else await click(`.rescue-result-animal[data-animal-id="${hit.participantId}"]`);
+      state=solver.applyObservation(state,{type:'hit',cellIndex:hitCell,participantId:hit.participantId});
       await verify(state);
       assert.equal(await evaluate(`document.querySelector('[data-cell-index="${hitCell}"]').dataset.cellState`),'animal');
       await waitFor(`[...document.querySelectorAll('.rescue-live img')].every(i=>i.complete&&i.naturalWidth>0)`);
@@ -144,7 +145,7 @@ fs.mkdirSync(output, {recursive:true});
         await waitFor(`!document.querySelector('[role="dialog"]')`);
       }
       await clickText('↶ Undo last result'); await verify(afterEmpty);
-      await clickText('Reset rescue'); await verify(solver.createDynamicRescueState(animals));
+      await clickText('Reset rescue'); await verify(createState(animals));
       results.push({width,region,selectionCounts:[1,2,3],empty:true,animalHit:true,undo:true,reset:true,panel});
     }
   }
