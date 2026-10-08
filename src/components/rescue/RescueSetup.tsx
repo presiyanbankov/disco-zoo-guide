@@ -1,3 +1,7 @@
+import { BALANCED_STRATEGY, type RescueStrategy } from "../../solver/dynamic/rescueStrategy";
+import { StrategySelector } from "./StrategySelector";
+import { animalParticipant, petParticipant, type DisplayParticipant } from "./rescueParticipants";
+import { PET_SPECIES } from "../../data/pets";
 import { PetSelector } from "../pets/PetSelector";
 import { regionPosition } from "../regions/regionPresentation";
 import type { Animal } from "../../types/game";
@@ -6,6 +10,10 @@ import { REGION_PRESENTATION } from "../regions/regionPresentation";
 import { RegionLandscape } from "../regions/RegionLandscape";
 
 type Props = {
+  strategy?: RescueStrategy;
+  participants?: readonly DisplayParticipant[];
+  onStrategy?: (type: RescueStrategy["type"]) => void;
+  onTarget?: (id: string) => void;
   regionId: string | null;
   selectedIds: readonly string[];
   animals: readonly Animal[];
@@ -16,8 +24,11 @@ type Props = {
   onPet?: (id: string | null) => void;
 };
 
-export function RescueSetup({ regionId, selectedIds, animals, onRegion, onAnimal, onStart, petId = null, onPet = () => {} }: Props) {
+export function RescueSetup({ regionId, selectedIds, animals, onRegion, onAnimal, onStart, petId = null, onPet = () => {}, strategy = BALANCED_STRATEGY, participants, onStrategy = () => {}, onTarget = () => {} }: Props) {
   const candidates = animals.filter(a => a.regionId === regionId && !a.hidden && a.rarity !== "timeless");
+  const pet = PET_SPECIES.find(p => p.id === petId);
+  const targets = participants ?? [...candidates.filter(a => selectedIds.includes(a.id)).map(animalParticipant), ...(pet ? [petParticipant(pet)] : [])];
+  const targetRequired = strategy.type === "target" && !targets.some(p => p.id === strategy.participantId);
   return <div className="rescue-setup">
     <section aria-labelledby="rescue-region-heading">
       <div className="rescue-section-heading"><h2 id="rescue-region-heading"><span>01</span> Region</h2><span className="eyebrow">7 UNLOCKED</span></div>
@@ -41,6 +52,7 @@ export function RescueSetup({ regionId, selectedIds, animals, onRegion, onAnimal
       </div> : <div className="rescue-setup-pending">Select a region to see its six classic animals.</div>}
     </section>
     <PetSelector petId={petId} disabled={!regionId || selectedIds.length >= 3} disabledReason={!regionId ? "Select a region first." : "A pet allows at most two animals."} onPet={onPet} />
-    <div className="rescue-start-row"><span>04 / Participants cannot overlap.</span><button className="rescue-primary rescue-start-cta" type="button" disabled={!selectedIds.length} onClick={onStart}>Start rescue <span aria-hidden="true">&#8599;</span></button></div>
+    <StrategySelector strategy={strategy} participants={targets} onStrategy={onStrategy} onTarget={onTarget} />
+    <div className="rescue-start-row"><span>05 / Participants cannot overlap.</span><button className="rescue-primary rescue-start-cta" type="button" disabled={!selectedIds.length || targetRequired} onClick={onStart}>Start rescue <span aria-hidden="true">&#8599;</span></button></div>
   </div>;
 }

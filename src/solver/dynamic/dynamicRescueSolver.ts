@@ -1,9 +1,11 @@
 import type { AnimalPattern } from "../../types/game";
 import { generatePlacements } from "../static/generatePlacements";
+import { BALANCED_STRATEGY, scoreWorldsByStrategy, type RescueStrategy } from "./rescueStrategy";
 
 export interface RescueParticipant {
   id: string;
   kind: "animal" | "pet";
+  animalRarity?: "common" | "rare" | "mythical";
   pattern: AnimalPattern;
 }
 export type RescueObservation =
@@ -19,9 +21,11 @@ export interface RescueWorld {
 export interface DynamicCellScore {
   cellIndex: number;
   hitProbability: number;
+  /** Policy utility; may exceed one. Absent for backwards-compatible balanced scores. */
+  strategyScore?: number;
 }
 export interface DynamicRescueResult {
-  status: "ready" | "complete" | "contradiction";
+  status: "ready" | "complete" | "contradiction" | "target-required" | "target-resolved" | "strategy-complete";
   worldCount: number;
   scores: readonly DynamicCellScore[];
   recommendation: DynamicCellScore | null;
@@ -42,7 +46,7 @@ export function createDynamicRescueState(participants: readonly RescueParticipan
     }
   }
   return {
-    participants: participants.map(a => ({ id: a.id, kind: a.kind, pattern: { cells: a.pattern.cells.map(c => ({ ...c })) } })),
+    participants: participants.map(a => ({ id: a.id, kind: a.kind, ...(a.animalRarity ? { animalRarity: a.animalRarity } : {}), pattern: { cells: a.pattern.cells.map(c => ({ ...c })) } })),
     observations: [],
   };
 }
@@ -108,22 +112,34 @@ export function scoreWorldsByHitProbability(worlds: readonly RescueWorld[], obse
 
 export function chooseDynamicCell(scores: readonly DynamicCellScore[]): DynamicCellScore | null {
   if (!scores.length) return null;
-  const maximum = Math.max(...scores.map(s => s.hitProbability));
+  const value = (s: DynamicCellScore) => s.strategyScore ?? s.hitProbability;
+  const maximum = Math.max(...scores.map(value));
   // Compare with the actual maximum, then take the lowest row-major index.
-  return scores.filter(s => maximum - s.hitProbability <= DYNAMIC_SCORE_EPSILON)
+  return scores.filter(s => maximum - value(s) <= DYNAMIC_SCORE_EPSILON)
     .reduce((best, s) => s.cellIndex < best.cellIndex ? s : best);
 }
 
-export function analyzeDynamicRescue(state: DynamicRescueState): DynamicRescueResult {
-  const worlds = getPossibleWorlds(state);
+export function analyzeDynamicRescue(state: DynamicRescueState, strategy: RescueStrategy = BALANCED_STRATEGY): DynamicRescueResult {
+  return analyzeRescueWorlds(state, getPossibleWorlds(state), strategy);
+}
+
+/** Policy-only analysis of already generated/filtered worlds; useful when switching modes. */
+export function analyzeRescueWorlds(state: DynamicRescueState, worlds: readonly RescueWorld[], strategy: RescueStrategy = BALANCED_STRATEGY): DynamicRescueResult {
   // An impossible observation history is a result state, not an exception.
   if (!worlds.length) return { status: "contradiction", worldCount: 0, scores: [], recommendation: null };
-  const scores = scoreWorldsByHitProbability(worlds, state.observations);
+  if (strategy.type === "target" && !state.participants.some(p => p.id === strategy.participantId)) {
+    return { status: "target-required", worldCount: worlds.length, scores: [], recommendation: null };
+  }
+  const scores = strategy.type === "balanced" ? scoreWorldsByHitProbability(worlds, state.observations)
+    : scoreWorldsByStrategy(worlds, state, strategy);
   const recommendation = chooseDynamicCell(scores);
   // Conservative completion: no unopened cell can contain a participant in ANY
   // surviving world. A uniquely determined but partly unopened participant continues.
-  if (!recommendation || recommendation.hitProbability === 0) {
+  if (!scores.some(s => s.hitProbability > 0)) {
     return { status: "complete", worldCount: worlds.length, scores, recommendation: null };
+  }
+  if (!recommendation || (recommendation.strategyScore ?? recommendation.hitProbability) === 0) {
+    return { status: strategy.type === "target" ? "target-resolved" : "strategy-complete", worldCount: worlds.length, scores, recommendation: null };
   }
   return { status: "ready", worldCount: worlds.length, scores, recommendation };
 }

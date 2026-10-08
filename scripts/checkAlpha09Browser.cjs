@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports -- Standalone Chrome CDP QA. */
 const fs = require('node:fs');
 const assert = require('node:assert/strict');
+const version = fs.readFileSync('src/components/layout/siteVersion.ts','utf8').match(/SITE_VERSION = "([^"]+)"/)[1];
 const base = process.env.ALPHA09_QA_URL || 'http://localhost:3000';
 const debug = 'http://localhost:9242';
 const output = process.env.ALPHA09_QA_OUTPUT || 'public/game/experiments/alpha09';
@@ -52,7 +53,7 @@ fs.mkdirSync(output,{recursive:true});
   };
   const shot = async name => { await waitFor(`!document.querySelector('[role=dialog]') || document.querySelector('[role=dialog]').getAnimations().every(a=>a.playState==='finished')`); const r=await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:name.startsWith('home') || name.startsWith('pets')});fs.writeFileSync(output+'/'+name+'.png',Buffer.from(r.data,'base64')); };
   const check = async (name,expression) => { assert.ok(await evaluate(`Boolean(${expression})`),name);results.push(name); };
-  const navigate = async path => {await call('Page.navigate',{url:base+path});await waitFor(`location.pathname===${JSON.stringify(path)} && document.readyState==='complete' && document.querySelector('.alpha-tag')?.textContent==='ALPHA 09'`);};
+  const navigate = async path => {await call('Page.navigate',{url:base+path});await waitFor(`location.pathname===${JSON.stringify(path)} && document.readyState==='complete' && document.querySelector('.alpha-tag')?.textContent===${JSON.stringify(version)}`);};
   await call('Runtime.enable');await call('Network.enable');await call('Page.enable');
   for(const width of [375,390,768,1440]) {
     await call('Emulation.setDeviceMetricsOverride',{width,height:950,deviceScaleFactor:1,mobile:width<600});

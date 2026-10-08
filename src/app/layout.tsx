@@ -9,6 +9,7 @@ import "../styles/environment.css";
 import "../styles/rescue.css";
 import "../styles/alpha09.css";
 import "../styles/pets.css";
+import "../styles/strategies.css";
 import { NavigationMotion } from "../components/navigation/NavigationMotion";
 import { EnvironmentLifecycle } from "../components/effects/EnvironmentLifecycle";
 

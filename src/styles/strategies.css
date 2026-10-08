@@ -1,0 +1,35 @@
+/* Strategy controls retain the rescue/region palette; only pet targets use pet tokens. */
+.strategy-control h2 {display:flex;align-items:center;gap:16px;font-size:21px;font-weight:500;letter-spacing:-.035em;margin:0 0 20px;}
+.strategy-control h2>span {font:10px var(--font-geist-mono),monospace;color:var(--muted);}
+.strategy-options {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;}
+.strategy-options button {position:relative;text-align:left;min-height:108px;padding:18px 28px 18px 16px;background:#101512;border:1px solid var(--line);border-radius:3px;cursor:pointer;transition:border-color 160ms,background 160ms;}
+.strategy-options strong {display:block;font-size:13px;font-weight:550;line-height:1.5;margin-bottom:8px;}
+.strategy-options button>span:not(.strategy-check) {display:block;font-size:11px;line-height:1.6;color:var(--muted);}
+.strategy-options button[aria-pressed=true] {border-color:var(--accent);background:color-mix(in srgb,var(--accent) 7%,#101512);}
+.strategy-options button:hover {border-color:var(--accent);}
+.strategy-check {position:absolute;top:14px;right:12px;color:var(--accent);font-size:13px;}
+.strategy-targets>div {display:flex;flex-wrap:wrap;gap:10px;}
+.strategy-targets button {display:flex;align-items:center;gap:12px;min-height:68px;padding:12px 16px;background:#101512;border:1px solid var(--line);border-radius:3px;cursor:pointer;}
+.strategy-targets button strong {font-size:12px;font-weight:500;}
+.strategy-targets .animal-game-icon {width:auto;height:auto;max-height:42px;max-width:64px;object-fit:contain;image-rendering:pixelated;}
+.strategy-targets button:is(:hover,[aria-pressed=true]) {border-color:var(--accent);}
+.strategy-targets button[data-participant-kind=pet] {background:var(--pet-surface);border-color:var(--pet-border);}
+.strategy-targets button[data-participant-kind=pet]:is(:hover,[aria-pressed=true]) {border-color:var(--pet-accent);background:var(--pet-selected);}
+.strategy-targets button[data-participant-kind=pet]:focus-visible {outline-color:var(--pet-accent);}
+.strategy-target-required,.strategy-legend {font-size:11px;color:var(--muted);line-height:1.8;margin:16px 0 0;}
+.strategy-legend {display:flex;flex-wrap:wrap;gap:8px 20px;}
+.strategy-live {padding:0 0 28px;margin-bottom:28px;border-bottom:1px solid var(--line);}
+.strategy-live h2 {font-size:14px;}
+.strategy-live .strategy-options button {min-height:58px;padding-block:14px;}
+.strategy-live .strategy-options strong {margin-bottom:0;}
+.strategy-active-help {font-size:11px;line-height:1.7;margin:14px 0 0;color:var(--muted);}
+.strategy-feedback {margin:0 0 20px;display:flex;flex-direction:column;gap:8px;}
+.strategy-feedback strong {font-size:13px;font-weight:500;}
+.strategy-feedback span {font-size:11px;color:var(--muted);}
+.participant-priority {display:inline-flex;font:8px var(--font-geist-mono),monospace;letter-spacing:.07em;padding:4px 6px;border:1px solid var(--line);margin-left:8px;color:var(--accent);}
+.rescue-roster-animal[data-prioritized=true] {border-bottom-color:var(--accent);}
+.rescue-roster-animal[data-participant-kind=pet] .participant-priority {color:var(--pet-accent);border-color:var(--pet-border-strong);}
+.rescue-roster-animal[data-participant-kind=pet][data-prioritized=true] {border-bottom-color:var(--pet-accent);}
+@media(max-width:1023px) {.strategy-options {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:600px) {.strategy-options {gap:8px;}.strategy-options button {padding:15px 25px 15px 12px;min-height:120px;}.strategy-options strong {font-size:12px;}.strategy-options button>span:not(.strategy-check) {font-size:10px;}.strategy-targets>div {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));}.strategy-targets button {position:relative;flex-direction:column;justify-content:center;width:100%;min-height:110px;padding:12px 6px;gap:8px;}.strategy-targets button strong {font-size:11px;}.strategy-targets button>span:last-child:not(.pet-tile-frame) {position:absolute;top:5px;right:6px;font-size:11px;}}
+@media(prefers-reduced-motion:reduce) {.strategy-options button {transition:none;}}

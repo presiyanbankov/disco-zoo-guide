@@ -6,7 +6,7 @@ export interface DisplayParticipant extends RescueParticipant {
   imagePath: string;
 }
 export function animalParticipant(animal: Animal): DisplayParticipant {
-  return { id: `animal:${animal.regionId}:${animal.id}`, kind: "animal", name: animal.name, imagePath: animal.imagePath, pattern: animal.pattern };
+  return { id: `animal:${animal.regionId}:${animal.id}`, kind: "animal", ...(animal.rarity !== "timeless" ? { animalRarity: animal.rarity } : {}), name: animal.name, imagePath: animal.imagePath, pattern: animal.pattern };
 }
 export function petParticipant(pet: PetSpecies): DisplayParticipant {
   return { id: `pet:${pet.id}`, kind: "pet", name: pet.name, imagePath: pet.imagePath, pattern: pet.pattern };

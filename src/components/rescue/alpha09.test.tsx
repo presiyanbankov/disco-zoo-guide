@@ -98,6 +98,6 @@ test("homepage prioritizes assistant then Earth, Space and Pets; locks seven des
  assert.ok(html.indexOf('id="space-title"') < html.indexOf('id="pets-reference-title"'));
  assert.equal((html.match(/data-region-locked="true"/g)??[]).length,7);
  assert.doesNotMatch(html,/href="\/regions\/(mars|jurassic|constellation|nocturnal)/);
- assert.equal(SITE_VERSION,"ALPHA 09"); assert.ok(html.includes(SITE_VERSION));
+ assert.match(SITE_VERSION,/^ALPHA \d{2}$/); assert.ok(html.includes(SITE_VERSION));
  assert.equal(regionPosition("moon").number,1); assert.equal(REGION_GROUPS[0].destinations.length,11);
 });
