@@ -4,7 +4,7 @@ import { ANIMALS } from "../../data/animals";
 import { PET_SPECIES } from "../../data/pets";
 import { animalParticipant, petParticipant } from "../../components/rescue/rescueParticipants";
 import { analyzeDynamicRescue, analyzeRescueWorlds, applyObservation, chooseDynamicCell, createDynamicRescueState, filterRescueWorlds, generateRescueWorlds, getPossibleWorlds, resetObservations, scoreWorldsByHitProbability, undoObservation, type DynamicRescueState, type RescueParticipant, type RescueWorld } from "./dynamicRescueSolver";
-import { participantStrategyWeight, scoreWorldsByStrategy, type RescueStrategy } from "./rescueStrategy";
+import { rarityPriorityStrategy, participantStrategyWeight, scoreWorldsByStrategy, type RescueStrategy } from "./rescueStrategy";
 
 const point = (id: string, kind: "animal" | "pet" = "animal", rarity: "common" | "rare" | "mythical" = "common"): RescueParticipant => ({ id, kind, animalRarity: rarity, pattern: { cells: [{ row: 0, col: 0 }] } });
 const participants = [point("a"), point("b", "animal", "mythical"), point("pet:p", "pet")];
@@ -97,34 +97,34 @@ for (const participantId of ["", "missing"]) test(`invalid target ${JSON.stringi
   assert.equal(r.status, "target-required"); assert.equal(r.recommendation, null); assert.ok(r.worldCount > 0);
 });
 for (const [rarity, weight] of [["common", 1], ["rare", 2], ["mythical", 3]] as const) test(`rarity ${rarity} weighs ${weight}`, () => {
-  assert.equal(participantStrategyWeight(point("x", "animal", rarity), state, { type: "rarity-first" }), weight);
+  assert.equal(participantStrategyWeight(point("x", "animal", rarity), state, rarityPriorityStrategy()), weight);
 });
-test("pet rarity weight is always zero, even if supplied contradictory rarity metadata", () => {
-  assert.equal(participantStrategyWeight(point("p", "pet", "mythical"), state, { type: "rarity-first" }), 0);
+test("pet default priority is one regardless of animal rarity metadata", () => {
+  assert.equal(participantStrategyWeight(point("p", "pet", "mythical"), state, rarityPriorityStrategy()), 1);
 });
 test("mixed rarity scores use participant marginals, not any-hit probability", () => {
-  assert.equal(score({ type: "rarity-first" }, 1).strategyScore, 3);
-  assert.equal(score({ type: "rarity-first" }, 2).strategyScore, 1.5);
-  assert.equal(score({ type: "rarity-first" }, 4).strategyScore, .5);
+  assert.equal(score(rarityPriorityStrategy(), 1).strategyScore, 3);
+  assert.equal(score(rarityPriorityStrategy(), 2).strategyScore, 2);
+  assert.equal(score(rarityPriorityStrategy(), 4).strategyScore, .5);
 });
-test("pet stays in worlds and exact hit filtering despite zero rarity utility", () => {
+test("pet stays in worlds and exact hit filtering with positive configured rarity priority", () => {
   const s = applyObservation(createDynamicRescueState([point("a"), point("p", "pet")]), { type: "hit", cellIndex: 4, participantId: "p" });
-  const r = analyzeDynamicRescue(s, { type: "rarity-first" });
+  const r = analyzeDynamicRescue(s, rarityPriorityStrategy());
   assert.equal(r.worldCount, 24); assert.equal(r.recommendation?.cellIndex, 0);
   assert.ok(getPossibleWorlds(s).every(w => w.participants.find(p => p.participantId === "p")?.cells.includes(4)));
 });
 test("rarity ties and pet-only score cells retain row-major/opened-cell behavior", () => {
-  const r = analyzeDynamicRescue(createDynamicRescueState([point("a"), point("p", "pet")]), { type: "rarity-first" });
+  const r = analyzeDynamicRescue(createDynamicRescueState([point("a"), point("p", "pet")]), rarityPriorityStrategy());
   assert.equal(r.recommendation?.cellIndex, 0);
   const s = applyObservation(createDynamicRescueState([point("a"), point("p", "pet")]), { type: "hit", cellIndex: 0, participantId: "a" });
-  const done = analyzeDynamicRescue(s, { type: "rarity-first" });
-  assert.equal(done.status, "strategy-complete"); assert.equal(done.recommendation, null); assert.equal(analyzeDynamicRescue(s).status, "ready");
+  const done = analyzeDynamicRescue(s, rarityPriorityStrategy());
+  assert.equal(done.status, "ready"); assert.equal(done.recommendation?.cellIndex, 1); assert.equal(analyzeDynamicRescue(s).status, "ready");
 });
 test("policy analysis does not mutate world generation, filtering, participants or observations", () => {
   const s = applyObservation(createDynamicRescueState(participants), { type: "empty", cellIndex: 0 });
   const before = JSON.stringify(s), initial = generateRescueWorlds(s.participants);
   const filtered = filterRescueWorlds(initial, s.observations);
-  for (const strategy of [{ type: "balanced" }, { type: "finish-found" }, { type: "target", participantId: "a" }, { type: "rarity-first" }] as const) {
+  for (const strategy of [{ type: "balanced" }, { type: "finish-found" }, { type: "target", participantId: "a" }, rarityPriorityStrategy()] as const) {
     assert.equal(analyzeDynamicRescue(s, strategy).worldCount, filtered.length);
     assert.deepEqual(getPossibleWorlds(s), filtered); assert.equal(JSON.stringify(s), before);
   }
@@ -132,7 +132,7 @@ test("policy analysis does not mutate world generation, filtering, participants 
 test("contradiction takes precedence over strategy/invalid target", () => {
   let s = applyObservation(createDynamicRescueState([point("a")]), { type: "hit", cellIndex: 0, participantId: "a" });
   s = applyObservation(s, { type: "empty", cellIndex: 0 });
-  for (const strategy of [{ type: "balanced" }, { type: "finish-found" }, { type: "target", participantId: "missing" }, { type: "rarity-first" }] as const) assert.equal(analyzeDynamicRescue(s, strategy).status, "contradiction");
+  for (const strategy of [{ type: "balanced" }, { type: "finish-found" }, { type: "target", participantId: "missing" }, rarityPriorityStrategy()] as const) assert.equal(analyzeDynamicRescue(s, strategy).status, "contradiction");
 });
 test("undo/reset change observations only, keeping policy passed separately", () => {
   const s = createDynamicRescueState(participants), strategy = { type: "target", participantId: "b" } as const;
@@ -142,13 +142,13 @@ test("undo/reset change observations only, keeping policy passed separately", ()
 });
 test("all modes exclude previously opened hits and misses", () => {
   const s = { ...hitA, observations: [...hitA.observations, { type: "empty" as const, cellIndex: 24 }] };
-  for (const strategy of [{ type: "balanced" }, { type: "finish-found" }, { type: "target", participantId: "a" }, { type: "rarity-first" }] as const) assert.ok(analyzeRescueWorlds(s, worlds, strategy).scores.every(c => c.cellIndex !== 0 && c.cellIndex !== 24));
+  for (const strategy of [{ type: "balanced" }, { type: "finish-found" }, { type: "target", participantId: "a" }, rarityPriorityStrategy()] as const) assert.ok(analyzeRescueWorlds(s, worlds, strategy).scores.every(c => c.cellIndex !== 0 && c.cellIndex !== 24));
 });
 for (const region of new Set(ANIMALS.map(a => a.regionId))) test(`${region}: four policies preserve real-world distribution and deterministic recommendations`, () => {
   const selected = ANIMALS.filter(a => a.regionId === region && !a.hidden && a.rarity !== "timeless").slice(-2).map(animalParticipant);
   const s = createDynamicRescueState([...selected, petParticipant(PET_SPECIES[0])]);
   const worlds = getPossibleWorlds(s);
-  for (const strategy of [{ type: "balanced" }, { type: "finish-found" }, { type: "target", participantId: selected[0].id }, { type: "rarity-first" }] as const) {
+  for (const strategy of [{ type: "balanced" }, { type: "finish-found" }, { type: "target", participantId: selected[0].id }, rarityPriorityStrategy()] as const) {
     const r = analyzeDynamicRescue(s, strategy);
     assert.equal(r.worldCount, worlds.length); assert.equal(r.status, "ready");
     assert.deepEqual(analyzeDynamicRescue(s, strategy), r);

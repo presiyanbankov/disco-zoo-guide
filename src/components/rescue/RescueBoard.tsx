@@ -1,4 +1,5 @@
-import { BALANCED_STRATEGY, type RescueStrategy } from "../../solver/dynamic/rescueStrategy";
+import { BALANCED_STRATEGY, type PriorityValue, type RarityPriorityConfig, type RescueStrategy } from "../../solver/dynamic/rescueStrategy";
+import { formatRarityPriorities } from "./RarityPriorityControls";
 import { StrategySelector, STRATEGY_OPTIONS } from "./StrategySelector";
 import { useEffect, useRef, useState } from "react";
 import type { DisplayParticipant } from "./rescueParticipants";
@@ -10,6 +11,7 @@ import { ResultSelector } from "./ResultSelector";
 type Props = {
   strategy?: RescueStrategy;
   onStrategy?: (type: RescueStrategy["type"]) => void;
+  onPriority?: (category: keyof RarityPriorityConfig, value: PriorityValue) => void;
   onTarget?: (id: string) => void;
   regionName: string;
   participants: readonly DisplayParticipant[];
@@ -21,7 +23,7 @@ type Props = {
   onChange: () => void;
 };
 
-export function RescueBoard({ regionName, participants, state, result, onObservation, onUndo, onReset, onChange, strategy = BALANCED_STRATEGY, onStrategy = () => {}, onTarget = () => {} }: Props) {
+export function RescueBoard({ regionName, participants, state, result, onObservation, onUndo, onReset, onChange, strategy = BALANCED_STRATEGY, onStrategy = () => {}, onTarget = () => {}, onPriority = () => {} }: Props) {
   const [pending, setPending] = useState<{ cellIndex: number; anchor: { left: number; top: number } } | null>(null);
   const buttons = useRef<(HTMLButtonElement | null)[]>([]);
   const livePanel = useRef<HTMLElement>(null);
@@ -41,7 +43,7 @@ export function RescueBoard({ regionName, participants, state, result, onObserva
 
   return <section ref={livePanel} className="rescue-live" data-rescue-status={result.status} aria-labelledby="live-rescue-title">
     <div className="rescue-live-heading"><div><span className="eyebrow">LIVE RESCUE</span><h2 id="live-rescue-title">{regionName}</h2></div><button className="rescue-secondary" onClick={onChange}>Change setup</button></div>
-    <StrategySelector live strategy={strategy} participants={participants} onStrategy={onStrategy} onTarget={onTarget} />
+    <StrategySelector live strategy={strategy} participants={participants} onStrategy={onStrategy} onTarget={onTarget} onPriority={onPriority} />
     <div className="rescue-live-layout">
       <div className="rescue-live-board-panel">
         <div className="rescue-recommendation" aria-live="polite" aria-atomic="true">
@@ -76,11 +78,11 @@ export function RescueBoard({ regionName, participants, state, result, onObserva
         <div className="rescue-board-actions"><button className="rescue-secondary" disabled={!state.observations.length} onClick={onUndo}>↶ Undo last result</button><button className="rescue-secondary" disabled={!state.observations.length} onClick={onReset}>Reset rescue</button></div>
       </div>
       <div className="rescue-live-sidebar">
-        <div className="strategy-feedback" aria-live="polite"><strong>{STRATEGY_OPTIONS.find(o => o.type === strategy.type)?.label}</strong><span>{strategy.type === "finish-found" ? `${found.size} participants currently prioritized` : strategy.type === "target" ? `Target: ${targetName ?? "not selected"}` : strategy.type === "rarity-first" ? "Mythical > Rare > Common" : "Best chance of hitting anything."}</span></div>
+        <div className="strategy-feedback" aria-live="polite"><strong>{STRATEGY_OPTIONS.find(o => o.type === strategy.type)?.label}</strong><span>{strategy.type === "finish-found" ? `${found.size} participants currently prioritized` : strategy.type === "target" ? `Target: ${targetName ?? "not selected"}` : strategy.type === "rarity-priority" ? formatRarityPriorities(strategy.priorities) : "Best chance of hitting anything."}</span></div>
         <dl className="rescue-metrics"><div><dt>HIT PROBABILITY</dt><dd>{recommendation ? `${(recommendation.hitProbability * 100).toFixed(1)}%` : "—"}</dd></div><div><dt>POSSIBLE WORLDS</dt><dd>{result.worldCount.toLocaleString("en-US")}</dd></div><div><dt>RESULTS REPORTED</dt><dd>{state.observations.length}</dd></div></dl>
         {result.status === "contradiction" && <div className="rescue-status-note" role="alert"><strong>Results are inconsistent.</strong><p>Undo the last result or reset this rescue.</p></div>}
         {result.status === "complete" && <div className="rescue-status-note" role="status"><strong>Rescue complete.</strong><p>No unopened participant tiles remain in the possible worlds.</p></div>}
-        {(result.status === "target-required" || result.status === "target-resolved" || result.status === "strategy-complete") && <div className="rescue-status-note" role="status"><strong>{statusText}.</strong><p>{result.status === "strategy-complete" ? "Pets do not influence this strategy. Change strategy to continue." : "Choose a target above or change strategy to continue."}</p></div>}
+        {(result.status === "target-required" || result.status === "target-resolved" || result.status === "strategy-complete") && <div className="rescue-status-note" role="status"><strong>{statusText}.</strong><p>{result.status === "strategy-complete" ? "Change strategy to continue." : "Choose a target above or change strategy to continue."}</p></div>}
         <div className="rescue-selected-roster"><span className="eyebrow">GUARANTEED PARTICIPANTS</span>{participants.map((animal, i) => <div key={animal.id} className={`rescue-roster-animal animal-color-${i}`} data-participant-kind={animal.kind} data-prioritized={strategy.type === "finish-found" && found.has(animal.id) || undefined}>
           <ParticipantArtwork participant={animal} /><div><strong>{animal.name}{animal.kind === "pet" && <small className="participant-kind">PET</small>}{strategy.type === "finish-found" && found.has(animal.id) && <small className="participant-priority">FOUND / PRIORITY</small>}</strong><span>{state.observations.filter(o => o.type === "hit" && o.participantId === animal.id).length} / {animal.pattern.cells.length} TILES REPORTED</span></div>
         </div>)}</div>

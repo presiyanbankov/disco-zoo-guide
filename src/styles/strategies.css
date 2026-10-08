@@ -16,8 +16,21 @@
 .strategy-targets button[data-participant-kind=pet] {background:var(--pet-surface);border-color:var(--pet-border);}
 .strategy-targets button[data-participant-kind=pet]:is(:hover,[aria-pressed=true]) {border-color:var(--pet-accent);background:var(--pet-selected);}
 .strategy-targets button[data-participant-kind=pet]:focus-visible {outline-color:var(--pet-accent);}
-.strategy-target-required,.strategy-legend {font-size:11px;color:var(--muted);line-height:1.8;margin:16px 0 0;}
-.strategy-legend {display:flex;flex-wrap:wrap;gap:8px 20px;}
+.strategy-target-required {font-size:11px;color:var(--muted);line-height:1.8;margin:16px 0 0;}
+.rarity-priority-controls {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 24px;margin-top:20px;}
+.priority-row {display:grid;grid-template-columns:76px minmax(0,1fr);align-items:center;gap:10px;}
+.priority-category {font-size:12px;color:var(--muted);}
+.priority-values {display:grid;grid-template-columns:repeat(4,minmax(44px,1fr));gap:4px;}
+.priority-values button {position:relative;min-height:44px;padding:8px 16px 8px 8px;background:#101512;border:1px solid var(--line);border-radius:2px;cursor:pointer;font:12px var(--font-geist-mono),monospace;transition:background 160ms,border-color 160ms;}
+.priority-values button:is(:hover,[aria-checked=true]) {border-color:var(--accent);}
+.priority-values button[aria-checked=true] {background:color-mix(in srgb,var(--accent) 9%,#101512);}
+.priority-check {position:absolute;top:5px;right:4px;font-size:9px;color:var(--accent);}
+.priority-row[data-priority-category=pet] .priority-category {color:var(--pet-accent);}
+.priority-row[data-priority-category=pet] button {background:var(--pet-surface);border-color:var(--pet-border);}
+.priority-row[data-priority-category=pet] button:is(:hover,[aria-checked=true]) {border-color:var(--pet-accent);}
+.priority-row[data-priority-category=pet] button[aria-checked=true] {background:var(--pet-selected);}
+.priority-row[data-priority-category=pet] button:focus-visible {outline-color:var(--pet-accent);}
+.priority-row[data-priority-category=pet] .priority-check {color:var(--pet-accent);}
 .strategy-live {padding:0 0 28px;margin-bottom:28px;border-bottom:1px solid var(--line);}
 .strategy-live h2 {font-size:14px;}
 .strategy-live .strategy-options button {min-height:58px;padding-block:14px;}
@@ -32,4 +45,5 @@
 .rescue-roster-animal[data-participant-kind=pet][data-prioritized=true] {border-bottom-color:var(--pet-accent);}
 @media(max-width:1023px) {.strategy-options {grid-template-columns:repeat(2,minmax(0,1fr));}}
 @media(max-width:600px) {.strategy-options {gap:8px;}.strategy-options button {padding:15px 25px 15px 12px;min-height:120px;}.strategy-options strong {font-size:12px;}.strategy-options button>span:not(.strategy-check) {font-size:10px;}.strategy-targets>div {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));}.strategy-targets button {position:relative;flex-direction:column;justify-content:center;width:100%;min-height:110px;padding:12px 6px;gap:8px;}.strategy-targets button strong {font-size:11px;}.strategy-targets button>span:last-child:not(.pet-tile-frame) {position:absolute;top:5px;right:6px;font-size:11px;}}
-@media(prefers-reduced-motion:reduce) {.strategy-options button {transition:none;}}
+@media(max-width:767px) {.rarity-priority-controls {grid-template-columns:minmax(0,1fr);}}
+@media(prefers-reduced-motion:reduce) {.strategy-options button,.priority-values button {transition:none;}}

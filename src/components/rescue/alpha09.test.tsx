@@ -29,12 +29,13 @@ test("participant namespaces distinguish both Rabbits and are unique", () => {
  assert.equal(new Set(ids).size, 50);
  assert.ok(ids.includes("animal:farm:rabbit")); assert.ok(ids.includes("pet:rabbit"));
 });
-test("setup accepts exactly the five approved configurations", () => {
+test("setup accepts the six approved configurations", () => {
+ assert.equal(validateRescueSetup([],[pet]),null);
  for (const count of [1,2,3]) assert.equal(validateRescueSetup(farm.slice(0,count),[]),null);
  for (const count of [1,2]) assert.equal(validateRescueSetup(farm.slice(0,count),[pet]),null);
 });
-test("setup rejects pet-only, two pets, over-three, mixed regions and duplicates", () => {
- assert.ok(validateRescueSetup([],[pet]));
+test("setup rejects empty, two pets, over-three, mixed regions and duplicates", () => {
+ assert.ok(validateRescueSetup([],[]));
  assert.ok(validateRescueSetup(farm.slice(0,1),PET_SPECIES.slice(0,2)));
  assert.ok(validateRescueSetup(farm.slice(0,3),[pet]));
  assert.ok(validateRescueSetup([farm[0],ANIMALS.find(a => a.regionId === "moon")!],[]));

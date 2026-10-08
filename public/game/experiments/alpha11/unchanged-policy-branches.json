@@ -1,0 +1,5 @@
+{
+  "balanced": "    case \"balanced\": return 1;",
+  "finish-found": "    case \"finish-found\": return state.observations.some(o => o.type === \"hit\" && o.participantId === participant.id) ? 3 : 1;",
+  "target": "    case \"target\": return participant.id === strategy.participantId ? 1 : 0;"
+}

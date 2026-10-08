@@ -1,5 +1,6 @@
 import { useId } from "react";
-import type { RescueStrategy } from "../../solver/dynamic/rescueStrategy";
+import { RarityPriorityControls } from "./RarityPriorityControls";
+import type { PriorityValue, RarityPriorityConfig, RescueStrategy } from "../../solver/dynamic/rescueStrategy";
 import type { DisplayParticipant } from "./rescueParticipants";
 import { ParticipantArtwork } from "./ParticipantArtwork";
 
@@ -7,7 +8,7 @@ export const STRATEGY_OPTIONS = [
   { type: "balanced", label: "Balanced Search", description: "Best chance of hitting anything." },
   { type: "finish-found", label: "Finish What You Found", description: "Prefer animals you've already started uncovering." },
   { type: "target", label: "Target One", description: "Focus on one selected animal or pet." },
-  { type: "rarity-first", label: "Rarity First", description: "Prefer rarer animals; pets are ignored for scoring." },
+  { type: "rarity-priority", label: "Rarity Priority", description: "Set how strongly Common, Rare, Mythical, and Pet results should influence the search." },
 ] as const;
 
 type Props = {
@@ -15,10 +16,11 @@ type Props = {
   participants: readonly DisplayParticipant[];
   onStrategy: (type: RescueStrategy["type"]) => void;
   onTarget: (participantId: string) => void;
+  onPriority?: (category: keyof RarityPriorityConfig, value: PriorityValue) => void;
   live?: boolean;
 };
 
-export function StrategySelector({ strategy, participants, onStrategy, onTarget, live = false }: Props) {
+export function StrategySelector({ strategy, participants, onStrategy, onTarget, onPriority = () => {}, live = false }: Props) {
   const id = useId();
   return <section className={`strategy-control${live ? " strategy-live" : ""}`} aria-labelledby={id}>
     <h2 id={id}>{!live && <span>04</span>} Strategy</h2>
@@ -39,6 +41,6 @@ export function StrategySelector({ strategy, participants, onStrategy, onTarget,
       </button>)}</div>
       {!participants.some(p => p.id === strategy.participantId) && <p className="strategy-target-required" role="status">Select a target to continue.</p>}
     </div>}
-    {strategy.type === "rarity-first" && <p className="strategy-legend">Common &#215;1 <span>Rare &#215;2</span> <span>Mythical &#215;3</span> <span>Pets &#215;0</span></p>}
+    {strategy.type === "rarity-priority" && <RarityPriorityControls priorities={strategy.priorities} onPriority={onPriority} />}
   </section>;
 }

@@ -21,7 +21,7 @@ export function PetSelector({ petId, disabled, disabledReason, onPet }: Props) {
         <span className="pet-current" aria-live="polite">{selected && <PetArtwork name={selected.name} imagePath={selected.imagePath} />}<strong>{selected?.name ?? "None"}</strong><span className="pet-chevron" aria-hidden="true">&#8964;</span></span>
       </summary>
       <div className="pet-disclosure-content">
-        <p className="rescue-functional-copy">{disabled ? disabledReason : "Optional. Select only a species definitely present. A pet allows at most two animals."}</p>
+        <p className="rescue-functional-copy">{disabled ? disabledReason : "Select a species definitely present. Rescue a pet on its own or with up to two animals."}</p>
         <div className="rescue-pet-options">
           <button type="button" className="rescue-pet-option" aria-pressed={petId === null} onClick={() => choose(null)}><span className="pet-none" aria-hidden="true">&#8212;</span><strong>None</strong>{petId === null && <span className="pet-choice-check" aria-hidden="true">&#10003;</span>}</button>
           {PET_SPECIES.map(pet => <button key={pet.id} type="button" className="rescue-pet-option" data-pet-id={pet.id} aria-pressed={petId === pet.id} disabled={disabled} onClick={() => choose(petId === pet.id ? null : pet.id)}><PetArtwork name={pet.name} imagePath={pet.imagePath} /><strong>{pet.name}</strong>{petId === pet.id && <span className="pet-choice-check" aria-hidden="true">&#10003;</span>}</button>)}

@@ -1,0 +1,414 @@
+{
+  "runtime": "v24.14.0",
+  "methodology": "Eight region-independent pet-only species and every classic-animal combination in all seven regions; every pet species when applicable; three repeats after policy warm-up. Initial states. Full includes world generation/filtering; policy reuses surviving worlds.",
+  "results": [
+    {
+      "animals": 0,
+      "pet": true,
+      "strategy": "balanced",
+      "runs": 24,
+      "maxWorlds": 12,
+      "full": {
+        "meanMs": 0.09028749999996914,
+        "p95Ms": 0.32809999999972206,
+        "maxMs": 0.3966000000000349
+      },
+      "policy": {
+        "meanMs": 0.0470708333333126,
+        "p95Ms": 0.13989999999921565,
+        "maxMs": 0.2356999999992695
+      }
+    },
+    {
+      "animals": 0,
+      "pet": true,
+      "strategy": "finish-found",
+      "runs": 24,
+      "maxWorlds": 12,
+      "full": {
+        "meanMs": 0.03691249999985757,
+        "p95Ms": 0.06109999999989668,
+        "maxMs": 0.08770000000004075
+      },
+      "policy": {
+        "meanMs": 0.01849583333338008,
+        "p95Ms": 0.03690000000005966,
+        "maxMs": 0.08259999999972933
+      }
+    },
+    {
+      "animals": 0,
+      "pet": true,
+      "strategy": "target",
+      "runs": 24,
+      "maxWorlds": 12,
+      "full": {
+        "meanMs": 0.07704583333342423,
+        "p95Ms": 0.17360000000007858,
+        "maxMs": 0.7608000000000175
+      },
+      "policy": {
+        "meanMs": 0.021175000000084765,
+        "p95Ms": 0.055099999999583815,
+        "maxMs": 0.0838000000003376
+      }
+    },
+    {
+      "animals": 0,
+      "pet": true,
+      "strategy": "rarity-priority",
+      "runs": 24,
+      "maxWorlds": 12,
+      "full": {
+        "meanMs": 0.05372499999994792,
+        "p95Ms": 0.17969999999968422,
+        "maxMs": 0.19170000000030996
+      },
+      "policy": {
+        "meanMs": 0.022991666666674366,
+        "p95Ms": 0.04750000000058208,
+        "maxMs": 0.07189999999991414
+      }
+    },
+    {
+      "animals": 1,
+      "pet": false,
+      "strategy": "balanced",
+      "runs": 126,
+      "maxWorlds": 20,
+      "full": {
+        "meanMs": 0.04050476190476484,
+        "p95Ms": 0.07179999999971187,
+        "maxMs": 0.5604999999995925
+      },
+      "policy": {
+        "meanMs": 0.017970634920611846,
+        "p95Ms": 0.032599999999547435,
+        "maxMs": 0.0672999999997046
+      }
+    },
+    {
+      "animals": 1,
+      "pet": false,
+      "strategy": "finish-found",
+      "runs": 126,
+      "maxWorlds": 20,
+      "full": {
+        "meanMs": 0.03102301587307646,
+        "p95Ms": 0.05349999999998545,
+        "maxMs": 0.31530000000020664
+      },
+      "policy": {
+        "meanMs": 0.011756349206236683,
+        "p95Ms": 0.02489999999943393,
+        "maxMs": 0.06999999999970896
+      }
+    },
+    {
+      "animals": 1,
+      "pet": false,
+      "strategy": "target",
+      "runs": 126,
+      "maxWorlds": 20,
+      "full": {
+        "meanMs": 0.03175476190480122,
+        "p95Ms": 0.06849999999940337,
+        "maxMs": 0.2746000000006461
+      },
+      "policy": {
+        "meanMs": 0.01264444444445366,
+        "p95Ms": 0.025499999999738066,
+        "maxMs": 0.10900000000037835
+      }
+    },
+    {
+      "animals": 1,
+      "pet": false,
+      "strategy": "rarity-priority",
+      "runs": 126,
+      "maxWorlds": 20,
+      "full": {
+        "meanMs": 0.026670634920662004,
+        "p95Ms": 0.04579999999987194,
+        "maxMs": 0.3055000000003929
+      },
+      "policy": {
+        "meanMs": 0.014678571428537417,
+        "p95Ms": 0.03169999999954598,
+        "maxMs": 0.23610000000007858
+      }
+    },
+    {
+      "animals": 2,
+      "pet": false,
+      "strategy": "balanced",
+      "runs": 315,
+      "maxWorlds": 180,
+      "full": {
+        "meanMs": 0.1682441269841273,
+        "p95Ms": 0.47120000000086293,
+        "maxMs": 1.0331000000005588
+      },
+      "policy": {
+        "meanMs": 0.09928539682544123,
+        "p95Ms": 0.25340000000051077,
+        "maxMs": 0.6174000000000888
+      }
+    },
+    {
+      "animals": 2,
+      "pet": false,
+      "strategy": "finish-found",
+      "runs": 315,
+      "maxWorlds": 180,
+      "full": {
+        "meanMs": 0.10536285714283405,
+        "p95Ms": 0.33150000000023283,
+        "maxMs": 0.7405000000007931
+      },
+      "policy": {
+        "meanMs": 0.034400634920639855,
+        "p95Ms": 0.09349999999994907,
+        "maxMs": 0.25979999999981374
+      }
+    },
+    {
+      "animals": 2,
+      "pet": false,
+      "strategy": "target",
+      "runs": 315,
+      "maxWorlds": 180,
+      "full": {
+        "meanMs": 0.09511904761902337,
+        "p95Ms": 0.2791000000006534,
+        "maxMs": 0.6606999999994514
+      },
+      "policy": {
+        "meanMs": 0.03765968253969082,
+        "p95Ms": 0.08839999999963766,
+        "maxMs": 0.46670000000085565
+      }
+    },
+    {
+      "animals": 2,
+      "pet": false,
+      "strategy": "rarity-priority",
+      "runs": 315,
+      "maxWorlds": 180,
+      "full": {
+        "meanMs": 0.09522825396828603,
+        "p95Ms": 0.25529999999980646,
+        "maxMs": 0.6975000000002183
+      },
+      "policy": {
+        "meanMs": 0.033476190476202254,
+        "p95Ms": 0.08399999999983265,
+        "maxMs": 0.3102000000008047
+      }
+    },
+    {
+      "animals": 3,
+      "pet": false,
+      "strategy": "balanced",
+      "runs": 420,
+      "maxWorlds": 1008,
+      "full": {
+        "meanMs": 0.7930583333333419,
+        "p95Ms": 1.9922999999998865,
+        "maxMs": 4.166699999999764
+      },
+      "policy": {
+        "meanMs": 0.456522142857139,
+        "p95Ms": 1.269800000000032,
+        "maxMs": 2.52809999999954
+      }
+    },
+    {
+      "animals": 3,
+      "pet": false,
+      "strategy": "finish-found",
+      "runs": 420,
+      "maxWorlds": 1008,
+      "full": {
+        "meanMs": 0.4816588095238049,
+        "p95Ms": 1.1828999999997905,
+        "maxMs": 2.7776999999996406
+      },
+      "policy": {
+        "meanMs": 0.1483730952380635,
+        "p95Ms": 0.38879999999971915,
+        "maxMs": 1.4313999999994849
+      }
+    },
+    {
+      "animals": 3,
+      "pet": false,
+      "strategy": "target",
+      "runs": 420,
+      "maxWorlds": 1008,
+      "full": {
+        "meanMs": 0.4756340476190373,
+        "p95Ms": 1.1520000000000437,
+        "maxMs": 2.3234000000002197
+      },
+      "policy": {
+        "meanMs": 0.15196857142856668,
+        "p95Ms": 0.4293999999999869,
+        "maxMs": 1.0671000000002095
+      }
+    },
+    {
+      "animals": 3,
+      "pet": false,
+      "strategy": "rarity-priority",
+      "runs": 420,
+      "maxWorlds": 1008,
+      "full": {
+        "meanMs": 0.47725285714283405,
+        "p95Ms": 1.410899999999856,
+        "maxMs": 2.438100000000304
+      },
+      "policy": {
+        "meanMs": 0.15138690476190797,
+        "p95Ms": 0.37739999999939755,
+        "maxMs": 2.779000000000451
+      }
+    },
+    {
+      "animals": 1,
+      "pet": true,
+      "strategy": "balanced",
+      "runs": 1008,
+      "maxWorlds": 168,
+      "full": {
+        "meanMs": 0.10917867063492143,
+        "p95Ms": 0.23700000000008004,
+        "maxMs": 0.9393000000000029
+      },
+      "policy": {
+        "meanMs": 0.061156845238120434,
+        "p95Ms": 0.13990000000012515,
+        "maxMs": 1.8307000000004336
+      }
+    },
+    {
+      "animals": 1,
+      "pet": true,
+      "strategy": "finish-found",
+      "runs": 1008,
+      "maxWorlds": 168,
+      "full": {
+        "meanMs": 0.07349781746031459,
+        "p95Ms": 0.15209999999933643,
+        "maxMs": 0.630699999999706
+      },
+      "policy": {
+        "meanMs": 0.026452777777763906,
+        "p95Ms": 0.05580000000009022,
+        "maxMs": 0.6350999999995111
+      }
+    },
+    {
+      "animals": 1,
+      "pet": true,
+      "strategy": "target",
+      "runs": 1008,
+      "maxWorlds": 168,
+      "full": {
+        "meanMs": 0.07261666666667159,
+        "p95Ms": 0.15570000000025175,
+        "maxMs": 0.636199999999917
+      },
+      "policy": {
+        "meanMs": 0.02617301587299102,
+        "p95Ms": 0.05879999999979191,
+        "maxMs": 0.6774999999997817
+      }
+    },
+    {
+      "animals": 1,
+      "pet": true,
+      "strategy": "rarity-priority",
+      "runs": 1008,
+      "maxWorlds": 168,
+      "full": {
+        "meanMs": 0.07115783730158737,
+        "p95Ms": 0.1514999999999418,
+        "maxMs": 0.629399999999805
+      },
+      "policy": {
+        "meanMs": 0.02710615079367457,
+        "p95Ms": 0.0632000000005064,
+        "maxMs": 0.454000000000633
+      }
+    },
+    {
+      "animals": 2,
+      "pet": true,
+      "strategy": "balanced",
+      "runs": 2520,
+      "maxWorlds": 623,
+      "full": {
+        "meanMs": 0.44305182539683263,
+        "p95Ms": 1.253700000000208,
+        "maxMs": 4.433600000000297
+      },
+      "policy": {
+        "meanMs": 0.21487416666664969,
+        "p95Ms": 0.6800999999995838,
+        "maxMs": 3.7132000000001426
+      }
+    },
+    {
+      "animals": 2,
+      "pet": true,
+      "strategy": "finish-found",
+      "runs": 2520,
+      "maxWorlds": 623,
+      "full": {
+        "meanMs": 0.30168158730158745,
+        "p95Ms": 0.8280999999988126,
+        "maxMs": 2.585800000000745
+      },
+      "policy": {
+        "meanMs": 0.08021591269839771,
+        "p95Ms": 0.2316999999984546,
+        "maxMs": 1.6725999999998749
+      }
+    },
+    {
+      "animals": 2,
+      "pet": true,
+      "strategy": "target",
+      "runs": 2520,
+      "maxWorlds": 623,
+      "full": {
+        "meanMs": 0.29567178571430325,
+        "p95Ms": 0.8726000000006024,
+        "maxMs": 3.138600000000224
+      },
+      "policy": {
+        "meanMs": 0.07823726190477351,
+        "p95Ms": 0.22820000000047003,
+        "maxMs": 3.828400000000329
+      }
+    },
+    {
+      "animals": 2,
+      "pet": true,
+      "strategy": "rarity-priority",
+      "runs": 2520,
+      "maxWorlds": 623,
+      "full": {
+        "meanMs": 0.2986561507936138,
+        "p95Ms": 0.8806000000004133,
+        "maxMs": 3.7572000000000116
+      },
+      "policy": {
+        "meanMs": 0.07917309523810608,
+        "p95Ms": 0.24639999999999418,
+        "maxMs": 4.1140000000004875
+      }
+    }
+  ]
+}

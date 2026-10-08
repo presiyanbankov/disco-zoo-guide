@@ -1,10 +1,23 @@
 import type { DynamicCellScore, DynamicRescueState, RescueParticipant, RescueWorld } from "./dynamicRescueSolver";
 
+export type PriorityValue = 1 | 2 | 3 | 4;
+export interface RarityPriorityConfig {
+  readonly common: PriorityValue;
+  readonly rare: PriorityValue;
+  readonly mythical: PriorityValue;
+  readonly pet: PriorityValue;
+}
+export const DEFAULT_RARITY_PRIORITIES: RarityPriorityConfig = { common: 1, rare: 2, mythical: 3, pet: 1 };
+
 export type RescueStrategy =
   | { type: "balanced" }
   | { type: "finish-found" }
   | { type: "target"; participantId: string }
-  | { type: "rarity-first" };
+  | { type: "rarity-priority"; priorities: RarityPriorityConfig };
+
+export function rarityPriorityStrategy(priorities: RarityPriorityConfig = DEFAULT_RARITY_PRIORITIES): RescueStrategy {
+  return { type: "rarity-priority", priorities: { ...priorities } };
+}
 
 export const BALANCED_STRATEGY: RescueStrategy = { type: "balanced" };
 
@@ -14,10 +27,10 @@ export function participantStrategyWeight(participant: RescueParticipant, state:
     case "balanced": return 1;
     case "finish-found": return state.observations.some(o => o.type === "hit" && o.participantId === participant.id) ? 3 : 1;
     case "target": return participant.id === strategy.participantId ? 1 : 0;
-    case "rarity-first":
-      if (participant.kind === "pet") return 0;
+    case "rarity-priority":
+      if (participant.kind === "pet") return strategy.priorities.pet;
       // Legacy callers without rarity metadata remain common-weight participants.
-      return participant.animalRarity === "mythical" ? 3 : participant.animalRarity === "rare" ? 2 : 1;
+      return strategy.priorities[participant.animalRarity ?? "common"];
   }
 }
 
