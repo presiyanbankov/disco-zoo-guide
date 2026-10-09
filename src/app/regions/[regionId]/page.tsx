@@ -38,7 +38,7 @@ export default async function RegionPage({ params }: Props) {
   return (
     <div className={`site-shell region-page region-${region.id}`} data-route-page={`/regions/${region.id}`}>
       <a className="skip-link" href="#wildlife">Skip to animals</a>
-      <SiteHeader />
+      <SiteHeader regionId={region.id} />
       <main>
         <RegionHero region={region} index={REGION_PRESENTATION.indexOf(region)} animals={animals} />
         <RegionSearch regionName={region.name} strategy={getRegionSearchPresentation(animals)} />

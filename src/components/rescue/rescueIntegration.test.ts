@@ -16,8 +16,8 @@ const noop = () => {};
 const animals = ANIMALS.filter(a => a.regionId === "farm" && !a.hidden && a.rarity !== "timeless");
 const actions = { onObservation: noop, onUndo: noop, onReset: noop, onChange: noop };
 
-test("rescue route presents precisely seven regions, no locked/Timeless choices, and centralized version", () => {
-  const html = renderToStaticMarkup(createElement(RescuePage));
+test("rescue route presents precisely seven regions, no locked/Timeless choices, and centralized version", async () => {
+  const html = renderToStaticMarkup(await RescuePage());
   assert.match(html, /data-route-page="\/rescue"/);
   assert.equal((html.match(/class="rescue-region region-/g) ?? []).length, 7);
   assert.match(html, /Select a region/);

@@ -85,7 +85,7 @@ export function RescueBoard({ regionName, participants, state, result, onObserva
                   setPending({ cellIndex, anchor: { left: Math.max(16, Math.min(rect.left, window.innerWidth - 304)), top: Math.max(16, Math.min(rect.bottom + 8, window.innerHeight - 310)) } });
                   void audio.play("grid-select");
                 }}>
-                {animal ? <ParticipantArtwork participant={animal} /> : observation ? <span aria-hidden="true">—</span> : recommended ? <span className="rescue-crosshair" aria-hidden="true">+</span> : <span className="rescue-unopened-dot" aria-hidden="true" />}
+                {animal ? <span className="rescue-cell-art"><ParticipantArtwork participant={animal} /></span> : observation ? <span aria-hidden="true">—</span> : recommended ? <span className="rescue-crosshair" aria-hidden="true">+</span> : <span className="rescue-unopened-dot" aria-hidden="true" />}
               </button>;
             })}
           </div>

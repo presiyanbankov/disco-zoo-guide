@@ -9,10 +9,11 @@ import { REGION_PRESENTATION } from "../regions/regionPresentation";
 import { BALANCED_STRATEGY, resolveTargetStrategy, rarityFocusParticipantIds, type RescueStrategy } from "../../solver/dynamic/rescueStrategy";
 import { RescueSetup } from "./RescueSetup";
 import { RescueBoard } from "./RescueBoard";
+import type { RescueSetupContext } from "./rescueSetupContext";
 
-export function RescueAssistant({ animals }: { animals: readonly Animal[] }) {
-  const [regionId, setRegionId] = useState<string | null>(null);
-  const [selectedIds, setSelectedIds] = useState<string[]>([]);
+export function RescueAssistant({ animals, initialContext }: { animals: readonly Animal[]; initialContext?: RescueSetupContext }) {
+  const [regionId, setRegionId] = useState<string | null>(() => initialContext?.regionId ?? null);
+  const [selectedIds, setSelectedIds] = useState<string[]>(() => [...(initialContext?.selectedIds ?? [])]);
   const [petId, setPetId] = useState<string | null>(null);
   const [state, setState] = useState<DynamicRescueState | null>(null);
   const [strategy, setStrategy] = useState<RescueStrategy>(BALANCED_STRATEGY);

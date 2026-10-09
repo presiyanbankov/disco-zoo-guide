@@ -34,7 +34,7 @@ export default async function AnimalPage({ params }: Props) {
   return (
     <div className={`site-shell region-page animal-page region-${region.id}`} data-route-page={`/regions/${region.id}/${animal.id}`}>
       <a className="skip-link" href="#rescue-guide">Skip to rescue guide</a>
-      <SiteHeader />
+      <SiteHeader regionId={region.id} animalId={animal.id} />
       <main>
         <AnimalGuideHero animal={animal} region={region} index={animals.findIndex((record) => record.id === animal.id)} />
         <AnimalGuideGrids key={animal.id} animalId={animal.id} animalName={animal.name} pattern={animal.pattern} strategy={animal.strategy} strategyUnavailableReason={animal.strategyUnavailableReason} strategyError={animal.strategyError} />

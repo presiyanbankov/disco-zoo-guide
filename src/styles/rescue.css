@@ -45,14 +45,17 @@
 .rescue-recommendation { min-height: 67px; display: flex; flex-direction: column; gap: 9px; margin-bottom: 10px; }
 .rescue-recommendation strong { font-size: clamp(16px,2vw,23px); font-weight: 500; letter-spacing: -.025em; }
 .dynamic-rescue-grid { grid-column: 2; grid-row: 2; display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: clamp(4px,1vw,8px); }
-.dynamic-cell { aspect-ratio: 1; min-width: 0; position: relative; display: flex; align-items: center; justify-content: center; background: #111a14; border: 1px solid #293328; border-radius: 3px; color: var(--accent); cursor: pointer; transition: background 180ms, border-color 180ms, transform 160ms; }
+.dynamic-cell { aspect-ratio: 1; min-width: 0; min-height: 0; overflow: hidden; position: relative; display: flex; align-items: center; justify-content: center; background: #111a14; border: 1px solid #293328; border-radius: 3px; color: var(--accent); cursor: pointer; transition: background 180ms, border-color 180ms, transform 160ms; }
 .dynamic-cell:hover:not(:disabled) { background: #283026; transform: translateY(-1px); }
 .dynamic-cell.cell-recommended { background: color-mix(in srgb,var(--accent) 18%,#111a14); border-color: var(--accent); box-shadow: inset 0 0 0 1px color-mix(in srgb,var(--accent) 15%,transparent); animation: rescue-recommend 220ms ease-out; }
 .rescue-crosshair { font: 34px var(--font-geist-mono),monospace; font-weight: 300; }
 .rescue-unopened-dot { width: 3px; height: 3px; background: #465143; border-radius: 50%; }
 .cell-empty { background: #0a100c; border-color: #1c251e; color: #53604f; cursor: default; }
 .cell-animal { cursor: default; border-color: #64756c; background: #1a2420; }
-.dynamic-cell .animal-game-icon { max-width: 75%; max-height: 72%; width: auto; height: auto; object-fit: contain; image-rendering: pixelated; }
+/* Hit artwork never participates in grid track sizing. The definite inset box
+   also gives percentage image bounds a height, including tall animal sprites. */
+.rescue-cell-art { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; min-width: 0; min-height: 0; }
+.dynamic-cell .rescue-cell-art .animal-game-icon { max-width: 75%; max-height: 72%; width: auto; height: auto; margin: 0; object-fit: contain; image-rendering: pixelated; }
 .dynamic-cell .animal-art-fallback { font-size: 20px; }
 .rescue-board-actions { display: flex; justify-content: space-between; gap: 10px; border-top: 1px solid var(--line); margin-top: 22px; padding-top: 18px; }
 .rescue-board-actions .rescue-secondary { padding: 10px 12px; font-size: 11px; }
