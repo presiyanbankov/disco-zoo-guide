@@ -1,10 +1,15 @@
+"use client";
+import { useProgress } from "../progress/ProgressProvider";
+import { canViewAnimal } from "../progress/spoilerPreferences";
 import { AnimalCard } from "./AnimalCard";
 import { TimelessSlot } from "./TimelessSlot";
 import type { AnimalCardPreview } from "./DEV_MOCK_ANIMALS";
 
 const rarityLabels = ["common", "rare", "mythical"] as const;
 
-export function AnimalCollection({ animals }: { animals: readonly AnimalCardPreview[] }) {
+export function AnimalCollection({ animals: records }: { animals: readonly AnimalCardPreview[] }) {
+  const { preferences } = useProgress();
+  const animals = records.filter(a => canViewAnimal(a, preferences));
   return (
     <section className="animal-collection" id="wildlife" aria-labelledby="wildlife-title">
       <div className="section-heading">

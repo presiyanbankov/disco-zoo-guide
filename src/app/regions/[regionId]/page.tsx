@@ -9,6 +9,7 @@ import { RegionNavigation } from "../../../components/regions/RegionNavigation";
 import { RegionSearch } from "../../../components/regions/RegionSearch";
 import { getRegionSearchPresentation } from "../../../components/regions/regionSearchPresentation";
 import { getRegionPresentation, REGION_PRESENTATION } from "../../../components/regions/regionPresentation";
+import { ProgressGuard } from "../../../components/progress/ProgressGuard";
 
 type Props = { params: Promise<{ regionId: string }> };
 
@@ -24,8 +25,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const region = getRegionPresentation(regionId);
   if (!region) return { title: "Uncharted territory — Disco Zoo Field Guide" };
   return {
-    title: `${region.name} — Disco Zoo Field Guide`,
-    description: `${region.name} animals, rescue patterns and search sequences. Unofficial Disco Zoo guide.`,
+    title: "Region guide — Disco Zoo Field Guide",
+    description: "Animal patterns and rescue search sequences with spoiler visibility settings.",
   };
 }
 
@@ -40,10 +41,12 @@ export default async function RegionPage({ params }: Props) {
       <a className="skip-link" href="#wildlife">Skip to animals</a>
       <SiteHeader regionId={region.id} />
       <main>
+        <ProgressGuard regionId={region.id}>
         <RegionHero region={region} index={REGION_PRESENTATION.indexOf(region)} animals={animals} />
         <RegionSearch regionName={region.name} strategy={getRegionSearchPresentation(animals)} />
         <AnimalCollection animals={animals} />
         <RegionNavigation currentId={region.id} />
+        </ProgressGuard>
       </main>
       <SiteFooter />
     </div>

@@ -14,7 +14,7 @@ export function RegionHero({ region, animals }: { region: RegionPresentation; in
         <p className="hero-animal-count">{animals.length} ANIMALS</p>
         <p className="hero-roster-summary">{["common", "rare", "mythical"].map((rarity) => `${animals.filter((animal) => animal.rarity === rarity).length} ${rarity.toUpperCase()}`).join(" \u00b7 ")}</p>
         <div className="hero-meta">
-          <span><span className="status-dot" /> UNLOCKED</span>
+          <span><span className="status-dot" /> GUIDE AVAILABLE</span>
           <span>{region.climate}</span>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { renderToStaticMarkup } from "react-dom/server";
+import { renderWithFullProgress as renderToStaticMarkup } from "../progress/progressTestSupport";
 import { PET_SPECIES } from "../../data/pets";
 import { ANIMALS } from "../../data/animals";
 import { animalParticipant, petParticipant, validateRescueSetup } from "./rescueParticipants";

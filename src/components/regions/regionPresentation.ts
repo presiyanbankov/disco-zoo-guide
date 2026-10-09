@@ -1,4 +1,5 @@
 import type { RegionId } from "../../types/game";
+import { EARTH_PROGRESS, SPACE_PROGRESS } from "../progress/progression";
 
 // Frontend copy and progress presentation, not canonical region data.
 export const REGION_PRESENTATION = [
@@ -51,8 +52,8 @@ export function getRegionPresentation(id: string) {
 
 /** Group-local numbering is presentation metadata, independent of routing/data. */
 export const REGION_GROUPS = [
-  { id: "earth", name: "Earth", destinations: ["Farm", "Outback", "Savanna", "Northern", "Polar", "Jungle", "Jurassic", "Ice Age", "City", "Mountain", "Nocturnal"] },
-  { id: "space", name: "Space", destinations: ["Moon", "Mars", "Constellation"] },
+  { id: "earth", name: "Earth", destinations: EARTH_PROGRESS.map(r => r.name) },
+  { id: "space", name: "Space", destinations: SPACE_PROGRESS.map(r => r.name) },
 ] as const;
 export function regionPosition(id: string) {
   const region = getRegionPresentation(id);

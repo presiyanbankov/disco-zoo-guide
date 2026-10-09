@@ -1,13 +1,14 @@
 import { ANIMALS } from "../../data/animals";
 import { getRegionPresentation } from "../regions/regionPresentation";
+import { canViewAnimal, canViewRegion, type SpoilerPreferences } from "../progress/spoilerPreferences";
 
 export type RescueSetupContext = { regionId: string | null; selectedIds: string[] };
 
 /** Query context initializes setup only; it never starts a rescue or stores observations. */
-export function resolveRescueSetupContext(region?: string | string[], animal?: string | string[]): RescueSetupContext {
-  const regionId = typeof region === "string" && getRegionPresentation(region) ? region : null;
+export function resolveRescueSetupContext(region?: string | string[], animal?: string | string[], preferences?: SpoilerPreferences): RescueSetupContext {
+  const regionId = typeof region === "string" && getRegionPresentation(region) && (!preferences || canViewRegion(region, preferences)) ? region : null;
   const record = regionId && typeof animal === "string"
-    ? ANIMALS.find(a => a.regionId === regionId && a.id === animal && !a.hidden && a.rarity !== "timeless") : undefined;
+    ? ANIMALS.find(a => a.regionId === regionId && a.id === animal && !a.hidden && a.rarity !== "timeless" && (!preferences || canViewAnimal(a, preferences))) : undefined;
   return { regionId, selectedIds: record ? [record.id] : [] };
 }
 

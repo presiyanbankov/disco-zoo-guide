@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { createElement } from "react";
-import { renderToStaticMarkup } from "react-dom/server";
+import { renderWithFullProgress as renderToStaticMarkup } from "../progress/progressTestSupport";
 import RescuePage from "../../app/rescue/page";
 import { ANIMALS as CANONICAL_ANIMALS } from "../../data/animals";
 import { analyzeDynamicRescue, applyObservation, createDynamicRescueState } from "../../solver/dynamic/dynamicRescueSolver";

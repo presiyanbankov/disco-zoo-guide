@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
 import { createElement } from "react";
-import { renderToStaticMarkup } from "react-dom/server";
+import { renderWithFullProgress as renderToStaticMarkup } from "../progress/progressTestSupport";
 import RegionPage, { generateStaticParams as regionParams } from "../../app/regions/[regionId]/page";
 import AnimalPage, { generateStaticParams as animalParams } from "../../app/regions/[regionId]/[animalId]/page";
 import { ANIMALS } from "../../data/animals";

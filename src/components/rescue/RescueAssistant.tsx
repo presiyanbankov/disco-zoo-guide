@@ -10,10 +10,18 @@ import { BALANCED_STRATEGY, resolveTargetStrategy, rarityFocusParticipantIds, ty
 import { RescueSetup } from "./RescueSetup";
 import { RescueBoard } from "./RescueBoard";
 import type { RescueSetupContext } from "./rescueSetupContext";
+import { resolveRescueSetupContext } from "./rescueSetupContext";
+import { useProgress } from "../progress/ProgressProvider";
+import { canViewAnimal, canViewRegion, getVisibleRegions } from "../progress/spoilerPreferences";
+import { ProgressGuard } from "../progress/ProgressGuard";
 
-export function RescueAssistant({ animals, initialContext }: { animals: readonly Animal[]; initialContext?: RescueSetupContext }) {
-  const [regionId, setRegionId] = useState<string | null>(() => initialContext?.regionId ?? null);
-  const [selectedIds, setSelectedIds] = useState<string[]>(() => [...(initialContext?.selectedIds ?? [])]);
+export function RescueAssistant({ animals: allAnimals, initialContext }: { animals: readonly Animal[]; initialContext?: RescueSetupContext }) {
+  const { preferences } = useProgress();
+  const animals = allAnimals.filter(a => canViewAnimal(a, preferences));
+  const regions = getVisibleRegions(REGION_PRESENTATION, preferences);
+  const context = resolveRescueSetupContext(initialContext?.regionId ?? undefined, initialContext?.selectedIds[0], preferences);
+  const [regionId, setRegionId] = useState<string | null>(() => context.regionId);
+  const [selectedIds, setSelectedIds] = useState<string[]>(() => [...context.selectedIds]);
   const [petId, setPetId] = useState<string | null>(null);
   const [state, setState] = useState<DynamicRescueState | null>(null);
   const [strategy, setStrategy] = useState<RescueStrategy>(BALANCED_STRATEGY);
@@ -59,11 +67,16 @@ export function RescueAssistant({ animals, initialContext }: { animals: readonly
     catch (error) { setError(error instanceof Error ? error.message : String(error)); }
   }
 
+  // A progress reduction must never leave a stale live roster/board visible.
+  // Keep state behind the barrier so revealing again is non-destructive.
+  const hiddenParticipant = allAnimals.find(a => a.regionId === regionId && selectedIds.includes(a.id) && !canViewAnimal(a, preferences));
+  if (regionId && (!canViewRegion(regionId, preferences) || hiddenParticipant)) return <ProgressGuard regionId={regionId} timeless={hiddenParticipant?.rarity === "timeless"} onBack={() => { setRegionId(null); setSelectedIds([]); setPetId(null); setState(null); setError(undefined); }}>{null}</ProgressGuard>;
+
   return <div className={`rescue-assistant${regionId ? ` region-${regionId}` : ""}`}>
-    {!state || !result ? <RescueSetup regionId={regionId} selectedIds={selectedIds} animals={animals}
+    {!state || !result ? <RescueSetup regionId={regionId} selectedIds={selectedIds} animals={animals} regions={regions}
       participants={participants} strategy={effectiveStrategy} onStrategy={onStrategy} onTarget={onTarget}
       petId={petId} onPet={id => { if (id === null || selectedIds.length < 3) { setPetId(id); if (id && !selectedIds.length && strategy.type === "rarity-focus") setStrategy(BALANCED_STRATEGY); } }}
-      onRegion={id => { if (id === regionId) return; setRegionId(id); setSelectedIds([]); setState(null); setStrategy(BALANCED_STRATEGY); setLastTarget(""); setError(undefined); }}
+      onRegion={id => { if (id === regionId || !regions.some(r => r.id === id)) return; setRegionId(id); setSelectedIds([]); setState(null); setStrategy(BALANCED_STRATEGY); setLastTarget(""); setError(undefined); }}
       onAnimal={id => {
         if (!animals.some(a => a.id === id && a.regionId === regionId && !a.hidden && a.rarity !== "timeless")) return;
         if (selectedIds.includes(id) && selectedIds.length === 1 && petId && strategy.type === "rarity-focus") setStrategy(BALANCED_STRATEGY);

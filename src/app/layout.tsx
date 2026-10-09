@@ -12,6 +12,8 @@ import "../styles/pets.css";
 import "../styles/strategies.css";
 import { NavigationMotion } from "../components/navigation/NavigationMotion";
 import { EnvironmentLifecycle } from "../components/effects/EnvironmentLifecycle";
+import { ProgressProvider } from "../components/progress/ProgressProvider";
+import "../styles/progress.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +27,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Disco Zoo Field Guide — Your next great rescue",
-  description: "An unofficial Disco Zoo companion. Explore Farm, Outback, Savanna, Northern, Polar, Jungle and Moon with animal patterns and search sequences.",
+  description: "An unofficial Disco Zoo companion with rescue tools and spoiler-controlled guides.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -35,7 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col"><EnvironmentLifecycle /><NavigationMotion>{children}</NavigationMotion></body>
+      <body className="min-h-full flex flex-col"><ProgressProvider><EnvironmentLifecycle /><NavigationMotion>{children}</NavigationMotion></ProgressProvider></body>
     </html>
   );
 }

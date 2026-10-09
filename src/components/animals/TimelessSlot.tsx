@@ -5,7 +5,7 @@ export function TimelessSlot() {
       <div className="timeless-copy">
         <span className="eyebrow">SLOT 07</span>
         <h3 id="timeless-title">Timeless<span className="unknown-tag">UNKNOWN</span></h3>
-        <p>Not unlocked.</p>
+        <p>Not available yet.</p>
       </div>
       <span className="timeless-seal" aria-hidden="true">07 / ?</span>
     </aside>

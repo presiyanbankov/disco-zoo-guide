@@ -22,9 +22,10 @@ type Props = {
   onStart: () => void;
   petId?: string | null;
   onPet?: (id: string | null) => void;
+  regions?: readonly (typeof REGION_PRESENTATION)[number][];
 };
 
-export function RescueSetup({ regionId, selectedIds, animals, onRegion, onAnimal, onStart, petId = null, onPet = () => {}, strategy = BALANCED_STRATEGY, participants, onStrategy = () => {}, onTarget = () => {} }: Props) {
+export function RescueSetup({ regionId, selectedIds, animals, onRegion, onAnimal, onStart, petId = null, onPet = () => {}, strategy = BALANCED_STRATEGY, participants, onStrategy = () => {}, onTarget = () => {}, regions = REGION_PRESENTATION }: Props) {
   const candidates = animals.filter(a => a.regionId === regionId && !a.hidden && a.rarity !== "timeless");
   const pet = PET_SPECIES.find(p => p.id === petId);
   const targets = participants ?? [...candidates.filter(a => selectedIds.includes(a.id)).map(animalParticipant), ...(pet ? [petParticipant(pet)] : [])];
@@ -34,10 +35,10 @@ export function RescueSetup({ regionId, selectedIds, animals, onRegion, onAnimal
   const targetRequired = strategy.type === "target" && !targets.some(p => p.id === strategy.participantId);
   return <div className="rescue-setup">
     <section aria-labelledby="rescue-region-heading">
-      <div className="rescue-section-heading"><h2 id="rescue-region-heading"><span>01</span> Region</h2><span className="eyebrow">7 UNLOCKED</span></div>
+      <div className="rescue-section-heading"><h2 id="rescue-region-heading"><span>01</span> Region</h2><span className="eyebrow">{regions.length} AVAILABLE</span></div>
       <p className="rescue-functional-copy">Choose a region for animals. Pet-only rescues do not need a region.</p>
       <div className="rescue-regions">
-        {REGION_PRESENTATION.map((region) => <button key={region.id} type="button" className={`rescue-region region-${region.id}`} aria-pressed={region.id === regionId} onClick={() => onRegion(region.id)}>
+        {regions.map((region) => <button key={region.id} type="button" className={`rescue-region region-${region.id}`} aria-pressed={region.id === regionId} onClick={() => onRegion(region.id)}>
           <RegionLandscape region={region.id} /><span className="rescue-region-number">{regionPosition(region.id).group.toUpperCase()} / {String(regionPosition(region.id).number).padStart(2, "0")}</span><strong>{region.name}</strong>
         </button>)}
       </div>

@@ -1,0 +1,69 @@
+.progress-loading { min-height: 100svh; display: grid; place-items: center; color: var(--muted); font-size: 13px; background: #090d0b; }
+.progress-welcome { min-height: 100svh; padding: clamp(24px, 4vw, 48px) 20px; background: radial-gradient(ellipse at 10% 0%, #24352280, transparent 55%), radial-gradient(ellipse at 95% 85%, #26273b60, transparent 50%), #090d0b; }
+.progress-setup { width: min(720px,100%); margin: auto; }
+.progress-setup h1 { font-size: clamp(32px,5vw,54px); line-height: 1.08; letter-spacing: -.055em; margin: 18px 0; font-weight: 550; }
+.progress-setup h1 span { color: #b9c88f; }
+.progress-setup > p { color: #a0a79e; font-size: 14px; line-height: 1.7; max-width: 490px; margin-bottom: 28px; }
+.progress-track { --journey-accent: #b5c58a; --journey-reached: #1c271a; --journey-endpoint: #2c3924; border: 0; padding: 0; margin: 0 0 22px; min-width: 0; }
+.progress-track legend { font-size: 18px; font-weight: 550; margin-bottom: 8px; width: 100%; display: flex; justify-content: space-between; align-items: center; }
+.progress-track legend > span { font: 10px var(--font-geist-mono),monospace; font-weight: 400; color: var(--journey-accent); margin-left: 12px; text-transform: uppercase; }
+.progress-track-hint { font-size: 12px; color: #929e8d; margin: 0 0 14px; }
+.progress-destinations { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 6px; }
+.progress-destinations label, .progress-space-none, .timeless-choices label { position: relative; min-width: 0; cursor: pointer; }
+.progress-destinations input, .progress-space-none input, .timeless-choices input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.progress-destinations label > span { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 7px; padding: 12px; min-height: 60px; border: 1px solid #263026; background: #101611; border-radius: 3px; color: #939e90; font-size: 13px; transition: background 160ms, border-color 160ms; }
+.progress-destinations label > span::before { content: ""; position: absolute; inset: -1px -1px auto; height: 2px; background: #30382e; border-radius: 3px 3px 0 0; }
+.progress-destinations [data-progress-state="reached"] > span { background: var(--journey-reached); border-color: #3a4931; color: #c5d1ba; }
+.progress-destinations [data-progress-state="reached"] > span::before, .progress-destinations [data-progress-state="endpoint"] > span::before { background: var(--journey-accent); }
+.progress-destinations small { font: 9px var(--font-geist-mono),monospace; color: #84907a; }
+.progress-destinations [data-progress-state="reached"] small, .progress-destinations [data-progress-state="endpoint"] small { color: var(--journey-accent); }
+.progress-destinations .journey-endpoint { position: absolute; right: 10px; top: 12px; font: 8px var(--font-geist-mono),monospace; letter-spacing: .08em; color: var(--journey-accent); }
+.progress-destinations input:checked + span { border-color: var(--journey-accent); background: var(--journey-endpoint); color: #edf2e5; }
+.progress-destinations input:focus-visible + span, .progress-space-none input:focus-visible + span, .timeless-choices input:focus-visible + span { outline: 2px solid #e4e9d7; outline-offset: 3px; }
+.progress-destinations label:hover > span { border-color: var(--journey-accent); }
+.progress-space { --journey-accent: #aba9cc; --journey-reached: #1e202e; --journey-endpoint: #303248; }
+.progress-space .progress-destinations { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.progress-space [data-progress-state="reached"] > span { border-color: #3c3e57; }
+.progress-space-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+.progress-space-heading .progress-track-hint { margin: 0; }
+.progress-space-none > span { display: flex; align-items: center; gap: 9px; min-height: 44px; padding: 8px 10px; font-size: 11px; color: #9fa4ba; border: 1px solid #35384a; border-radius: 3px; }
+.progress-space-none input:checked + span { color: #d9d9ef; background: #202232; border-color: #8285a6; }
+.progress-timeless { border-top: 1px solid #30372d; padding-top: 16px; margin-bottom: 18px; }
+.progress-timeless legend { float: left; width: auto; font-size: 13px; margin: 0; line-height: 44px; }
+.timeless-choices { display: flex; justify-content: flex-end; gap: 4px; }
+.timeless-choices label > span { display: flex; align-items: center; justify-content: center; gap: 7px; min-width: 72px; min-height: 44px; font-size: 12px; border: 1px solid #30382d; border-radius: 3px; color: #929e8c; }
+.timeless-choices input:checked + span { background: #222c1d; border-color: #798965; color: #dae4ce; }
+.progress-entry { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 24px; border-top: 1px solid #30372d; padding-top: 20px; }
+.progress-summary .eyebrow { font-size: 9px; }
+.progress-summary p { font-size: 12px; color: #c0cbb8; line-height: 1.75; margin: 8px 0 0; }
+.progress-summary p > span { display: block; color: #98a38f; }
+.progress-entry .progress-actions { margin: 0; }
+.progress-entry .progress-save { margin: 0; min-width: 180px; }
+.progress-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 26px; }
+.progress-save { margin-left: auto; min-width: 190px; }
+.progress-dialog { margin: auto; padding: clamp(24px,4vw,40px); background: #0d130f; color: #e4e9df; border: 1px solid #3b4435; border-radius: 4px; width: min(840px,calc(100% - 24px)); max-height: calc(100svh - 24px); overflow: auto; }
+.progress-dialog::backdrop { background: #030605dd; }
+.progress-barrier { max-width: 740px; padding: clamp(48px,10vw,120px) 0; min-height: 60svh; }
+.progress-barrier h1 { font-size: clamp(32px,5vw,52px); letter-spacing: -.05em; line-height: 1.1; margin: 22px 0; }
+.progress-barrier p { color: #a1a99a; line-height: 1.7; }
+.progress-control { color: #a6af9d; border: 1px solid #30372d; background: transparent; border-radius: 3px; padding: 10px 12px; min-height: 44px; font-size: 11px; cursor: pointer; }
+.progress-control:hover { color: #e1e7d9; border-color: #728166; }
+.progress-barrier > .progress-control { margin-top: 20px; }
+.progress-storage-notice { position: fixed; bottom: 12px; left: 12px; right: 12px; padding: 12px; background: #182016; z-index: 20; font-size: 12px; }
+@media (min-width: 769px) { .site-header { gap: 16px; } }
+@media (max-width: 767px) {
+  .site-header .header-link { grid-column: 1; }
+  .site-header .progress-control { grid-column: 2; grid-row: 2; justify-self: end; padding: 8px 10px; }
+  .site-header .alpha-tag { grid-column: 3; grid-row: 2; }
+}
+@media (max-width: 480px) {
+  .progress-destinations { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .progress-destinations label > span { min-height: 62px; padding: 10px; font-size: 12px; gap: 6px; }
+  .progress-destinations .journey-endpoint { top: 10px; right: 8px; font-size: 7px; }
+  .progress-track legend > span { margin-left: 10px; font-size: 9px; }
+  .progress-setup > p { margin-bottom: 22px; }
+  .progress-entry { grid-template-columns: 1fr; gap: 16px; }
+  .progress-save { flex: 1; }
+  .progress-welcome { padding-top: 26px; }
+}
+@media (prefers-reduced-motion: reduce) { .progress-destinations label > span { transition: none; } }

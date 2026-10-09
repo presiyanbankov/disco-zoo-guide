@@ -3,6 +3,7 @@ import { SoundToggle } from "../audio/SoundToggle";
 import { RescueHeaderLink } from "./RescueHeaderLink";
 import { SITE_VERSION } from "./siteVersion";
 import { rescueSetupHref } from "../rescue/rescueSetupContext";
+import { ProgressControl } from "../progress/ProgressProvider";
 
 export function SiteHeader({ regionId, animalId }: { regionId?: string; animalId?: string } = {}) {
   return (
@@ -16,6 +17,7 @@ export function SiteHeader({ regionId, animalId }: { regionId?: string; animalId
       </Link>
       <RescueHeaderLink href={rescueSetupHref(regionId, animalId)} />
       <SoundToggle />
+      <ProgressControl />
       <span className="alpha-tag">{SITE_VERSION}</span>
     </header>
   );

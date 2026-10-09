@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { renderToStaticMarkup } from "react-dom/server";
+import { renderWithFullProgress as renderToStaticMarkup } from "../progress/progressTestSupport";
 import RescuePage from "../../app/rescue/page";
 import RegionPage from "../../app/regions/[regionId]/page";
 import AnimalPage from "../../app/regions/[regionId]/[animalId]/page";

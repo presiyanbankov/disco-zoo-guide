@@ -1,7 +1,12 @@
+"use client";
+import { useProgress } from "../progress/ProgressProvider";
+import { canViewAnimal } from "../progress/spoilerPreferences";
 import { TransitionLink as Link } from "../navigation/TransitionLink";
 import type { AnimalCardPreview } from "./DEV_MOCK_ANIMALS";
 
-export function AnimalGuideNavigation({ animals, currentId, regionName }: { animals: readonly AnimalCardPreview[]; currentId: string; regionName: string }) {
+export function AnimalGuideNavigation({ animals: records, currentId, regionName }: { animals: readonly AnimalCardPreview[]; currentId: string; regionName: string }) {
+  const { preferences } = useProgress();
+  const animals = records.filter(a => canViewAnimal(a, preferences));
   const index = animals.findIndex((animal) => animal.id === currentId);
   const previous = index > 0 ? animals[index - 1] : undefined;
   const next = index >= 0 ? animals[index + 1] : undefined;
