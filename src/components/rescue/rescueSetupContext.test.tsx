@@ -14,7 +14,7 @@ for (const [region, animal, expected] of [
   ["moon", "jade-rabbit", { regionId: "moon", selectedIds: ["jade-rabbit"] }],
   ["savanna", "pig", { regionId: "savanna", selectedIds: [] }],
   ["farm", "unknown", { regionId: "farm", selectedIds: [] }],
-  ["mars", "giraffe", { regionId: null, selectedIds: [] }],
+  ["mars", "giraffe", { regionId: "mars", selectedIds: [] }],
   ["unknown", undefined, { regionId: null, selectedIds: [] }],
 ] as const) {
   test(`context ${region}/${animal}: validates without exposing unsupported content`, () => {
@@ -27,7 +27,7 @@ test("ambiguous duplicate query values are ignored safely", () => {
 });
 test("link construction uses canonical IDs and generic pages stay plain", () => {
   assert.equal(rescueSetupHref(), "/rescue");
-  assert.equal(rescueSetupHref("mars"), "/rescue");
+  assert.equal(rescueSetupHref("mars"), "/rescue?region=mars");
   assert.equal(rescueSetupHref("farm"), "/rescue?region=farm");
   assert.equal(rescueSetupHref("farm", "pig"), "/rescue?region=farm&animal=pig");
   assert.equal(rescueSetupHref("moon", "jade-rabbit"), "/rescue?region=moon&animal=jade-rabbit");

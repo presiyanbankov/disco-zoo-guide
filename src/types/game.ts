@@ -9,7 +9,10 @@ export type RegionId =
     | "ice-age"
     | "city"
     | "mountain"
-    | "moon";
+    | "nocturnal"
+    | "moon"
+    | "mars"
+    | "constellation";
 
 export type Rarity =
     | "common"

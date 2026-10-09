@@ -1,0 +1,1426 @@
+[
+  {
+    "animal": "rock",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/0/0b/Rock.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Rock.png",
+    "sourceSHA256": "ece52aac9a714737332e3f144b2ea7c800084489a1ff42d6ffcfec9ee3cb0095",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      9,
+      39,
+      141,
+      135
+    ],
+    "cropBounds": [
+      7,
+      37,
+      143,
+      137
+    ],
+    "outputDimensions": [
+      136,
+      100
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      154,
+      148,
+      104
+    ],
+    "sourceRGBColors": [
+      [
+        115,
+        66,
+        32
+      ],
+      [
+        129,
+        75,
+        38
+      ],
+      [
+        136,
+        131,
+        93
+      ],
+      [
+        141,
+        81,
+        42
+      ],
+      [
+        144,
+        83,
+        42
+      ],
+      [
+        153,
+        91,
+        50
+      ],
+      [
+        154,
+        148,
+        104
+      ],
+      [
+        159,
+        92,
+        48
+      ],
+      [
+        166,
+        96,
+        51
+      ],
+      [
+        171,
+        101,
+        57
+      ],
+      [
+        174,
+        102,
+        55
+      ],
+      [
+        188,
+        109,
+        59
+      ],
+      [
+        189,
+        112,
+        62
+      ],
+      [
+        194,
+        114,
+        65
+      ],
+      [
+        203,
+        120,
+        70
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        115,
+        66,
+        32
+      ],
+      [
+        129,
+        75,
+        38
+      ],
+      [
+        141,
+        81,
+        42
+      ],
+      [
+        144,
+        83,
+        42
+      ],
+      [
+        153,
+        91,
+        50
+      ],
+      [
+        159,
+        92,
+        48
+      ],
+      [
+        166,
+        96,
+        51
+      ],
+      [
+        171,
+        101,
+        57
+      ],
+      [
+        174,
+        102,
+        55
+      ],
+      [
+        188,
+        109,
+        59
+      ],
+      [
+        189,
+        112,
+        62
+      ],
+      [
+        194,
+        114,
+        65
+      ],
+      [
+        203,
+        120,
+        70
+      ]
+    ],
+    "animalPixels": 8658,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 9714,
+        "bounds": [
+          9,
+          39,
+          141,
+          141
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 1056,
+        "bounds": [
+          11,
+          129,
+          139,
+          141
+        ],
+        "rgb": [
+          136,
+          131,
+          93
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 8658,
+        "bounds": [
+          9,
+          39,
+          141,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "ebec6a0c71118f2784ca616ae23267d93c23ea20b9ca9b6c5ad36a9676e29327",
+    "sourceEnclosedBackgroundComponents": [],
+    "enclosedCleanup": "Reviewed shadow removal connects all measured pockets to exterior; no seed needed."
+  },
+  {
+    "animal": "marsmot",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/2/21/Marsmot.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Marsmot.png",
+    "sourceSHA256": "d1d037f58378271d411b0ef53499f73faa3bdc4749f4e94893a81558e2db52aa",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      24,
+      3,
+      132,
+      135
+    ],
+    "cropBounds": [
+      22,
+      1,
+      134,
+      137
+    ],
+    "outputDimensions": [
+      112,
+      136
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      154,
+      148,
+      104
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        35,
+        68,
+        67
+      ],
+      [
+        48,
+        86,
+        91
+      ],
+      [
+        79,
+        120,
+        117
+      ],
+      [
+        81,
+        152,
+        159
+      ],
+      [
+        82,
+        166,
+        178
+      ],
+      [
+        83,
+        180,
+        198
+      ],
+      [
+        112,
+        149,
+        149
+      ],
+      [
+        136,
+        131,
+        93
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        145,
+        175,
+        179
+      ],
+      [
+        154,
+        148,
+        104
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        35,
+        68,
+        67
+      ],
+      [
+        48,
+        86,
+        91
+      ],
+      [
+        79,
+        120,
+        117
+      ],
+      [
+        81,
+        152,
+        159
+      ],
+      [
+        82,
+        166,
+        178
+      ],
+      [
+        83,
+        180,
+        198
+      ],
+      [
+        112,
+        149,
+        149
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        145,
+        175,
+        179
+      ]
+    ],
+    "animalPixels": 8280,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 9020,
+        "bounds": [
+          20,
+          3,
+          132,
+          141
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 704,
+        "bounds": [
+          20,
+          130,
+          122,
+          141
+        ],
+        "rgb": [
+          136,
+          131,
+          93
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 8280,
+        "bounds": [
+          24,
+          3,
+          132,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "725f2ca3abfa701b8f9e88cacdc4e5c805eb1f09e3c72bd040ff569635db0553",
+    "sourceEnclosedBackgroundComponents": [
+      {
+        "pixels": 36,
+        "bounds": [
+          90,
+          124,
+          96,
+          130
+        ]
+      }
+    ],
+    "enclosedCleanup": "Reviewed shadow removal connects all measured pockets to exterior; no seed needed."
+  },
+  {
+    "animal": "marsmoset",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/2/2b/Marsmoset.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Marsmoset.png",
+    "sourceSHA256": "3d953352860fa04d92df258368540d7a84a8df4ba55e127cd9c0ccbc91b65d88",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      9,
+      27,
+      141,
+      135
+    ],
+    "cropBounds": [
+      7,
+      25,
+      143,
+      137
+    ],
+    "outputDimensions": [
+      136,
+      112
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      154,
+      148,
+      104
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        75,
+        163
+      ],
+      [
+        25,
+        25,
+        25
+      ],
+      [
+        50,
+        50,
+        50
+      ],
+      [
+        59,
+        120,
+        202
+      ],
+      [
+        91,
+        91,
+        91
+      ],
+      [
+        132,
+        132,
+        132
+      ],
+      [
+        136,
+        131,
+        93
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        143,
+        25,
+        95
+      ],
+      [
+        154,
+        148,
+        104
+      ],
+      [
+        214,
+        214,
+        214
+      ],
+      [
+        237,
+        0,
+        140
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        75,
+        163
+      ],
+      [
+        25,
+        25,
+        25
+      ],
+      [
+        50,
+        50,
+        50
+      ],
+      [
+        59,
+        120,
+        202
+      ],
+      [
+        91,
+        91,
+        91
+      ],
+      [
+        132,
+        132,
+        132
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        143,
+        25,
+        95
+      ],
+      [
+        214,
+        214,
+        214
+      ],
+      [
+        237,
+        0,
+        140
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "animalPixels": 8976,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 10008,
+        "bounds": [
+          9,
+          27,
+          141,
+          141
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 756,
+        "bounds": [
+          21,
+          129,
+          129,
+          141
+        ],
+        "rgb": [
+          136,
+          131,
+          93
+        ]
+      },
+      {
+        "role": "shadow",
+        "pixels": 24,
+        "bounds": [
+          135,
+          129,
+          139,
+          135
+        ],
+        "rgb": [
+          136,
+          131,
+          93
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 8976,
+        "bounds": [
+          9,
+          27,
+          141,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "89c1d99a97babab4775994c781ab70a9cb3287c8e4c8ee334968c3d11b358181",
+    "sourceEnclosedBackgroundComponents": [
+      {
+        "pixels": 252,
+        "bounds": [
+          33,
+          105,
+          57,
+          129
+        ]
+      }
+    ],
+    "enclosedCleanup": "Reviewed shadow removal connects all measured pockets to exterior; no seed needed."
+  },
+  {
+    "animal": "rover",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/f/f4/Rover.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Rover.png",
+    "sourceSHA256": "03728d7301a74661eb48562e6ab853d0d74443de1e6bb6c27a790ab31037c2fa",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      11,
+      3,
+      143,
+      135
+    ],
+    "cropBounds": [
+      9,
+      1,
+      145,
+      137
+    ],
+    "outputDimensions": [
+      136,
+      136
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      153,
+      142,
+      107
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        100,
+        100,
+        100
+      ],
+      [
+        124,
+        124,
+        124
+      ],
+      [
+        135,
+        126,
+        95
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        137,
+        137,
+        137
+      ],
+      [
+        150,
+        150,
+        150
+      ],
+      [
+        153,
+        142,
+        107
+      ],
+      [
+        157,
+        157,
+        157
+      ],
+      [
+        161,
+        161,
+        161
+      ],
+      [
+        168,
+        168,
+        168
+      ],
+      [
+        171,
+        160,
+        0
+      ],
+      [
+        172,
+        172,
+        172
+      ],
+      [
+        182,
+        182,
+        182
+      ],
+      [
+        190,
+        190,
+        190
+      ],
+      [
+        196,
+        196,
+        196
+      ],
+      [
+        198,
+        198,
+        198
+      ],
+      [
+        203,
+        203,
+        203
+      ],
+      [
+        208,
+        208,
+        208
+      ],
+      [
+        212,
+        212,
+        212
+      ],
+      [
+        213,
+        201,
+        0
+      ],
+      [
+        222,
+        222,
+        222
+      ],
+      [
+        231,
+        231,
+        231
+      ],
+      [
+        234,
+        234,
+        234
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        100,
+        100,
+        100
+      ],
+      [
+        124,
+        124,
+        124
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        137,
+        137,
+        137
+      ],
+      [
+        150,
+        150,
+        150
+      ],
+      [
+        157,
+        157,
+        157
+      ],
+      [
+        161,
+        161,
+        161
+      ],
+      [
+        168,
+        168,
+        168
+      ],
+      [
+        171,
+        160,
+        0
+      ],
+      [
+        172,
+        172,
+        172
+      ],
+      [
+        182,
+        182,
+        182
+      ],
+      [
+        190,
+        190,
+        190
+      ],
+      [
+        196,
+        196,
+        196
+      ],
+      [
+        198,
+        198,
+        198
+      ],
+      [
+        203,
+        203,
+        203
+      ],
+      [
+        208,
+        208,
+        208
+      ],
+      [
+        212,
+        212,
+        212
+      ],
+      [
+        213,
+        201,
+        0
+      ],
+      [
+        222,
+        222,
+        222
+      ],
+      [
+        231,
+        231,
+        231
+      ],
+      [
+        234,
+        234,
+        234
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "animalPixels": 8196,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 11088,
+        "bounds": [
+          11,
+          3,
+          143,
+          141
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 1272,
+        "bounds": [
+          13,
+          129,
+          141,
+          141
+        ],
+        "rgb": [
+          135,
+          126,
+          95
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 8196,
+        "bounds": [
+          11,
+          3,
+          143,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "83101b939310c9d62d32dd9df23dad4e250c138002209d13e003ff1e356a2577",
+    "sourceEnclosedBackgroundComponents": [
+      {
+        "pixels": 900,
+        "bounds": [
+          35,
+          87,
+          71,
+          129
+        ]
+      },
+      {
+        "pixels": 720,
+        "bounds": [
+          71,
+          87,
+          113,
+          129
+        ]
+      }
+    ],
+    "enclosedCleanup": "Reviewed shadow removal connects all measured pockets to exterior; no seed needed."
+  },
+  {
+    "animal": "martian",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/0/00/Martian.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Martian.png",
+    "sourceSHA256": "919dfd6093383b9cbbbd60b8069f3810e87cdc7113943f28079df9d374d520dd",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      10,
+      9,
+      142,
+      135
+    ],
+    "cropBounds": [
+      8,
+      7,
+      144,
+      137
+    ],
+    "outputDimensions": [
+      136,
+      130
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      153,
+      142,
+      107
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        115,
+        165,
+        51
+      ],
+      [
+        119,
+        14,
+        18
+      ],
+      [
+        128,
+        182,
+        57
+      ],
+      [
+        135,
+        126,
+        95
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        141,
+        198,
+        63
+      ],
+      [
+        153,
+        142,
+        107
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        115,
+        165,
+        51
+      ],
+      [
+        119,
+        14,
+        18
+      ],
+      [
+        128,
+        182,
+        57
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        141,
+        198,
+        63
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "animalPixels": 7326,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 8448,
+        "bounds": [
+          10,
+          9,
+          142,
+          141
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 1056,
+        "bounds": [
+          12,
+          129,
+          140,
+          141
+        ],
+        "rgb": [
+          135,
+          126,
+          95
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 7326,
+        "bounds": [
+          10,
+          9,
+          142,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "b30bc1319b218726c729d71d9c655c5202bcee073984743c6b83de4bebbdca14",
+    "sourceEnclosedBackgroundComponents": [
+      {
+        "pixels": 66,
+        "bounds": [
+          70,
+          118,
+          76,
+          129
+        ]
+      }
+    ],
+    "enclosedCleanup": "Reviewed shadow removal connects all measured pockets to exterior; no seed needed."
+  },
+  {
+    "animal": "marsmallow",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/b/b4/Marsmallow.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Marsmallow.png",
+    "sourceSHA256": "68d9ec7496e8a6b0b6eb69a2675aa416e50f613c11f56872b44e43679046552c",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      24,
+      3,
+      126,
+      135
+    ],
+    "cropBounds": [
+      22,
+      1,
+      128,
+      137
+    ],
+    "outputDimensions": [
+      106,
+      136
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      169,
+      140,
+      107
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        191,
+        243
+      ],
+      [
+        70,
+        1,
+        83
+      ],
+      [
+        82,
+        85,
+        93
+      ],
+      [
+        99,
+        3,
+        96
+      ],
+      [
+        122,
+        125,
+        133
+      ],
+      [
+        149,
+        124,
+        95
+      ],
+      [
+        169,
+        140,
+        107
+      ],
+      [
+        220,
+        222,
+        222
+      ],
+      [
+        226,
+        227,
+        231
+      ],
+      [
+        234,
+        235,
+        235
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        191,
+        243
+      ],
+      [
+        70,
+        1,
+        83
+      ],
+      [
+        82,
+        85,
+        93
+      ],
+      [
+        99,
+        3,
+        96
+      ],
+      [
+        122,
+        125,
+        133
+      ],
+      [
+        220,
+        222,
+        222
+      ],
+      [
+        226,
+        227,
+        231
+      ],
+      [
+        234,
+        235,
+        235
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "animalPixels": 10164,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 11340,
+        "bounds": [
+          24,
+          3,
+          126,
+          142
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 799,
+        "bounds": [
+          26,
+          130,
+          125,
+          142
+        ],
+        "rgb": [
+          149,
+          124,
+          95
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 10164,
+        "bounds": [
+          24,
+          3,
+          126,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "05da5f4e8dc32fcea0c2ae1cfc384b2e68670b0efc315e004988be8e94eea5ee",
+    "sourceEnclosedBackgroundComponents": [
+      {
+        "pixels": 377,
+        "bounds": [
+          61,
+          117,
+          90,
+          130
+        ]
+      }
+    ],
+    "enclosedCleanup": "Reviewed shadow removal connects all measured pockets to exterior; no seed needed."
+  }
+]

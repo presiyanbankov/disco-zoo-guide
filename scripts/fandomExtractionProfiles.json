@@ -4654,5 +4654,1002 @@
     "review_status": "reviewed",
     "notes": "Individually inspected native source, shadow bounds and thin extremities. Explicit enclosed seeds reviewed where listed; all animal palette pixels protected by exact coverage validation.",
     "file_page": "https://discozoo.fandom.com/wiki/File:Aatxe.png"
+  },
+  {
+    "id": "badger",
+    "name": "Badger",
+    "region": "nocturnal",
+    "cdn": "f/ff/Badger.png",
+    "size": [
+      180,
+      112
+    ],
+    "sha256": "d557e30c2dd5c750de0e9dd581cf94d1786b118044962543229b6cc609dfb2ea",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      30,
+      91,
+      158,
+      103
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        53,
+        53,
+        53
+      ],
+      [
+        59,
+        59,
+        59
+      ],
+      [
+        77,
+        77,
+        77
+      ],
+      [
+        83,
+        83,
+        83
+      ],
+      [
+        105,
+        105,
+        105
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        164,
+        164,
+        164
+      ],
+      [
+        177,
+        177,
+        177
+      ],
+      [
+        192,
+        192,
+        192
+      ],
+      [
+        218,
+        218,
+        218
+      ]
+    ],
+    "count": 5580,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Pale face stripe, ears, stepped back and feet inspected; shadow touches feet. No visible signature. No enclosed background seeds needed; retain native dimensions.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Badger.png"
+  },
+  {
+    "id": "bat",
+    "name": "Bat",
+    "region": "nocturnal",
+    "cdn": "a/ad/Bat.png",
+    "size": [
+      157,
+      121
+    ],
+    "sha256": "d6fa65f8597fbce4454336bfeb398ddce44c64c865e2c2fcff56820072fff391",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      31,
+      102,
+      149,
+      114
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        59,
+        59,
+        59
+      ],
+      [
+        72,
+        57,
+        38
+      ],
+      [
+        77,
+        71,
+        67
+      ],
+      [
+        80,
+        64,
+        45
+      ],
+      [
+        101,
+        76,
+        46
+      ],
+      [
+        123,
+        88,
+        48
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        137,
+        100,
+        58
+      ],
+      [
+        151,
+        113,
+        69
+      ]
+    ],
+    "count": 5472,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Folded dark wings, pointed ears, eye highlight and lower edge inspected; shadow contact reviewed. No visible signature. No enclosed background seeds needed; retain native dimensions.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Bat.png"
+  },
+  {
+    "id": "kiwi",
+    "name": "Kiwi",
+    "region": "nocturnal",
+    "cdn": "e/ea/Kiwi.png",
+    "size": [
+      160,
+      128
+    ],
+    "sha256": "b7a0a54ddba9b64d77f556be48b5d3cff9f225cb3ecde2cbd976c3f20126ef3f",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      19,
+      108,
+      135,
+      120
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        59,
+        45,
+        29
+      ],
+      [
+        80,
+        64,
+        45
+      ],
+      [
+        123,
+        88,
+        48
+      ],
+      [
+        136,
+        100,
+        58
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        151,
+        113,
+        69
+      ],
+      [
+        168,
+        135,
+        108
+      ],
+      [
+        213,
+        182,
+        169
+      ]
+    ],
+    "count": 5724,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Long pale beak, eye and thin legs/feet inspected. No visible signature. No enclosed background seeds needed; retain native dimensions.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Kiwi.png"
+  },
+  {
+    "id": "flying-squirrel",
+    "name": "Flying Squirrel",
+    "region": "nocturnal",
+    "cdn": "6/62/Flying_Squirrel.png",
+    "size": [
+      162,
+      100
+    ],
+    "sha256": "4f668b0c59ecfef023141842bc048a80b54d31ffafc14b36b549d85bc7e36e85",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      22,
+      82,
+      140,
+      94
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        61,
+        49,
+        34
+      ],
+      [
+        95,
+        63,
+        22
+      ],
+      [
+        126,
+        88,
+        39
+      ],
+      [
+        127,
+        106,
+        79
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        145,
+        122,
+        92
+      ]
+    ],
+    "count": 3960,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Long tail, pale underside and small forelimbs inspected; shadow contact reviewed. No visible signature. No enclosed background seeds needed; retain native dimensions.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Flying_Squirrel.png"
+  },
+  {
+    "id": "kakapo",
+    "name": "Kakapo",
+    "region": "nocturnal",
+    "cdn": "4/45/Kakapo.png",
+    "size": [
+      152,
+      138
+    ],
+    "sha256": "4ec66f50493cd29c7afc7d2b5e89d431bd2233e980511e9fcb76fb9c2b19693e",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      24,
+      118,
+      131,
+      130
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        80,
+        64,
+        45
+      ],
+      [
+        104,
+        110,
+        38
+      ],
+      [
+        114,
+        128,
+        36
+      ],
+      [
+        116,
+        119,
+        91
+      ],
+      [
+        116,
+        133,
+        35
+      ],
+      [
+        130,
+        159,
+        31
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        138,
+        140,
+        67
+      ],
+      [
+        147,
+        150,
+        120
+      ],
+      [
+        148,
+        138,
+        85
+      ],
+      [
+        167,
+        171,
+        137
+      ],
+      [
+        182,
+        174,
+        104
+      ],
+      [
+        188,
+        192,
+        153
+      ],
+      [
+        203,
+        195,
+        123
+      ],
+      [
+        220,
+        227,
+        158
+      ]
+    ],
+    "count": 7776,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Pale face/beak, patterned wing pixels, feet and tail tip inspected. No visible signature. No enclosed background seeds needed; retain native dimensions.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Kakapo.png"
+  },
+  {
+    "id": "ghost",
+    "name": "Ghost",
+    "region": "nocturnal",
+    "cdn": "a/ab/Ghost.png",
+    "size": [
+      156,
+      140
+    ],
+    "sha256": "aaee7dfc4e4e0e08b3b891609d580bd69cd45627a335c794d6a653e2d14a1ecd",
+    "shadow": [
+      149,
+      124,
+      95
+    ],
+    "shadow_box": [
+      23,
+      126,
+      138,
+      138
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        126,
+        136,
+        128
+      ],
+      [
+        203,
+        219,
+        211
+      ],
+      [
+        229,
+        221,
+        211
+      ]
+    ],
+    "count": 7368,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Pale stepped outline, eyes and thin trailing tip inspected; separate ground shadow reviewed. No visible signature. No enclosed background seeds needed; retain native dimensions.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Ghost.png"
+  },
+  {
+    "id": "rock",
+    "name": "Rock",
+    "region": "mars",
+    "cdn": "0/0b/Rock.png",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Rock.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "ece52aac9a714737332e3f144b2ea7c800084489a1ff42d6ffcfec9ee3cb0095",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      11,
+      129,
+      139,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        115,
+        66,
+        32
+      ],
+      [
+        129,
+        75,
+        38
+      ],
+      [
+        141,
+        81,
+        42
+      ],
+      [
+        144,
+        83,
+        42
+      ],
+      [
+        153,
+        91,
+        50
+      ],
+      [
+        159,
+        92,
+        48
+      ],
+      [
+        166,
+        96,
+        51
+      ],
+      [
+        171,
+        101,
+        57
+      ],
+      [
+        174,
+        102,
+        55
+      ],
+      [
+        188,
+        109,
+        59
+      ],
+      [
+        189,
+        112,
+        62
+      ],
+      [
+        194,
+        114,
+        65
+      ],
+      [
+        203,
+        120,
+        70
+      ]
+    ],
+    "count": 8658
+  },
+  {
+    "id": "marsmot",
+    "name": "Marsmot",
+    "region": "mars",
+    "cdn": "2/21/Marsmot.png",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Marsmot.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "d1d037f58378271d411b0ef53499f73faa3bdc4749f4e94893a81558e2db52aa",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      20,
+      130,
+      122,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        35,
+        68,
+        67
+      ],
+      [
+        48,
+        86,
+        91
+      ],
+      [
+        79,
+        120,
+        117
+      ],
+      [
+        81,
+        152,
+        159
+      ],
+      [
+        82,
+        166,
+        178
+      ],
+      [
+        83,
+        180,
+        198
+      ],
+      [
+        112,
+        149,
+        149
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        145,
+        175,
+        179
+      ]
+    ],
+    "count": 8280
+  },
+  {
+    "id": "marsmoset",
+    "name": "Marsmoset",
+    "region": "mars",
+    "cdn": "2/2b/Marsmoset.png",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Marsmoset.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "3d953352860fa04d92df258368540d7a84a8df4ba55e127cd9c0ccbc91b65d88",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      21,
+      129,
+      139,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        10,
+        75,
+        163
+      ],
+      [
+        25,
+        25,
+        25
+      ],
+      [
+        50,
+        50,
+        50
+      ],
+      [
+        59,
+        120,
+        202
+      ],
+      [
+        91,
+        91,
+        91
+      ],
+      [
+        132,
+        132,
+        132
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        143,
+        25,
+        95
+      ],
+      [
+        214,
+        214,
+        214
+      ],
+      [
+        237,
+        0,
+        140
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "count": 8976
+  },
+  {
+    "id": "rover",
+    "name": "Rover",
+    "region": "mars",
+    "cdn": "f/f4/Rover.png",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Rover.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "03728d7301a74661eb48562e6ab853d0d74443de1e6bb6c27a790ab31037c2fa",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      13,
+      129,
+      141,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        100,
+        100,
+        100
+      ],
+      [
+        124,
+        124,
+        124
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        137,
+        137,
+        137
+      ],
+      [
+        150,
+        150,
+        150
+      ],
+      [
+        157,
+        157,
+        157
+      ],
+      [
+        161,
+        161,
+        161
+      ],
+      [
+        168,
+        168,
+        168
+      ],
+      [
+        171,
+        160,
+        0
+      ],
+      [
+        172,
+        172,
+        172
+      ],
+      [
+        182,
+        182,
+        182
+      ],
+      [
+        190,
+        190,
+        190
+      ],
+      [
+        196,
+        196,
+        196
+      ],
+      [
+        198,
+        198,
+        198
+      ],
+      [
+        203,
+        203,
+        203
+      ],
+      [
+        208,
+        208,
+        208
+      ],
+      [
+        212,
+        212,
+        212
+      ],
+      [
+        213,
+        201,
+        0
+      ],
+      [
+        222,
+        222,
+        222
+      ],
+      [
+        231,
+        231,
+        231
+      ],
+      [
+        234,
+        234,
+        234
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "count": 8196
+  },
+  {
+    "id": "martian",
+    "name": "Martian",
+    "region": "mars",
+    "cdn": "0/00/Martian.png",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Martian.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "919dfd6093383b9cbbbd60b8069f3810e87cdc7113943f28079df9d374d520dd",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      12,
+      129,
+      140,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        115,
+        165,
+        51
+      ],
+      [
+        119,
+        14,
+        18
+      ],
+      [
+        128,
+        182,
+        57
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        141,
+        198,
+        63
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "count": 7326
+  },
+  {
+    "id": "marsmallow",
+    "name": "Marsmallow",
+    "region": "mars",
+    "cdn": "b/b4/Marsmallow.png",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Marsmallow.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "68d9ec7496e8a6b0b6eb69a2675aa416e50f613c11f56872b44e43679046552c",
+    "shadow": [
+      149,
+      124,
+      95
+    ],
+    "shadow_box": [
+      26,
+      130,
+      125,
+      142
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        191,
+        243
+      ],
+      [
+        70,
+        1,
+        83
+      ],
+      [
+        82,
+        85,
+        93
+      ],
+      [
+        99,
+        3,
+        96
+      ],
+      [
+        122,
+        125,
+        133
+      ],
+      [
+        220,
+        222,
+        222
+      ],
+      [
+        226,
+        227,
+        231
+      ],
+      [
+        234,
+        235,
+        235
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "count": 10164
   }
 ]

@@ -102,3 +102,15 @@ html[data-page-hidden="true"] .city-window-light { animation-play-state: paused;
 .atmosphere-mountain .atmosphere-light { background: radial-gradient(ellipse at 65% 24%, #c5ae7c18, transparent 60%); }
 .atmosphere-mountain .atmosphere-band { top: 43%; height: 18%; opacity: .06; background: linear-gradient(0deg, transparent, #b3c4bf, transparent); }
 .atmosphere-mountain .atmosphere-mote { background: #b7c1af; opacity: .15; animation-name: dust-drift; }
+
+.atmosphere-nocturnal .atmosphere-light { background: radial-gradient(ellipse at 71% 24%, #b6c1c510, transparent 44%); }
+.atmosphere-nocturnal .atmosphere-band { top: 68%; height: 17%; opacity: .055; background: linear-gradient(0deg, transparent, #a7bcc7, transparent); }
+.atmosphere-nocturnal .atmosphere-mote { border-radius: 50%; width: 2px; height: 2px; background: #d7bd80; box-shadow: 0 0 4px #d7bd8030; animation-name: firefly-drift; }
+.atmosphere-mars .atmosphere-light { background: radial-gradient(ellipse at 65% 65%, #b17c5120, transparent 65%); }
+
+.atmosphere-mars .atmosphere-band { top: 59%; height: 13%; opacity: .055; background: linear-gradient(0deg, transparent, #b49378, transparent); }
+.atmosphere-mars .atmosphere-mote { background: #ad927d; opacity: .15; animation-name: dust-drift; }
+
+.atmosphere-constellation .atmosphere-light { background: radial-gradient(ellipse at 60% 40%, #777da015, transparent 65%); }
+.atmosphere-constellation .atmosphere-band { opacity: .035; background: linear-gradient(110deg, transparent, #888bab, transparent); }
+.atmosphere-constellation .atmosphere-mote { background: #b4bed0; width: 1px; height: 1px; opacity: .2; }

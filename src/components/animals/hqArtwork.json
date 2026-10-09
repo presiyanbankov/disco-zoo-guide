@@ -328,5 +328,65 @@
     "src": "/game/animals-hq/mountain/aatxe.png",
     "width": 131,
     "height": 124
+  },
+  "/game/animals/nocturnal/badger.png": {
+    "src": "/game/animals-hq/nocturnal/badger.png",
+    "width": 136,
+    "height": 76
+  },
+  "/game/animals/nocturnal/bat.png": {
+    "src": "/game/animals-hq/nocturnal/bat.png",
+    "width": 130,
+    "height": 70
+  },
+  "/game/animals/nocturnal/kiwi.png": {
+    "src": "/game/animals-hq/nocturnal/kiwi.png",
+    "width": 124,
+    "height": 94
+  },
+  "/game/animals/nocturnal/flying-squirrel.png": {
+    "src": "/game/animals-hq/nocturnal/flying-squirrel.png",
+    "width": 136,
+    "height": 70
+  },
+  "/game/animals/nocturnal/kakapo.png": {
+    "src": "/game/animals-hq/nocturnal/kakapo.png",
+    "width": 124,
+    "height": 112
+  },
+  "/game/animals/nocturnal/ghost.png": {
+    "src": "/game/animals-hq/nocturnal/ghost.png",
+    "width": 124,
+    "height": 100
+  },
+  "/game/animals/mars/rock.png": {
+    "src": "/game/animals-hq/mars/rock.png",
+    "width": 136,
+    "height": 100
+  },
+  "/game/animals/mars/marsmot.png": {
+    "src": "/game/animals-hq/mars/marsmot.png",
+    "width": 112,
+    "height": 136
+  },
+  "/game/animals/mars/marsmoset.png": {
+    "src": "/game/animals-hq/mars/marsmoset.png",
+    "width": 136,
+    "height": 112
+  },
+  "/game/animals/mars/rover.png": {
+    "src": "/game/animals-hq/mars/rover.png",
+    "width": 136,
+    "height": 136
+  },
+  "/game/animals/mars/martian.png": {
+    "src": "/game/animals-hq/mars/martian.png",
+    "width": 136,
+    "height": 130
+  },
+  "/game/animals/mars/marsmallow.png": {
+    "src": "/game/animals-hq/mars/marsmallow.png",
+    "width": 106,
+    "height": 136
   }
 }

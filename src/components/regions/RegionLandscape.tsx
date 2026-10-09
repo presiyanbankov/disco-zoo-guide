@@ -1,3 +1,6 @@
+import { ConstellationLandscape } from "./ConstellationLandscape";
+import { MarsLandscape } from "./MarsLandscape";
+import { NocturnalLandscape } from "./NocturnalLandscape";
 import { MountainLandscape } from "./MountainLandscape";
 import { CityLandscape } from "./CityLandscape";
 import { IceAgeLandscape } from "./IceAgeLandscape";
@@ -6,6 +9,9 @@ import { JurassicLandscape } from "./JurassicLandscape";
 
 /** Original vector interpretations; no game screenshots or animal-pattern geometry. */
 export function RegionLandscape({ region }: { region: string }) {
+  if (region === "constellation") return <ConstellationLandscape />;
+  if (region === "mars") return <MarsLandscape />;
+  if (region === "nocturnal") return <NocturnalLandscape />;
   if (region === "mountain") return <MountainLandscape />;
   if (region === "city") return <CityLandscape />;
   if (region === "ice-age") return <IceAgeLandscape />;

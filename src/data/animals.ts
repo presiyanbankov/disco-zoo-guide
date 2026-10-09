@@ -352,4 +352,100 @@ export const ANIMALS: Animal[] = [
     pattern: { cells: [{ row: 0, col: 2 }, { row: 1, col: 0 }] },
     imagePath: "/game/animals/mountain/aatxe.png",
   },
+
+  // Nocturnal - approved ALPHA 18 coordinates (medium-high confidence).
+  {
+    id: "badger", name: "Badger", regionId: "nocturnal", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 2 }, { row: 1, col: 0 }, { row: 1, col: 2 }, { row: 2, col: 0 }] },
+    imagePath: "/game/animals/nocturnal/badger.png",
+  },
+  {
+    id: "bat", name: "Bat", regionId: "nocturnal", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 2 }, { row: 1, col: 1 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/nocturnal/bat.png",
+  },
+  {
+    id: "kiwi", name: "Kiwi", regionId: "nocturnal", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 1, col: 0 }, { row: 1, col: 2 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/nocturnal/kiwi.png",
+  },
+  {
+    id: "flying-squirrel", name: "Flying Squirrel", regionId: "nocturnal", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 2 }, { row: 1, col: 0 }, { row: 1, col: 3 }] },
+    imagePath: "/game/animals/nocturnal/flying-squirrel.png",
+  },
+  {
+    id: "kakapo", name: "Kakapo", regionId: "nocturnal", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 1 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/nocturnal/kakapo.png",
+  },
+  {
+    id: "ghost", name: "Ghost", regionId: "nocturnal", rarity: "mythical",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 1 }] },
+    imagePath: "/game/animals/nocturnal/ghost.png",
+  },
+
+  // Mars - approved ALPHA 19 normalized coordinates.
+  {
+    id: "rock", name: "Rock", regionId: "mars", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 1 }, { row: 1, col: 0 }, { row: 1, col: 1 }] },
+    imagePath: "/game/animals/mars/rock.png",
+  },
+  {
+    id: "marsmot", name: "Marsmot", regionId: "mars", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 1, col: 1 }, { row: 2, col: 0 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/mars/marsmot.png",
+  },
+  {
+    id: "marsmoset", name: "Marsmoset", regionId: "mars", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 2 }, { row: 1, col: 2 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/mars/marsmoset.png",
+  },
+  {
+    id: "rover", name: "Rover", regionId: "mars", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 1, col: 0 }, { row: 1, col: 2 }] },
+    imagePath: "/game/animals/mars/rover.png",
+  },
+  {
+    id: "martian", name: "Martian", regionId: "mars", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 2 }, { row: 1, col: 1 }] },
+    imagePath: "/game/animals/mars/martian.png",
+  },
+  {
+    id: "marsmallow", name: "Marsmallow", regionId: "mars", rarity: "mythical",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 2, col: 0 }] },
+    imagePath: "/game/animals/mars/marsmallow.png",
+  },
+
+  // Constellation - approved ALPHA 20 geometry; artwork is a temporary fallback.
+  {
+    id: "chamaeleon", name: "Chamaeleon", regionId: "constellation", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 0, col: 3 }, { row: 1, col: 0 }, { row: 1, col: 1 }] },
+    imagePath: "/game/animals/constellation/chamaeleon.svg",
+  },
+  {
+    id: "corvus", name: "Corvus", regionId: "constellation", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 0, col: 2 }, { row: 2, col: 0 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/constellation/corvus.svg",
+  },
+  {
+    id: "lynx", name: "Lynx", regionId: "constellation", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 1, col: 0 }, { row: 1, col: 1 }, { row: 2, col: 0 }] },
+    imagePath: "/game/animals/constellation/lynx.svg",
+  },
+  {
+    id: "pisces", name: "Pisces", regionId: "constellation", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 1, col: 2 }, { row: 2, col: 0 }] },
+    imagePath: "/game/animals/constellation/pisces.svg",
+  },
+  {
+    id: "capricornus", name: "Capricornus", regionId: "constellation", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 3 }, { row: 1, col: 2 }] },
+    imagePath: "/game/animals/constellation/capricornus.svg",
+  },
+  {
+    id: "pegasus", name: "Pegasus", regionId: "constellation", rarity: "mythical",
+    pattern: { cells: [{ row: 0, col: 2 }, { row: 2, col: 0 }] },
+    imagePath: "/game/animals/constellation/pegasus.svg",
+  },
 ];

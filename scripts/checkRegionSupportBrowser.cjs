@@ -50,7 +50,7 @@ const output = 'public/game/experiments/jungle-moon';
   await call('Page.enable');await call('Runtime.enable');await call('Network.enable');
   await call('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false});
   await go('/');
-  await evaluate("localStorage.setItem('disco-zoo-guide.progress',JSON.stringify({version:1,maxEarthRegionId:'mountain',maxSpaceRegionId:'moon',showTimeless:false}))");
+  await evaluate("localStorage.setItem('disco-zoo-guide.progress',JSON.stringify({version:1,maxEarthRegionId:'nocturnal',maxSpaceRegionId:'constellation',showTimeless:false}))");
   await go('/');
   await waitFor(`document.querySelectorAll('.region-card').length===${REGION_PRESENTATION.length}`);
   await click('a.region-card[href="/regions/jungle"]');
@@ -81,7 +81,7 @@ const output = 'public/game/experiments/jungle-moon';
     }
   }
   const locked = [];
-  for(const region of ['nocturnal','mars','constellation']) {
+  for(const region of ['unknown-region']) {
     const response=await fetch(base+'/regions/'+region);
     if(response.status!==404) throw Error('Locked region accessible: '+region);
     locked.push(region);

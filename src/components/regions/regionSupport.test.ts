@@ -8,7 +8,7 @@ import AnimalPage, { generateStaticParams as animalParams } from "../../app/regi
 import { ANIMALS } from "../../data/animals";
 import { getRegionAnimalPresentations } from "../animals/animalGuidePresentation";
 import { getAnimalDisplayArtwork } from "../animals/animalArtworkPresentation";
-import { getRegionPresentation, REGION_PRESENTATION } from "./regionPresentation";
+import { getRegionPresentation, regionPosition, REGION_PRESENTATION } from "./regionPresentation";
 import { RegionExplorer } from "./RegionExplorer";
 import { RegionSearch } from "./RegionSearch";
 
@@ -42,12 +42,12 @@ test("navigation exposes all implemented unlocked regions in the requested seque
   assert.deepEqual(regionParams().map(params => params.regionId), regions);
   const html = renderToStaticMarkup(createElement(RegionExplorer));
   assert.equal((html.match(/class="region-card /g) ?? []).length, REGION_PRESENTATION.length);
-  for (const [index, region] of regions.entries()) {
+  for (const region of regions) {
     assert.ok(html.includes(`href="/regions/${region}"`));
-    assert.match(html, new RegExp(`class="region-number">${String(region === "moon" ? 1 : index + 1).padStart(2, "0")}`));
+    assert.match(html, new RegExp(`class="region-number">${String(regionPosition(region).number).padStart(2, "0")}`));
   }
-  assert.match(html, /Unknown region/);
-  assert.doesNotMatch(html, /href="\/regions\/(mars|constellation)/);
+  assert.doesNotMatch(html, /Unknown region/);
+  assert.match(html, /href="\/regions\/constellation/);
 });
 
 test("all supported region pages contain the real search section before their six-animal collection", async () => {
@@ -78,13 +78,13 @@ test("all 12 new shareable animal routes render approved patterns and real owner
     assert.ok(html.includes(`data-route-page="/regions/${params.regionId}/${params.animalId}"`));
     assert.match(html, /data-pattern-status="ready"/);
     assert.match(html, /data-strategy-status="ready"/);
-    assert.match(html, /data-art-source="hq"/);
+    assert.match(html, params.regionId === "constellation" ? /data-art-source="original"/ : /data-art-source="hq"/);
     assert.doesNotMatch(html, /data-region-search-status|LAYOUT DEMO/);
   }
 });
 
 test("unsupported regions and unknown animal routes remain non-spoiling 404s", async () => {
-  for (const regionId of ["mars", "constellation", "nocturnal"]) {
+  for (const regionId of ["unknown-region"]) {
     assert.equal(getRegionPresentation(regionId), undefined);
     assert.deepEqual(getRegionAnimalPresentations(regionId), []);
     await assert.rejects(RegionPage({ params: Promise.resolve({ regionId }) }), /NEXT_HTTP_ERROR_FALLBACK;404/);

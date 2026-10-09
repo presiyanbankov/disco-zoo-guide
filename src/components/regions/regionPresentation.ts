@@ -37,11 +37,14 @@ export const REGION_PRESENTATION = [
   { id: "ice-age", name: "Ice Age", climate: "GLACIAL" },
   { id: "city", name: "City", climate: "URBAN" },
   { id: "mountain", name: "Mountain", climate: "ALPINE" },
+  { id: "nocturnal", name: "Nocturnal", climate: "MOONLIT" },
   {
     id: "moon",
     name: "Moon",
     climate: "LUNAR",
   },
+  { id: "mars", name: "Mars", climate: "MARTIAN" },
+  { id: "constellation", name: "Constellation", climate: "STELLAR" },
 ] as const satisfies readonly {
   id: RegionId;
   name: string;

@@ -98,7 +98,7 @@ test("homepage prioritizes assistant then Earth, Space and Pets; keeps unimpleme
  assert.ok(html.indexOf('id="earth-title"') < html.indexOf('id="space-title"'));
  assert.ok(html.indexOf('id="space-title"') < html.indexOf('id="pets-reference-title"'));
  assert.equal((html.match(/data-region-locked="true"/g)??[]).length,REGION_GROUPS.reduce((n,g)=>n+g.destinations.length,0)-REGION_PRESENTATION.length);
- assert.doesNotMatch(html,/href="\/regions\/(mars|constellation|nocturnal)/);
+ assert.match(html,/href="\/regions\/constellation/);
  assert.match(SITE_VERSION,/^ALPHA \d{2}$/); assert.ok(html.includes(SITE_VERSION));
  assert.equal(regionPosition("moon").number,1); assert.equal(REGION_GROUPS[0].destinations.length,11);
 });

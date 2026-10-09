@@ -305,3 +305,8 @@
 .region-city { --region-accent: #c3b18d; --sky: #263239; --sun: #c8b485; --far: #354349; --mid: #3e4140; --ground: #252f31; --detail: #897b61; }
 
 .region-mountain { --region-accent: #b0b398; --sky: #24343b; --sun: #c5ae7c; --far: #476063; --mid: #38494c; --ground: #273735; --detail: #7d8970; }
+
+.region-nocturnal { --region-accent: #a9b4c1; --sky: #1b2838; --sun: #b6c1c5; --far: #303f51; --mid: #263746; --ground: #1a2931; --detail: #65747a; }
+.region-mars { --region-accent: #bd927a; --sky: #191c22; --sun: #b4866e; --far: #49403d; --mid: #6e5143; --ground: #513d33; --detail: #a7836e; }
+
+.region-constellation { --region-accent: #b0b3ce; --sky: #111522; --sun: #aaacc5; --far: #292c43; --mid: #393c54; --ground: #181c2a; --detail: #858ba5; }
