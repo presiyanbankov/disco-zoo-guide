@@ -8,6 +8,7 @@ import hashlib
 import json
 from PIL import Image
 from extractFandomPrototype import ROOT, REFERENCES, exterior_background, components, bounds
+from reviewedAlphaMask import reviewed_pixels
 
 
 def main():
@@ -24,7 +25,9 @@ def main():
             validation.append(dict(id=profile['id'], status='fallback'))
             continue
         points = {(x, y) for y in range(source.height) for x in range(source.width)}
-        if profile['method'] == 'opaque-alpha':
+        if profile['method'] == 'reviewed-mask':
+            retained = reviewed_pixels(source, profile)
+        elif profile['method'] == 'opaque-alpha':
             # Rhinoceros alpha 53 is a reviewed shadow, not an animal edge.
             # Horologium already has binary alpha. Keep its opaque internal black.
             retained = {p for p in points if source.getpixel(p)[3] == 255}
@@ -57,9 +60,13 @@ def main():
         destination = ROOT / 'public' / src.lstrip('/')
         destination.parent.mkdir(parents=True, exist_ok=True)
         output.save(destination)
-        manifest[f"/game/animals/{profile['region']}/{profile['id']}.svg"] = dict(src=src, width=output.width, height=output.height)
+        entry = dict(src=src, width=output.width, height=output.height)
+        if profile.get('originalFallback') is False:
+            entry['originalFallback'] = False
+        manifest[f"/game/animals/{profile['region']}/{profile['id']}.svg"] = entry
         validation.append(dict(id=profile['id'], status='HQ', sourceSize=list(source.size),
                                outputSize=list(output.size), crop=list(crop), retainedPixels=len(retained),
+                               sourceSha256=profile['sha256'], maskSha256=profile.get('maskSha256'),
                                rgbChanges=0, binaryAlpha=True, padding=2, resampled=False))
     manifest_path.write_text(json.dumps(manifest, indent=2) + '\n')
     (REFERENCES / 'timeless-validation.json').write_text(json.dumps(validation, indent=2) + '\n')

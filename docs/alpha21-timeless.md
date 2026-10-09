@@ -76,3 +76,5 @@ tests passed, including 22 new Timeless tests. Browser checks: 42 assertions
 at 390px/1440px, four screenshots visually reviewed. Classic extraction now
 preserves display-manifest entries owned by separate reviewed profiles;
 classic extraction masks and source pixels are unchanged.
+
+Current artwork status: the pre-BETA restoration supersedes the historical fallback status above. See [HQ artwork restoration](hq-artwork-restoration.md) for sources, reviewed masks and validation.

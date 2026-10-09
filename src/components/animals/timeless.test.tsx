@@ -57,8 +57,7 @@ for (const [regionId, id, cells] of expected) test(`${id}: approved geometry, re
   assert.ok(generateStaticParams().some(p => p.regionId === regionId && p.animalId === id));
   const art = getAnimalDisplayArtwork(a.imagePath)!;
   assert.ok(existsSync(`public${art.src}`));
-  assert.equal(art.isHq, ["echidna", "rhinoceros", "horologium"].includes(id));
-  assert.ok(existsSync(`public${a.imagePath}`));
+  assert.equal(art.isHq, true);
   assert.equal(getAnimalDisplayArtwork(a.imagePath, art.src)?.isHq ?? false, false);
 });
 test("visibility is region AND Timeless; reveal and lowering remain independent", () => {

@@ -1,0 +1,254 @@
+[
+  {
+    "id": "chamaeleon",
+    "region": "constellation",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/1/1d/Chamaeleon.png/revision/latest?format=original",
+    "page": "https://discozoo.fandom.com/wiki/Chamaeleon",
+    "sha256": "a239e21baf4e4319c1a2452875dd4f251d11b7a181419e0cd975dc99bbdad8c0",
+    "sourceSize": [
+      163,
+      150
+    ],
+    "status": "HQ",
+    "method": "reviewed-mask",
+    "mask": "masks/chamaeleon.png",
+    "maskSha256": "b51d4107cece906309175860417cfeab0ddb86cf9652b62432bb7de7bc4f47b1",
+    "retainedPixels": 8996,
+    "protectedPixels": [
+      [
+        17,
+        111
+      ],
+      [
+        76,
+        40
+      ],
+      [
+        143,
+        106
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        50,
+        94
+      ]
+    ],
+    "notes": "Reviewed body/tail contour and underside opening; brown perch is foreground and retained. Ground shadow excluded.",
+    "originalFallback": false
+  },
+  {
+    "id": "corvus",
+    "region": "constellation",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/f/f3/Corvus.png/revision/latest?format=original",
+    "page": "https://discozoo.fandom.com/wiki/Corvus",
+    "sha256": "4d00ea872157ccec5048cbf5d13328e4acdd7c8fbbebc21f2e3f0a954b33d266",
+    "sourceSize": [
+      148,
+      133
+    ],
+    "status": "HQ",
+    "method": "reviewed-mask",
+    "mask": "masks/corvus.png",
+    "maskSha256": "abc707326beb9185601d05596d2ed01d871ed483f8b69cd7e8e9224f8104354e",
+    "retainedPixels": 5808,
+    "protectedPixels": [
+      [
+        6,
+        35
+      ],
+      [
+        46,
+        16
+      ],
+      [
+        81,
+        113
+      ],
+      [
+        137,
+        107
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        95,
+        124
+      ],
+      [
+        110,
+        105
+      ]
+    ],
+    "notes": "Manually traced source block contour replaces threshold fringe/holes; grey eye highlight, beak, feather steps, thin legs and tail retained.",
+    "originalFallback": false
+  },
+  {
+    "id": "lynx",
+    "region": "constellation",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/b/b8/Lynx.png/revision/latest?format=original",
+    "page": "https://discozoo.fandom.com/wiki/Lynx",
+    "sha256": "41919f0ada2beb37d6fc30d675db62e07bc0a23f605564432c5c91a8872a0554",
+    "sourceSize": [
+      141,
+      119
+    ],
+    "status": "HQ",
+    "method": "reviewed-mask",
+    "mask": "masks/lynx.png",
+    "maskSha256": "b73fcfc21bf4c657204fc2dbff777c7993566714268170f2f8cd3b10e83d2feb",
+    "retainedPixels": 6288,
+    "protectedPixels": [
+      [
+        32,
+        26
+      ],
+      [
+        133,
+        38
+      ],
+      [
+        50,
+        103
+      ],
+      [
+        102,
+        102
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        80,
+        92
+      ]
+    ],
+    "notes": "Reviewed ear tips, raised tail, forelimb, feet and open belly; exterior fragment excluded.",
+    "originalFallback": false
+  },
+  {
+    "id": "pisces",
+    "region": "constellation",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/5/5d/Pisces.png/revision/latest?format=original",
+    "page": "https://discozoo.fandom.com/wiki/Pisces",
+    "sha256": "c135ad068897cf893b3678fe43408ed4bdb1092f6bb47640ba599ff23419bb6b",
+    "sourceSize": [
+      149,
+      149
+    ],
+    "status": "HQ",
+    "method": "reviewed-mask",
+    "mask": "masks/pisces.png",
+    "maskSha256": "517a6513260b4f8a0af9c5a8ec85d4a43b042d513fe3a61c4fea0b040045b8df",
+    "retainedPixels": 7413,
+    "protectedPixels": [
+      [
+        60,
+        19
+      ],
+      [
+        111,
+        19
+      ],
+      [
+        12,
+        68
+      ],
+      [
+        135,
+        88
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        76,
+        78
+      ]
+    ],
+    "notes": "Both fish explicitly retained as separate components; central gap, fins and both tails reviewed.",
+    "originalFallback": false
+  },
+  {
+    "id": "capricornus",
+    "region": "constellation",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/1/13/Capricornus.png/revision/latest?format=original",
+    "page": "https://discozoo.fandom.com/wiki/Capricornus",
+    "sha256": "542f8a87c2c6d90c17aeb9c5c485572bcc9483323066c67b9f36110346f9d458",
+    "sourceSize": [
+      139,
+      134
+    ],
+    "status": "HQ",
+    "method": "reviewed-mask",
+    "mask": "masks/capricornus.png",
+    "maskSha256": "4ea3abbcae001274a5e89e5beac29fd29156e5d50438b6f3f0a84f0c6f935e6c",
+    "retainedPixels": 6724,
+    "protectedPixels": [
+      [
+        60,
+        20
+      ],
+      [
+        79,
+        32
+      ],
+      [
+        53,
+        118
+      ],
+      [
+        132,
+        45
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        67,
+        40
+      ]
+    ],
+    "notes": "Reviewed pale horn curve, open horn interior, single thin leg and curled fish-tail outline.",
+    "originalFallback": false
+  },
+  {
+    "id": "pegasus",
+    "region": "constellation",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/4/4a/Pegasus.png/revision/latest?format=original",
+    "page": "https://discozoo.fandom.com/wiki/Pegasus",
+    "sha256": "19df152e6ea9ee1a13cd40c2a36fedde2c0545468af4b982c46bb8b8b97d1060",
+    "sourceSize": [
+      144,
+      124
+    ],
+    "status": "HQ",
+    "method": "reviewed-mask",
+    "mask": "masks/pegasus.png",
+    "maskSha256": "7e4fd5c8e21418c228da151278f57a2a20f27d7187dd684570cb83b71d563d05",
+    "retainedPixels": 5851,
+    "protectedPixels": [
+      [
+        40,
+        12
+      ],
+      [
+        131,
+        103
+      ],
+      [
+        48,
+        109
+      ],
+      [
+        96,
+        109
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        75,
+        97
+      ]
+    ],
+    "notes": "Reviewed pale wings/body, thin blue feet, open belly and tight right wing margin; no pale-pixel deletion.",
+    "originalFallback": false
+  }
+]

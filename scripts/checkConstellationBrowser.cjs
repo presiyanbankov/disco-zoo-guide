@@ -23,22 +23,22 @@ for(const width of [390,1440]){
   await check("document.documentElement.scrollWidth<=innerWidth");
   if(path.includes('/pegasus')){
    await check("document.querySelector('a.rescue-header-link').getAttribute('href')==='/rescue?region=constellation&animal=pegasus'");
-   await check("[...document.querySelectorAll('img')].some(i=>i.src.includes('animals/constellation/pegasus.svg')&&i.complete&&i.naturalWidth===32)");
+   await check("[...document.querySelectorAll('img')].some(i=>i.src.includes('animals-hq/constellation/pegasus.png')&&i.complete&&i.naturalWidth>32)");
   }else if(path.startsWith('/rescue')){
    await check("!!document.querySelector('.rescue-region.region-constellation[aria-pressed=true]')");
    await check("!!document.querySelector('[data-animal-id=pegasus][aria-pressed=true]')&&!document.querySelector('.dynamic-rescue-grid')");
    await click('.rescue-start-cta');await wait("!!document.querySelector('.dynamic-rescue-grid')");
    await click('[data-cell-index="2"]');await wait("!!document.querySelector('.rescue-result-selector')");
    await click('.rescue-result-animal');await wait(`!!document.querySelector('[data-cell-index="2"][data-cell-state="animal"]')`);
-   await check("[...document.querySelectorAll('.rescue-cell-art img')].every(i=>i.complete&&i.naturalWidth===32&&!i.src.includes('animals-hq'))");
+   await check("[...document.querySelectorAll('.rescue-cell-art img')].every(i=>i.complete&&i.naturalWidth>32&&i.src.includes('animals-hq'))");
    await check("[...document.querySelectorAll('.dynamic-cell')].every(c=>{const r=c.getBoundingClientRect();return Math.abs(r.width-r.height)<1})");
 
   }else{
    await check("document.querySelector('a.rescue-header-link').getAttribute('href')==='/rescue?region=constellation'");
    await check(`document.querySelectorAll('.animal-card').length===6&&!!document.querySelector('.vector-constellation')&&document.body.textContent.includes(${JSON.stringify(SITE_VERSION)})`);
    await evaluate("[...document.querySelectorAll('img')].forEach(i=>i.loading='eager')");
-   await wait("[...document.querySelectorAll('img')].filter(i=>i.src.includes('animals/constellation')).every(i=>i.complete&&i.naturalWidth>0)");
-   await check("[...document.querySelectorAll('img')].filter(i=>i.src.includes('animals/constellation')).every(i=>i.complete&&i.naturalWidth>0)");
+   await wait("[...document.querySelectorAll('img')].filter(i=>i.src.includes('animals-hq/constellation')).every(i=>i.complete&&i.naturalWidth>0)");
+   await check("[...document.querySelectorAll('img')].filter(i=>i.src.includes('animals-hq/constellation')).every(i=>i.complete&&i.naturalWidth>0)");
   }
   if(path==='/regions/constellation'||(path==='/regions/constellation/pegasus'&&width===1440)){
    await evaluate("const p=document.querySelector('nextjs-portal');if(p)p.style.display='none'");

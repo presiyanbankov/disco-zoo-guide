@@ -403,5 +403,107 @@
     "src": "/game/animals-hq/constellation/horologium.png",
     "width": 78,
     "height": 134
+  },
+  "/game/animals/constellation/chamaeleon.svg": {
+    "src": "/game/animals-hq/constellation/chamaeleon.png",
+    "width": 136,
+    "height": 106,
+    "originalFallback": false
+  },
+  "/game/animals/constellation/corvus.svg": {
+    "src": "/game/animals-hq/constellation/corvus.png",
+    "width": 136,
+    "height": 112,
+    "originalFallback": false
+  },
+  "/game/animals/constellation/lynx.svg": {
+    "src": "/game/animals-hq/constellation/lynx.png",
+    "width": 136,
+    "height": 88,
+    "originalFallback": false
+  },
+  "/game/animals/constellation/pisces.svg": {
+    "src": "/game/animals-hq/constellation/pisces.png",
+    "width": 138,
+    "height": 124,
+    "originalFallback": false
+  },
+  "/game/animals/constellation/capricornus.svg": {
+    "src": "/game/animals-hq/constellation/capricornus.png",
+    "width": 125,
+    "height": 112,
+    "originalFallback": false
+  },
+  "/game/animals/constellation/pegasus.svg": {
+    "src": "/game/animals-hq/constellation/pegasus.png",
+    "width": 137,
+    "height": 108,
+    "originalFallback": false
+  },
+  "/game/animals/farm/chicken.svg": {
+    "src": "/game/animals-hq/farm/chicken.png",
+    "width": 78,
+    "height": 69,
+    "originalFallback": false
+  },
+  "/game/animals/northern/otter.svg": {
+    "src": "/game/animals-hq/northern/otter.png",
+    "width": 169,
+    "height": 104,
+    "originalFallback": false
+  },
+  "/game/animals/polar/snowy-owl.svg": {
+    "src": "/game/animals-hq/polar/snowy-owl.png",
+    "width": 243,
+    "height": 231,
+    "originalFallback": false
+  },
+  "/game/animals/jungle/lemur.svg": {
+    "src": "/game/animals-hq/jungle/lemur.png",
+    "width": 161,
+    "height": 141,
+    "originalFallback": false
+  },
+  "/game/animals/jurassic/ankylosaurus.svg": {
+    "src": "/game/animals-hq/jurassic/ankylosaurus.png",
+    "width": 141,
+    "height": 78,
+    "originalFallback": false
+  },
+  "/game/animals/ice-age/yukon-camel.svg": {
+    "src": "/game/animals-hq/ice-age/yukon-camel.png",
+    "width": 153,
+    "height": 129,
+    "originalFallback": false
+  },
+  "/game/animals/city/chipmunk.svg": {
+    "src": "/game/animals-hq/city/chipmunk.png",
+    "width": 100,
+    "height": 58,
+    "originalFallback": false
+  },
+  "/game/animals/mountain/pika.svg": {
+    "src": "/game/animals-hq/mountain/pika.png",
+    "width": 72,
+    "height": 63,
+    "originalFallback": false
+  },
+  "/game/animals/nocturnal/firefly.svg": {
+    "src": "/game/animals-hq/nocturnal/firefly.png",
+    "width": 141,
+    "height": 103,
+    "originalFallback": false
+  },
+  "/game/animals/moon/babmoon.svg": {
+    "src": "/game/animals-hq/moon/babmoon.png",
+    "width": 88,
+    "height": 76,
+    "originalFallback": false
+  },
+  "/game/animals/mars/marsten.svg": {
+    "src": "/game/animals-hq/mars/marsten.png",
+    "width": 92,
+    "height": 68,
+    "originalFallback": false
   }
 }

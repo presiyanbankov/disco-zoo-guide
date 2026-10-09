@@ -1,0 +1,152 @@
+[
+  {
+    "id": "chamaeleon",
+    "status": "HQ",
+    "sourceSize": [
+      163,
+      150
+    ],
+    "outputSize": [
+      136,
+      106
+    ],
+    "crop": [
+      14,
+      36,
+      150,
+      142
+    ],
+    "retainedPixels": 8996,
+    "sourceSha256": "a239e21baf4e4319c1a2452875dd4f251d11b7a181419e0cd975dc99bbdad8c0",
+    "maskSha256": "b51d4107cece906309175860417cfeab0ddb86cf9652b62432bb7de7bc4f47b1",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
+  },
+  {
+    "id": "corvus",
+    "status": "HQ",
+    "sourceSize": [
+      148,
+      133
+    ],
+    "outputSize": [
+      136,
+      112
+    ],
+    "crop": [
+      4,
+      12,
+      140,
+      124
+    ],
+    "retainedPixels": 5808,
+    "sourceSha256": "4d00ea872157ccec5048cbf5d13328e4acdd7c8fbbebc21f2e3f0a954b33d266",
+    "maskSha256": "abc707326beb9185601d05596d2ed01d871ed483f8b69cd7e8e9224f8104354e",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
+  },
+  {
+    "id": "lynx",
+    "status": "HQ",
+    "sourceSize": [
+      141,
+      119
+    ],
+    "outputSize": [
+      136,
+      88
+    ],
+    "crop": [
+      3,
+      21,
+      139,
+      109
+    ],
+    "retainedPixels": 6288,
+    "sourceSha256": "41919f0ada2beb37d6fc30d675db62e07bc0a23f605564432c5c91a8872a0554",
+    "maskSha256": "b73fcfc21bf4c657204fc2dbff777c7993566714268170f2f8cd3b10e83d2feb",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
+  },
+  {
+    "id": "pisces",
+    "status": "HQ",
+    "sourceSize": [
+      149,
+      149
+    ],
+    "outputSize": [
+      138,
+      124
+    ],
+    "crop": [
+      6,
+      14,
+      144,
+      138
+    ],
+    "retainedPixels": 7413,
+    "sourceSha256": "c135ad068897cf893b3678fe43408ed4bdb1092f6bb47640ba599ff23419bb6b",
+    "maskSha256": "517a6513260b4f8a0af9c5a8ec85d4a43b042d513fe3a61c4fea0b040045b8df",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
+  },
+  {
+    "id": "capricornus",
+    "status": "HQ",
+    "sourceSize": [
+      139,
+      134
+    ],
+    "outputSize": [
+      125,
+      112
+    ],
+    "crop": [
+      11,
+      14,
+      136,
+      126
+    ],
+    "retainedPixels": 6724,
+    "sourceSha256": "542f8a87c2c6d90c17aeb9c5c485572bcc9483323066c67b9f36110346f9d458",
+    "maskSha256": "4ea3abbcae001274a5e89e5beac29fd29156e5d50438b6f3f0a84f0c6f935e6c",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
+  },
+  {
+    "id": "pegasus",
+    "status": "HQ",
+    "sourceSize": [
+      144,
+      124
+    ],
+    "outputSize": [
+      137,
+      108
+    ],
+    "crop": [
+      4,
+      8,
+      141,
+      116
+    ],
+    "retainedPixels": 5851,
+    "sourceSha256": "19df152e6ea9ee1a13cd40c2a36fedde2c0545468af4b982c46bb8b8b97d1060",
+    "maskSha256": "7e4fd5c8e21418c228da151278f57a2a20f27d7187dd684570cb83b71d563d05",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
+  }
+]

@@ -1,7 +1,28 @@
 [
   {
     "id": "chicken",
-    "status": "fallback"
+    "status": "HQ",
+    "sourceSize": [
+      120,
+      120
+    ],
+    "outputSize": [
+      78,
+      69
+    ],
+    "crop": [
+      21,
+      41,
+      99,
+      110
+    ],
+    "retainedPixels": 2040,
+    "sourceSha256": "84bf75f623dda1a16e6e2f94d5ee0098634bdb5c55d170dc06816e5a242acb87",
+    "maskSha256": "8466c35828d3f80c38fb0e802a96a456ecd4d28b23c0bf03ff0953c3cc7e5349",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
   },
   {
     "id": "echidna",
@@ -21,6 +42,8 @@
       137
     ],
     "retainedPixels": 5844,
+    "sourceSha256": "6649b8fbffc636be040ddc49666d4aa869109a3fc1e64cfbd4634054fb2cfeb6",
+    "maskSha256": null,
     "rgbChanges": 0,
     "binaryAlpha": true,
     "padding": 2,
@@ -44,6 +67,8 @@
       158
     ],
     "retainedPixels": 11601,
+    "sourceSha256": "69ba4d9a9af6ff33d5d268fddbf6898d02e7b4ce0d82736f59b24a1d1602b3cc",
+    "maskSha256": null,
     "rgbChanges": 0,
     "binaryAlpha": true,
     "padding": 2,
@@ -51,43 +76,253 @@
   },
   {
     "id": "otter",
-    "status": "fallback"
+    "status": "HQ",
+    "sourceSize": [
+      194,
+      185
+    ],
+    "outputSize": [
+      169,
+      104
+    ],
+    "crop": [
+      15,
+      58,
+      184,
+      162
+    ],
+    "retainedPixels": 7229,
+    "sourceSha256": "4a4ab08d08f39a3c66a963d288fa4d7990d7cbc4f704e6ea33f4cf50c63c841e",
+    "maskSha256": "010a3320d93a2e2c4790c498622f1c95e0e891c9415ad218e81f70e527f9c46d",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
   },
   {
     "id": "snowy-owl",
-    "status": "fallback"
+    "status": "HQ",
+    "sourceSize": [
+      298,
+      314
+    ],
+    "outputSize": [
+      243,
+      231
+    ],
+    "crop": [
+      35,
+      53,
+      278,
+      284
+    ],
+    "retainedPixels": 28347,
+    "sourceSha256": "d0ff56633fad886843dd5a471932704e3436beff3ed43f128dffada71ced6d77",
+    "maskSha256": "a0eacbd42d6e32f86daabac56d0417e0447e1d1abb91081db657cdf077e4c8c5",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
   },
   {
     "id": "lemur",
-    "status": "fallback"
+    "status": "HQ",
+    "sourceSize": [
+      191,
+      187
+    ],
+    "outputSize": [
+      161,
+      141
+    ],
+    "crop": [
+      13,
+      38,
+      174,
+      179
+    ],
+    "retainedPixels": 10612,
+    "sourceSha256": "325c7f357e2acffefafa0f2c74e5a5e516e0763f3c168d9c416f4bcc14c34374",
+    "maskSha256": "945c6553b7dee404b258c66b32c3686aecc18f67af6231af174439852dc06bcf",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
   },
   {
     "id": "ankylosaurus",
-    "status": "fallback"
+    "status": "HQ",
+    "sourceSize": [
+      140,
+      131
+    ],
+    "outputSize": [
+      141,
+      78
+    ],
+    "crop": [
+      -1,
+      29,
+      140,
+      107
+    ],
+    "retainedPixels": 5503,
+    "sourceSha256": "14b990ef6334534fa80442f9f7033ec72b234147af5fd9036c57b1a5184140bc",
+    "maskSha256": "cc4a35231c4527e969c6a1d05500d0dd641932c052a1100c58d4fb5d030a4e7e",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
   },
   {
     "id": "yukon-camel",
-    "status": "fallback"
+    "status": "HQ",
+    "sourceSize": [
+      172,
+      190
+    ],
+    "outputSize": [
+      153,
+      129
+    ],
+    "crop": [
+      8,
+      39,
+      161,
+      168
+    ],
+    "retainedPixels": 8766,
+    "sourceSha256": "65fd00536d12ef87bbd5e64839f7642b54e75f8bde3c58675974697b8fbb6946",
+    "maskSha256": "82b090650fd490b0dccfcf8cba6c81f7035a11049c51a442ce5c85b793cefd15",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
   },
   {
     "id": "chipmunk",
-    "status": "fallback"
+    "status": "HQ",
+    "sourceSize": [
+      100,
+      94
+    ],
+    "outputSize": [
+      100,
+      58
+    ],
+    "crop": [
+      2,
+      20,
+      102,
+      78
+    ],
+    "retainedPixels": 2122,
+    "sourceSha256": "ad0ee07d93473fdb760c02f9d0e41edeec2426ca25a3c8af1e3c6a32fbd32917",
+    "maskSha256": "2d1c46435c08d006df3d979f0c346cba850cf138650e1c7d79731eb943b4dc56",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
   },
   {
     "id": "pika",
-    "status": "fallback"
+    "status": "HQ",
+    "sourceSize": [
+      88,
+      88
+    ],
+    "outputSize": [
+      72,
+      63
+    ],
+    "crop": [
+      10,
+      17,
+      82,
+      80
+    ],
+    "retainedPixels": 2800,
+    "sourceSha256": "40b9d19b4b08400a7f52408508ff6397ca91404dcae824e0d4280e7538ad6e46",
+    "maskSha256": "a6130ed82a6b38142d66041c864aaa182e21434d693418a4dc71e4d48910e783",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
   },
   {
     "id": "firefly",
-    "status": "fallback"
+    "status": "HQ",
+    "sourceSize": [
+      147,
+      129
+    ],
+    "outputSize": [
+      141,
+      103
+    ],
+    "crop": [
+      2,
+      15,
+      143,
+      118
+    ],
+    "retainedPixels": 4695,
+    "sourceSha256": "66f4209fe0221fb97f052119bf90c73378d5648dbdaca87a6c148c12c803ac6a",
+    "maskSha256": "bd780c465b7d41e50b9574fe4d0580f521fed8146522959ae08649d561d55c13",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
   },
   {
     "id": "babmoon",
-    "status": "fallback"
+    "status": "HQ",
+    "sourceSize": [
+      88,
+      85
+    ],
+    "outputSize": [
+      88,
+      76
+    ],
+    "crop": [
+      1,
+      5,
+      89,
+      81
+    ],
+    "retainedPixels": 3036,
+    "sourceSha256": "271da671445717557248ce4d00d73d4b6b40ddd9a8e3200520de149840764b9a",
+    "maskSha256": "0faa8616ff32e895057b4e8ddcdee5ab3c7320197e64b13a5b8079f814f7abfc",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
   },
   {
     "id": "marsten",
-    "status": "fallback"
+    "status": "HQ",
+    "sourceSize": [
+      92,
+      94
+    ],
+    "outputSize": [
+      92,
+      68
+    ],
+    "crop": [
+      0,
+      14,
+      92,
+      82
+    ],
+    "retainedPixels": 2272,
+    "sourceSha256": "b4ba0f84cdb0a4a447a04d10392e01235af499688b0c699b67f0d8f23c24a6d8",
+    "maskSha256": "123692a20f01abf6b1d84956a662d6a28c375049bd0be8a7863c84e3ccb3773d",
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
   },
   {
     "id": "horologium",
@@ -107,6 +342,8 @@
       150
     ],
     "retainedPixels": 9170,
+    "sourceSha256": "bda7dddd48678d416caa065a0e606c7a7e8a928a26358daffda94da03551ea7f",
+    "maskSha256": null,
     "rgbChanges": 0,
     "binaryAlpha": true,
     "padding": 2,

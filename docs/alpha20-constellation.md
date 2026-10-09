@@ -65,3 +65,5 @@ Validation: 66 focused automated tests passed (six Constellation tests), strict
 compilation passed, 40 browser assertions passed at 390/1440px, four screenshots
 reviewed. No commits, solver changes, existing pattern edits or HQ extraction.
 Final ALPHA 20 production build and npm lint both passed.
+
+Current artwork status: the pre-BETA restoration supersedes the historical fallback status above. See [HQ artwork restoration](hq-artwork-restoration.md) for sources, reviewed masks and validation.

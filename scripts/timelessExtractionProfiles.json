@@ -8,8 +8,37 @@
       120,
       120
     ],
-    "status": "fallback",
-    "notes": "Tan ground and shadow; 291 source RGB colors with small edge/background islands. Exact boundary not yet approved; initial fallback only."
+    "status": "HQ",
+    "notes": "Reviewed tan exterior and foot-contact shadow; beak, tail and complete yellow foot retained.",
+    "method": "reviewed-mask",
+    "mask": "masks/chicken.png",
+    "maskSha256": "8466c35828d3f80c38fb0e802a96a456ecd4d28b23c0bf03ff0953c3cc7e5349",
+    "retainedPixels": 2040,
+    "protectedPixels": [
+      [
+        26,
+        65
+      ],
+      [
+        58,
+        105
+      ],
+      [
+        94,
+        60
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        40,
+        104
+      ],
+      [
+        82,
+        106
+      ]
+    ],
+    "originalFallback": false
   },
   {
     "id": "echidna",
@@ -80,8 +109,41 @@
       194,
       185
     ],
-    "status": "fallback",
-    "notes": "Baked noisy green checkerboard and softened pale chest/tail edges; 2933 RGB colors. Manual boundary review pending; no mask published."
+    "status": "HQ",
+    "notes": "Reviewed green checker exterior, chest outline, feet and tapered tail. Native softened edge pixels retained; no edge reconstruction.",
+    "method": "reviewed-mask",
+    "mask": "masks/otter.png",
+    "maskSha256": "010a3320d93a2e2c4790c498622f1c95e0e891c9415ad218e81f70e527f9c46d",
+    "retainedPixels": 7229,
+    "protectedPixels": [
+      [
+        19,
+        74
+      ],
+      [
+        30,
+        97
+      ],
+      [
+        67,
+        153
+      ],
+      [
+        125,
+        153
+      ],
+      [
+        179,
+        156
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        102,
+        155
+      ]
+    ],
+    "originalFallback": false
   },
   {
     "id": "snowy-owl",
@@ -92,8 +154,37 @@
       298,
       314
     ],
-    "status": "fallback",
-    "notes": "Baked blue-green checkerboard overlaps pale/internal body details. Global deletion unsafe; no mask published."
+    "status": "HQ",
+    "notes": "Exterior-only checker removal; pale internal feather/checker-like details protected. Isolated 36px outside-checker fragment removed, not an internal feather area.",
+    "method": "reviewed-mask",
+    "mask": "masks/snowy-owl.png",
+    "maskSha256": "a0eacbd42d6e32f86daabac56d0417e0447e1d1abb91081db657cdf077e4c8c5",
+    "retainedPixels": 28347,
+    "protectedPixels": [
+      [
+        60,
+        110
+      ],
+      [
+        84,
+        109
+      ],
+      [
+        192,
+        229
+      ],
+      [
+        270,
+        275
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        236,
+        206
+      ]
+    ],
+    "originalFallback": false
   },
   {
     "id": "lemur",
@@ -104,8 +195,49 @@
       191,
       187
     ],
-    "status": "fallback",
-    "notes": "Baked noisy green checkerboard, 5289 RGB colors; thin feet and ringed tail at risk. No mask published."
+    "status": "HQ",
+    "notes": "Reviewed local grey/white tail-ring mask restores dark rings lost by the initial checker proposal; open ring interior, face and both feet retained.",
+    "method": "reviewed-mask",
+    "mask": "masks/lemur.png",
+    "maskSha256": "945c6553b7dee404b258c66b32c3686aecc18f67af6231af174439852dc06bcf",
+    "retainedPixels": 10612,
+    "protectedPixels": [
+      [
+        110,
+        44
+      ],
+      [
+        119,
+        47
+      ],
+      [
+        167,
+        83
+      ],
+      [
+        23,
+        128
+      ],
+      [
+        55,
+        173
+      ],
+      [
+        132,
+        173
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        120,
+        71
+      ],
+      [
+        94,
+        168
+      ]
+    ],
+    "originalFallback": false
   },
   {
     "id": "ankylosaurus",
@@ -116,8 +248,41 @@
       140,
       131
     ],
-    "status": "fallback",
-    "notes": "Uniform tan exterior but varied low-contrast plate/foot boundary pixels. Manual boundary review pending; no mask published."
+    "status": "HQ",
+    "notes": "Reviewed plate contours including disconnected 42px plate, tail club, pale muzzle and low-contrast feet retained.",
+    "method": "reviewed-mask",
+    "mask": "masks/ankylosaurus.png",
+    "maskSha256": "cc4a35231c4527e969c6a1d05500d0dd641932c052a1100c58d4fb5d030a4e7e",
+    "retainedPixels": 5503,
+    "protectedPixels": [
+      [
+        72,
+        34
+      ],
+      [
+        91,
+        41
+      ],
+      [
+        131,
+        58
+      ],
+      [
+        43,
+        102
+      ],
+      [
+        88,
+        102
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        67,
+        96
+      ]
+    ],
+    "originalFallback": false
   },
   {
     "id": "yukon-camel",
@@ -128,8 +293,33 @@
       172,
       190
     ],
-    "status": "fallback",
-    "notes": "Baked noisy grey-green checkerboard; thin legs and underbody gaps unresolved. No mask published."
+    "status": "HQ",
+    "notes": "Reviewed checker removal around thin neck, legs and belly opening. Original noisy/soft boundary pixels retained.",
+    "method": "reviewed-mask",
+    "mask": "masks/yukon-camel.png",
+    "maskSha256": "82b090650fd490b0dccfcf8cba6c81f7035a11049c51a442ce5c85b793cefd15",
+    "retainedPixels": 8766,
+    "protectedPixels": [
+      [
+        58,
+        45
+      ],
+      [
+        84,
+        158
+      ],
+      [
+        137,
+        160
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        111,
+        144
+      ]
+    ],
+    "originalFallback": false
   },
   {
     "id": "chipmunk",
@@ -140,8 +330,33 @@
       100,
       94
     ],
-    "status": "fallback",
-    "notes": "Flat tan exterior with multicolor softened edges; narrow tail and pale stripes unresolved. No mask published."
+    "status": "HQ",
+    "notes": "Reviewed narrow tail through source right edge, pale face/body stripes and both feet; only transparent padding extends beyond source.",
+    "method": "reviewed-mask",
+    "mask": "masks/chipmunk.png",
+    "maskSha256": "2d1c46435c08d006df3d979f0c346cba850cf138650e1c7d79731eb943b4dc56",
+    "retainedPixels": 2122,
+    "protectedPixels": [
+      [
+        30,
+        25
+      ],
+      [
+        58,
+        70
+      ],
+      [
+        96,
+        73
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        82,
+        50
+      ]
+    ],
+    "originalFallback": false
   },
   {
     "id": "pika",
@@ -152,8 +367,33 @@
       88,
       88
     ],
-    "status": "fallback",
-    "notes": "Flat tan exterior with multicolor edge transitions and pale underside. No mask published."
+    "status": "HQ",
+    "notes": "Reviewed ears, pale belly, two feet and rounded outline.",
+    "method": "reviewed-mask",
+    "mask": "masks/pika.png",
+    "maskSha256": "a6130ed82a6b38142d66041c864aaa182e21434d693418a4dc71e4d48910e783",
+    "retainedPixels": 2800,
+    "protectedPixels": [
+      [
+        42,
+        23
+      ],
+      [
+        30,
+        76
+      ],
+      [
+        65,
+        75
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        20,
+        15
+      ]
+    ],
+    "originalFallback": false
   },
   {
     "id": "firefly",
@@ -164,8 +404,53 @@
       147,
       129
     ],
-    "status": "fallback",
-    "notes": "Yellow rescue-tile background with uneven colors and softened antenna/pale lower edges. No mask published."
+    "status": "HQ",
+    "notes": "Manually traced antenna sections, stepped body and three legs; pale glowing underside and eye highlight protected. Yellow ground strip and 417 visually reviewed yellow fringe pixels excluded, with 216 dark appendage pixels explicitly restored inside the reviewed antenna/leg regions (15,94,43,120), (58,94,71,120), (87,96,121,120), (1,12,26,63). Surviving source-baked edge blending is retained, not recolored.",
+    "method": "reviewed-mask",
+    "mask": "masks/firefly.png",
+    "maskSha256": "bd780c465b7d41e50b9574fe4d0580f521fed8146522959ae08649d561d55c13",
+    "retainedPixels": 4695,
+    "protectedPixels": [
+      [
+        20,
+        18
+      ],
+      [
+        12,
+        25
+      ],
+      [
+        6,
+        42
+      ],
+      [
+        24,
+        112
+      ],
+      [
+        64,
+        110
+      ],
+      [
+        107,
+        112
+      ],
+      [
+        99,
+        95
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        44,
+        112
+      ],
+      [
+        126,
+        113
+      ]
+    ],
+    "originalFallback": false
   },
   {
     "id": "babmoon",
@@ -176,8 +461,41 @@
       88,
       85
     ],
-    "status": "fallback",
-    "notes": "Brown exterior with color variation around thin limbs and tail opening. No mask published."
+    "status": "HQ",
+    "notes": "Reviewed curled tail opening, tight right edge and thin limbs; no component-size deletion.",
+    "method": "reviewed-mask",
+    "mask": "masks/babmoon.png",
+    "maskSha256": "0faa8616ff32e895057b4e8ddcdee5ab3c7320197e64b13a5b8079f814f7abfc",
+    "retainedPixels": 3036,
+    "protectedPixels": [
+      [
+        78,
+        31
+      ],
+      [
+        85,
+        60
+      ],
+      [
+        28,
+        74
+      ],
+      [
+        70,
+        74
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        80,
+        52
+      ],
+      [
+        50,
+        66
+      ]
+    ],
+    "originalFallback": false
   },
   {
     "id": "marsten",
@@ -188,8 +506,37 @@
       92,
       94
     ],
-    "status": "fallback",
-    "notes": "Brown exterior with edge variation; thin legs and long tail unresolved. No mask published."
+    "status": "HQ",
+    "notes": "Reviewed long tail, yellow chest/ear highlights and narrow purple legs.",
+    "method": "reviewed-mask",
+    "mask": "masks/marsten.png",
+    "maskSha256": "123692a20f01abf6b1d84956a662d6a28c375049bd0be8a7863c84e3ccb3773d",
+    "retainedPixels": 2272,
+    "protectedPixels": [
+      [
+        21,
+        17
+      ],
+      [
+        24,
+        76
+      ],
+      [
+        56,
+        77
+      ],
+      [
+        87,
+        77
+      ]
+    ],
+    "backgroundChecks": [
+      [
+        41,
+        73
+      ]
+    ],
+    "originalFallback": false
   },
   {
     "id": "horologium",
