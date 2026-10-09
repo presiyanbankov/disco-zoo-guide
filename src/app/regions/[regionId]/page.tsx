@@ -7,7 +7,6 @@ import { SiteHeader } from "../../../components/layout/SiteHeader";
 import { RegionHero } from "../../../components/regions/RegionHero";
 import { RegionNavigation } from "../../../components/regions/RegionNavigation";
 import { RegionSearch } from "../../../components/regions/RegionSearch";
-import { getRegionSearchPresentation } from "../../../components/regions/regionSearchPresentation";
 import { getRegionPresentation, REGION_PRESENTATION } from "../../../components/regions/regionPresentation";
 import { ProgressGuard } from "../../../components/progress/ProgressGuard";
 
@@ -43,7 +42,7 @@ export default async function RegionPage({ params }: Props) {
       <main>
         <ProgressGuard regionId={region.id}>
         <RegionHero region={region} index={REGION_PRESENTATION.indexOf(region)} animals={animals} />
-        <RegionSearch regionName={region.name} strategy={getRegionSearchPresentation(animals)} />
+        <RegionSearch regionName={region.name} animals={animals} />
         <AnimalCollection animals={animals} />
         <RegionNavigation currentId={region.id} />
         </ProgressGuard>

@@ -5,7 +5,7 @@ import { BALANCED_STRATEGY, resolveTargetStrategy, scoreWorldsByStrategy, type R
 export interface RescueParticipant {
   id: string;
   kind: "animal" | "pet";
-  animalRarity?: "common" | "rare" | "mythical";
+  animalRarity?: "common" | "rare" | "mythical" | "timeless";
   pattern: AnimalPattern;
 }
 export type RescueObservation =

@@ -26,7 +26,7 @@ type Props = {
 };
 
 export function RescueSetup({ regionId, selectedIds, animals, onRegion, onAnimal, onStart, petId = null, onPet = () => {}, strategy = BALANCED_STRATEGY, participants, onStrategy = () => {}, onTarget = () => {}, regions = REGION_PRESENTATION }: Props) {
-  const candidates = animals.filter(a => a.regionId === regionId && !a.hidden && a.rarity !== "timeless");
+  const candidates = animals.filter(a => a.regionId === regionId && !a.hidden);
   const pet = PET_SPECIES.find(p => p.id === petId);
   const targets = participants ?? [...candidates.filter(a => selectedIds.includes(a.id)).map(animalParticipant), ...(pet ? [petParticipant(pet)] : [])];
   const setupError = validateRescueSetup(candidates.filter(a => selectedIds.includes(a.id)), pet ? [pet] : []);
@@ -54,7 +54,7 @@ export function RescueSetup({ regionId, selectedIds, animals, onRegion, onAnimal
             <strong>{animal.name}</strong><span className="eyebrow">{animal.rarity}</span><span className="rescue-check" aria-hidden="true">{selected ? "✓" : "+"}</span>
           </button>;
         })}
-      </div> : <div className="rescue-setup-pending">Select a region to see its six classic animals, or choose a pet below.</div>}
+      </div> : <div className="rescue-setup-pending">Select a region to see its visible animals, or choose a pet below.</div>}
     </section>
     <PetSelector petId={petId} disabled={selectedIds.length >= 3} disabledReason="A pet allows at most two animals." onPet={onPet} />
     <StrategySelector strategy={strategy} participants={targets} onStrategy={onStrategy} onTarget={onTarget} />

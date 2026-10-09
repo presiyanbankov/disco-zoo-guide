@@ -22,7 +22,7 @@ test("future owner records retain their supplied pattern/result while hidden and
   assert.equal(view?.pattern, ownerRecord.pattern);
   assert.equal(view?.strategy, strategy);
   assert.equal(presentOwnerAnimal({ ...ownerRecord, hidden: true }), undefined);
-  assert.equal(presentOwnerAnimal({ ...ownerRecord, rarity: "timeless" }), undefined);
+  assert.equal(presentOwnerAnimal({ ...ownerRecord, rarity: "timeless" })?.rarity, "timeless");
   assert.equal(presentOwnerAnimal({ ...ownerRecord, regionId: "locked-test" as Animal["regionId"] }), undefined);
 });
 
@@ -39,10 +39,10 @@ test("approved lookup supplies the original pattern, excludes other regions, and
 });
 
 test("approved roster has exactly six classic animals per region, normalized cells, and intact separated patterns", () => {
-  assert.equal(ANIMALS.length, REGION_PRESENTATION.length * 6);
+  assert.equal(ANIMALS.filter(a => a.rarity !== "timeless").length, REGION_PRESENTATION.length * 6);
   assert.equal(new Set(ANIMALS.map((animal) => animal.id)).size, ANIMALS.length);
   for (const region of REGION_PRESENTATION.map(r => r.id)) {
-    const animals = getRegionAnimalPresentations(region);
+    const animals = getRegionAnimalPresentations(region).filter(a => a.rarity !== "timeless");
     assert.equal(animals.length, 6);
     assert.equal(animals.filter((animal) => animal.rarity === "common").length, 3);
     assert.equal(animals.filter((animal) => animal.rarity === "rare").length, 2);

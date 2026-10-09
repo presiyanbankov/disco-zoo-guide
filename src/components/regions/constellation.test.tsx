@@ -18,7 +18,7 @@ import { animalParticipant } from "../rescue/rescueParticipants";
 import { createDynamicRescueState, getPossibleWorlds, analyzeRescueWorlds } from "../../solver/dynamic/dynamicRescueSolver";
 import { rarityFocusParticipantIds } from "../../solver/dynamic/rescueStrategy";
 
-const records = ANIMALS.filter(a => a.regionId === "constellation");
+const records = ANIMALS.filter(a => a.regionId === "constellation" && a.rarity !== "timeless");
 const expected = [
  ["chamaeleon","Chamaeleon","common",[[0,1],[0,3],[1,0],[1,1]]],
  ["corvus","Corvus","common",[[0,1],[0,2],[2,0],[2,2]]],
@@ -40,7 +40,7 @@ test("Constellation region/animal barriers and editable contextual setup obey Sp
  assert.equal(rescueSetupHref("constellation","pegasus"),"/rescue?region=constellation&animal=pegasus");assert.deepEqual(resolveRescueSetupContext("constellation",undefined,{...DEFAULT_PREFERENCES,maxSpaceRegionId:"constellation"}),{regionId:"constellation",selectedIds:[]});
 });
 test("All six Constellation guides, non-HQ fallback, static sequence and region search consume real records",()=>{
- assert.equal(animalRoutes().filter(p=>p.regionId==="constellation").length,records.length);assert.equal(getRegionSearchPresentation(getRegionAnimalPresentations("constellation")).status,"ready");
+ assert.equal(animalRoutes().filter(p=>p.regionId==="constellation" && p.animalId!=="horologium").length,records.length);assert.equal(getRegionSearchPresentation(getRegionAnimalPresentations("constellation")).status,"ready");
  for(const animal of records){const art=getAnimalDisplayArtwork(animal.imagePath)!;assert.ok(!art.isHq&&existsSync(`public${art.src}`));assert.ok(art.src.endsWith(".svg"));assert.ok(!existsSync(`public/game/animals-hq/constellation/${animal.id}.png`));assert.match(readFileSync(`public${art.src}`,"utf8"),/viewBox="0 0 32 23"/);assert.equal(getAnimalDisplayArtwork(animal.imagePath,animal.imagePath),null);assert.ok(getAnimalGuidePresentation("constellation",animal.id)?.strategy?.steps.length);}
 });
 test("Constellation dynamic policies work and Pegasus naturally selects Mythical tier",()=>{

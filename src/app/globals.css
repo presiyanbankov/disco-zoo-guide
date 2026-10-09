@@ -733,3 +733,8 @@ h1 {
 .intro h1 { font-size: clamp(48px, 6vw, 84px); line-height: 1.02; }
 .intro-bottom { margin-top: 22px; }
 .card-copy { min-height: 82px; }
+
+/* Timeless is a restrained fourth rarity section, not a separate visual system. */
+.group-timeless .rarity-heading h3, .rarity-timeless .rarity-badge, .rarity-timeless .guide-rarity { color: #d6c99b; }
+.group-timeless .rarity-rule { background: linear-gradient(90deg, #d6c99b44, transparent); }
+.rarity-timeless.animal-card:hover, .rarity-timeless.animal-card:focus-visible { border-color: #d6c99b88; }

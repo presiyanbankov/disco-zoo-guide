@@ -7,7 +7,7 @@ export const STRATEGY_OPTIONS = [
   { type: "balanced", label: "Balanced Search", description: "Best chance of hitting anything." },
   { type: "finish-found", label: "Finish What You Found", description: "Prefer animals you've already started uncovering." },
   { type: "target", label: "Target One", description: "Focus on one selected animal or pet." },
-  { type: "rarity-focus", label: "Rarity Focus", description: "Prioritize Mythical, then Rare, then Common. Pets don't affect priority." },
+  { type: "rarity-focus", label: "Rarity Focus", description: "Prioritize Mythical, then Rare + Timeless, then Common. Pets don't affect priority." },
 ] as const;
 
 type Props = {

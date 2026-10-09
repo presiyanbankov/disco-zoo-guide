@@ -28,7 +28,7 @@ export function RescueAssistant({ animals: allAnimals, initialContext }: { anima
   const [targetTransition, setTargetTransition] = useState("");
   const [lastTarget, setLastTarget] = useState("");
   const [error, setError] = useState<string>();
-  const selected = selectedIds.flatMap(id => { const a = animals.find(a => a.id === id && a.regionId === regionId && !a.hidden && a.rarity !== "timeless"); return a ? [a] : []; });
+  const selected = selectedIds.flatMap(id => { const a = animals.find(a => a.id === id && a.regionId === regionId && !a.hidden); return a ? [a] : []; });
   const pet = PET_SPECIES.find(p => p.id === petId);
   const participants = [...selected.map(animalParticipant), ...(pet ? [petParticipant(pet)] : [])];
   const worlds = useMemo(() => state ? getPossibleWorlds(state) : [], [state]);
@@ -78,7 +78,7 @@ export function RescueAssistant({ animals: allAnimals, initialContext }: { anima
       petId={petId} onPet={id => { if (id === null || selectedIds.length < 3) { setPetId(id); if (id && !selectedIds.length && strategy.type === "rarity-focus") setStrategy(BALANCED_STRATEGY); } }}
       onRegion={id => { if (id === regionId || !regions.some(r => r.id === id)) return; setRegionId(id); setSelectedIds([]); setState(null); setStrategy(BALANCED_STRATEGY); setLastTarget(""); setError(undefined); }}
       onAnimal={id => {
-        if (!animals.some(a => a.id === id && a.regionId === regionId && !a.hidden && a.rarity !== "timeless")) return;
+        if (!animals.some(a => a.id === id && a.regionId === regionId && !a.hidden)) return;
         if (selectedIds.includes(id) && selectedIds.length === 1 && petId && strategy.type === "rarity-focus") setStrategy(BALANCED_STRATEGY);
         setSelectedIds(ids => ids.includes(id) ? ids.filter(i => i !== id) : ids.length < (petId ? 2 : 3) ? [...ids, id] : ids);
       }} onStart={start} />

@@ -8,7 +8,7 @@ import type { Animal, RegionId } from "../../types/game";
  * Replace this boundary with owner-supplied records when src/data/animals.ts is ready.
  */
 export type AnimalCardPreview = Pick<Animal, "id" | "name" | "regionId"> & {
-  rarity: Exclude<Animal["rarity"], "timeless">;
+  rarity: Animal["rarity"];
   imagePath?: Animal["imagePath"];
 };
 

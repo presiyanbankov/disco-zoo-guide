@@ -26,6 +26,6 @@ test("pet-only exposes three applicable strategies and no dead rarity card", () 
 for (const animal of ANIMALS.filter(a => !a.hidden && a.rarity !== "timeless")) test(`${animal.name} + pet always allows Rarity Focus`, () => {
   const html = renderToStaticMarkup(<StrategySelector participants={[animalParticipant(animal), pet]} strategy={{ type: "rarity-focus" }} onStrategy={noop} onTarget={noop} />);
   assert.match(html, /data-strategy="rarity-focus" aria-pressed="true"/);
-  assert.match(html, /Prioritize Mythical, then Rare, then Common/);
+  assert.match(html, /Prioritize Mythical, then Rare \+ Timeless, then Common/);
   assert.doesNotMatch(html, /×[123]|&#215;|Pets ignored|priority-values/);
 });

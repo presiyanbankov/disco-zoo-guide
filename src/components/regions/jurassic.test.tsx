@@ -15,7 +15,7 @@ import { animalParticipant } from "../rescue/rescueParticipants";
 import { createDynamicRescueState, getPossibleWorlds, analyzeRescueWorlds } from "../../solver/dynamic/dynamicRescueSolver";
 import { rarityFocusParticipantIds } from "../../solver/dynamic/rescueStrategy";
 
-const records = ANIMALS.filter(a => a.regionId === "jurassic");
+const records = ANIMALS.filter(a => a.regionId === "jurassic" && a.rarity !== "timeless");
 const expected = [
   ["diplodocus", "Diplodocus", "common", [[0,0],[1,1],[1,2],[2,1]]],
   ["stegosaurus", "Stegosaurus", "common", [[0,1],[0,2],[1,0],[1,3]]],

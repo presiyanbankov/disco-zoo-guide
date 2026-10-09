@@ -16,7 +16,7 @@ const actions = { onObservation: noop, onUndo: noop, onReset: noop, onChange: no
 const setup = { regionId: null, selectedIds: [], animals: ANIMALS, onRegion: noop, onAnimal: noop, onStart: noop };
 test("tiered Rarity Focus explains intent without numeric controls", () => {
   const html = renderToStaticMarkup(<StrategySelector strategy={RARITY_FOCUS_STRATEGY} participants={[animalParticipant(farm[0]), pet]} onStrategy={noop} onTarget={noop} />);
-  assert.match(html, /Rarity Focus/); assert.match(html, /Prioritize Mythical, then Rare, then Common/); assert.match(html, /affect priority/);
+  assert.match(html, /Rarity Focus/); assert.match(html, /Prioritize Mythical, then Rare \+ Timeless, then Common/); assert.match(html, /affect priority/);
   assert.doesNotMatch(html, /Rarity Priority|priority-values|radiogroup/);
 });
 test("pet-only omits inapplicable Rarity Focus and can start Balanced", () => {

@@ -1,11 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { GridBoard, type BoardTile } from "../grid/GridBoard";
 import { BOARD_SIZE } from "../grid/gridPresentation";
+import { useProgress } from "../progress/ProgressProvider";
+import { canViewAnimal } from "../progress/spoilerPreferences";
+import type { AnimalGuidePresentation } from "../animals/animalGuidePresentation";
+import { getRegionSearchPresentation } from "./regionSearchPresentation";
 import type { RegionSearchPresentation } from "./regionSearchPresentation";
 
-export function RegionSearch({ regionName, strategy }: { regionName: string; strategy?: RegionSearchPresentation }) {
+export function RegionSearch({ regionName, strategy: suppliedStrategy, animals }: { regionName: string; strategy?: RegionSearchPresentation; animals?: readonly AnimalGuidePresentation[] }) {
+  const { preferences } = useProgress();
+  // Only visible candidates enter the real solver; hidden Timeless cannot change numbers.
+  const strategy = useMemo(() => animals ? getRegionSearchPresentation(animals.filter(a => canViewAnimal(a, preferences))) : suppliedStrategy, [animals, preferences, suppliedStrategy]);
   const [activeCell, setActiveCell] = useState<number | null>(null);
   const ready = strategy?.status === "ready";
   const steps = new Map((ready ? strategy.steps : []).map(step => [step.cellIndex, step]));

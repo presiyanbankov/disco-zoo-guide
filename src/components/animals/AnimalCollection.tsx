@@ -5,7 +5,7 @@ import { AnimalCard } from "./AnimalCard";
 import { TimelessSlot } from "./TimelessSlot";
 import type { AnimalCardPreview } from "./DEV_MOCK_ANIMALS";
 
-const rarityLabels = ["common", "rare", "mythical"] as const;
+const rarityLabels = ["common", "rare", "mythical", "timeless"] as const;
 
 export function AnimalCollection({ animals: records }: { animals: readonly AnimalCardPreview[] }) {
   const { preferences } = useProgress();
@@ -14,7 +14,7 @@ export function AnimalCollection({ animals: records }: { animals: readonly Anima
     <section className="animal-collection" id="wildlife" aria-labelledby="wildlife-title">
       <div className="section-heading">
         <div><span className="eyebrow">COLLECTION</span><h2 id="wildlife-title">Animals<span>.</span></h2></div>
-        <span className="collection-count">{String(animals.length).padStart(2, "0")} ANIMALS / 01 MYSTERY</span>
+        <span className="collection-count">{String(animals.length).padStart(2, "0")} ANIMALS</span>
       </div>
       {rarityLabels.map((rarity) => {
         const group = animals.filter((animal) => animal.rarity === rarity);
@@ -26,7 +26,7 @@ export function AnimalCollection({ animals: records }: { animals: readonly Anima
           </section>
         );
       })}
-      <TimelessSlot />
+      {!animals.some(a => a.rarity === "timeless") && <TimelessSlot />}
     </section>
   );
 }

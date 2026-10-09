@@ -35,7 +35,7 @@ export function RescueBoard({ regionName, participants, state, result, onObserva
 
   const found = new Set(state.observations.flatMap(o => o.type === "hit" ? [o.participantId] : []));
   const rarityParticipant = participants.find(p => rarityParticipants.includes(p.id));
-  const raritySummary = rarityParticipant?.kind === "pet" ? "Finishing pet" : rarityParticipant ? `Priority: ${(rarityParticipant.animalRarity ?? "common").replace(/^./, c => c.toUpperCase())}` : "Mythical, then Rare, then Common.";
+  const raritySummary = rarityParticipant?.kind === "pet" ? "Finishing pet" : rarityParticipant ? `Priority: ${rarityParticipant.animalRarity === "rare" || rarityParticipant.animalRarity === "timeless" ? "Rare + Timeless" : (rarityParticipant.animalRarity ?? "common").replace(/^./, c => c.toUpperCase())}` : "Mythical, then Rare + Timeless, then Common.";
   const targetName = strategy.type === "target" ? participants.find(p => p.id === strategy.participantId)?.name : undefined;
   const statusText = result.status === "contradiction" ? "Results don't match any possible layout."
     : result.status === "complete" ? "RESCUE COMPLETE"

@@ -16,7 +16,7 @@ import { animalParticipant } from "../rescue/rescueParticipants";
 import { createDynamicRescueState, getPossibleWorlds, analyzeRescueWorlds } from "../../solver/dynamic/dynamicRescueSolver";
 import { rarityFocusParticipantIds } from "../../solver/dynamic/rescueStrategy";
 
-const records = ANIMALS.filter(a => a.regionId === "ice-age");
+const records = ANIMALS.filter(a => a.regionId === "ice-age" && a.rarity !== "timeless");
 const expected = [
   ["wooly-rhino", "Wooly Rhino", "common", [[0,2],[1,0],[1,3],[2,1]]],
   ["giant-sloth", "Giant Sloth", "common", [[0,0],[1,2],[2,0],[2,2]]],

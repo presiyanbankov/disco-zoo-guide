@@ -20,7 +20,7 @@ import { animalParticipant } from "../rescue/rescueParticipants";
 import { createDynamicRescueState, getPossibleWorlds, analyzeRescueWorlds } from "../../solver/dynamic/dynamicRescueSolver";
 import { rarityFocusParticipantIds } from "../../solver/dynamic/rescueStrategy";
 
-const records = ANIMALS.filter(a => a.regionId === "nocturnal");
+const records = ANIMALS.filter(a => a.regionId === "nocturnal" && a.rarity !== "timeless");
 const expected = [
   ["badger", "Badger", "common", [[0,2],[1,0],[1,2],[2,0]]],
   ["bat", "Bat", "common", [[0,0],[0,2],[1,1],[2,1]]],
@@ -121,7 +121,7 @@ test("final Earth availability has no mystery cards while Space stays independen
 
 
 test("all six Nocturnal animal routes render exact pattern coordinates and real strategies behind the barrier", async () => {
-  const routes = animalRoutes().filter(r => r.regionId === "nocturnal");
+  const routes = animalRoutes().filter(r => r.regionId === "nocturnal" && records.some(a => a.id === r.animalId));
   assert.deepEqual(routes.map(r => r.animalId), records.map(a => a.id));
   for (const endpoint of ["mountain", "nocturnal"] as const) {
     const preferences = { ...DEFAULT_PREFERENCES, maxEarthRegionId: endpoint };

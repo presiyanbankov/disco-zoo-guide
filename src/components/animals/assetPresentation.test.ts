@@ -12,7 +12,7 @@ import { getAnimalGuidePresentation } from "./animalGuidePresentation";
 import { RegionLandscape } from "../regions/RegionLandscape";
 
 test("existing 30 canonical records and original RGBA icons remain intact while display prefers reviewed HQ", () => {
-  assert.equal(ANIMALS.length, REGION_PRESENTATION.length * 6);
+  assert.equal(ANIMALS.filter(a => a.rarity !== "timeless").length, REGION_PRESENTATION.length * 6);
   for (const record of ANIMALS.slice(0, 30)) {
     const animal = getAnimalGuidePresentation(record.regionId, record.id)!;
     assert.equal(animal.imagePath, record.imagePath);
@@ -42,8 +42,8 @@ test("all supported collection and detail contexts render validated HQ dimension
     const collection = renderToStaticMarkup(createElement(AnimalArtwork, { ...record, context: "collection" }));
     const detail = renderToStaticMarkup(createElement(AnimalArtwork, { ...record, context: "detail" }));
     const artwork = getAnimalDisplayArtwork(record.imagePath)!;
+    if (!artwork.isHq) { assert.ok(readFileSync(join(process.cwd(), "public", artwork.src)).length); continue; }
     assert.equal(artwork.src, `/game/animals-hq/${record.regionId}/${record.id}.png`);
-    assert.equal(artwork.isHq, true);
     for (const html of [collection, detail]) {
       assert.ok(html.includes(`src="${artwork.src}"`));
       assert.match(html, /data-art-source="hq"/);

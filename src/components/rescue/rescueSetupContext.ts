@@ -8,7 +8,7 @@ export type RescueSetupContext = { regionId: string | null; selectedIds: string[
 export function resolveRescueSetupContext(region?: string | string[], animal?: string | string[], preferences?: SpoilerPreferences): RescueSetupContext {
   const regionId = typeof region === "string" && getRegionPresentation(region) && (!preferences || canViewRegion(region, preferences)) ? region : null;
   const record = regionId && typeof animal === "string"
-    ? ANIMALS.find(a => a.regionId === regionId && a.id === animal && !a.hidden && a.rarity !== "timeless" && (!preferences || canViewAnimal(a, preferences))) : undefined;
+    ? ANIMALS.find(a => a.regionId === regionId && a.id === animal && !a.hidden && (!preferences || canViewAnimal(a, preferences))) : undefined;
   return { regionId, selectedIds: record ? [record.id] : [] };
 }
 

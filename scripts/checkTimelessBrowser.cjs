@@ -1,0 +1,93 @@
+/* eslint-disable @typescript-eslint/no-require-imports -- Focused local browser QA. */
+const fs = require('node:fs');
+const assert = require('node:assert/strict');
+require('tsx/cjs');
+const { ANIMALS } = require('../src/data/animals.ts');
+const { animalParticipant } = require('../src/components/rescue/rescueParticipants.ts');
+const { createDynamicRescueState, getPossibleWorlds, applyObservation, analyzeDynamicRescue } = require('../src/solver/dynamic/dynamicRescueSolver.ts');
+const { rarityFocusParticipantIds } = require('../src/solver/dynamic/rescueStrategy.ts');
+const output = 'public/game/experiments/alpha21-timeless';
+const base = process.env.TIMELESS_QA_URL || 'http://localhost:3000';
+(async () => {
+  const tabs = await fetch('http://localhost:9242/json').then(r => r.json());
+  const socket = new WebSocket(tabs.find(t => t.type === 'page').webSocketDebuggerUrl);
+  await new Promise(r => socket.addEventListener('open', r));
+  let id = 0, checks = 0; const pending = new Map();
+  socket.addEventListener('message', e => { const m = JSON.parse(e.data); if (m.id) { const p = pending.get(m.id); pending.delete(m.id); if (m.error) p.reject(m.error); else p.resolve(m.result); } });
+  const call = (method, params = {}) => new Promise((resolve, reject) => { pending.set(++id, { resolve, reject }); socket.send(JSON.stringify({id, method, params})); });
+  const evaluate = async expression => { const r = await call('Runtime.evaluate', {expression, returnByValue:true}).catch(e=>{throw Error(expression+' : '+JSON.stringify(e));}); if (r.exceptionDetails) throw Error(r.exceptionDetails.text); return r.result.value; };
+  const wait = async expression => { for (let i=0; i<150; i++) { if (await evaluate(`Boolean(${expression})`)) return; await new Promise(r=>setTimeout(r,150)); } throw Error('Timeout: '+expression); };
+  const check = async expression => { assert.ok(await evaluate(`Boolean(${expression})`), expression); checks++; };
+  const click = async selector => { await evaluate(`document.querySelector(${JSON.stringify(selector)}).click()`); await new Promise(r=>setTimeout(r,100)); };
+  const navigate = async path => { await call('Page.navigate',{url:base+path}); await wait(`location.pathname===${JSON.stringify(path.split('?')[0])}&&document.readyState==='complete'&&!!document.querySelector('.site-shell')`); };
+  const prefs = {version:1,maxEarthRegionId:'nocturnal',maxSpaceRegionId:'constellation',showTimeless:false};
+  const storage = async value => evaluate(`localStorage.setItem('disco-zoo-guide.progress',${JSON.stringify(JSON.stringify(value))})`);
+  const shot = async name => { await evaluate("[...document.querySelectorAll('img')].forEach(i=>i.loading='eager')"); await wait("[...document.querySelectorAll('img')].every(i=>i.complete)"); await evaluate("document.querySelector('nextjs-portal')?.setAttribute('style','display:none')"); const r = await call('Page.captureScreenshot',{format:'png',captureBeyondViewport:true}); fs.mkdirSync(output,{recursive:true}); fs.writeFileSync(`${output}/${name}.png`,Buffer.from(r.data,'base64')); };
+  for (const width of [390,1440]) {
+    await call('Emulation.setDeviceMetricsOverride',{width,height:950,deviceScaleFactor:1,mobile:width<600});
+    await navigate('/'); await storage(prefs);
+    await navigate('/regions/farm'); await wait("document.querySelectorAll('.animal-card').length===6");
+    await check("!document.body.innerText.includes('Chicken')&&!document.querySelector('a[href*=chicken]')");
+    await check("document.querySelector('.hero-animal-count').textContent==='6 ANIMALS'");
+    const hiddenNumbers = await evaluate("[...document.querySelectorAll('.region-search-board .board-tile')].map(c=>c.textContent)");
+    if(width===390) await shot('farm-hidden-390');
+    await click('.progress-control'); await wait("document.querySelector('dialog[open]')");
+    await click('input[aria-label="Show Timeless"]'); await click('.progress-save');
+    await wait("document.querySelector('.group-timeless')");
+    await check("document.querySelectorAll('.animal-card').length===7&&document.querySelector('.hero-animal-count').textContent==='7 ANIMALS'");
+    await check("document.querySelector('.group-timeless').textContent.includes('Chicken')&&!document.querySelector('.timeless-slot')");
+    await check("document.documentElement.scrollWidth<=innerWidth");
+    if(width===1440) await shot('farm-shown-1440');
+    // Hide immediately without reload: classic candidate sequence returns exactly.
+    await click('.progress-control'); await wait("document.querySelector('dialog[open]')");
+    await click('input[aria-label="Hide Timeless"]'); await click('.progress-save');
+    await wait("document.querySelectorAll('.animal-card').length===6");
+    assert.deepEqual(await evaluate("[...document.querySelectorAll('.region-search-board .board-tile')].map(c=>c.textContent)"),hiddenNumbers); checks++;
+    await navigate('/regions/farm/chicken'); await wait("document.querySelector('.progress-barrier')");
+    await check("!document.querySelector('.animal-guide-hero')&&![...document.querySelectorAll('a')].some(a=>a.getAttribute('href')?.includes('animal=chicken'))");
+    await click('.progress-barrier .rescue-primary'); await wait("document.querySelector('.animal-guide-hero')");
+    await check("document.querySelector('#page-title').textContent.includes('Chicken')&&document.querySelector('[data-pattern-status=ready]')&&document.querySelector('[data-strategy-status=ready]')");
+    await check("document.querySelector('a.rescue-header-link').getAttribute('href')==='/rescue?region=farm&animal=chicken'");
+    await wait("document.querySelector('.animal-guide-art img')?.complete");
+    await check("document.querySelector('.animal-guide-art img').naturalWidth===32&&document.querySelector('.animal-guide-art img').dataset.artSource==='original'");
+    await navigate('/regions/constellation/horologium'); await wait("document.querySelector('.animal-guide-hero')");
+    await wait("document.querySelector('.animal-guide-art img')?.complete");
+    await check("document.querySelector('.animal-guide-art img').naturalWidth===78&&document.querySelector('.animal-guide-art img').dataset.artSource==='hq'");
+    await check("document.documentElement.scrollWidth<=innerWidth");
+    if(width===1440) await shot('horologium-guide-1440');
+    await navigate('/rescue?region=farm&animal=chicken'); await wait("document.querySelector('[data-animal-id=chicken][aria-pressed=true]')");
+    await check("document.querySelectorAll('[data-animal-id]').length===7&&!document.querySelector('.dynamic-rescue-grid')");
+    await click('[data-animal-id=unicorn]'); await click('[data-animal-id=pig]');
+    await click('[data-strategy=rarity-focus]'); await click('.rescue-start-cta'); await wait("document.querySelector('.dynamic-rescue-grid')");
+    await check("document.querySelector('.strategy-feedback').textContent.includes('Priority: Mythical')");
+    const participants=['chicken','unicorn','pig'].map(id=>animalParticipant(ANIMALS.find(a=>a.regionId==='farm'&&a.id===id)));
+    let state=createDynamicRescueState(participants); const world=getPossibleWorlds(state)[0];
+    for(const hit of world.participants.find(p=>p.participantId.endsWith(':unicorn')).cells) {
+      await click(`[data-cell-index="${hit}"]`); await wait("document.querySelector('.rescue-result-selector')");
+      await evaluate("[...document.querySelectorAll('.rescue-result-animal')].find(b=>b.textContent.includes('Unicorn')).click()");
+      state=applyObservation(state,{type:'hit',cellIndex:hit,participantId:participants[1].id});
+      await wait(`document.querySelector('[data-cell-index="${hit}"][data-cell-state=animal]')`);
+    }
+    await check("document.querySelector('.strategy-feedback').textContent.includes('Priority: Rare + Timeless')");
+    assert.deepEqual(rarityFocusParticipantIds(state,getPossibleWorlds(state)),[participants[0].id]);checks++;
+    await check("[...document.querySelectorAll('.dynamic-cell')].every(c=>{const r=c.getBoundingClientRect();return Math.abs(r.width-r.height)<1})");
+    await check("document.documentElement.scrollWidth<=innerWidth");
+    if(width===390) await shot('rarity-focus-rescue-390');
+    await storage({...prefs,showTimeless:false});
+    await navigate('/rescue?region=farm&animal=chicken'); await wait("document.querySelector('.rescue-setup')");
+    await check("!document.querySelector('[data-animal-id=chicken]')&&!document.querySelector('[data-animal-id][aria-pressed=true]')");
+    await storage({...prefs,maxEarthRegionId:'farm',showTimeless:true});
+    await navigate('/regions/jungle/lemur'); await wait("document.querySelector('.progress-barrier')");
+    await check("!document.querySelector('.animal-guide-hero')&&document.querySelector('.progress-barrier .rescue-primary').textContent==='Reveal Jungle'");
+    await click('.progress-barrier .rescue-primary'); await wait("document.querySelector('.animal-guide-hero')");
+    await click('.progress-control'); await wait("document.querySelector('dialog[open]')");
+    await click('input[name=earth-progress][value=farm]'); await click('.progress-save'); await wait("document.querySelector('.progress-barrier')");
+    await check("!document.querySelector('.animal-guide-hero')");
+    await storage(prefs); console.log(`${width}px passed`);
+  }
+  // Local real-data solver smoke: unchanged other policies, one Timeless + two classics.
+  const state=createDynamicRescueState(['chicken','cow','pig'].map(id=>animalParticipant(ANIMALS.find(a=>a.regionId==='farm'&&a.id===id))));
+  assert.equal(analyzeDynamicRescue(state).status,'ready');
+  fs.writeFileSync(`${output}/browser-checks.json`,JSON.stringify({checks,widths:[390,1440],screenshots:4},null,2));
+  console.log(`${checks} browser assertions passed`); socket.close();
+})().catch(e=>{console.error(e);process.exit(1);});

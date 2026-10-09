@@ -42,7 +42,7 @@ export function getRegionAnimalPresentations(regionId: string): AnimalGuidePrese
 
 // Presentation adapter for owner-reviewed records; never invokes a solver.
 export function presentOwnerAnimal(animal: Animal, strategy?: StaticSearchResult): AnimalGuidePresentation | undefined {
-  if (animal.hidden || animal.rarity === "timeless" || !getRegionPresentation(animal.regionId)) return undefined;
+  if (animal.hidden || !getRegionPresentation(animal.regionId)) return undefined;
   return {
     id: animal.id,
     name: animal.name,

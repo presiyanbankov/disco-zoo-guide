@@ -19,7 +19,7 @@ import { animalParticipant } from "../rescue/rescueParticipants";
 import { createDynamicRescueState, getPossibleWorlds, analyzeRescueWorlds } from "../../solver/dynamic/dynamicRescueSolver";
 import { rarityFocusParticipantIds } from "../../solver/dynamic/rescueStrategy";
 
-const records = ANIMALS.filter(a => a.regionId === "mars");
+const records = ANIMALS.filter(a => a.regionId === "mars" && a.rarity !== "timeless");
 const expected = [
  ["rock","Rock","common",[[0,0],[0,1],[1,0],[1,1]]],
  ["marsmot","Marsmot","common",[[0,1],[1,1],[2,0],[2,1]]],
@@ -41,7 +41,7 @@ test("Mars region/animal barriers and editable contextual setup obey Space visib
  assert.equal(rescueSetupHref("mars","marsmoset"),"/rescue?region=mars&animal=marsmoset");assert.deepEqual(resolveRescueSetupContext("mars",undefined,{...DEFAULT_PREFERENCES,maxSpaceRegionId:"mars"}),{regionId:"mars",selectedIds:[]});
 });
 test("All six Mars guides, HQ fallback, static sequence and region search consume real records",()=>{
- assert.equal(animalRoutes().filter(p=>p.regionId==="mars").length,records.length);assert.equal(getRegionSearchPresentation(getRegionAnimalPresentations("mars")).status,"ready");
+ assert.equal(animalRoutes().filter(p=>ANIMALS.some(a=>a.id===p.animalId&&a.rarity!=="timeless")&&p.regionId==="mars").length,records.length);assert.equal(getRegionSearchPresentation(getRegionAnimalPresentations("mars")).status,"ready");
  for(const animal of records){const art=getAnimalDisplayArtwork(animal.imagePath)!;assert.ok(art.isHq&&existsSync(`public${art.src}`));assert.equal(getAnimalDisplayArtwork(animal.imagePath,art.src)?.isHq,false);assert.equal(getAnimalDisplayArtwork(animal.imagePath,animal.imagePath),null);assert.ok(getAnimalGuidePresentation("mars",animal.id)?.strategy?.steps.length);}
 });
 test("Mars dynamic policies work and Marsmallow naturally selects Mythical tier",()=>{

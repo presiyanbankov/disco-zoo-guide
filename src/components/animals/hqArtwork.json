@@ -388,5 +388,20 @@
     "src": "/game/animals-hq/mars/marsmallow.png",
     "width": 106,
     "height": 136
+  },
+  "/game/animals/outback/echidna.svg": {
+    "src": "/game/animals-hq/outback/echidna.png",
+    "width": 136,
+    "height": 88
+  },
+  "/game/animals/savanna/rhinoceros.svg": {
+    "src": "/game/animals-hq/savanna/rhinoceros.png",
+    "width": 159,
+    "height": 112
+  },
+  "/game/animals/constellation/horologium.svg": {
+    "src": "/game/animals-hq/constellation/horologium.png",
+    "width": 78,
+    "height": 134
   }
 }

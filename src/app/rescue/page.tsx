@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default async function RescuePage({ searchParams }: { searchParams?: Promise<Record<string, string | string[] | undefined>> } = {}) {
   const query = await searchParams ?? {};
   const initialContext = resolveRescueSetupContext(query.region, query.animal);
-  const animals = ANIMALS.filter(a => !a.hidden && a.rarity !== "timeless" && REGION_PRESENTATION.some(r => r.id === a.regionId));
+  const animals = ANIMALS.filter(a => !a.hidden && REGION_PRESENTATION.some(r => r.id === a.regionId));
   return <div className="site-shell" data-route-page="/rescue">
     <a className="skip-link" href="#rescue-assistant">Skip to rescue assistant</a>
     <SiteHeader />

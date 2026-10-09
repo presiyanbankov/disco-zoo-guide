@@ -16,7 +16,7 @@ import { animalParticipant } from "../rescue/rescueParticipants";
 import { createDynamicRescueState, getPossibleWorlds, analyzeRescueWorlds } from "../../solver/dynamic/dynamicRescueSolver";
 import { rarityFocusParticipantIds } from "../../solver/dynamic/rescueStrategy";
 
-const records = ANIMALS.filter(a => a.regionId === "mountain");
+const records = ANIMALS.filter(a => a.regionId === "mountain" && a.rarity !== "timeless");
 const expected = [
   ["goat", "Goat", "common", [[0,0],[1,0],[1,1],[1,2]]],
   ["cougar", "Cougar", "common", [[0,0],[1,1],[2,0],[2,2]]],

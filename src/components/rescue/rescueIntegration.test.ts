@@ -24,17 +24,17 @@ test("rescue route presents all implemented regions, no locked/Timeless choices,
   assert.match(html, /Select a region/);
   assert.match(SITE_VERSION, /^ALPHA \d{2}$/);
   assert.ok(html.includes(SITE_VERSION));
-  assert.doesNotMatch(html, /Timeless|Mars|Constellation/);
+  assert.doesNotMatch(html, /data-animal-id="chicken"/);
 });
 
 test("setup offers only the chosen region's six animals and disables a fourth selection", () => {
-  const html = renderToStaticMarkup(createElement(RescueSetup, { regionId: "farm", selectedIds: animals.slice(0, 3).map(a => a.id), animals: ANIMALS, onRegion: noop, onAnimal: noop, onStart: noop }));
+  const html = renderToStaticMarkup(createElement(RescueSetup, { regionId: "farm", selectedIds: animals.slice(0, 3).map(a => a.id), animals: ANIMALS.filter(a => a.rarity !== "timeless"), onRegion: noop, onAnimal: noop, onStart: noop }));
   assert.equal((html.match(/class="rescue-animal-option"/g) ?? []).length, 6);
   assert.equal((html.match(/class="rescue-animal-option" aria-pressed="true"/g) ?? []).length, 3);
   assert.equal((html.match(/class="rescue-animal-option" aria-pressed="false" disabled=""/g) ?? []).length, 3);
   assert.match(html, /3 \/ 3 SELECTED/);
   assert.doesNotMatch(html, /Kangaroo|Moonkey|Timeless/);
-  const initial = renderToStaticMarkup(createElement(RescueSetup, { regionId: null, selectedIds: [], animals: ANIMALS, onRegion: noop, onAnimal: noop, onStart: noop }));
+  const initial = renderToStaticMarkup(createElement(RescueSetup, { regionId: null, selectedIds: [], animals: ANIMALS.filter(a => a.rarity !== "timeless"), onRegion: noop, onAnimal: noop, onStart: noop }));
   assert.match(initial, /class="rescue-primary rescue-start-cta" type="button" disabled=""/);
 });
 

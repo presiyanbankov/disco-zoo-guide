@@ -71,7 +71,7 @@ test("pending region search has 25 unnumbered subdued cells and no fabricated st
 });
 
 test("all 12 new shareable animal routes render approved patterns and real owner-generated search sequences", async () => {
-  const routes = animalParams().filter(params => params.regionId === "jungle" || params.regionId === "moon");
+  const routes = animalParams().filter(params => (params.regionId === "jungle" || params.regionId === "moon") && ANIMALS.some(a => a.id === params.animalId && a.rarity !== "timeless"));
   assert.equal(routes.length, 12);
   for (const params of routes) {
     const html = renderToStaticMarkup(await AnimalPage({ params: Promise.resolve(params) }));

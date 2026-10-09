@@ -1,0 +1,115 @@
+[
+  {
+    "id": "chicken",
+    "status": "fallback"
+  },
+  {
+    "id": "echidna",
+    "status": "HQ",
+    "sourceSize": [
+      150,
+      150
+    ],
+    "outputSize": [
+      136,
+      88
+    ],
+    "crop": [
+      6,
+      49,
+      142,
+      137
+    ],
+    "retainedPixels": 5844,
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
+  },
+  {
+    "id": "rhinoceros",
+    "status": "HQ",
+    "sourceSize": [
+      197,
+      188
+    ],
+    "outputSize": [
+      159,
+      112
+    ],
+    "crop": [
+      18,
+      46,
+      177,
+      158
+    ],
+    "retainedPixels": 11601,
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
+  },
+  {
+    "id": "otter",
+    "status": "fallback"
+  },
+  {
+    "id": "snowy-owl",
+    "status": "fallback"
+  },
+  {
+    "id": "lemur",
+    "status": "fallback"
+  },
+  {
+    "id": "ankylosaurus",
+    "status": "fallback"
+  },
+  {
+    "id": "yukon-camel",
+    "status": "fallback"
+  },
+  {
+    "id": "chipmunk",
+    "status": "fallback"
+  },
+  {
+    "id": "pika",
+    "status": "fallback"
+  },
+  {
+    "id": "firefly",
+    "status": "fallback"
+  },
+  {
+    "id": "babmoon",
+    "status": "fallback"
+  },
+  {
+    "id": "marsten",
+    "status": "fallback"
+  },
+  {
+    "id": "horologium",
+    "status": "HQ",
+    "sourceSize": [
+      150,
+      150
+    ],
+    "outputSize": [
+      78,
+      134
+    ],
+    "crop": [
+      37,
+      16,
+      115,
+      150
+    ],
+    "retainedPixels": 9170,
+    "rgbChanges": 0,
+    "binaryAlpha": true,
+    "padding": 2,
+    "resampled": false
+  }
+]

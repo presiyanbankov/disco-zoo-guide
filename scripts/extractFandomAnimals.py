@@ -70,9 +70,13 @@ def main():
     if not __debug__:
         raise RuntimeError('Run without -O: pixel validation must remain enabled')
     REVIEW.mkdir(parents=True, exist_ok=True)
-    results, unresolved, manifest = [], [], {}
+    # Preserve separately reviewed display entries (e.g. Timeless). This run
+    # owns only the canonical paths represented by its classic profiles.
+    results, unresolved = [], []
+    manifest = json.loads(MANIFEST.read_text()) if MANIFEST.exists() else {}
     for profile in load_profiles():
         animal_id, region = profile['id'], profile['region']
+        manifest.pop(f'/game/animals/{region}/{animal_id}.png', None)
         try:
             assert profile['review_status'] == 'reviewed', 'Profile awaits visual review'
             staging = REVIEW / 'validated' / f'{animal_id}.png'

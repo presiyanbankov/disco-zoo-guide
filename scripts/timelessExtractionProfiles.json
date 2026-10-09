@@ -1,0 +1,208 @@
+[
+  {
+    "id": "chicken",
+    "region": "farm",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/6/62/ChickenSolo.png/revision/latest?cb=20200404072825&format=original",
+    "sha256": "84bf75f623dda1a16e6e2f94d5ee0098634bdb5c55d170dc06816e5a242acb87",
+    "sourceSize": [
+      120,
+      120
+    ],
+    "status": "fallback",
+    "notes": "Tan ground and shadow; 291 source RGB colors with small edge/background islands. Exact boundary not yet approved; initial fallback only."
+  },
+  {
+    "id": "echidna",
+    "region": "outback",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/1/18/Echidna.png/revision/latest?cb=20200923005801&format=original",
+    "sha256": "6649b8fbffc636be040ddc49666d4aa869109a3fc1e64cfbd4634054fb2cfeb6",
+    "sourceSize": [
+      150,
+      150
+    ],
+    "status": "HQ",
+    "notes": "Reviewed shadow removal reopens the 276px foot pocket; two 36px gaps between spine tips cleared explicitly.",
+    "method": "exterior-fill",
+    "backgroundRgb": [
+      169,
+      146,
+      101
+    ],
+    "shadowRgb": [
+      148,
+      128,
+      91
+    ],
+    "shadowBox": [
+      10,
+      129,
+      138,
+      141
+    ],
+    "enclosedBackground": [
+      {
+        "seed": [
+          57,
+          64
+        ],
+        "count": 36
+      },
+      {
+        "seed": [
+          128,
+          93
+        ],
+        "count": 36
+      }
+    ],
+    "retainedPixels": 5844
+  },
+  {
+    "id": "rhinoceros",
+    "region": "savanna",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/3/33/Rhinoceros.png/revision/latest?cb=20231027140427&format=original",
+    "sha256": "69ba4d9a9af6ff33d5d268fddbf6898d02e7b4ce0d82736f59b24a1d1602b3cc",
+    "sourceSize": [
+      197,
+      188
+    ],
+    "status": "HQ",
+    "notes": "Alpha 53 pixels are the visually reviewed ground shadow; all 11601 opaque pixels, including horns and feet, retained.",
+    "method": "opaque-alpha",
+    "retainedPixels": 11601
+  },
+  {
+    "id": "otter",
+    "region": "northern",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/9/9f/Otter.png/revision/latest?cb=20210105005557&format=original",
+    "sha256": "4a4ab08d08f39a3c66a963d288fa4d7990d7cbc4f704e6ea33f4cf50c63c841e",
+    "sourceSize": [
+      194,
+      185
+    ],
+    "status": "fallback",
+    "notes": "Baked noisy green checkerboard and softened pale chest/tail edges; 2933 RGB colors. Manual boundary review pending; no mask published."
+  },
+  {
+    "id": "snowy-owl",
+    "region": "polar",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/c/c6/Snowy_Owl.png/revision/latest?cb=20210105005722&format=original",
+    "sha256": "d0ff56633fad886843dd5a471932704e3436beff3ed43f128dffada71ced6d77",
+    "sourceSize": [
+      298,
+      314
+    ],
+    "status": "fallback",
+    "notes": "Baked blue-green checkerboard overlaps pale/internal body details. Global deletion unsafe; no mask published."
+  },
+  {
+    "id": "lemur",
+    "region": "jungle",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/1/1f/Lemur.png/revision/latest?cb=20210105005814&format=original",
+    "sha256": "325c7f357e2acffefafa0f2c74e5a5e516e0763f3c168d9c416f4bcc14c34374",
+    "sourceSize": [
+      191,
+      187
+    ],
+    "status": "fallback",
+    "notes": "Baked noisy green checkerboard, 5289 RGB colors; thin feet and ringed tail at risk. No mask published."
+  },
+  {
+    "id": "ankylosaurus",
+    "region": "jurassic",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/a/a7/Ankylosaurus.png/revision/latest?cb=20210105005856&format=original",
+    "sha256": "14b990ef6334534fa80442f9f7033ec72b234147af5fd9036c57b1a5184140bc",
+    "sourceSize": [
+      140,
+      131
+    ],
+    "status": "fallback",
+    "notes": "Uniform tan exterior but varied low-contrast plate/foot boundary pixels. Manual boundary review pending; no mask published."
+  },
+  {
+    "id": "yukon-camel",
+    "region": "ice-age",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/d/da/Yukon_Camel.png/revision/latest?cb=20210105005955&format=original",
+    "sha256": "65fd00536d12ef87bbd5e64839f7642b54e75f8bde3c58675974697b8fbb6946",
+    "sourceSize": [
+      172,
+      190
+    ],
+    "status": "fallback",
+    "notes": "Baked noisy grey-green checkerboard; thin legs and underbody gaps unresolved. No mask published."
+  },
+  {
+    "id": "chipmunk",
+    "region": "city",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/9/9e/Chipmunk.png/revision/latest?cb=20210105010037&format=original",
+    "sha256": "ad0ee07d93473fdb760c02f9d0e41edeec2426ca25a3c8af1e3c6a32fbd32917",
+    "sourceSize": [
+      100,
+      94
+    ],
+    "status": "fallback",
+    "notes": "Flat tan exterior with multicolor softened edges; narrow tail and pale stripes unresolved. No mask published."
+  },
+  {
+    "id": "pika",
+    "region": "mountain",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/e/e8/Pika.png/revision/latest?cb=20210105010224&format=original",
+    "sha256": "40b9d19b4b08400a7f52408508ff6397ca91404dcae824e0d4280e7538ad6e46",
+    "sourceSize": [
+      88,
+      88
+    ],
+    "status": "fallback",
+    "notes": "Flat tan exterior with multicolor edge transitions and pale underside. No mask published."
+  },
+  {
+    "id": "firefly",
+    "region": "nocturnal",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/d/d7/Firefly.png/revision/latest?cb=20241122205108&format=original",
+    "sha256": "66f4209fe0221fb97f052119bf90c73378d5648dbdaca87a6c148c12c803ac6a",
+    "sourceSize": [
+      147,
+      129
+    ],
+    "status": "fallback",
+    "notes": "Yellow rescue-tile background with uneven colors and softened antenna/pale lower edges. No mask published."
+  },
+  {
+    "id": "babmoon",
+    "region": "moon",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/3/30/Babmoon.png/revision/latest?cb=20210105010340&format=original",
+    "sha256": "271da671445717557248ce4d00d73d4b6b40ddd9a8e3200520de149840764b9a",
+    "sourceSize": [
+      88,
+      85
+    ],
+    "status": "fallback",
+    "notes": "Brown exterior with color variation around thin limbs and tail opening. No mask published."
+  },
+  {
+    "id": "marsten",
+    "region": "mars",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/9/93/Marsten.png/revision/latest?cb=20210105005353&format=original",
+    "sha256": "b4ba0f84cdb0a4a447a04d10392e01235af499688b0c699b67f0d8f23c24a6d8",
+    "sourceSize": [
+      92,
+      94
+    ],
+    "status": "fallback",
+    "notes": "Brown exterior with edge variation; thin legs and long tail unresolved. No mask published."
+  },
+  {
+    "id": "horologium",
+    "region": "constellation",
+    "source": "https://static.wikia.nocookie.net/discozoo/images/a/a3/Horologium.png/revision/latest?cb=20250502080956&format=original",
+    "sha256": "bda7dddd48678d416caa065a0e606c7a7e8a928a26358daffda94da03551ea7f",
+    "sourceSize": [
+      150,
+      150
+    ],
+    "status": "HQ",
+    "notes": "Already binary alpha; all opaque pixels, including internal black clock details, retained.",
+    "method": "opaque-alpha",
+    "retainedPixels": 9170
+  }
+]

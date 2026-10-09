@@ -448,4 +448,76 @@ export const ANIMALS: Animal[] = [
     pattern: { cells: [{ row: 0, col: 2 }, { row: 2, col: 0 }] },
     imagePath: "/game/animals/constellation/pegasus.svg",
   },
+
+  // ALPHA 21: approved Timeless patterns; single-source visual verification.
+  {
+    id: "chicken", name: "Chicken", regionId: "farm", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 2 }, { row: 1, col: 1 }, { row: 2, col: 0 }] },
+    imagePath: "/game/animals/farm/chicken.svg",
+  },
+  {
+    id: "echidna", name: "Echidna", regionId: "outback", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 2 }, { row: 1, col: 0 }, { row: 1, col: 1 }] },
+    imagePath: "/game/animals/outback/echidna.svg",
+  },
+  {
+    id: "rhinoceros", name: "Rhinoceros", regionId: "savanna", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 1, col: 0 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/savanna/rhinoceros.svg",
+  },
+  {
+    id: "otter", name: "Otter", regionId: "northern", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 0 }, { row: 1, col: 1 }] },
+    imagePath: "/game/animals/northern/otter.svg",
+  },
+  {
+    id: "snowy-owl", name: "Snowy Owl", regionId: "polar", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 1 }, { row: 1, col: 1 }] },
+    imagePath: "/game/animals/polar/snowy-owl.svg",
+  },
+  {
+    id: "lemur", name: "Lemur", regionId: "jungle", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 1 }, { row: 2, col: 0 }] },
+    imagePath: "/game/animals/jungle/lemur.svg",
+  },
+  {
+    id: "ankylosaurus", name: "Ankylosaurus", regionId: "jurassic", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 2 }, { row: 1, col: 0 }, { row: 1, col: 2 }] },
+    imagePath: "/game/animals/jurassic/ankylosaurus.svg",
+  },
+  {
+    id: "yukon-camel", name: "Yukon Camel", regionId: "ice-age", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 2 }, { row: 1, col: 0 }, { row: 2, col: 3 }] },
+    imagePath: "/game/animals/ice-age/yukon-camel.svg",
+  },
+  {
+    id: "chipmunk", name: "Chipmunk", regionId: "city", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 1, col: 0 }, { row: 1, col: 3 }] },
+    imagePath: "/game/animals/city/chipmunk.svg",
+  },
+  {
+    id: "pika", name: "Pika", regionId: "mountain", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 2 }, { row: 1, col: 2 }] },
+    imagePath: "/game/animals/mountain/pika.svg",
+  },
+  {
+    id: "firefly", name: "Firefly", regionId: "nocturnal", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 0 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/nocturnal/firefly.svg",
+  },
+  {
+    id: "babmoon", name: "Babmoon", regionId: "moon", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 1, col: 2 }, { row: 2, col: 0 }] },
+    imagePath: "/game/animals/moon/babmoon.svg",
+  },
+  {
+    id: "marsten", name: "Marsten", regionId: "mars", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 2 }, { row: 1, col: 3 }] },
+    imagePath: "/game/animals/mars/marsten.svg",
+  },
+  {
+    id: "horologium", name: "Horologium", regionId: "constellation", rarity: "timeless",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 2 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/constellation/horologium.svg",
+  },
 ];

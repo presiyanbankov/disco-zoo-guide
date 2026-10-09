@@ -37,8 +37,9 @@ export function rarityFocusParticipantIds(state: DynamicRescueState, worlds: rea
   const resolved = new Set(resolvedParticipantIds(state, worlds));
   const unresolved = state.participants.filter(p => !resolved.has(p.id));
   const animals = unresolved.filter(p => p.kind === "animal");
-  for (const tier of ["mythical", "rare", "common"] as const) {
-    const candidates = animals.filter(p => (p.animalRarity ?? "common") === tier);
+  // Timeless shares the Rare tier; neither receives a separate priority bonus.
+  for (const tier of [["mythical"], ["rare", "timeless"], ["common"]] as const) {
+    const candidates = animals.filter(p => tier.some(rarity => rarity === (p.animalRarity ?? "common")));
     if (candidates.length) return candidates.map(p => p.id);
   }
   return unresolved.filter(p => p.kind === "pet").map(p => p.id);
