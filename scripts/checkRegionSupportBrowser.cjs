@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports -- Standalone Node CommonJS QA script. */
 const fs = require('node:fs');
+require('tsx/cjs');
+const { REGION_PRESENTATION } = require('../src/components/regions/regionPresentation.ts');
 const base = process.env.HQ_QA_URL || 'http://localhost:3108';
 const debug = process.env.HQ_QA_CDP || 'http://localhost:9241';
 const output = 'public/game/experiments/jungle-moon';
@@ -48,7 +50,9 @@ const output = 'public/game/experiments/jungle-moon';
   await call('Page.enable');await call('Runtime.enable');await call('Network.enable');
   await call('Emulation.setDeviceMetricsOverride',{width:1440,height:1000,deviceScaleFactor:1,mobile:false});
   await go('/');
-  await waitFor(`document.querySelectorAll('.region-card').length===7`);
+  await evaluate("localStorage.setItem('disco-zoo-guide.progress',JSON.stringify({version:1,maxEarthRegionId:'mountain',maxSpaceRegionId:'moon',showTimeless:false}))");
+  await go('/');
+  await waitFor(`document.querySelectorAll('.region-card').length===${REGION_PRESENTATION.length}`);
   await click('a.region-card[href="/regions/jungle"]');
   await waitFor(`location.pathname==='/regions/jungle' && !!document.querySelector('.region-search') && document.documentElement.dataset.routeTransition!=='active'`);
   await click('a.region-nav-link[href="/regions/moon"]');
@@ -77,7 +81,7 @@ const output = 'public/game/experiments/jungle-moon';
     }
   }
   const locked = [];
-  for(const region of ['jurassic','mars','constellation']) {
+  for(const region of ['nocturnal','mars','constellation']) {
     const response=await fetch(base+'/regions/'+region);
     if(response.status!==404) throw Error('Locked region accessible: '+region);
     locked.push(region);

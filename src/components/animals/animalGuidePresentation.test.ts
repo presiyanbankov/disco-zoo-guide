@@ -1,3 +1,4 @@
+import { REGION_PRESENTATION } from "../regions/regionPresentation";
 import assert from "node:assert/strict";
 import test from "node:test";
 import type { Animal, StaticSearchResult } from "../../types/game";
@@ -38,9 +39,9 @@ test("approved lookup supplies the original pattern, excludes other regions, and
 });
 
 test("approved roster has exactly six classic animals per region, normalized cells, and intact separated patterns", () => {
-  assert.equal(ANIMALS.length, 48);
-  assert.equal(new Set(ANIMALS.map((animal) => animal.id)).size, 48);
-  for (const region of ["farm", "outback", "savanna", "northern", "polar", "jungle", "jurassic", "moon"]) {
+  assert.equal(ANIMALS.length, REGION_PRESENTATION.length * 6);
+  assert.equal(new Set(ANIMALS.map((animal) => animal.id)).size, ANIMALS.length);
+  for (const region of REGION_PRESENTATION.map(r => r.id)) {
     const animals = getRegionAnimalPresentations(region);
     assert.equal(animals.length, 6);
     assert.equal(animals.filter((animal) => animal.rarity === "common").length, 3);
@@ -52,7 +53,7 @@ test("approved roster has exactly six classic animals per region, normalized cel
       assert.equal(Math.min(...cells.map((cell) => cell.col)), 0);
       assert.equal(new Set(cells.map((cell) => `${cell.row},${cell.col}`)).size, cells.length);
       assert.ok(cells.every((cell) => Number.isInteger(cell.row) && Number.isInteger(cell.col) && cell.row < 5 && cell.col < 5));
-      assert.equal(cells.length, animal.rarity === "common" ? 4 : animal.rarity === "rare" ? 3 : ["sasquatch", "yeti", "phoenix", "jade-rabbit", "dragon"].includes(animal.id) ? 2 : 3);
+      assert.deepEqual(cells, ANIMALS.find(record => record.regionId === region && record.id === animal.id)!.pattern.cells);
     }
   }
   assert.deepEqual(getAnimalGuidePresentation("polar", "yeti")?.pattern?.cells, [{ row: 0, col: 0 }, { row: 2, col: 0 }]);

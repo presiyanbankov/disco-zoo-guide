@@ -8,7 +8,7 @@ import { RegionSearch } from "./RegionSearch";
 import { REGION_PRESENTATION } from "./regionPresentation";
 import { getRegionSearchPresentation } from "./regionSearchPresentation";
 
-test("all seven region grids immediately render real steps in their cells and leave other cells blank", () => {
+test("all implemented region grids immediately render real steps in their cells and leave other cells blank", () => {
   for (const region of REGION_PRESENTATION) {
     const animals = ANIMALS.filter(a => a.regionId === region.id && !a.hidden && a.rarity !== "timeless");
     const strategy = getRegionSearchPresentation(animals);

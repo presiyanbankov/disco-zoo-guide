@@ -3298,5 +3298,1361 @@
     "review_status": "reviewed",
     "notes": "Native source reviewed individually; ground shadow removed. Protect all palette pixels including pale extremities, horns and wing membrane. All background openings exterior-connected after shadow removal.",
     "file_page": "https://discozoo.fandom.com/wiki/File:Dragon.png"
+  },
+  {
+    "id": "wooly-rhino",
+    "name": "Wooly Rhino",
+    "region": "ice-age",
+    "cdn": "1/1b/Wooly_Rhino.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "ba934737a312117d7eb65a73f17a85005bf91a454e418a6d173d69866bb2892f",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      4,
+      130,
+      142,
+      142
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        52,
+        43,
+        31
+      ],
+      [
+        74,
+        61,
+        44
+      ],
+      [
+        126,
+        88,
+        39
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        185,
+        154,
+        116
+      ]
+    ],
+    "count": 7524,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Source individually inspected; protect pale extremities and all native animal palette pixels. Shadow mask restricted to reviewed exact-color bounds. No enclosed background seed required.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Wooly_Rhino.png"
+  },
+  {
+    "id": "giant-sloth",
+    "name": "Giant Sloth",
+    "region": "ice-age",
+    "cdn": "1/1a/Giant_Sloth.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "966d9b53aa0ae21adcc3b76e4555a817a6e94ac5b43043244def17aab04b35d2",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      9,
+      129,
+      137,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        74,
+        61,
+        44
+      ],
+      [
+        119,
+        74,
+        17
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        143,
+        92,
+        28
+      ]
+    ],
+    "count": 6480,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Source individually inspected; protect pale extremities and all native animal palette pixels. Shadow mask restricted to reviewed exact-color bounds. No enclosed background seed required.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Giant_Sloth.png"
+  },
+  {
+    "id": "dire-wolf",
+    "name": "Dire Wolf",
+    "region": "ice-age",
+    "cdn": "3/32/Dire_Wolf.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "9005cd5be20b48dde72b5f7b4661d377bdd99948daf6a878427dbf6b0b1e6e03",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      7,
+      129,
+      145,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        192,
+        190,
+        169
+      ],
+      [
+        209,
+        207,
+        187
+      ],
+      [
+        226,
+        224,
+        206
+      ]
+    ],
+    "count": 6378,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Source individually inspected; protect pale extremities and all native animal palette pixels. Shadow mask restricted to reviewed exact-color bounds. No enclosed background seed required.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Dire_Wolf.png"
+  },
+  {
+    "id": "saber-tooth",
+    "name": "Saber Tooth",
+    "region": "ice-age",
+    "cdn": "3/35/Saber_Tooth.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "18d576f797049ae142b5f3852474e77e95972b89822f9fa375171267ee5237f7",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      5,
+      129,
+      137,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        114,
+        90,
+        61
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        193,
+        121,
+        32
+      ],
+      [
+        201,
+        127,
+        36
+      ],
+      [
+        206,
+        130,
+        39
+      ],
+      [
+        220,
+        140,
+        46
+      ],
+      [
+        232,
+        207,
+        177
+      ],
+      [
+        244,
+        220,
+        192
+      ]
+    ],
+    "count": 6006,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Source individually inspected; protect pale extremities and all native animal palette pixels. Shadow mask restricted to reviewed exact-color bounds. No enclosed background seed required.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Saber_Tooth.png"
+  },
+  {
+    "id": "mammoth",
+    "name": "Mammoth",
+    "region": "ice-age",
+    "cdn": "a/a5/Mammoth.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "616d8f50e674bbacd32e291a0e47be8d9f53186c5c0b05236cb786cc3b143ffd",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      13,
+      129,
+      120,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        52,
+        43,
+        31
+      ],
+      [
+        63,
+        52,
+        38
+      ],
+      [
+        74,
+        61,
+        44
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        224,
+        198,
+        167
+      ],
+      [
+        239,
+        214,
+        181
+      ]
+    ],
+    "count": 8178,
+    "enclosed_background": [
+      {
+        "seed": [
+          23,
+          90
+        ],
+        "count": 360,
+        "label": "trunk-tusk-opening"
+      }
+    ],
+    "review_status": "reviewed",
+    "notes": "Source individually inspected; protect pale extremities and all native animal palette pixels. Shadow mask restricted to reviewed exact-color bounds. Reviewed seed (23,90) clears only the 360px trunk/tusk background pocket.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Mammoth.png"
+  },
+  {
+    "id": "akhlut",
+    "name": "Akhlut",
+    "region": "ice-age",
+    "cdn": "2/25/Akhlut.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "4e0090fb2e0c4dd4fcb505c955aaea5c0ac707d25eff80a8f34d24a94172e980",
+    "shadow": [
+      149,
+      124,
+      95
+    ],
+    "shadow_box": [
+      6,
+      129,
+      145,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        68,
+        68,
+        68
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        206,
+        206,
+        206
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "count": 6649,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Source individually inspected; protect pale extremities and all native animal palette pixels. Shadow mask restricted to reviewed exact-color bounds. No enclosed background seed required.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Akhlut.png"
+  },
+  {
+    "id": "raccoon",
+    "name": "Raccoon",
+    "region": "city",
+    "cdn": "7/7c/Raccoon.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "61ae3133b08db28f3e279526e7f5c88d1795560f824e0c3b15d73d29435cbde1",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      11,
+      129,
+      139,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        54,
+        54,
+        54
+      ],
+      [
+        57,
+        57,
+        57
+      ],
+      [
+        82,
+        82,
+        82
+      ],
+      [
+        104,
+        104,
+        104
+      ],
+      [
+        126,
+        126,
+        126
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        177,
+        177,
+        177
+      ],
+      [
+        192,
+        192,
+        192
+      ],
+      [
+        229,
+        229,
+        229
+      ]
+    ],
+    "count": 5604,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Source individually visually inspected: protect all native palette pixels, pale extremities and thin tails/legs. Ground-shadow exact-color bounds reviewed. All background openings exterior-connected after shadow removal; no seed needed.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Raccoon.png"
+  },
+  {
+    "id": "pigeon",
+    "name": "Pigeon",
+    "region": "city",
+    "cdn": "9/9e/Pigeon.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "5edafc2bf62fac25d4cc2f2e37702af43f1f81f75cf5c197244651aed765cfcc",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      30,
+      129,
+      122,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        61,
+        61,
+        61
+      ],
+      [
+        93,
+        93,
+        93
+      ],
+      [
+        120,
+        191,
+        188
+      ],
+      [
+        124,
+        124,
+        124
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        145,
+        155,
+        171
+      ],
+      [
+        153,
+        144,
+        166
+      ],
+      [
+        182,
+        193,
+        205
+      ],
+      [
+        222,
+        226,
+        229
+      ],
+      [
+        237,
+        186,
+        186
+      ]
+    ],
+    "count": 4104,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Source individually visually inspected: protect all native palette pixels, pale extremities and thin tails/legs. Ground-shadow exact-color bounds reviewed. All background openings exterior-connected after shadow removal; no seed needed.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Pigeon.png"
+  },
+  {
+    "id": "rat",
+    "name": "Rat",
+    "region": "city",
+    "cdn": "8/8b/Rat.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "7ddb405a03f62a9786f3aad43b488b7b6bb875b532b4eba382edf82b86d97607",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      12,
+      129,
+      140,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        105,
+        82,
+        62
+      ],
+      [
+        134,
+        109,
+        86
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        233,
+        208,
+        199
+      ]
+    ],
+    "count": 3780,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Source individually visually inspected: protect all native palette pixels, pale extremities and thin tails/legs. Ground-shadow exact-color bounds reviewed. All background openings exterior-connected after shadow removal; no seed needed.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Rat.png"
+  },
+  {
+    "id": "squirrel",
+    "name": "Squirrel",
+    "region": "city",
+    "cdn": "4/41/Squirrel.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "9fc3e753c77be993366de4656c8b2afea57264c0ce47339996ce8bfbf01ddb12",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      23,
+      129,
+      127,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        118,
+        43,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        139,
+        60,
+        4
+      ],
+      [
+        160,
+        77,
+        10
+      ],
+      [
+        194,
+        110,
+        41
+      ],
+      [
+        201,
+        129,
+        67
+      ],
+      [
+        203,
+        134,
+        72
+      ],
+      [
+        223,
+        188,
+        144
+      ]
+    ],
+    "count": 6342,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Source individually visually inspected: protect all native palette pixels, pale extremities and thin tails/legs. Ground-shadow exact-color bounds reviewed. All background openings exterior-connected after shadow removal; no seed needed.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Squirrel.png"
+  },
+  {
+    "id": "opossum",
+    "name": "Opossum",
+    "region": "city",
+    "cdn": "b/b1/Opossum.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "612b3e046af5c2ca7c6fb4a6b913cb6960184418721dcc08798ec29ea7e5a351",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      6,
+      129,
+      144,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        57,
+        57,
+        57
+      ],
+      [
+        79,
+        82,
+        85
+      ],
+      [
+        119,
+        123,
+        127
+      ],
+      [
+        134,
+        134,
+        134
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        139,
+        143,
+        148
+      ],
+      [
+        146,
+        149,
+        152
+      ],
+      [
+        158,
+        134,
+        135
+      ],
+      [
+        158,
+        163,
+        169
+      ],
+      [
+        187,
+        189,
+        190
+      ],
+      [
+        229,
+        229,
+        229
+      ],
+      [
+        237,
+        186,
+        186
+      ]
+    ],
+    "count": 4608,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Source individually visually inspected: protect all native palette pixels, pale extremities and thin tails/legs. Ground-shadow exact-color bounds reviewed. All background openings exterior-connected after shadow removal; no seed needed.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Opossum.png"
+  },
+  {
+    "id": "sewer-turtle",
+    "name": "Sewer Turtle",
+    "region": "city",
+    "cdn": "a/a5/Sewer_Turtle.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "cd79f001961e52f7f77ca2448e93ecfcfdbfcab34b819f04a19433e8f1e5eef3",
+    "shadow": [
+      149,
+      124,
+      95
+    ],
+    "shadow_box": [
+      6,
+      129,
+      145,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        47,
+        91,
+        0
+      ],
+      [
+        59,
+        106,
+        10
+      ],
+      [
+        60,
+        106,
+        10
+      ],
+      [
+        65,
+        113,
+        15
+      ],
+      [
+        72,
+        109,
+        25
+      ],
+      [
+        72,
+        121,
+        20
+      ],
+      [
+        95,
+        140,
+        38
+      ],
+      [
+        100,
+        160,
+        36
+      ],
+      [
+        114,
+        80,
+        20
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        142,
+        104,
+        37
+      ],
+      [
+        151,
+        167,
+        23
+      ],
+      [
+        170,
+        193,
+        18
+      ],
+      [
+        207,
+        193,
+        9
+      ],
+      [
+        209,
+        138,
+        0
+      ],
+      [
+        240,
+        226,
+        0
+      ],
+      [
+        255,
+        168,
+        0
+      ]
+    ],
+    "count": 7339,
+    "enclosed_background": [
+      {
+        "seed": [
+          56,
+          78
+        ],
+        "count": 138,
+        "label": "neck-opening"
+      }
+    ],
+    "review_status": "reviewed",
+    "notes": "Source individually visually inspected: protect all native palette pixels, pale extremities and thin tails/legs. Ground-shadow exact-color bounds reviewed. Explicitly inspected neck-opening seed (56,78), 138px background component; yellow highlights preserved.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Sewer_Turtle.png"
+  },
+  {
+    "id": "goat",
+    "name": "Goat",
+    "region": "mountain",
+    "cdn": "5/52/Goat.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "6dd572c02c64d112ff9f723075f31d5206fce718750200c386e833aafe56abf4",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      11,
+      130,
+      139,
+      142
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        113,
+        102,
+        72
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        172,
+        155,
+        111
+      ],
+      [
+        198,
+        179,
+        130
+      ],
+      [
+        211,
+        191,
+        140
+      ],
+      [
+        224,
+        203,
+        150
+      ],
+      [
+        237,
+        225,
+        163
+      ],
+      [
+        249,
+        246,
+        175
+      ]
+    ],
+    "count": 6984,
+    "enclosed_background": [
+      {
+        "seed": [
+          38,
+          28
+        ],
+        "count": 108,
+        "label": "horn-opening"
+      }
+    ],
+    "review_status": "reviewed",
+    "notes": "Individually inspected native source, shadow bounds and thin extremities. Explicit enclosed seeds reviewed where listed; all animal palette pixels protected by exact coverage validation.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Goat.png"
+  },
+  {
+    "id": "cougar",
+    "name": "Cougar",
+    "region": "mountain",
+    "cdn": "5/55/Cougar.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "4368577de5d7154fbe6146a76a1556fbdf324a46b97a2f63e8150ded26a7be0b",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      11,
+      129,
+      139,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        116,
+        74,
+        43
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        193,
+        123,
+        71
+      ],
+      [
+        212,
+        160,
+        92
+      ],
+      [
+        219,
+        206,
+        173
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "count": 6390,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Individually inspected native source, shadow bounds and thin extremities. Explicit enclosed seeds reviewed where listed; all animal palette pixels protected by exact coverage validation.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Cougar.png"
+  },
+  {
+    "id": "elk",
+    "name": "Elk",
+    "region": "mountain",
+    "cdn": "3/32/Elk.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "8fde7a30f8c98af32126fb6fe6fec1f993474d8cd94a86330996176e86cd853a",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      17,
+      129,
+      133,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        53,
+        29,
+        26
+      ],
+      [
+        100,
+        65,
+        51
+      ],
+      [
+        102,
+        94,
+        99
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        147,
+        102,
+        76
+      ],
+      [
+        183,
+        141,
+        111
+      ]
+    ],
+    "count": 5928,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Individually inspected native source, shadow bounds and thin extremities. Explicit enclosed seeds reviewed where listed; all animal palette pixels protected by exact coverage validation.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Elk.png"
+  },
+  {
+    "id": "eagle",
+    "name": "Eagle",
+    "region": "mountain",
+    "cdn": "8/8b/Eagle.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "75016f103330c504b9d0173b3af60120d9b3fe05a3f61e101ad703a068faa279",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      12,
+      129,
+      140,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        49,
+        38,
+        29
+      ],
+      [
+        68,
+        53,
+        41
+      ],
+      [
+        98,
+        76,
+        59
+      ],
+      [
+        132,
+        86,
+        61
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        165,
+        96,
+        63
+      ],
+      [
+        178,
+        178,
+        178
+      ],
+      [
+        225,
+        215,
+        23
+      ],
+      [
+        235,
+        224,
+        72
+      ],
+      [
+        255,
+        242,
+        0
+      ],
+      [
+        255,
+        255,
+        255
+      ]
+    ],
+    "count": 6288,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Individually inspected native source, shadow bounds and thin extremities. Explicit enclosed seeds reviewed where listed; all animal palette pixels protected by exact coverage validation.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Eagle.png"
+  },
+  {
+    "id": "coyote",
+    "name": "Coyote",
+    "region": "mountain",
+    "cdn": "0/02/Coyote.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "ff589987e00eebf6dcd21d7395b7d4b7c20e1eb519f288492bf1aacfbbae1560",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      16,
+      129,
+      132,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        88,
+        53,
+        46
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        147,
+        88,
+        76
+      ],
+      [
+        167,
+        89,
+        69
+      ],
+      [
+        183,
+        142,
+        125
+      ],
+      [
+        190,
+        153,
+        134
+      ],
+      [
+        219,
+        197,
+        173
+      ]
+    ],
+    "count": 5052,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Individually inspected native source, shadow bounds and thin extremities. Explicit enclosed seeds reviewed where listed; all animal palette pixels protected by exact coverage validation.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Coyote.png"
+  },
+  {
+    "id": "aatxe",
+    "name": "Aatxe",
+    "region": "mountain",
+    "cdn": "2/28/Aatxe.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "02910d087a8a579df892c19c76f28fdca1cd86e73a395ab01ef32034bd01bdad",
+    "shadow": [
+      149,
+      124,
+      95
+    ],
+    "shadow_box": [
+      12,
+      129,
+      139,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        84,
+        0,
+        0
+      ],
+      [
+        102,
+        0,
+        0
+      ],
+      [
+        121,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        215,
+        179,
+        179
+      ],
+      [
+        219,
+        198,
+        125
+      ],
+      [
+        237,
+        222,
+        139
+      ],
+      [
+        255,
+        242,
+        0
+      ],
+      [
+        255,
+        247,
+        153
+      ]
+    ],
+    "count": 7860,
+    "enclosed_background": [
+      {
+        "seed": [
+          18,
+          78
+        ],
+        "count": 36,
+        "label": "muzzle-opening"
+      }
+    ],
+    "review_status": "reviewed",
+    "notes": "Individually inspected native source, shadow bounds and thin extremities. Explicit enclosed seeds reviewed where listed; all animal palette pixels protected by exact coverage validation.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Aatxe.png"
   }
 ]

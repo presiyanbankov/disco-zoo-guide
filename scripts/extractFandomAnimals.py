@@ -9,7 +9,7 @@ HQ = ROOT / 'public/game/animals-hq'
 REVIEW = ROOT / 'public/game/experiments/fandom-extracted-all'
 PROFILE_FILE = ROOT / 'scripts/fandomExtractionProfiles.json'
 MANIFEST = ROOT / 'src/components/animals/hqArtwork.json'
-REGIONS = ('farm', 'outback', 'savanna', 'northern', 'polar', 'jungle', 'jurassic', 'moon')
+REGIONS = ('farm', 'outback', 'savanna', 'northern', 'polar', 'jungle', 'jurassic', 'ice-age', 'city', 'mountain', 'moon')
 
 
 def load_profiles():

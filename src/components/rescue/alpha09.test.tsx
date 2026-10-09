@@ -9,7 +9,7 @@ import { RescueSetup } from "./RescueSetup";
 import { ResultSelector } from "./ResultSelector";
 import PetsPage from "../../app/pets/page";
 import Home from "../../app/page";
-import { REGION_GROUPS, regionPosition } from "../regions/regionPresentation";
+import { REGION_GROUPS, REGION_PRESENTATION, regionPosition } from "../regions/regionPresentation";
 import { SITE_VERSION } from "../layout/siteVersion";
 const farm = ANIMALS.filter(a => a.regionId === "farm");
 const pet = PET_SPECIES[0];
@@ -92,12 +92,12 @@ test("pets reference shows all eight exact pattern grids", () => {
  assert.equal((html.match(/data-pattern-occupied="true"/g)??[]).length,40);
  assert.match(html,/Cosmetic appearance does not affect/);
 });
-test("homepage prioritizes assistant then Earth, Space and Pets; locks seven destinations", () => {
+test("homepage prioritizes assistant then Earth, Space and Pets; keeps unimplemented destinations locked", () => {
  const html = renderToStaticMarkup(<Home />);
  assert.ok(html.indexOf('id="rescue"') < html.indexOf('id="regions"'));
  assert.ok(html.indexOf('id="earth-title"') < html.indexOf('id="space-title"'));
  assert.ok(html.indexOf('id="space-title"') < html.indexOf('id="pets-reference-title"'));
- assert.equal((html.match(/data-region-locked="true"/g)??[]).length,6);
+ assert.equal((html.match(/data-region-locked="true"/g)??[]).length,REGION_GROUPS.reduce((n,g)=>n+g.destinations.length,0)-REGION_PRESENTATION.length);
  assert.doesNotMatch(html,/href="\/regions\/(mars|constellation|nocturnal)/);
  assert.match(SITE_VERSION,/^ALPHA \d{2}$/); assert.ok(html.includes(SITE_VERSION));
  assert.equal(regionPosition("moon").number,1); assert.equal(REGION_GROUPS[0].destinations.length,11);

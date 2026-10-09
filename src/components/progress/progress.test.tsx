@@ -123,9 +123,9 @@ test("future Timeless barrier has independent reveal action", () => {
 });
 test("progress beyond implementation does not create routes or reveal future destinations", () => {
   const maximum: SpoilerPreferences = { maxEarthRegionId: "nocturnal", maxSpaceRegionId: "constellation", showTimeless: true };
-  assert.equal(getVisibleRegions(REGION_PRESENTATION, maximum).length, 8);
+  assert.equal(getVisibleRegions(REGION_PRESENTATION, maximum).length, REGION_PRESENTATION.length);
   const html = render(<RegionExplorer />, maximum);
-  assert.equal((html.match(/data-region-locked="true"/g) ?? []).length, 6);
+  assert.equal((html.match(/data-region-locked="true"/g) ?? []).length, EARTH_PROGRESS.length + SPACE_PROGRESS.length - REGION_PRESENTATION.length);
   assert.doesNotMatch(html, /Nocturnal|Mars|Constellation/);
 });
 test("rescue selector and URL context respect progress", () => {

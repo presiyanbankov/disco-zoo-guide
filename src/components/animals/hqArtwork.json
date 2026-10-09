@@ -238,5 +238,95 @@
     "src": "/game/animals-hq/jurassic/dragon.png",
     "width": 136,
     "height": 112
+  },
+  "/game/animals/ice-age/wooly-rhino.png": {
+    "src": "/game/animals-hq/ice-age/wooly-rhino.png",
+    "width": 142,
+    "height": 88
+  },
+  "/game/animals/ice-age/giant-sloth.png": {
+    "src": "/game/animals-hq/ice-age/giant-sloth.png",
+    "width": 130,
+    "height": 100
+  },
+  "/game/animals/ice-age/dire-wolf.png": {
+    "src": "/game/animals-hq/ice-age/dire-wolf.png",
+    "width": 148,
+    "height": 100
+  },
+  "/game/animals/ice-age/saber-tooth.png": {
+    "src": "/game/animals-hq/ice-age/saber-tooth.png",
+    "width": 136,
+    "height": 81
+  },
+  "/game/animals/ice-age/mammoth.png": {
+    "src": "/game/animals-hq/ice-age/mammoth.png",
+    "width": 124,
+    "height": 100
+  },
+  "/game/animals/ice-age/akhlut.png": {
+    "src": "/game/animals-hq/ice-age/akhlut.png",
+    "width": 148,
+    "height": 100
+  },
+  "/game/animals/city/raccoon.png": {
+    "src": "/game/animals-hq/city/raccoon.png",
+    "width": 136,
+    "height": 76
+  },
+  "/game/animals/city/pigeon.png": {
+    "src": "/game/animals-hq/city/pigeon.png",
+    "width": 100,
+    "height": 112
+  },
+  "/game/animals/city/rat.png": {
+    "src": "/game/animals-hq/city/rat.png",
+    "width": 136,
+    "height": 64
+  },
+  "/game/animals/city/squirrel.png": {
+    "src": "/game/animals-hq/city/squirrel.png",
+    "width": 112,
+    "height": 100
+  },
+  "/game/animals/city/opossum.png": {
+    "src": "/game/animals-hq/city/opossum.png",
+    "width": 148,
+    "height": 70
+  },
+  "/game/animals/city/sewer-turtle.png": {
+    "src": "/game/animals-hq/city/sewer-turtle.png",
+    "width": 148,
+    "height": 88
+  },
+  "/game/animals/mountain/goat.png": {
+    "src": "/game/animals-hq/mountain/goat.png",
+    "width": 136,
+    "height": 124
+  },
+  "/game/animals/mountain/cougar.png": {
+    "src": "/game/animals-hq/mountain/cougar.png",
+    "width": 136,
+    "height": 88
+  },
+  "/game/animals/mountain/elk.png": {
+    "src": "/game/animals-hq/mountain/elk.png",
+    "width": 124,
+    "height": 136
+  },
+  "/game/animals/mountain/eagle.png": {
+    "src": "/game/animals-hq/mountain/eagle.png",
+    "width": 136,
+    "height": 112
+  },
+  "/game/animals/mountain/coyote.png": {
+    "src": "/game/animals-hq/mountain/coyote.png",
+    "width": 124,
+    "height": 88
+  },
+  "/game/animals/mountain/aatxe.png": {
+    "src": "/game/animals-hq/mountain/aatxe.png",
+    "width": 131,
+    "height": 124
   }
 }

@@ -299,3 +299,9 @@
 @media (prefers-reduced-motion: reduce) { .animal-card:is(:hover,:focus-visible) .animal-guide-status { transform: none; } }
 
 .region-jurassic { --region-accent: #bdac82; --sky: #202627; --sun: #b96c41; --far: #303b36; --mid: #3d493b; --ground: #20282a; --detail: #74805a; }
+
+.region-ice-age { --region-accent: #acbdb7; --sky: #253238; --sun: #c5cdc1; --far: #52666b; --mid: #425558; --ground: #303d3e; --detail: #7c9185; }
+
+.region-city { --region-accent: #c3b18d; --sky: #263239; --sun: #c8b485; --far: #354349; --mid: #3e4140; --ground: #252f31; --detail: #897b61; }
+
+.region-mountain { --region-accent: #b0b398; --sky: #24343b; --sun: #c5ae7c; --far: #476063; --mid: #38494c; --ground: #273735; --detail: #7d8970; }

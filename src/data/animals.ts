@@ -256,4 +256,100 @@ export const ANIMALS: Animal[] = [
     pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 2 }] },
     imagePath: "/game/animals/jurassic/dragon.png",
   },
+
+  // Ice Age - approved ALPHA 15 coordinates.
+  {
+    id: "wooly-rhino", name: "Wooly Rhino", regionId: "ice-age", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 2 }, { row: 1, col: 0 }, { row: 1, col: 3 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/ice-age/wooly-rhino.png",
+  },
+  {
+    id: "giant-sloth", name: "Giant Sloth", regionId: "ice-age", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 2 }, { row: 2, col: 0 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/ice-age/giant-sloth.png",
+  },
+  {
+    id: "dire-wolf", name: "Dire Wolf", regionId: "ice-age", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 1, col: 0 }, { row: 1, col: 3 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/ice-age/dire-wolf.png",
+  },
+  {
+    id: "saber-tooth", name: "Saber Tooth", regionId: "ice-age", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 2 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/ice-age/saber-tooth.png",
+  },
+  {
+    id: "mammoth", name: "Mammoth", regionId: "ice-age", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 1, col: 0 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/ice-age/mammoth.png",
+  },
+  {
+    id: "akhlut", name: "Akhlut", regionId: "ice-age", rarity: "mythical",
+    pattern: { cells: [{ row: 0, col: 2 }, { row: 1, col: 0 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/ice-age/akhlut.png",
+  },
+
+  // City - approved ALPHA 16 coordinates.
+  {
+    id: "raccoon", name: "Raccoon", regionId: "city", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 2 }, { row: 1, col: 0 }, { row: 1, col: 3 }] },
+    imagePath: "/game/animals/city/raccoon.png",
+  },
+  {
+    id: "pigeon", name: "Pigeon", regionId: "city", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 1 }, { row: 2, col: 1 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/city/pigeon.png",
+  },
+  {
+    id: "rat", name: "Rat", regionId: "city", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 1 }, { row: 1, col: 1 }, { row: 1, col: 3 }] },
+    imagePath: "/game/animals/city/rat.png",
+  },
+  {
+    id: "squirrel", name: "Squirrel", regionId: "city", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 2 }, { row: 1, col: 0 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/city/squirrel.png",
+  },
+  {
+    id: "opossum", name: "Opossum", regionId: "city", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 0 }, { row: 1, col: 2 }] },
+    imagePath: "/game/animals/city/opossum.png",
+  },
+  {
+    id: "sewer-turtle", name: "Sewer Turtle", regionId: "city", rarity: "mythical",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 1 }] },
+    imagePath: "/game/animals/city/sewer-turtle.png",
+  },
+
+  // Mountain - approved ALPHA 17 coordinates.
+  {
+    id: "goat", name: "Goat", regionId: "mountain", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 0 }, { row: 1, col: 1 }, { row: 1, col: 2 }] },
+    imagePath: "/game/animals/mountain/goat.png",
+  },
+  {
+    id: "cougar", name: "Cougar", regionId: "mountain", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 1 }, { row: 2, col: 0 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/mountain/cougar.png",
+  },
+  {
+    id: "elk", name: "Elk", regionId: "mountain", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 2 }, { row: 1, col: 1 }, { row: 1, col: 2 }] },
+    imagePath: "/game/animals/mountain/elk.png",
+  },
+  {
+    id: "eagle", name: "Eagle", regionId: "mountain", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 0 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/mountain/eagle.png",
+  },
+  {
+    id: "coyote", name: "Coyote", regionId: "mountain", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 1 }, { row: 1, col: 2 }] },
+    imagePath: "/game/animals/mountain/coyote.png",
+  },
+  {
+    id: "aatxe", name: "Aatxe", regionId: "mountain", rarity: "mythical",
+    pattern: { cells: [{ row: 0, col: 2 }, { row: 1, col: 0 }] },
+    imagePath: "/game/animals/mountain/aatxe.png",
+  },
 ];

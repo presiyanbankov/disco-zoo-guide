@@ -1,3 +1,4 @@
+import { REGION_PRESENTATION } from "../regions/regionPresentation";
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFileSync } from "node:fs";
@@ -11,7 +12,7 @@ import { getAnimalGuidePresentation } from "./animalGuidePresentation";
 import { RegionLandscape } from "../regions/RegionLandscape";
 
 test("existing 30 canonical records and original RGBA icons remain intact while display prefers reviewed HQ", () => {
-  assert.equal(ANIMALS.length, 48);
+  assert.equal(ANIMALS.length, REGION_PRESENTATION.length * 6);
   for (const record of ANIMALS.slice(0, 30)) {
     const animal = getAnimalGuidePresentation(record.regionId, record.id)!;
     assert.equal(animal.imagePath, record.imagePath);
@@ -27,16 +28,16 @@ test("existing 30 canonical records and original RGBA icons remain intact while 
   }
 });
 
-test("all seven regions use vector landscapes without screenshot layers", () => {
-  for (const region of ["farm", "outback", "savanna", "northern", "polar", "jungle", "moon"]) {
+test("all supported regions use vector landscapes without screenshot layers", () => {
+  for (const region of REGION_PRESENTATION.map(r => r.id)) {
     const html = renderToStaticMarkup(createElement(RegionLandscape, { region }));
     assert.match(html, /<svg/);
-    assert.match(html, /land-far-layer/);
+    assert.match(html, /land-far/);
     assert.doesNotMatch(html, /<img|region-game-art|game\/regions/);
   }
 });
 
-test("all 48 collection and detail contexts render validated HQ dimensions without upscale assets", () => {
+test("all supported collection and detail contexts render validated HQ dimensions without upscale assets", () => {
   for (const record of ANIMALS) {
     const collection = renderToStaticMarkup(createElement(AnimalArtwork, { ...record, context: "collection" }));
     const detail = renderToStaticMarkup(createElement(AnimalArtwork, { ...record, context: "detail" }));

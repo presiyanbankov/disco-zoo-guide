@@ -86,3 +86,19 @@ html[data-page-hidden="true"] :is(.atmosphere-light,.atmosphere-band,.land-far-l
 .atmosphere-jurassic .atmosphere-light { background: radial-gradient(ellipse at 47% 90%, #b96c411c, transparent 60%); }
 .atmosphere-jurassic .atmosphere-band { top: 60%; height: 24%; opacity: .06; background: linear-gradient(0deg, transparent, #b4bfad, transparent); }
 .atmosphere-jurassic .atmosphere-mote { background: #bd9164; opacity: .3; }
+
+.atmosphere-ice-age .atmosphere-light { background: radial-gradient(ellipse at 65% 25%, #bacbc619, transparent 60%); }
+.atmosphere-ice-age .atmosphere-band { top: 65%; height: 18%; opacity: .065; background: linear-gradient(0deg, transparent, #bbd1d1, transparent); }
+.atmosphere-ice-age .atmosphere-mote { background: #d7e2df; width: 2px; height: 2px; opacity: .22; animation-name: dust-drift; }
+
+.atmosphere-city .atmosphere-light { background: radial-gradient(ellipse at 50% 85%, #c3a56e18, transparent 55%); }
+.atmosphere-city .atmosphere-band { top: 57%; height: 18%; opacity: .05; background: linear-gradient(0deg, transparent, #a5b2af, transparent); }
+.atmosphere-city .atmosphere-mote { background: #bcb49c; opacity: .15; animation-name: dust-drift; }
+.city-window-light { opacity: .55; animation: city-light-breathe 23s ease-in-out infinite alternate; }
+@keyframes city-light-breathe { to { opacity: .7; } }
+html[data-page-hidden="true"] .city-window-light { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .city-window-light { animation: none; } }
+
+.atmosphere-mountain .atmosphere-light { background: radial-gradient(ellipse at 65% 24%, #c5ae7c18, transparent 60%); }
+.atmosphere-mountain .atmosphere-band { top: 43%; height: 18%; opacity: .06; background: linear-gradient(0deg, transparent, #b3c4bf, transparent); }
+.atmosphere-mountain .atmosphere-mote { background: #b7c1af; opacity: .15; animation-name: dust-drift; }

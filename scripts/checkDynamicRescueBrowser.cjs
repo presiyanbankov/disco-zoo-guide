@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports -- Standalone Chrome CDP QA. */
 const fs = require('node:fs');
+require('tsx/cjs');
+const { REGION_PRESENTATION } = require('../src/components/regions/regionPresentation.ts');
 const assert = require('node:assert/strict');
 const { ANIMALS } = require('../.next/dynamic-component-check/data/animals.js');
 const solver = require('../.next/dynamic-component-check/solver/dynamic/dynamicRescueSolver.js');
@@ -43,7 +45,7 @@ fs.mkdirSync(output, {recursive:true});
   };
   const go = async () => {
     await call('Page.navigate', {url:base+'/rescue'});
-    await waitFor(`location.pathname==='/rescue' && document.readyState==='complete' && document.querySelectorAll('.rescue-region').length===7`);
+    await waitFor(`location.pathname==='/rescue' && document.readyState==='complete' && document.querySelectorAll('.rescue-region').length===${REGION_PRESENTATION.length}`);
     // Hydration is confirmed by the first real region click below.
   };
   const click = async selector => {
@@ -83,7 +85,7 @@ fs.mkdirSync(output, {recursive:true});
   await call('Page.navigate', {url:base+'/'});
   await waitFor(`document.readyState==='complete' && !!document.querySelector('.rescue-teaser a[href="/rescue"]')`);
   await click('.rescue-teaser a[href="/rescue"]');
-  await waitFor(`location.pathname==='/rescue' && document.querySelectorAll('.rescue-region').length===7 && document.documentElement.dataset.routeTransition!=='active'`);
+  await waitFor(`location.pathname==='/rescue' && document.querySelectorAll('.rescue-region').length===${REGION_PRESENTATION.length} && document.documentElement.dataset.routeTransition!=='active'`);
   for (const width of [375,390,768,1440]) {
     await call('Emulation.setDeviceMetricsOverride', {width,height:1000,deviceScaleFactor:1,mobile:width<768});
     for (const region of ['farm','outback','savanna','northern','polar','jungle','moon']) {

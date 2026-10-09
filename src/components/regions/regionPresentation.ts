@@ -34,6 +34,9 @@ export const REGION_PRESENTATION = [
     climate: "TROPICAL",
   },
   { id: "jurassic", name: "Jurassic", climate: "PRIMEVAL" },
+  { id: "ice-age", name: "Ice Age", climate: "GLACIAL" },
+  { id: "city", name: "City", climate: "URBAN" },
+  { id: "mountain", name: "Mountain", climate: "ALPINE" },
   {
     id: "moon",
     name: "Moon",
