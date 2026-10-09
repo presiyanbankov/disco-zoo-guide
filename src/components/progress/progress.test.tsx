@@ -123,10 +123,10 @@ test("future Timeless barrier has independent reveal action", () => {
 });
 test("progress beyond implementation does not create routes or reveal future destinations", () => {
   const maximum: SpoilerPreferences = { maxEarthRegionId: "nocturnal", maxSpaceRegionId: "constellation", showTimeless: true };
-  assert.equal(getVisibleRegions(REGION_PRESENTATION, maximum).length, 7);
+  assert.equal(getVisibleRegions(REGION_PRESENTATION, maximum).length, 8);
   const html = render(<RegionExplorer />, maximum);
-  assert.equal((html.match(/data-region-locked="true"/g) ?? []).length, 7);
-  assert.doesNotMatch(html, /Jurassic|Nocturnal|Mars|Constellation/);
+  assert.equal((html.match(/data-region-locked="true"/g) ?? []).length, 6);
+  assert.doesNotMatch(html, /Nocturnal|Mars|Constellation/);
 });
 test("rescue selector and URL context respect progress", () => {
   assert.deepEqual(resolveRescueSetupContext("jungle","monkey",DEFAULT_PREFERENCES),{regionId:null,selectedIds:[]});

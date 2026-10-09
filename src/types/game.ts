@@ -5,6 +5,7 @@ export type RegionId =
     | "northern"
     | "polar"
     | "jungle"
+    | "jurassic"
     | "moon";
 
 export type Rarity =

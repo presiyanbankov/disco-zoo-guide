@@ -1,0 +1,1025 @@
+[
+  {
+    "animal": "diplodocus",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/e/e6/Diplodocus.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Diplodocus.png",
+    "sourceSHA256": "081ffa9a498472957f4db7a3dfc888bc6a804c21013270bbb019b585b143a293",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      10,
+      15,
+      142,
+      135
+    ],
+    "cropBounds": [
+      8,
+      13,
+      144,
+      137
+    ],
+    "outputDimensions": [
+      136,
+      124
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      154,
+      148,
+      104
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        72,
+        143,
+        184
+      ],
+      [
+        88,
+        163,
+        207
+      ],
+      [
+        105,
+        184,
+        230
+      ],
+      [
+        136,
+        131,
+        93
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        144,
+        203,
+        237
+      ],
+      [
+        154,
+        148,
+        104
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        72,
+        143,
+        184
+      ],
+      [
+        88,
+        163,
+        207
+      ],
+      [
+        105,
+        184,
+        230
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        144,
+        203,
+        237
+      ]
+    ],
+    "animalPixels": 7362,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 8964,
+        "bounds": [
+          10,
+          15,
+          142,
+          141
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 1056,
+        "bounds": [
+          12,
+          129,
+          140,
+          141
+        ],
+        "rgb": [
+          136,
+          131,
+          93
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 7362,
+        "bounds": [
+          10,
+          15,
+          142,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "22d2212c70f30875dacadae5f1428f8818e0c678bb27d745a690e1393ec14496"
+  },
+  {
+    "animal": "stegosaurus",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/c/cd/Stegosaurus.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Stegosaurus.png",
+    "sourceSHA256": "6b6ae14c4b0f58ad77ac00d74690606dbafb998ccbfaa6b74bf8946fc1cc235a",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      9,
+      27,
+      141,
+      135
+    ],
+    "cropBounds": [
+      7,
+      25,
+      143,
+      137
+    ],
+    "outputDimensions": [
+      136,
+      112
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      154,
+      148,
+      104
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        131,
+        93
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        154,
+        148,
+        104
+      ],
+      [
+        174,
+        38,
+        0
+      ],
+      [
+        214,
+        67,
+        26
+      ],
+      [
+        222,
+        49,
+        0
+      ],
+      [
+        255,
+        97,
+        52
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        174,
+        38,
+        0
+      ],
+      [
+        214,
+        67,
+        26
+      ],
+      [
+        222,
+        49,
+        0
+      ],
+      [
+        255,
+        97,
+        52
+      ]
+    ],
+    "animalPixels": 7818,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 9276,
+        "bounds": [
+          9,
+          27,
+          141,
+          141
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 1200,
+        "bounds": [
+          11,
+          129,
+          139,
+          141
+        ],
+        "rgb": [
+          136,
+          131,
+          93
+        ]
+      },
+      {
+        "role": "reviewed-plate-notch-1",
+        "pixels": 36,
+        "bounds": [
+          81,
+          51,
+          87,
+          57
+        ],
+        "rgb": [
+          154,
+          148,
+          104
+        ]
+      },
+      {
+        "role": "reviewed-plate-notch-2",
+        "pixels": 42,
+        "bounds": [
+          105,
+          63,
+          111,
+          70
+        ],
+        "rgb": [
+          154,
+          148,
+          104
+        ]
+      },
+      {
+        "role": "reviewed-plate-notch-3",
+        "pixels": 36,
+        "bounds": [
+          99,
+          70,
+          105,
+          76
+        ],
+        "rgb": [
+          154,
+          148,
+          104
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 7818,
+        "bounds": [
+          9,
+          27,
+          141,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "1b598b3b7841a505e0d9140dfb5699128274496941dfe6076cd170533d37bf69"
+  },
+  {
+    "animal": "raptor",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/0/08/Raptor.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Raptor.png",
+    "sourceSHA256": "1b3a17f0c162f36adcd01fefc1eab193d3b75b4e505e40e32471a02249228f3c",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      10,
+      27,
+      142,
+      135
+    ],
+    "cropBounds": [
+      8,
+      25,
+      144,
+      137
+    ],
+    "outputDimensions": [
+      136,
+      112
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      154,
+      148,
+      104
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        131,
+        93
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        154,
+        148,
+        104
+      ],
+      [
+        192,
+        177,
+        79
+      ],
+      [
+        236,
+        219,
+        105
+      ],
+      [
+        244,
+        244,
+        244
+      ],
+      [
+        245,
+        180,
+        25
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        192,
+        177,
+        79
+      ],
+      [
+        236,
+        219,
+        105
+      ],
+      [
+        244,
+        244,
+        244
+      ],
+      [
+        245,
+        180,
+        25
+      ]
+    ],
+    "animalPixels": 4758,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 6030,
+        "bounds": [
+          10,
+          27,
+          142,
+          141
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 1272,
+        "bounds": [
+          12,
+          129,
+          140,
+          141
+        ],
+        "rgb": [
+          136,
+          131,
+          93
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 4758,
+        "bounds": [
+          10,
+          27,
+          142,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "23d93eb929155295af433db0d33ccafbdcc00b61294070d1c65f274ffbb8238d"
+  },
+  {
+    "animal": "t-rex",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/e/e6/T._Rex.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:T._Rex.png",
+    "sourceSHA256": "db1eeadcd6fbbd1ff58c96f9cb78d3316230734d63f48466e1ca01258fb1f6b2",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      11,
+      15,
+      143,
+      135
+    ],
+    "cropBounds": [
+      9,
+      13,
+      145,
+      137
+    ],
+    "outputDimensions": [
+      136,
+      124
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      153,
+      142,
+      107
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        135,
+        126,
+        95
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        153,
+        142,
+        107
+      ],
+      [
+        168,
+        74,
+        176
+      ],
+      [
+        193,
+        93,
+        201
+      ],
+      [
+        216,
+        181,
+        219
+      ],
+      [
+        233,
+        205,
+        235
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        168,
+        74,
+        176
+      ],
+      [
+        193,
+        93,
+        201
+      ],
+      [
+        216,
+        181,
+        219
+      ],
+      [
+        233,
+        205,
+        235
+      ]
+    ],
+    "animalPixels": 5196,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 6438,
+        "bounds": [
+          11,
+          15,
+          143,
+          141
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 1242,
+        "bounds": [
+          13,
+          129,
+          141,
+          141
+        ],
+        "rgb": [
+          135,
+          126,
+          95
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 5196,
+        "bounds": [
+          11,
+          15,
+          143,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "fa6578de090da54dc92770c51e2159eae66cd2ee21ec441b34629c49f8ab0f3f"
+  },
+  {
+    "animal": "triceratops",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/a/a1/Triceratops.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Triceratops.png",
+    "sourceSHA256": "87e188abb3dddbf9386ca4899d0c7c584fd3ca3fb542db8241bf2b511c32efea",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      9,
+      33,
+      141,
+      135
+    ],
+    "cropBounds": [
+      7,
+      31,
+      143,
+      137
+    ],
+    "outputDimensions": [
+      136,
+      106
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      153,
+      142,
+      107
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        70,
+        123,
+        74
+      ],
+      [
+        82,
+        145,
+        86
+      ],
+      [
+        82,
+        146,
+        87
+      ],
+      [
+        94,
+        168,
+        99
+      ],
+      [
+        133,
+        188,
+        136
+      ],
+      [
+        135,
+        126,
+        95
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        153,
+        142,
+        107
+      ],
+      [
+        206,
+        235,
+        208
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        70,
+        123,
+        74
+      ],
+      [
+        82,
+        145,
+        86
+      ],
+      [
+        82,
+        146,
+        87
+      ],
+      [
+        94,
+        168,
+        99
+      ],
+      [
+        133,
+        188,
+        136
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        206,
+        235,
+        208
+      ]
+    ],
+    "animalPixels": 7194,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 8802,
+        "bounds": [
+          9,
+          33,
+          141,
+          141
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 1200,
+        "bounds": [
+          11,
+          129,
+          139,
+          141
+        ],
+        "rgb": [
+          135,
+          126,
+          95
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 7194,
+        "bounds": [
+          9,
+          33,
+          141,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "6d53c441950d6d888aee686333f1155abda7fef5860fa5c67a62bf1b73908c57"
+  },
+  {
+    "animal": "dragon",
+    "sourceURL": "https://static.wikia.nocookie.net/discozoo/images/c/c7/Dragon.png/revision/latest?format=original",
+    "filePage": "https://discozoo.fandom.com/wiki/File:Dragon.png",
+    "sourceSHA256": "e5ef0b98ba074d9eb3b8c4e076e0d067200f5c6c3ffa7b5ba91c59eed435eafa",
+    "sourceDimensions": [
+      150,
+      150
+    ],
+    "animalBounds": [
+      8,
+      27,
+      140,
+      135
+    ],
+    "cropBounds": [
+      6,
+      25,
+      142,
+      137
+    ],
+    "outputDimensions": [
+      136,
+      112
+    ],
+    "padding": 2,
+    "backgroundRGB": [
+      169,
+      140,
+      107
+    ],
+    "sourceRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        38,
+        137,
+        168
+      ],
+      [
+        67,
+        165,
+        197
+      ],
+      [
+        86,
+        183,
+        215
+      ],
+      [
+        96,
+        193,
+        225
+      ],
+      [
+        149,
+        124,
+        95
+      ],
+      [
+        169,
+        140,
+        107
+      ],
+      [
+        196,
+        196,
+        196
+      ],
+      [
+        239,
+        249,
+        252
+      ]
+    ],
+    "retainedRGBColors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        38,
+        137,
+        168
+      ],
+      [
+        67,
+        165,
+        197
+      ],
+      [
+        86,
+        183,
+        215
+      ],
+      [
+        96,
+        193,
+        225
+      ],
+      [
+        196,
+        196,
+        196
+      ],
+      [
+        239,
+        249,
+        252
+      ]
+    ],
+    "animalPixels": 7890,
+    "missingAnimalPixels": 0,
+    "addedAnimalPixels": 0,
+    "recoloredPixels": 0,
+    "artificialSemitransparentPixels": 0,
+    "alphaValues": [
+      0,
+      255
+    ],
+    "initialForegroundComponents": [
+      {
+        "pixels": 9036,
+        "bounds": [
+          8,
+          27,
+          140,
+          141
+        ]
+      }
+    ],
+    "removedComponents": [
+      {
+        "role": "shadow",
+        "pixels": 1020,
+        "bounds": [
+          11,
+          129,
+          138,
+          141
+        ],
+        "rgb": [
+          149,
+          124,
+          95
+        ]
+      }
+    ],
+    "finalForegroundComponents": [
+      {
+        "pixels": 7890,
+        "bounds": [
+          8,
+          27,
+          140,
+          135
+        ]
+      }
+    ],
+    "sourcePixelsPerOutputPixel": 1,
+    "scaleFactor": 1,
+    "resampling": false,
+    "outputSHA256": "16dc3cd35f0e9918bff4cea1dfed6fc8c3d9a5a2ae7c24db4984962460aa3f4b"
+  }
+]

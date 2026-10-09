@@ -82,3 +82,7 @@ html[data-page-hidden="true"] :is(.atmosphere-light,.atmosphere-band,.land-far-l
   :is(.atmosphere-light,.atmosphere-band,.land-far-layer,.land-mid-layer,.land-near-layer,.land-leaves,.land-grass,.land-sun-glow,.land-ice-shimmer) { animation: none !important; transform: none !important; }
 }
 @media (max-width: 767px) { .band-near { display: none; } }
+
+.atmosphere-jurassic .atmosphere-light { background: radial-gradient(ellipse at 47% 90%, #b96c411c, transparent 60%); }
+.atmosphere-jurassic .atmosphere-band { top: 60%; height: 24%; opacity: .06; background: linear-gradient(0deg, transparent, #b4bfad, transparent); }
+.atmosphere-jurassic .atmosphere-mote { background: #bd9164; opacity: .3; }

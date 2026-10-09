@@ -224,4 +224,36 @@ export const ANIMALS: Animal[] = [
     pattern: { cells: [{ row: 0, col: 0 }, { row: 2, col: 1 }] },
     imagePath: "/game/animals/moon/jade-rabbit.png",
   },
+
+  // Jurassic - approved ALPHA 14 coordinates.
+  {
+    id: "diplodocus", name: "Diplodocus", regionId: "jurassic", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 1 }, { row: 1, col: 2 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/jurassic/diplodocus.png",
+  },
+  {
+    id: "stegosaurus", name: "Stegosaurus", regionId: "jurassic", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 1 }, { row: 0, col: 2 }, { row: 1, col: 0 }, { row: 1, col: 3 }] },
+    imagePath: "/game/animals/jurassic/stegosaurus.png",
+  },
+  {
+    id: "raptor", name: "Raptor", regionId: "jurassic", rarity: "common",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 0, col: 1 }, { row: 1, col: 1 }, { row: 2, col: 2 }] },
+    imagePath: "/game/animals/jurassic/raptor.png",
+  },
+  {
+    id: "t-rex", name: "T-Rex", regionId: "jurassic", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 2, col: 0 }, { row: 2, col: 1 }] },
+    imagePath: "/game/animals/jurassic/t-rex.png",
+  },
+  {
+    id: "triceratops", name: "Triceratops", regionId: "jurassic", rarity: "rare",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 2 }, { row: 2, col: 0 }] },
+    imagePath: "/game/animals/jurassic/triceratops.png",
+  },
+  {
+    id: "dragon", name: "Dragon", regionId: "jurassic", rarity: "mythical",
+    pattern: { cells: [{ row: 0, col: 0 }, { row: 1, col: 2 }] },
+    imagePath: "/game/animals/jurassic/dragon.png",
+  },
 ];

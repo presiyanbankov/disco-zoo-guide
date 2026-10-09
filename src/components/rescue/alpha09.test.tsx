@@ -26,7 +26,7 @@ test("eight pet records exactly preserve approved species geometry", () => {
 });
 test("participant namespaces distinguish both Rabbits and are unique", () => {
  const ids = [...ANIMALS.map(animalParticipant), ...PET_SPECIES.map(petParticipant)].map(p => p.id);
- assert.equal(new Set(ids).size, 50);
+ assert.equal(new Set(ids).size, ANIMALS.length + PET_SPECIES.length);
  assert.ok(ids.includes("animal:farm:rabbit")); assert.ok(ids.includes("pet:rabbit"));
 });
 test("setup accepts the six approved configurations", () => {
@@ -97,8 +97,8 @@ test("homepage prioritizes assistant then Earth, Space and Pets; locks seven des
  assert.ok(html.indexOf('id="rescue"') < html.indexOf('id="regions"'));
  assert.ok(html.indexOf('id="earth-title"') < html.indexOf('id="space-title"'));
  assert.ok(html.indexOf('id="space-title"') < html.indexOf('id="pets-reference-title"'));
- assert.equal((html.match(/data-region-locked="true"/g)??[]).length,7);
- assert.doesNotMatch(html,/href="\/regions\/(mars|jurassic|constellation|nocturnal)/);
+ assert.equal((html.match(/data-region-locked="true"/g)??[]).length,6);
+ assert.doesNotMatch(html,/href="\/regions\/(mars|constellation|nocturnal)/);
  assert.match(SITE_VERSION,/^ALPHA \d{2}$/); assert.ok(html.includes(SITE_VERSION));
  assert.equal(regionPosition("moon").number,1); assert.equal(REGION_GROUPS[0].destinations.length,11);
 });

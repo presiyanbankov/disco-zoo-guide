@@ -1,7 +1,9 @@
 import { JungleLandscape, MoonLandscape } from "./JungleMoonLandscapes";
+import { JurassicLandscape } from "./JurassicLandscape";
 
 /** Original vector interpretations; no game screenshots or animal-pattern geometry. */
 export function RegionLandscape({ region }: { region: string }) {
+  if (region === "jurassic") return <JurassicLandscape />;
   if (region === "jungle") return <JungleLandscape />;
   if (region === "moon") return <MoonLandscape />;
   const farm = region === "farm", outback = region === "outback", savanna = region === "savanna";

@@ -11,7 +11,7 @@ import { getAnimalGuidePresentation } from "./animalGuidePresentation";
 import { RegionLandscape } from "../regions/RegionLandscape";
 
 test("existing 30 canonical records and original RGBA icons remain intact while display prefers reviewed HQ", () => {
-  assert.equal(ANIMALS.length, 42);
+  assert.equal(ANIMALS.length, 48);
   for (const record of ANIMALS.slice(0, 30)) {
     const animal = getAnimalGuidePresentation(record.regionId, record.id)!;
     assert.equal(animal.imagePath, record.imagePath);
@@ -36,7 +36,7 @@ test("all seven regions use vector landscapes without screenshot layers", () => 
   }
 });
 
-test("all 42 collection and detail contexts render validated HQ dimensions without upscale assets", () => {
+test("all 48 collection and detail contexts render validated HQ dimensions without upscale assets", () => {
   for (const record of ANIMALS) {
     const collection = renderToStaticMarkup(createElement(AnimalArtwork, { ...record, context: "collection" }));
     const detail = renderToStaticMarkup(createElement(AnimalArtwork, { ...record, context: "detail" }));

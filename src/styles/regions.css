@@ -297,3 +297,5 @@
 .animal-guide-status { font-size: 17px; transition: transform 160ms ease, color 160ms ease; }
 .animal-card:is(:hover,:focus-visible) .animal-guide-status { transform: translate(2px,-2px); }
 @media (prefers-reduced-motion: reduce) { .animal-card:is(:hover,:focus-visible) .animal-guide-status { transform: none; } }
+
+.region-jurassic { --region-accent: #bdac82; --sky: #202627; --sun: #b96c41; --far: #303b36; --mid: #3d493b; --ground: #20282a; --detail: #74805a; }

@@ -19,11 +19,11 @@ const actions = { onObservation: noop, onUndo: noop, onReset: noop, onChange: no
 test("rescue route presents precisely seven regions, no locked/Timeless choices, and centralized version", async () => {
   const html = renderToStaticMarkup(await RescuePage());
   assert.match(html, /data-route-page="\/rescue"/);
-  assert.equal((html.match(/class="rescue-region region-/g) ?? []).length, 7);
+  assert.equal((html.match(/class="rescue-region region-/g) ?? []).length, 8);
   assert.match(html, /Select a region/);
   assert.match(SITE_VERSION, /^ALPHA \d{2}$/);
   assert.ok(html.includes(SITE_VERSION));
-  assert.doesNotMatch(html, /Timeless|Jurassic|Mars|Constellation/);
+  assert.doesNotMatch(html, /Timeless|Mars|Constellation/);
 });
 
 test("setup offers only the chosen region's six animals and disables a fourth selection", () => {

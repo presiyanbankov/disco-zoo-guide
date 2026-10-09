@@ -9,12 +9,12 @@ HQ = ROOT / 'public/game/animals-hq'
 REVIEW = ROOT / 'public/game/experiments/fandom-extracted-all'
 PROFILE_FILE = ROOT / 'scripts/fandomExtractionProfiles.json'
 MANIFEST = ROOT / 'src/components/animals/hqArtwork.json'
-REGIONS = ('farm', 'outback', 'savanna', 'northern', 'polar', 'jungle', 'moon')
+REGIONS = ('farm', 'outback', 'savanna', 'northern', 'polar', 'jungle', 'jurassic', 'moon')
 
 
 def load_profiles():
     profiles = json.loads(PROFILE_FILE.read_text())
-    assert len(profiles) == 42 and len({p['id'] for p in profiles}) == 42
+    assert len(profiles) == len({p['id'] for p in profiles})
     for profile in profiles:
         assert profile['region'] in REGIONS
         for field in ('size', 'shadow', 'shadow_box'):

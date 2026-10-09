@@ -2898,5 +2898,405 @@
     "enclosed_background": [],
     "review_status": "reviewed",
     "notes": "Tall ear, projecting forepaw, hind foot, pale ear/face shading and eye highlight individually reviewed."
+  },
+  {
+    "id": "diplodocus",
+    "name": "Diplodocus",
+    "region": "jurassic",
+    "cdn": "e/e6/Diplodocus.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "081ffa9a498472957f4db7a3dfc888bc6a804c21013270bbb019b585b143a293",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      12,
+      129,
+      140,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        72,
+        143,
+        184
+      ],
+      [
+        88,
+        163,
+        207
+      ],
+      [
+        105,
+        184,
+        230
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        144,
+        203,
+        237
+      ]
+    ],
+    "count": 7362,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Native source reviewed individually; ground shadow removed. Protect all palette pixels including pale extremities, horns and wing membrane. All background openings exterior-connected after shadow removal.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Diplodocus.png"
+  },
+  {
+    "id": "stegosaurus",
+    "name": "Stegosaurus",
+    "region": "jurassic",
+    "cdn": "c/cd/Stegosaurus.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "6b6ae14c4b0f58ad77ac00d74690606dbafb998ccbfaa6b74bf8946fc1cc235a",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      11,
+      129,
+      139,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        174,
+        38,
+        0
+      ],
+      [
+        214,
+        67,
+        26
+      ],
+      [
+        222,
+        49,
+        0
+      ],
+      [
+        255,
+        97,
+        52
+      ]
+    ],
+    "count": 7818,
+    "enclosed_background": [
+      {
+        "seed": [
+          81,
+          51
+        ],
+        "count": 36,
+        "label": "plate-notch-1"
+      },
+      {
+        "seed": [
+          105,
+          63
+        ],
+        "count": 42,
+        "label": "plate-notch-2"
+      },
+      {
+        "seed": [
+          99,
+          70
+        ],
+        "count": 36,
+        "label": "plate-notch-3"
+      }
+    ],
+    "review_status": "reviewed",
+    "notes": "Native source reviewed individually; ground shadow removed. Protect all palette pixels including pale extremities, horns and wing membrane. Three enclosed plate notches explicitly cleared.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Stegosaurus.png"
+  },
+  {
+    "id": "raptor",
+    "name": "Raptor",
+    "region": "jurassic",
+    "cdn": "0/08/Raptor.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "1b3a17f0c162f36adcd01fefc1eab193d3b75b4e505e40e32471a02249228f3c",
+    "shadow": [
+      136,
+      131,
+      93
+    ],
+    "shadow_box": [
+      12,
+      129,
+      140,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        192,
+        177,
+        79
+      ],
+      [
+        236,
+        219,
+        105
+      ],
+      [
+        244,
+        244,
+        244
+      ],
+      [
+        245,
+        180,
+        25
+      ]
+    ],
+    "count": 4758,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Native source reviewed individually; ground shadow removed. Protect all palette pixels including pale extremities, horns and wing membrane. All background openings exterior-connected after shadow removal.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Raptor.png"
+  },
+  {
+    "id": "t-rex",
+    "name": "T-Rex",
+    "region": "jurassic",
+    "cdn": "e/e6/T._Rex.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "db1eeadcd6fbbd1ff58c96f9cb78d3316230734d63f48466e1ca01258fb1f6b2",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      13,
+      129,
+      141,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        168,
+        74,
+        176
+      ],
+      [
+        193,
+        93,
+        201
+      ],
+      [
+        216,
+        181,
+        219
+      ],
+      [
+        233,
+        205,
+        235
+      ]
+    ],
+    "count": 5196,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Native source reviewed individually; ground shadow removed. Protect all palette pixels including pale extremities, horns and wing membrane. All background openings exterior-connected after shadow removal.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:T._Rex.png"
+  },
+  {
+    "id": "triceratops",
+    "name": "Triceratops",
+    "region": "jurassic",
+    "cdn": "a/a1/Triceratops.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "87e188abb3dddbf9386ca4899d0c7c584fd3ca3fb542db8241bf2b511c32efea",
+    "shadow": [
+      135,
+      126,
+      95
+    ],
+    "shadow_box": [
+      11,
+      129,
+      139,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        70,
+        123,
+        74
+      ],
+      [
+        82,
+        145,
+        86
+      ],
+      [
+        82,
+        146,
+        87
+      ],
+      [
+        94,
+        168,
+        99
+      ],
+      [
+        133,
+        188,
+        136
+      ],
+      [
+        136,
+        136,
+        136
+      ],
+      [
+        206,
+        235,
+        208
+      ]
+    ],
+    "count": 7194,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Native source reviewed individually; ground shadow removed. Protect all palette pixels including pale extremities, horns and wing membrane. All background openings exterior-connected after shadow removal.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Triceratops.png"
+  },
+  {
+    "id": "dragon",
+    "name": "Dragon",
+    "region": "jurassic",
+    "cdn": "c/c7/Dragon.png",
+    "size": [
+      150,
+      150
+    ],
+    "sha256": "e5ef0b98ba074d9eb3b8c4e076e0d067200f5c6c3ffa7b5ba91c59eed435eafa",
+    "shadow": [
+      149,
+      124,
+      95
+    ],
+    "shadow_box": [
+      11,
+      129,
+      138,
+      141
+    ],
+    "signature": null,
+    "animal_colors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        38,
+        137,
+        168
+      ],
+      [
+        67,
+        165,
+        197
+      ],
+      [
+        86,
+        183,
+        215
+      ],
+      [
+        96,
+        193,
+        225
+      ],
+      [
+        196,
+        196,
+        196
+      ],
+      [
+        239,
+        249,
+        252
+      ]
+    ],
+    "count": 7890,
+    "enclosed_background": [],
+    "review_status": "reviewed",
+    "notes": "Native source reviewed individually; ground shadow removed. Protect all palette pixels including pale extremities, horns and wing membrane. All background openings exterior-connected after shadow removal.",
+    "file_page": "https://discozoo.fandom.com/wiki/File:Dragon.png"
   }
 ]

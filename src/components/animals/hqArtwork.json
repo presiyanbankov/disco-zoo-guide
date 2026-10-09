@@ -208,5 +208,35 @@
     "src": "/game/animals-hq/moon/jade-rabbit.png",
     "width": 76,
     "height": 136
+  },
+  "/game/animals/jurassic/diplodocus.png": {
+    "src": "/game/animals-hq/jurassic/diplodocus.png",
+    "width": 136,
+    "height": 124
+  },
+  "/game/animals/jurassic/stegosaurus.png": {
+    "src": "/game/animals-hq/jurassic/stegosaurus.png",
+    "width": 136,
+    "height": 112
+  },
+  "/game/animals/jurassic/raptor.png": {
+    "src": "/game/animals-hq/jurassic/raptor.png",
+    "width": 136,
+    "height": 112
+  },
+  "/game/animals/jurassic/t-rex.png": {
+    "src": "/game/animals-hq/jurassic/t-rex.png",
+    "width": 136,
+    "height": 124
+  },
+  "/game/animals/jurassic/triceratops.png": {
+    "src": "/game/animals-hq/jurassic/triceratops.png",
+    "width": 136,
+    "height": 106
+  },
+  "/game/animals/jurassic/dragon.png": {
+    "src": "/game/animals-hq/jurassic/dragon.png",
+    "width": 136,
+    "height": 112
   }
 }

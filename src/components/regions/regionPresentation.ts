@@ -33,6 +33,7 @@ export const REGION_PRESENTATION = [
     name: "Jungle",
     climate: "TROPICAL",
   },
+  { id: "jurassic", name: "Jurassic", climate: "PRIMEVAL" },
   {
     id: "moon",
     name: "Moon",
