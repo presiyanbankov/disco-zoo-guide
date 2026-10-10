@@ -79,7 +79,7 @@ test("setup disables pets with three animals and third animal with a pet", () =>
  const three = renderToStaticMarkup(<RescueSetup {...base} selectedIds={farm.slice(0,3).map(a=>a.id)} />);
  assert.equal((three.match(/data-pet-id="[^"]+" aria-pressed="false" disabled=""/g)??[]).length,8);
  const two = renderToStaticMarkup(<RescueSetup {...base} petId="rabbit" selectedIds={farm.slice(0,2).map(a=>a.id)} />);
- assert.equal((two.match(/class="rescue-animal-option" aria-pressed="false" disabled=""/g)??[]).length,4);
+ assert.equal((two.match(/class="rescue-animal-option" aria-pressed="false" disabled=""/g)??[]).length,ANIMALS.filter(a => a.regionId === "farm" && !a.hidden).length - 2);
 });
 test("result selector includes namespaced pet and animal hit choices", () => {
  const participants = [...farm.slice(0,2).map(animalParticipant),petParticipant(pet)];

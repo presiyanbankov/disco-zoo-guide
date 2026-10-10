@@ -22,7 +22,7 @@ test("rescue route presents all implemented regions, no locked/Timeless choices,
   assert.match(html, /data-route-page="\/rescue"/);
   assert.equal((html.match(/class="rescue-region region-/g) ?? []).length, REGION_PRESENTATION.length);
   assert.match(html, /Select a region/);
-  assert.match(SITE_VERSION, /^ALPHA \d{2}$/);
+  assert.match(SITE_VERSION, /^(?:ALPHA|BETA) \d{2}$/);
   assert.ok(html.includes(SITE_VERSION));
   assert.doesNotMatch(html, /data-animal-id="chicken"/);
 });

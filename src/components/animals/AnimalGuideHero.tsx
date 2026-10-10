@@ -21,7 +21,7 @@ export function AnimalGuideHero({ animal, region, index }: { animal: AnimalGuide
         <div className="guide-art-lines" aria-hidden="true" />
         <AnimalArtwork id={animal.id} name={animal.name} imagePath={animal.imagePath} context="detail" transitionName={`animal-${animal.regionId}-${animal.id}`} />
         <span className="guide-art-ground" />
-        <span className="guide-art-caption">{animal.imagePath ? `${region.name} / ${animal.name}` : "ORIGINAL PLACEHOLDER ILLUSTRATION"}</span>
+        <span className="guide-art-caption">{region.name} / {animal.name}</span>
       </div>
     </section>
   );

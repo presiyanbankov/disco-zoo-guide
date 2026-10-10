@@ -19,7 +19,7 @@ grids, and ultrawide compositions. Native transitions do not trigger a second
 entrance animation when they finish.
 
 No dependencies, canonical data, domain types, patterns, or solver files changed.
-Artwork remains clearly identified original placeholder art. Additional ambient
+Production animal artwork uses reviewed HQ display assets. Additional ambient
 effects and optional centralized sound infrastructure are documented in
 `../audio/README.md` (Phase 5).
 

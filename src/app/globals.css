@@ -22,6 +22,9 @@ html {
   scroll-behavior:smooth;
   scroll-padding-top:28px;
 }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior:auto; }
+}
 body {
   margin:0;
   background:var(--background);
@@ -483,16 +486,6 @@ h2 {
   margin:0;
   line-height:1.7;
 }
-.coming-soon {
-  margin-left:auto;
-  display:flex;
-  align-items:center;
-  gap:9px;
-  font:9px var(--font-geist-mono),monospace;
-  letter-spacing:1px;
-  white-space:nowrap;
-  color:#a2ae90;
-}
 .site-footer {
   display:flex;
   align-items:center;
@@ -689,10 +682,6 @@ h1 {
 .rescue-teaser .eyebrow {
   font-size:7px;
   letter-spacing:1px;
-}
-.coming-soon {
-  margin-left:96px;
-  font-size:8px;
 }
 .site-footer {
   align-items:start;

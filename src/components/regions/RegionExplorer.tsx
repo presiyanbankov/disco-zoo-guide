@@ -27,9 +27,9 @@ export function RegionExplorer() {
             </div>
             <div className="card-copy"><div><h3>{region.name}</h3></div><span className="card-arrow" aria-hidden="true">↗</span></div>
           </Link>
-        ) : <div className="locked-card" key={name} data-region-locked="true" aria-label={`${group.name} destination ${index + 1}: ${region ? "hidden by spoiler settings" : "guide unavailable"}`}>
+        ) : <div className="locked-card" key={name} data-region-locked="true" aria-label={`${group.name} destination ${index + 1}: hidden by spoiler settings`}>
           <div className="locked-art" aria-hidden="true"><span className="region-number">{String(index + 1).padStart(2, "0")}</span><span className="mystery-symbol">?</span><span className="locked-lines" /></div>
-          <div className="card-copy"><h3>Unknown region</h3><svg width="18" height="20" viewBox="0 0 18 20" fill="none" aria-hidden="true"><path d="M5 8V5a4 4 0 0 1 8 0v3M3 8h12v10H3z" stroke="currentColor" strokeWidth="1.4" /></svg></div><span className="locked-caption">{region ? "HIDDEN" : "COMING LATER"}</span>
+          <div className="card-copy"><h3>Unknown region</h3><svg width="18" height="20" viewBox="0 0 18 20" fill="none" aria-hidden="true"><path d="M5 8V5a4 4 0 0 1 8 0v3M3 8h12v10H3z" stroke="currentColor" strokeWidth="1.4" /></svg></div><span className="locked-caption">HIDDEN</span>
         </div>; })}
       </div>
       </section>)}
