@@ -1,5 +1,5 @@
-.progress-loading { min-height: 100svh; display: grid; place-items: center; color: var(--muted); font-size: 13px; background: #090d0b; }
-.progress-welcome { min-height: 100svh; padding: clamp(24px, 4vw, 48px) 20px; background: radial-gradient(ellipse at 10% 0%, #24352280, transparent 55%), radial-gradient(ellipse at 95% 85%, #26273b60, transparent 50%), #090d0b; }
+/* Only saved-preference visitors are veiled until their restrictions hydrate. */
+html[data-spoiler-restoring="true"] body { visibility: hidden; }
 .progress-setup { width: min(720px,100%); margin: auto; }
 .progress-setup h1 { font-size: clamp(32px,5vw,54px); line-height: 1.08; letter-spacing: -.055em; margin: 18px 0; font-weight: 550; }
 .progress-setup h1 span { color: #b9c88f; }
@@ -64,6 +64,5 @@
   .progress-setup > p { margin-bottom: 22px; }
   .progress-entry { grid-template-columns: 1fr; gap: 16px; }
   .progress-save { flex: 1; }
-  .progress-welcome { padding-top: 26px; }
 }
 @media (prefers-reduced-motion: reduce) { .progress-destinations label > span { transition: none; } }

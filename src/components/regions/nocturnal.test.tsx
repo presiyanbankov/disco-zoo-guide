@@ -106,7 +106,7 @@ test("Nocturnal Rescue setup filters hidden content and visible Badger context n
 
 test("final Earth availability has no mystery cards while Space stays independent", () => {
   for (const endpoint of ["nocturnal", "mountain"] as const) {
-    const preferences = { ...DEFAULT_PREFERENCES, maxEarthRegionId: endpoint };
+    const preferences = { ...DEFAULT_PREFERENCES, maxEarthRegionId: endpoint, maxSpaceRegionId: null };
     const html = renderToStaticMarkup(<ProgressContext.Provider value={{preferences,save:()=>{},openSettings:()=>{}}}><RegionExplorer/></ProgressContext.Provider>);
     const earth = html.split('class="region-group group-earth"')[1].split('class="region-group group-space"')[0];
     const space = html.split('class="region-group group-space"')[1];

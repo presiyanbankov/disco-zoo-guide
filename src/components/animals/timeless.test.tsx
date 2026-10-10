@@ -14,7 +14,7 @@ import { RegionSearch } from "../regions/RegionSearch";
 import { getRegionSearchPresentation } from "../regions/regionSearchPresentation";
 import { ProgressContext } from "../progress/ProgressProvider";
 import { ProgressGuard } from "../progress/ProgressGuard";
-import { DEFAULT_PREFERENCES, canViewAnimal, revealRegion, type SpoilerPreferences } from "../progress/spoilerPreferences";
+import { canViewAnimal, revealRegion, type SpoilerPreferences } from "../progress/spoilerPreferences";
 import { RescueAssistant } from "../rescue/RescueAssistant";
 import { animalParticipant, petParticipant, validateRescueSetup } from "../rescue/rescueParticipants";
 import { resolveRescueSetupContext, rescueSetupHref } from "../rescue/rescueSetupContext";
@@ -43,6 +43,7 @@ function render(children: ReactNode, preferences = full) {
   return renderToStaticMarkup(<ProgressContext.Provider value={{ preferences, save: () => {}, openSettings: () => {} }}>{children}</ProgressContext.Provider>);
 }
 const timeless = ANIMALS.filter(a => a.rarity === "timeless");
+const RESTRICTED_PREFERENCES = { maxEarthRegionId: "farm" as const, maxSpaceRegionId: null, showTimeless: false };
 test("one approved Timeless record per region, classic records remain six each", () => {
   assert.equal(timeless.length, expected.length);
   assert.deepEqual(new Set(timeless.map(a => a.regionId)), new Set(REGION_PRESENTATION.map(r => r.id)));
@@ -63,9 +64,9 @@ for (const [regionId, id, cells] of expected) test(`${id}: approved geometry, re
 test("visibility is region AND Timeless; reveal and lowering remain independent", () => {
   const lemur = timeless.find(a => a.id === "lemur")!;
   assert.equal(canViewAnimal(lemur, {...full, showTimeless:false}), false);
-  assert.equal(canViewAnimal(lemur, {...DEFAULT_PREFERENCES, showTimeless:true}), false);
+  assert.equal(canViewAnimal(lemur, {...RESTRICTED_PREFERENCES, showTimeless:true}), false);
   assert.equal(canViewAnimal(lemur, full), true);
-  const revealed = revealRegion("jungle", DEFAULT_PREFERENCES);
+  const revealed = revealRegion("jungle", RESTRICTED_PREFERENCES);
   assert.equal(revealed.showTimeless, false);
   assert.equal(canViewAnimal(lemur, {...revealed, showTimeless:true}), true);
   assert.equal(canViewAnimal(lemur, {...full, maxEarthRegionId:"savanna"}), false);
@@ -86,12 +87,12 @@ test("hero, collection and region-search count only visible candidates", () => {
 });
 test("Timeless guide direct guards hide identity and reveal tracks separately", async () => {
   const page = await AnimalPage({params:Promise.resolve({regionId:"jungle",animalId:"lemur"})});
-  for (const prefs of [{...full,showTimeless:false},{...DEFAULT_PREFERENCES,showTimeless:true},full]) {
+  for (const prefs of [{...full,showTimeless:false},{...RESTRICTED_PREFERENCES,showTimeless:true},full]) {
     const html = render(page,prefs);
     assert.equal(html.includes('id="page-title">Lemur'),canViewAnimal(timeless.find(a=>a.id==="lemur")!,prefs));
   }
   assert.match(render(<ProgressGuard regionId="jungle" rarity="timeless">secret</ProgressGuard>,{...full,showTimeless:false}),/Show Timeless/);
-  assert.match(render(<ProgressGuard regionId="jungle" rarity="timeless">secret</ProgressGuard>,DEFAULT_PREFERENCES),/Reveal Jungle/);
+  assert.match(render(<ProgressGuard regionId="jungle" rarity="timeless">secret</ProgressGuard>,RESTRICTED_PREFERENCES),/Reveal Jungle/);
 });
 test("Rescue contextual eligibility respects Timeless visibility and remains editable setup", () => {
   assert.equal(rescueSetupHref("farm","chicken"),"/rescue?region=farm&animal=chicken");
@@ -103,7 +104,7 @@ test("Rescue contextual eligibility respects Timeless visibility and remains edi
     assert.equal(html.includes('data-animal-id="chicken"'),shown);
     assert.ok(!html.includes('dynamic-rescue-grid'));
   }
-  assert.deepEqual(resolveRescueSetupContext("jungle","lemur",{...DEFAULT_PREFERENCES,showTimeless:true}),{regionId:null,selectedIds:[]});
+  assert.deepEqual(resolveRescueSetupContext("jungle","lemur",{...RESTRICTED_PREFERENCES,showTimeless:true}),{regionId:null,selectedIds:[]});
 });
 test("Timeless-only, classic + Timeless and Timeless + pet obey existing participant limits", () => {
   const chicken = timeless[0], pig = ANIMALS.find(a=>a.id==="pig")!, cow = ANIMALS.find(a=>a.id==="cow")!;

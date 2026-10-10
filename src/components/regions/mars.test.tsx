@@ -11,7 +11,7 @@ import { regionPosition } from "./regionPresentation";
 import { getRegionSearchPresentation } from "./regionSearchPresentation";
 import { getRegionAnimalPresentations, getAnimalGuidePresentation } from "../animals/animalGuidePresentation";
 import { getAnimalDisplayArtwork } from "../animals/animalArtworkPresentation";
-import { DEFAULT_PREFERENCES, canViewRegion, revealRegion } from "../progress/spoilerPreferences";
+import { canViewRegion, revealRegion } from "../progress/spoilerPreferences";
 import { ProgressContext } from "../progress/ProgressProvider";
 import { ProgressGuard } from "../progress/ProgressGuard";
 import { resolveRescueSetupContext, rescueSetupHref } from "../rescue/rescueSetupContext";
@@ -28,17 +28,18 @@ const expected = [
  ["martian","Martian","rare",[[0,0],[0,2],[1,1]]],
  ["marsmallow","Marsmallow","mythical",[[0,0],[2,0]]],
 ] as const;
+const RESTRICTED_PREFERENCES = { maxEarthRegionId: "farm" as const, maxSpaceRegionId: null, showTimeless: false };
 test("Mars Space 02 preserves all six approved names, rarities and coordinates",()=>{
  assert.deepEqual(regionPosition("mars"),{group:"Space",number:2});assert.equal(records.length,6);
  expected.forEach(([id,name,rarity,cells],i)=>{assert.equal(records[i].id,id);assert.equal(records[i].name,name);assert.equal(records[i].rarity,rarity);assert.deepEqual(records[i].pattern.cells,cells.map(([row,col])=>({row,col})));});
 });
 test("Space None / Moon / Mars are cumulative and independent of Earth",()=>{
- for(const endpoint of [null,"moon","mars"] as const){const preferences={...DEFAULT_PREFERENCES,maxSpaceRegionId:endpoint};assert.equal(canViewRegion("mars",preferences),endpoint==="mars");assert.equal(canViewRegion("moon",preferences),endpoint!==null);assert.equal(canViewRegion("constellation",preferences),false);const html=renderToStaticMarkup(<ProgressContext.Provider value={{preferences,save:()=>{},openSettings:()=>{}}}><RegionExplorer/></ProgressContext.Provider>);assert.equal(html.includes('href="/regions/mars"'),endpoint==="mars");}
- const p=revealRegion("mars",DEFAULT_PREFERENCES);assert.equal(p.maxEarthRegionId,"farm");assert.equal(p.maxSpaceRegionId,"mars");
+ for(const endpoint of [null,"moon","mars"] as const){const preferences={...RESTRICTED_PREFERENCES,maxSpaceRegionId:endpoint};assert.equal(canViewRegion("mars",preferences),endpoint==="mars");assert.equal(canViewRegion("moon",preferences),endpoint!==null);assert.equal(canViewRegion("constellation",preferences),false);const html=renderToStaticMarkup(<ProgressContext.Provider value={{preferences,save:()=>{},openSettings:()=>{}}}><RegionExplorer/></ProgressContext.Provider>);assert.equal(html.includes('href="/regions/mars"'),endpoint==="mars");}
+ const p=revealRegion("mars",RESTRICTED_PREFERENCES);assert.equal(p.maxEarthRegionId,"farm");assert.equal(p.maxSpaceRegionId,"mars");
 });
 test("Mars region/animal barriers and editable contextual setup obey Space visibility",async()=>{
- for(const endpoint of ["moon","mars","moon"] as const){const preferences={...DEFAULT_PREFERENCES,maxSpaceRegionId:endpoint};const context=resolveRescueSetupContext("mars","marsmoset",preferences);assert.deepEqual(context,endpoint==="mars"?{regionId:"mars",selectedIds:["marsmoset"]}:{regionId:null,selectedIds:[]});const html=renderToStaticMarkup(<ProgressContext.Provider value={{preferences,save:()=>{},openSettings:()=>{}}}><RescueAssistant animals={ANIMALS} initialContext={context}/></ProgressContext.Provider>);assert.equal(html.includes("rescue-region region-mars"),endpoint==="mars");assert.ok(!html.includes("dynamic-rescue-grid"));const guide=renderToStaticMarkup(<ProgressContext.Provider value={{preferences,save:()=>{},openSettings:()=>{}}}>{await AnimalPage({params:Promise.resolve({regionId:"mars",animalId:"marsmoset"})})}</ProgressContext.Provider>);assert.equal(guide.includes("animals-hq/mars/marsmoset.png"),endpoint==="mars");const barrier=renderToStaticMarkup(<ProgressContext.Provider value={{preferences,save:()=>{},openSettings:()=>{}}}><ProgressGuard regionId="mars">allowed</ProgressGuard></ProgressContext.Provider>);assert.equal(barrier.includes("allowed"),endpoint==="mars");}
- assert.equal(rescueSetupHref("mars","marsmoset"),"/rescue?region=mars&animal=marsmoset");assert.deepEqual(resolveRescueSetupContext("mars",undefined,{...DEFAULT_PREFERENCES,maxSpaceRegionId:"mars"}),{regionId:"mars",selectedIds:[]});
+ for(const endpoint of ["moon","mars","moon"] as const){const preferences={...RESTRICTED_PREFERENCES,maxSpaceRegionId:endpoint};const context=resolveRescueSetupContext("mars","marsmoset",preferences);assert.deepEqual(context,endpoint==="mars"?{regionId:"mars",selectedIds:["marsmoset"]}:{regionId:null,selectedIds:[]});const html=renderToStaticMarkup(<ProgressContext.Provider value={{preferences,save:()=>{},openSettings:()=>{}}}><RescueAssistant animals={ANIMALS} initialContext={context}/></ProgressContext.Provider>);assert.equal(html.includes("rescue-region region-mars"),endpoint==="mars");assert.ok(!html.includes("dynamic-rescue-grid"));const guide=renderToStaticMarkup(<ProgressContext.Provider value={{preferences,save:()=>{},openSettings:()=>{}}}>{await AnimalPage({params:Promise.resolve({regionId:"mars",animalId:"marsmoset"})})}</ProgressContext.Provider>);assert.equal(guide.includes("animals-hq/mars/marsmoset.png"),endpoint==="mars");const barrier=renderToStaticMarkup(<ProgressContext.Provider value={{preferences,save:()=>{},openSettings:()=>{}}}><ProgressGuard regionId="mars">allowed</ProgressGuard></ProgressContext.Provider>);assert.equal(barrier.includes("allowed"),endpoint==="mars");}
+ assert.equal(rescueSetupHref("mars","marsmoset"),"/rescue?region=mars&animal=marsmoset");assert.deepEqual(resolveRescueSetupContext("mars",undefined,{...RESTRICTED_PREFERENCES,maxSpaceRegionId:"mars"}),{regionId:"mars",selectedIds:[]});
 });
 test("All six Mars guides, HQ fallback, static sequence and region search consume real records",()=>{
  assert.equal(animalRoutes().filter(p=>ANIMALS.some(a=>a.id===p.animalId&&a.rarity!=="timeless")&&p.regionId==="mars").length,records.length);assert.equal(getRegionSearchPresentation(getRegionAnimalPresentations("mars")).status,"ready");

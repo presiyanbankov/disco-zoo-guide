@@ -3,14 +3,14 @@ import { useState } from "react";
 import { EARTH_PROGRESS, SPACE_PROGRESS } from "./progression";
 import type { SpoilerPreferences } from "./spoilerPreferences";
 
-export function ProgressSetup({ initial, firstVisit, onSave, onCancel }: { initial: SpoilerPreferences; firstVisit: boolean; onSave: (value: SpoilerPreferences) => void; onCancel?: () => void }) {
+export function ProgressSetup({ initial, onSave, onCancel }: { initial: SpoilerPreferences; onSave: (value: SpoilerPreferences) => void; onCancel?: () => void }) {
   const [draft, setDraft] = useState(initial);
   const earthEndpoint = EARTH_PROGRESS.findIndex(r => r.id === draft.maxEarthRegionId);
   const spaceEndpoint = SPACE_PROGRESS.findIndex(r => r.id === draft.maxSpaceRegionId);
   const stopState = (index: number, endpoint: number) => index === endpoint ? "endpoint" : index < endpoint ? "reached" : "future";
   return <form className="progress-setup" onSubmit={e => { e.preventDefault(); onSave(draft); }}>
-    <span className="eyebrow">{firstVisit ? "WELCOME TO DISCO ZOO GUIDE" : "YOUR GUIDE"}</span>
-    <h1 id="progress-title">{firstVisit ? <>Choose your<br />spoiler level<span>.</span></> : "Spoiler settings."}</h1>
+    <span className="eyebrow">YOUR GUIDE</span>
+    <h1 id="progress-title">Spoiler settings.</h1>
     <p>Choose how much of Disco Zoo the guide should reveal.</p>
     <fieldset className="progress-track progress-earth"><legend>Earth spoilers <span>{earthEndpoint + 1} / {EARTH_PROGRESS.length} visible</span></legend>
       <p className="progress-track-hint">Show regions through:</p>
@@ -30,7 +30,7 @@ export function ProgressSetup({ initial, firstVisit, onSave, onCancel }: { initi
       {[false, true].map(show => <label key={String(show)}><input type="radio" name="timeless-progress" aria-label={show ? "Show Timeless" : "Hide Timeless"} checked={draft.showTimeless === show} onChange={() => setDraft({ ...draft, showTimeless: show })} /><span>{show ? "Show" : "Hide"}{draft.showTimeless === show && <b aria-hidden="true">✓</b>}</span></label>)}
     </div></fieldset>
     <div className="progress-entry"><div className="progress-summary" aria-live="polite" aria-atomic="true"><span className="eyebrow">YOUR GUIDE WILL REVEAL</span><p>Earth through <strong>{EARTH_PROGRESS[earthEndpoint].name}</strong><span>{spaceEndpoint < 0 ? "No Space regions" : `Space through ${SPACE_PROGRESS[spaceEndpoint].name}`}</span><span>Timeless {draft.showTimeless ? "shown" : "hidden"}</span></p></div>
-      <div className="progress-actions">{onCancel && <button type="button" className="rescue-secondary" onClick={onCancel}>Cancel</button>}<button type="submit" className="rescue-primary progress-save">{firstVisit ? "Enter Guide" : "Save settings"}<span aria-hidden="true">↗</span></button></div>
+      <div className="progress-actions">{onCancel && <button type="button" className="rescue-secondary" onClick={onCancel}>Cancel</button>}<button type="submit" className="rescue-primary progress-save">Save settings<span aria-hidden="true">↗</span></button></div>
     </div>
   </form>;
 }

@@ -9,6 +9,8 @@ import { RegionNavigation } from "../../../components/regions/RegionNavigation";
 import { RegionSearch } from "../../../components/regions/RegionSearch";
 import { getRegionPresentation, REGION_PRESENTATION } from "../../../components/regions/regionPresentation";
 import { ProgressGuard } from "../../../components/progress/ProgressGuard";
+import { pageMetadata } from "../../../components/seo/pageMetadata";
+import { BreadcrumbJsonLd } from "../../../components/seo/BreadcrumbJsonLd";
 
 type Props = { params: Promise<{ regionId: string }> };
 
@@ -22,11 +24,8 @@ export const dynamicParams = false;
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { regionId } = await params;
   const region = getRegionPresentation(regionId);
-  if (!region) return { title: "Uncharted territory — Disco Zoo Field Guide" };
-  return {
-    title: "Region guide — Disco Zoo Field Guide",
-    description: "Animal patterns and rescue search sequences with spoiler visibility settings.",
-  };
+  if (!region) return { title: "Page not found – Disco Zoo Guide", robots: { index: false } };
+  return pageMetadata(`${region.name} Animals & Patterns – Disco Zoo Guide`, `Find the ${region.name} animals in Disco Zoo, their rarities, exact rescue patterns and region search sequence. Open a rescue with ${region.name} selected.`, `/regions/${region.id}`);
 }
 
 export default async function RegionPage({ params }: Props) {
@@ -41,6 +40,7 @@ export default async function RegionPage({ params }: Props) {
       <SiteHeader regionId={region.id} />
       <main>
         <ProgressGuard regionId={region.id}>
+        <BreadcrumbJsonLd items={[{ name: "Home", path: "/" }, { name: region.name, path: `/regions/${region.id}` }]} />
         <RegionHero region={region} index={REGION_PRESENTATION.indexOf(region)} animals={animals} />
         <RegionSearch regionName={region.name} animals={animals} />
         <AnimalCollection animals={animals} />

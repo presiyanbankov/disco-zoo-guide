@@ -3,6 +3,7 @@ import { AnimalArtwork } from "./AnimalArtwork";
 import type { AnimalGuidePresentation } from "./animalGuidePresentation";
 import type { RegionPresentation } from "../regions/regionPresentation";
 import { RegionAtmosphere } from "../effects/RegionAtmosphere";
+import { rescueSetupHref } from "../rescue/rescueSetupContext";
 
 export function AnimalGuideHero({ animal, region, index }: { animal: AnimalGuidePresentation; region: RegionPresentation; index: number }) {
   return (
@@ -13,6 +14,8 @@ export function AnimalGuideHero({ animal, region, index }: { animal: AnimalGuide
         <div className="eyebrow">ANIMAL FIELD NOTES / 0{index + 1}</div>
         <h1 id="page-title">{animal.name}<span>.</span></h1>
         <div className={`animal-guide-taxonomy rarity-${animal.rarity}`}><span className="guide-rarity">{animal.rarity}</span><Link href={`/regions/${region.id}`}>{region.name} region <span aria-hidden="true">↗</span></Link></div>
+        <p className="rescue-functional-copy">Exact {animal.name} rescue pattern and static search order for Disco Zoo.</p>
+        <Link className="back-link" href={rescueSetupHref(region.id, animal.id)}>Open {animal.name} in Rescue Assistant <span aria-hidden="true">↗</span></Link>
         {animal.source === "development-preview" && <p className="animal-preview-note"><span className="preview-badge">ALPHA PREVIEW</span>Sample identity awaiting review. Pattern and strategy have not been supplied.</p>}
       </div>
       <div className="animal-guide-art">

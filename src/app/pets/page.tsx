@@ -3,6 +3,8 @@ import { PetArtwork } from "../../components/pets/PetArtwork";
 import { SiteHeader } from "../../components/layout/SiteHeader";
 import { SiteFooter } from "../../components/layout/SiteFooter";
 import { TransitionLink as Link } from "../../components/navigation/TransitionLink";
+import { pageMetadata } from "../../components/seo/pageMetadata";
+export const metadata = pageMetadata("Disco Zoo Pet Patterns", "See the rescue patterns for all eight Disco Zoo pet species. Cosmetic appearance does not change a species' pattern.", "/pets");
 export default function PetsPage() {
   return <div className="site-shell" data-route-page="/pets"><SiteHeader /><main className="pets-page"><Link href="/" className="back-link">&#8592; Field guide</Link><span className="eyebrow">8 SPECIES / RESCUE PATTERNS</span><h1>Pet patterns<span>.</span></h1><p>Cosmetic appearance does not affect the rescue pattern. Search uses the species pattern.</p><div className="pets-grid">{PET_SPECIES.map(pet => {
     const rows = Math.max(...pet.pattern.cells.map(c => c.row)) + 1;

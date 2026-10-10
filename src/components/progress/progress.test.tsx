@@ -13,23 +13,21 @@ import { ProgressGuard } from "./ProgressGuard";
 import { ProgressSetup } from "./ProgressSetup";
 import { DEFAULT_PREFERENCES, canViewAnimal, canViewRegion, canViewTimeless, getVisibleRegions, parsePreferences, revealRegion, serializePreferences, type SpoilerPreferences } from "./spoilerPreferences";
 const noop = () => {};
-test("welcome, settings and global control describe visibility rather than gameplay progress", () => {
-  for (const firstVisit of [true, false]) {
-    const html = renderToStaticMarkup(<ProgressSetup initial={DEFAULT_PREFERENCES} firstVisit={firstVisit} onSave={noop} />);
-    const text = html.replace(/<[^>]*>/g, " ");
-    assert.match(text, /Choose how much of Disco Zoo the guide should reveal/);
-    assert.match(text, /YOUR GUIDE WILL REVEAL/);
-    assert.match(text, /visible/);
-    assert.doesNotMatch(text, /progress|reached|journey|\bHERE\b/i);
-    assert.match(text, firstVisit ? /spoiler level/ : /Spoiler settings/);
-  }
+const RESTRICTED_PREFERENCES: SpoilerPreferences = { maxEarthRegionId: "farm", maxSpaceRegionId: null, showTimeless: false };
+test("settings and global control describe visibility rather than gameplay progress", () => {
+  const html = renderToStaticMarkup(<ProgressSetup initial={RESTRICTED_PREFERENCES} onSave={noop} />);
+  const text = html.replace(/<[^>]*>/g, " ");
+  assert.match(text, /Choose how much of Disco Zoo the guide should reveal/);
+  assert.match(text, /YOUR GUIDE WILL REVEAL/);
+  assert.doesNotMatch(text, /progress|reached|journey|Enter Guide|WELCOME/i);
+  assert.match(text, /Spoiler settings/);
   assert.match(renderToStaticMarkup(<ProgressControl />), />Spoilers</);
 });
 const jungle: SpoilerPreferences = { maxEarthRegionId: "jungle", maxSpaceRegionId: null, showTimeless: false };
-function render(children: React.ReactNode, preferences = DEFAULT_PREFERENCES) {
+function render(children: React.ReactNode, preferences = RESTRICTED_PREFERENCES) {
   return renderToStaticMarkup(<ProgressContext.Provider value={{ preferences, save: noop, openSettings: noop }}>{children}</ProgressContext.Provider>);
 }
-test("conservative first-visit defaults", () => assert.deepEqual(DEFAULT_PREFERENCES, { maxEarthRegionId: "farm", maxSpaceRegionId: null, showTimeless: false }));
+test("new visitors default to the complete guide", () => assert.deepEqual(DEFAULT_PREFERENCES, { maxEarthRegionId: "nocturnal", maxSpaceRegionId: "constellation", showTimeless: true }));
 test("versioned storage round-trips only recognized fields", () => {
   const saved = serializePreferences(jungle);
   assert.equal(JSON.parse(saved).version, 1);
@@ -44,9 +42,9 @@ test("Earth and Space progression metadata is complete and separate", () => {
   assert.equal(EARTH_PROGRESS[10].id, "nocturnal"); assert.equal(SPACE_PROGRESS[2].id, "constellation");
 });
 test("Farm sees Farm, not implemented Jungle or Space", () => {
-  assert.ok(canViewRegion("farm", DEFAULT_PREFERENCES));
-  assert.equal(canViewRegion("jungle", DEFAULT_PREFERENCES), false); assert.equal(canViewRegion("moon", DEFAULT_PREFERENCES), false);
-  assert.equal(canViewRegion("unknown", DEFAULT_PREFERENCES), false);
+  assert.ok(canViewRegion("farm", RESTRICTED_PREFERENCES));
+  assert.equal(canViewRegion("jungle", RESTRICTED_PREFERENCES), false); assert.equal(canViewRegion("moon", RESTRICTED_PREFERENCES), false);
+  assert.equal(canViewRegion("unknown", RESTRICTED_PREFERENCES), false);
 });
 test("Jungle sees earlier Earth destinations without enabling Space", () => {
   for(const r of EARTH_PROGRESS.slice(0,6))assert.ok(canViewRegion(r.id,jungle));
@@ -54,21 +52,21 @@ test("Jungle sees earlier Earth destinations without enabling Space", () => {
   assert.equal(getVisibleRegions(REGION_PRESENTATION,jungle).length,6);
 });
 test("Space progress is independent, including future destinations", () => {
-  const p = { ...DEFAULT_PREFERENCES, maxSpaceRegionId: "mars" as const };
+  const p = { ...RESTRICTED_PREFERENCES, maxSpaceRegionId: "mars" as const };
   assert.ok(canViewRegion("moon",p)); assert.ok(canViewRegion("mars",p));
   assert.equal(canViewRegion("constellation",p),false); assert.equal(canViewRegion("outback",p),false);
   assert.equal(canViewRegion("moon",{...jungle,maxEarthRegionId:"nocturnal"}),false);
 });
 test("Timeless is a visibility-only gate and still requires visible region", () => {
   const timeless = { regionId: "farm", rarity: "timeless" };
-  assert.equal(canViewAnimal(timeless,DEFAULT_PREFERENCES),false);
-  assert.ok(canViewTimeless({...DEFAULT_PREFERENCES,showTimeless:true}));
-  assert.ok(canViewAnimal(timeless,{...DEFAULT_PREFERENCES,showTimeless:true}));
-  assert.equal(canViewAnimal({...timeless,regionId:"jungle"},{...DEFAULT_PREFERENCES,showTimeless:true}),false);
-  assert.equal(canViewAnimal({...timeless,hidden:true},{...DEFAULT_PREFERENCES,showTimeless:true}),false);
+  assert.equal(canViewAnimal(timeless,RESTRICTED_PREFERENCES),false);
+  assert.ok(canViewTimeless({...RESTRICTED_PREFERENCES,showTimeless:true}));
+  assert.ok(canViewAnimal(timeless,{...RESTRICTED_PREFERENCES,showTimeless:true}));
+  assert.equal(canViewAnimal({...timeless,regionId:"jungle"},{...RESTRICTED_PREFERENCES,showTimeless:true}),false);
+  assert.equal(canViewAnimal({...timeless,hidden:true},{...RESTRICTED_PREFERENCES,showTimeless:true}),false);
 });
 test("reveal updates only corresponding track and never enables Timeless", () => {
-  assert.deepEqual(revealRegion("jungle",DEFAULT_PREFERENCES),jungle);
+  assert.deepEqual(revealRegion("jungle",RESTRICTED_PREFERENCES),jungle);
   assert.deepEqual(revealRegion("moon",jungle),{...jungle,maxSpaceRegionId:"moon"});
   assert.equal(revealRegion("farm",jungle),jungle); assert.equal(revealRegion("unknown",jungle),jungle);
 });
@@ -76,19 +74,12 @@ test("progress can decrease and immediately change visibility", () => {
   assert.ok(canViewRegion("jungle",jungle));
   assert.equal(canViewRegion("jungle",{...jungle,maxEarthRegionId:"savanna"}),false);
 });
-test("first render contains only safe loading, never normal content", () => {
-  const html=renderToStaticMarkup(<ProgressProvider><div>Jungle Phoenix hidden art</div></ProgressProvider>);
-  assert.match(html,/Preparing your guide/);assert.doesNotMatch(html,/Jungle|Phoenix|hidden art/);
-});
-test("welcome provides both tracks, default hide and clear entry", () => {
-  const html=renderToStaticMarkup(<ProgressSetup initial={DEFAULT_PREFERENCES} firstVisit onSave={noop} />);
-  assert.match(html,/WELCOME TO/); assert.match(html,/Enter Guide/);assert.match(html,/Earth spoilers/);assert.match(html,/Independent from Earth/);
-  const farmInput = html.match(/<input[^>]*name="earth-progress"[^>]*>/g)?.find(input => input.includes('value="farm"'));
-  assert.ok(farmInput); assert.match(farmInput,/checked=""/);
-  assert.doesNotMatch(html,/Phoenix|Moonkey|Sasquatch/);
+test("first render contains public crawlable content without onboarding", () => {
+  const html=renderToStaticMarkup(<ProgressProvider><div>Jungle Phoenix guide</div></ProgressProvider>);
+  assert.match(html,/Jungle Phoenix guide/); assert.doesNotMatch(html,/Preparing your guide|Choose your|Enter Guide/);
 });
 test("journey presentation shows cumulative reached stops with distinct endpoints", () => {
-  const html = renderToStaticMarkup(<ProgressSetup initial={{ maxEarthRegionId: "jurassic", maxSpaceRegionId: "mars", showTimeless: false }} firstVisit onSave={noop} />);
+  const html = renderToStaticMarkup(<ProgressSetup initial={{ maxEarthRegionId: "jurassic", maxSpaceRegionId: "mars", showTimeless: false }} onSave={noop} />);
   const earth = html.split('class="progress-track progress-earth"')[1].split('</fieldset>')[0];
   const space = html.split('class="progress-track progress-space"')[1].split('</fieldset>')[0];
   assert.equal((earth.match(/data-progress-state="reached"/g) ?? []).length, 6);
@@ -100,11 +91,11 @@ test("journey presentation shows cumulative reached stops with distinct endpoint
   assert.match(earth,/Jurassic, show through this region/); assert.match(space,/Moon, visible/);
 });
 test("entry summary reflects progress and treats Timeless as a compact preference", () => {
-  const html = renderToStaticMarkup(<ProgressSetup initial={{ maxEarthRegionId: "jurassic", maxSpaceRegionId: null, showTimeless: true }} firstVisit onSave={noop} />);
+  const html = renderToStaticMarkup(<ProgressSetup initial={{ maxEarthRegionId: "jurassic", maxSpaceRegionId: null, showTimeless: true }} onSave={noop} />);
   assert.match(html,/Earth through <strong>Jurassic<\/strong>/);
   assert.match(html,/No Space regions/); assert.match(html,/Timeless shown/);
   assert.match(html,/class="timeless-choices"/); assert.match(html,/class="progress-entry"/);
-  assert.match(html,/aria-label="Show Timeless"/); assert.match(html,/Enter Guide/);
+  assert.match(html,/aria-label="Show Timeless"/); assert.match(html,/Save settings/);
 });
 test("explorer hides names/artwork and navigation filters hidden regions", () => {
   const explorer=render(<RegionExplorer />);const navigation=render(<RegionNavigation currentId="farm" />);
@@ -129,7 +120,7 @@ test("progress beyond implementation does not create routes or reveal future des
   assert.match(html, /Constellation/);
 });
 test("rescue selector and URL context respect progress", () => {
-  assert.deepEqual(resolveRescueSetupContext("jungle","monkey",DEFAULT_PREFERENCES),{regionId:null,selectedIds:[]});
+  assert.deepEqual(resolveRescueSetupContext("jungle","monkey",RESTRICTED_PREFERENCES),{regionId:null,selectedIds:[]});
   const hidden=render(<RescueAssistant animals={ANIMALS} initialContext={{regionId:"jungle",selectedIds:["monkey"]}} />);
   assert.doesNotMatch(hidden,/region-jungle|Monkey|Phoenix/);
   assert.doesNotMatch(hidden,/rescue-animal-option/);

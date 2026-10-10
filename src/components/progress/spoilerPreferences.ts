@@ -6,7 +6,7 @@ export interface SpoilerPreferences {
   showTimeless: boolean;
 }
 export const PROGRESS_STORAGE_KEY = "disco-zoo-guide.progress";
-export const DEFAULT_PREFERENCES: SpoilerPreferences = { maxEarthRegionId: "farm", maxSpaceRegionId: null, showTimeless: false };
+export const DEFAULT_PREFERENCES: SpoilerPreferences = { maxEarthRegionId: "nocturnal", maxSpaceRegionId: "constellation", showTimeless: true };
 export function serializePreferences(preferences: SpoilerPreferences): string {
   return JSON.stringify({ version: 1, ...preferences });
 }
