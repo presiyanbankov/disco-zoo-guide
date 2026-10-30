@@ -1,6 +1,7 @@
 "use client";
 import { createContext, useContext, useEffect, useRef, useState, type ReactNode } from "react";
 import { DEFAULT_PREFERENCES, PROGRESS_STORAGE_KEY, parsePreferences, serializePreferences, type SpoilerPreferences } from "./spoilerPreferences";
+import { trackEvent } from "../analytics/analytics";
 import { ProgressSetup } from "./ProgressSetup";
 
 export const ProgressContext = createContext({ preferences: DEFAULT_PREFERENCES, save: (value: SpoilerPreferences) => { void value; }, openSettings: () => {} });
@@ -44,7 +45,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   return <ProgressContext.Provider value={{ preferences, save, openSettings: () => setSettings(true) }}>
     {children}
     {storageNotice && <p className="progress-storage-notice" role="status">{storageNotice}</p>}
-    {settings && <ProgressDialog preferences={preferences} close={() => setSettings(false)} save={save} />}
+    {settings && <ProgressDialog preferences={preferences} close={() => setSettings(false)} save={value => { if (serializePreferences(value) !== serializePreferences(preferences)) trackEvent("spoiler_settings_changed", { source_surface: "spoiler_settings" }); save(value); }} />}
   </ProgressContext.Provider>;
 }
 

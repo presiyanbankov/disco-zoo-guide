@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { trackEvent } from "../analytics/analytics";
 import { PET_SPECIES } from "../../data/pets";
 import { animalParticipant, petParticipant, validateRescueSetup } from "./rescueParticipants";
 import type { Animal } from "../../types/game";
@@ -35,7 +36,21 @@ export function RescueAssistant({ animals: allAnimals, initialContext }: { anima
   const effectiveStrategy = state ? resolveTargetStrategy(state, worlds, strategy) : strategy;
   const rarityParticipants = state && effectiveStrategy.type === "rarity-focus" ? rarityFocusParticipantIds(state, worlds) : [];
   const result = useMemo(() => state ? analyzeRescueWorlds(state, worlds, strategy) : null, [state, worlds, strategy]);
+  const opened = useRef(false);
+  const completionSent = useRef(false);
+  useEffect(() => {
+    if (opened.current) return;
+    opened.current = true;
+    trackEvent("rescue_opened", { source_surface: "rescue" });
+    if (context.regionId) trackEvent("contextual_rescue_opened", { region: context.regionId, animal: context.selectedIds[0], source_surface: context.selectedIds.length ? "animal" : "region" });
+  }, [context.regionId, context.selectedIds]);
+  useEffect(() => {
+    if (result?.status !== "complete" || completionSent.current) return;
+    completionSent.current = true;
+    trackEvent("rescue_completed", { region: regionId ?? undefined, strategy: effectiveStrategy.type, participant_count: participants.length, has_pet: !!pet, source_surface: "rescue" });
+  }, [result?.status, regionId, effectiveStrategy.type, participants.length, pet]);
   const onStrategy = (type: RescueStrategy["type"]) => {
+    if (type !== strategy.type) trackEvent("rescue_strategy_selected", { region: regionId ?? undefined, strategy: type, participant_count: participants.length, has_pet: !!pet, source_surface: "rescue" });
     setTargetTransition("");
     setStrategy(type === "target" ? { type, participantId: lastTarget } : { type });
   };
@@ -63,7 +78,7 @@ export function RescueAssistant({ animals: allAnimals, initialContext }: { anima
   const region = REGION_PRESENTATION.find(r => r.id === regionId);
 
   function start() {
-    try { const validation = validateRescueSetup(selected, pet ? [pet] : []); if (validation) throw new Error(validation); setState(createDynamicRescueState(participants)); setError(undefined); }
+    try { const validation = validateRescueSetup(selected, pet ? [pet] : []); if (validation) throw new Error(validation); setState(createDynamicRescueState(participants)); completionSent.current = false; trackEvent("rescue_started", { region: regionId ?? undefined, strategy: strategy.type, participant_count: participants.length, has_pet: !!pet, source_surface: "rescue" }); setError(undefined); }
     catch (error) { setError(error instanceof Error ? error.message : String(error)); }
   }
 

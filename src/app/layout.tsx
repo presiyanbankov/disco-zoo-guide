@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "../components/analytics/GoogleAnalytics";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -41,7 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head><script dangerouslySetInnerHTML={{ __html: `try{if(localStorage.getItem(${JSON.stringify(PROGRESS_STORAGE_KEY)}))document.documentElement.dataset.spoilerRestoring="true"}catch{}` }} /></head>
-      <body className="min-h-full flex flex-col"><ProgressProvider><EnvironmentLifecycle /><NavigationMotion>{children}</NavigationMotion></ProgressProvider></body>
+      <body className="min-h-full flex flex-col"><GoogleAnalytics /><ProgressProvider><EnvironmentLifecycle /><NavigationMotion>{children}</NavigationMotion></ProgressProvider></body>
     </html>
   );
 }
